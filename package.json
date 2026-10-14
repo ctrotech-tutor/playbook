@@ -12,7 +12,10 @@
     "build": "node deploy/build.mjs",
     "start": "node deploy/serve.mjs",
     "test:seo": "python3 tools/verify_seo.py",
-    "indexnow": "node deploy/indexnow.mjs"
+    "indexnow": "node deploy/indexnow.mjs",
+    "test": "node --test tests/build-integrity.test.mjs",
+    "test:integrity": "node --test tests/build-integrity.test.mjs",
+    "check:site": "node --test tests/deployment-output.test.mjs"
   },
   "dependencies": {
     "cheerio": "1.2.0"

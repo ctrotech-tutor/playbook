@@ -8,7 +8,7 @@ Author: **Odejobi Abiola Samuel**
 
 The **self-deployment package is prepared and locally verified**. It can be deployed to the author's Vercel account without GitHub. This is not a claim that every requested behavior, cross-specification API, exercise answer or accessibility requirement has received exhaustive independent review.
 
-No Vercel project was created, linked or deployed. Actual Vercel routing, domain ownership, TLS, search-engine ownership verification and search indexing remain untested on a hosted destination. These are distinct from the checks already executed.
+The author created the `ctrobook` Vercel project and published the source to GitHub. The agent has not created, linked or deployed a project. The supplied Vercel log shows a failed build, not a successful hosted deployment. Actual Vercel routing, domain ownership, TLS, search-engine ownership verification and search indexing remain untested on a hosted destination. These are distinct from the checks already executed.
 
 ## Delivered
 
@@ -60,3 +60,9 @@ The author already supplied the name, design approval and permission to proceed.
 ## Rights and publication
 
 No open reuse license was selected for original editorial work. Upstream permissions and font rights remain intact. The author can self-deploy; an editorial reuse choice is not being manufactured as a blocker. This file is a factual release-status record, not legal advice or a certification.
+
+## Git-backed build repair
+
+The public repository at commit `c4f2ebd` contains a lockfile with one extra blank line compared with the original archive. This was enough to fail the old raw-byte guard. The version-2 manifest now ignores only insignificant JSON whitespace outside strings. Actual source strings, dependencies and non-JSON edits still invalidate the compiled snapshot. It also reports all mismatches rather than sending the owner through one-file-at-a-time repairs. A clean-source Python build now creates missing parent directories.
+
+Eight integrity regressions and three output checks are provided. A pinned-action, read-only GitHub workflow is configured for Node 24 on Linux and Windows. Hosted Actions and Windows execution are not claimed to have run in this Linux environment.

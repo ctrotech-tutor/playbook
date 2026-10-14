@@ -6,6 +6,26 @@ This is the self-deployable Vercel delivery of the playbook. No GitHub repositor
 
 **Content status:** all 74 chapter drafts are present. The declaration register is substantially expanded, but exhaustive behavioral documentation and independent technical/answer review remain open. This package is not represented as a completed whole-Standard audit or a tagged accessible PDF.
 
+## Repository updates and build checks
+
+The source repository is https://github.com/ctrotech-tutor/playbook. GitHub stores the source; Vercel remains the website host.
+
+For a clean local checkout:
+
+```sh
+git pull --ff-only
+npm ci --ignore-scripts
+npm test
+npm run build
+npm run check:site
+```
+
+Commit or stash your own edits before pulling. Do not use a hard reset to discard work. Updates become available through `git pull` only after someone with repository write access has pushed them. Repository updates are pushed only with the author’s explicit authorization and write credentials. Credentials must remain outside the repository; pull only retrieves commits that have actually been pushed.
+
+The included GitHub Actions workflow checks Node 24 on Linux and Windows. It runs integrity regressions, a synthetic-production build and generated-output checks. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
+
+To deploy, run `vercel deploy --prod`, or connect this repository to the existing `ctrobook` project under Vercel project settings. A local `git pull` alone does not deploy a website.
+
 ## Deploy on Vercel
 
 1. Unzip the package and open a terminal in the folder containing `vercel.json` and `package.json`.
@@ -22,7 +42,7 @@ vercel deploy --prod
 
 `vercel.json` selects the static/Other preset, runs `npm ci --ignore-scripts` and `npm run build`, and publishes only `dist/`. There are no application functions or collection backends. Hosting plan limits and terms still apply.
 
-The agent has not signed in, linked an account, created a project or deployed this package. Your own CLI login and deployment happen on your computer.
+The author has created the `ctrobook` Vercel project, according to the supplied CLI log. That log shows a failed build, not a successful hosted deployment. The agent has not signed in, linked an account, created a project or deployed this package.
 
 ### Production domain and canonicals
 
@@ -75,7 +95,7 @@ npm run build
 
 The Python build writes `build/site/` and `deliverables/ctrotech-html-playbook.pdf`. It uses bundled fonts, not system-installed font binaries. The deployment ZIP supplies the compiled `site/` fallback, so ordinary Vercel deployments do not need Python, Java or a live specification fetch.
 
-The Node build prefers a freshly generated `build/site/`, otherwise it uses the supplied `site/`. Its input manifest checks the maintained bytes. If you edit the manuscript and forget to regenerate the compiled source, deployment fails instead of silently shipping inconsistent content.
+The Node build prefers a freshly generated `build/site/`, otherwise it uses the supplied `site/`. Its version-2 input manifest checks maintained inputs. Insignificant JSON whitespace outside strings is normalized, including indentation, trailing blank lines and CRLF outside strings. JSON string values, escapes, key order, dependency versions and non-JSON bytes remain protected. Python and Node use the same normalization and regression tests check their agreement. If you edit the manuscript and forget to regenerate the compiled source, deployment fails instead of silently shipping inconsistent content.
 
 ### Refresh upstream declaration data
 
@@ -135,4 +155,4 @@ WHATWG source material, W3C Webref extraction software, selected Browser Compati
 
 ## Delivery and integrity
 
-`tools/package.py` builds the Vercel ZIP with a per-file SHA-256 manifest and verifies its CRC. `deliverables/package-checksums.json` supplies the final artifact hashes. The previous review archives are superseded by this deployment bundle. Generated `build/` and `dist/` folders are disposable outputs, not separate sources of truth.
+`tools/package.py` builds the Vercel ZIP with a per-file SHA-256 manifest and verifies its CRC. `deliverables/package-checksums.json` supplies the final artifact hashes. The manifest belongs inside an exported ZIP, not at the root of a changing Git working tree. The previous review archives are superseded by this deployment bundle. Generated `build/` and `dist/` folders are disposable outputs, not separate sources of truth.

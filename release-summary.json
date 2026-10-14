@@ -8,7 +8,8 @@
   "content_status": "Expanded behavioral coverage and independent technical/answer reviews remain open.",
   "independent_content_approved": false,
   "hosted_vercel_deployment_tested": false,
-  "vercel_project_created": false,
+  "vercel_project_created_by_agent": false,
+  "vercel_project_created_by_author": true,
   "search_accounts_verified": false,
   "indexnow_submitted": false,
   "chapters": 74,
@@ -26,7 +27,7 @@
   "pdf_pages": 401,
   "pdf_bookmarks": 400,
   "pdf_sha256": "357e25c8d3a9cda70b984777117f0cd4c46d9503d03e8310d1ddf16ffd30a137",
-  "publication_fingerprint": "c4b80bea5abe79778309d23644007ca41bd10daec65aa930efc15d970b4f1f2a",
+  "publication_fingerprint": "3233af9e33ec0d70d662936dde8f4d4d30c6f57719c95704e6a2334fbb96b7f5",
   "package_rebuild_evidence": "tests/package-rebuild.json",
   "not_certified": [
     "Independent technical or answer-key correctness",

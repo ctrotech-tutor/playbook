@@ -3,7 +3,7 @@
   "messages": [
     {
       "type": "error",
-      "url": "file:/home/user/ctrotech-html-playbook/publication/tests/fixtures/invalid-interactive-nesting.html",
+      "url": "file:/home/user/.cache/playbook-repository/tests/fixtures/invalid-interactive-nesting.html",
       "lastLine": 1,
       "lastColumn": 178,
       "firstColumn": 159,

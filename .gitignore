@@ -10,3 +10,8 @@ __pycache__/
 .env.*.local
 
 .vercel
+
+# Exported archives are release artifacts, not additional source trees.
+deliverables/*.zip
+deliverables/package-checksums.json
+deliverables/release-summary.json

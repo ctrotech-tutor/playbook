@@ -1,9 +1,9 @@
 {
-  "mode": "development",
-  "origin": null,
-  "indexable": false,
+  "mode": "production",
+  "origin": "https://publish-check.example.test",
+  "indexable": true,
   "html_documents": 497,
-  "indexable_pages": 0,
+  "indexable_pages": 408,
   "markdown_chapters": 74,
   "hashed_assets": 15,
   "edition": "0.3-rc",

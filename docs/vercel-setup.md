@@ -32,3 +32,7 @@ Official references:
 - https://vercel.com/docs/project-configuration
 - https://vercel.com/docs/environment-variables/system-environment-variables
 - https://openapi.vercel.sh/vercel.json
+
+## Subsequent author activity
+
+The author created the Vercel project `ctrobook` and shared a failed-build log, then published https://github.com/ctrotech-tutor/playbook. Initially, this sandbox had public clone access only and its push dry-run failed for lack of authentication. The author subsequently authorized temporary GitHub authentication for publishing the tested fix. No credential is stored in the repository. GitHub publishing does not provide Vercel account access or establish a successful production deployment. Hosted CI and remote commit results are reported separately.

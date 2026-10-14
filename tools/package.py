@@ -3,7 +3,7 @@
 from pathlib import Path
 import hashlib,json,re,zipfile
 import pymupdf
-from fingerprint import publication_fingerprint
+from fingerprint import publication_fingerprint,input_digest
 R=Path(__file__).resolve().parents[1];D=R/'deliverables'
 S=R/'build/site' if (R/'build/site').is_dir() else R/'site'
 def sha(data):return hashlib.sha256(data).hexdigest()
@@ -16,7 +16,7 @@ for evidence in [source,seo,final]:
 assert all(x['result']=='PASS' for x in source['results'])
 assert seo['result']==final['result']=='PASS'
 manifest=json.loads((S/'build-inputs.json').read_text())
-for name,digest in manifest['files'].items():assert sha((R/name).read_bytes())==digest,name
+for name,digest in manifest['files'].items():assert input_digest(R/name)==digest,name
 pdf=D/'ctrotech-html-playbook.pdf'
 if not pdf.exists():pdf=S/'downloads/ctrotech-html-playbook.pdf'
 assert pdf.read_bytes()==(S/'downloads/ctrotech-html-playbook.pdf').read_bytes()
@@ -24,7 +24,7 @@ with pymupdf.open(pdf) as p:
     assert p.metadata['author']==META['author'];pages=len(p);bookmarks=len(p.get_toc())
     assert len(p.embfile_names())==5
 api=json.loads((R/'content/api-register.json').read_text())
-summary={'title':META['title'],'author':META['author'],'copyright_notice':META['copyright_notice'],'edition':META['edition'],'publication_date':META['publication_date'],'delivery':'Self-deployable Vercel static bundle; no GitHub integration required','content_status':META['technical_release_status'],'independent_content_approved':False,'hosted_vercel_deployment_tested':False,'vercel_project_created':False,'search_accounts_verified':False,'indexnow_submitted':False,'chapters':74,'static_reference_projects':7,'source_html_documents':len(list(S.rglob('*.html'))),'generated_html_documents':next(x['html_documents'] for x in seo['checks'] if 'html_documents' in x),'intended_indexable_pages_in_production_fixture':next(x['indexed_pages'] for x in seo['checks'] if 'indexed_pages' in x),'api_register':api['stats'],'pdf_pages':pages,'pdf_bookmarks':bookmarks,'pdf_sha256':sha(pdf.read_bytes()),'publication_fingerprint':fingerprint,'package_rebuild_evidence':'tests/package-rebuild.json','not_certified':source['not_certified']}
+summary={'title':META['title'],'author':META['author'],'copyright_notice':META['copyright_notice'],'edition':META['edition'],'publication_date':META['publication_date'],'delivery':'Self-deployable Vercel static bundle; no GitHub integration required','content_status':META['technical_release_status'],'independent_content_approved':False,'hosted_vercel_deployment_tested':False,'vercel_project_created_by_agent':False,'vercel_project_created_by_author':True,'search_accounts_verified':False,'indexnow_submitted':False,'chapters':74,'static_reference_projects':7,'source_html_documents':len(list(S.rglob('*.html'))),'generated_html_documents':next(x['html_documents'] for x in seo['checks'] if 'html_documents' in x),'intended_indexable_pages_in_production_fixture':next(x['indexed_pages'] for x in seo['checks'] if 'indexed_pages' in x),'api_register':api['stats'],'pdf_pages':pages,'pdf_bookmarks':bookmarks,'pdf_sha256':sha(pdf.read_bytes()),'publication_fingerprint':fingerprint,'package_rebuild_evidence':'tests/package-rebuild.json','not_certified':source['not_certified']}
 D.mkdir(exist_ok=True)
 (D/'release-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 files={}
@@ -33,7 +33,7 @@ def include_tree(directory):
         if not p.is_file() or '__pycache__' in p.parts or p.suffix in ['.pyc','.pem','.key']:continue
         if p.name=='github-action-versions.json':continue
         files[p.relative_to(R).as_posix()]=p.read_bytes()
-for directory in ['content','assets','fonts','docs','deploy','tools','tests']:include_tree(directory)
+for directory in ['content','assets','fonts','docs','deploy','tools','tests','.github']:include_tree(directory)
 for name in ['README.md','PRODUCTION-READINESS.md','SEO-OPERATIONS.md','requirements-build.txt','requirements-verify.txt','package.json','package-lock.json','vercel.json','.vercelignore','.gitignore','.gitattributes','.env.example']:
     p=R/name
     if p.is_file():files[name]=p.read_bytes()
@@ -49,7 +49,7 @@ else:
     files['foundation/README.md']=b'# Historical foundation inputs\n\nRetained inventory, architecture and routing material predates the current manuscript. Planned routing is not completed behavioral coverage. This is not a final-release certificate. Raw historical snapshots and the original foundation generator remain separate; current HTML IDL and current publication inputs are retained in content/. See PRODUCTION-READINESS.md and the current receipts.\n'
 for name in files:
     assert not name.startswith('/') and '..' not in Path(name).parts,name
-    assert not any(x in Path(name).parts for x in ['node_modules','.vercel','.git','.github','.cache','__pycache__']),name
+    assert not any(x in Path(name).parts for x in ['node_modules','.vercel','.git','.cache','__pycache__']),name
     assert not (Path(name).name.startswith('.env') and name!='.env.example'),name
 assert set(manifest['files'])<=set(files)
 package_manifest={'edition':META['edition'],'author':META['author'],'publication_fingerprint':fingerprint,'scope':'Every payload file is hashed; this manifest excludes itself. Integrity is not independent technical approval.','files':{name:{'sha256':sha(data),'bytes':len(data)} for name,data in sorted(files.items())}}

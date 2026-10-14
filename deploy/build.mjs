@@ -3,13 +3,14 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import * as cheerio from 'cheerio';
+import {verifyInputs} from './integrity.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const out=path.join(root,'dist');
 let source=path.join(root,'build/site');
 try{await fs.access(source);}catch{source=path.join(root,'site');}
 const captured=JSON.parse(await fs.readFile(path.join(source,'build-inputs.json'),'utf8'));
-for(const [name,digest] of Object.entries(captured.files)){const actual=createHash('sha256').update(await fs.readFile(path.join(root,name))).digest('hex');if(actual!==digest)throw new Error('Precompiled site is stale: '+name+'. Rebuild the maintained source with python3 tools/build.py --pdf before deployment.');}
+await verifyInputs(root,captured);
 const meta=JSON.parse(await fs.readFile(path.join(root,'content/publication.json'),'utf8'));
 const book=JSON.parse(await fs.readFile(path.join(root,'content/chapters.json'),'utf8'));
 const api=JSON.parse(await fs.readFile(path.join(root,'content/api-register.json'),'utf8'));
