@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-10-14T15:56:52.506382+00:00",
+  "commit": "c95404d58596d5252e91831ba78958e8e009a66b",
+  "workflow_run_id": 38593506190,
+  "workflow_url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38593506190",
+  "workflow_conclusion": "success",
+  "jobs": [
+    {
+      "name": "Node 24 / windows-latest",
+      "conclusion": "success",
+      "url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38593506190/job/115954192824",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Use Node 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned dependencies without lifecycle scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check meaningful versus formatting-only changes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build production output with a synthetic test origin",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify generated documents and metadata",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Use Node 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "Node 24 / ubuntu-latest",
+      "conclusion": "success",
+      "url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38593506190/job/115954193297",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Use Node 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned dependencies without lifecycle scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check meaningful versus formatting-only changes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build production output with a synthetic test origin",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify generated documents and metadata",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Use Node 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "scope": "Observed GitHub-hosted Node 24 dependency installation, integrity tests, production build and generated-output tests on Linux and Windows. Not a hosted Vercel deployment, full manuscript review or accessibility certification."
+}

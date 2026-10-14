@@ -22,7 +22,7 @@ npm run check:site
 
 Commit or stash your own edits before pulling. Do not use a hard reset to discard work. Updates become available through `git pull` only after someone with repository write access has pushed them. Repository updates are pushed only with the author’s explicit authorization and write credentials. Credentials must remain outside the repository; pull only retrieves commits that have actually been pushed.
 
-The included GitHub Actions workflow checks Node 24 on Linux and Windows. It runs integrity regressions, a synthetic-production build and generated-output checks. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
+The included GitHub Actions workflow checks Node 24 on Linux and Windows. Both hosted jobs passed for the first repair commit; the observed run is recorded in `tests/github-hosted-build.json`. It runs integrity regressions, a synthetic-production build and generated-output checks. It also checks that a build does not change tracked source files. Environment-specific `tests/seo-build.json` is generated locally and ignored by Git, so normal builds do not create a tracked edit that interferes with future pulls. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
 
 To deploy, run `vercel deploy --prod`, or connect this repository to the existing `ctrobook` project under Vercel project settings. A local `git pull` alone does not deploy a website.
 

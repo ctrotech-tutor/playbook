@@ -42,3 +42,5 @@ jobs:
         run: npm run build
       - name: Verify generated documents and metadata
         run: npm run check:site
+      - name: Ensure build leaves tracked source unchanged
+        run: git diff --exit-code

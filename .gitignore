@@ -15,3 +15,6 @@ __pycache__/
 deliverables/*.zip
 deliverables/package-checksums.json
 deliverables/release-summary.json
+
+# Local and hosted builds write this environment-specific report.
+tests/seo-build.json

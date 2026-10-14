@@ -66,3 +66,7 @@ No open reuse license was selected for original editorial work. Upstream permiss
 The public repository at commit `c4f2ebd` contains a lockfile with one extra blank line compared with the original archive. This was enough to fail the old raw-byte guard. The version-2 manifest now ignores only insignificant JSON whitespace outside strings. Actual source strings, dependencies and non-JSON edits still invalidate the compiled snapshot. It also reports all mismatches rather than sending the owner through one-file-at-a-time repairs. A clean-source Python build now creates missing parent directories.
 
 Eight integrity regressions and three output checks are provided. A pinned-action, read-only GitHub workflow is configured for Node 24 on Linux and Windows. Hosted Actions and Windows execution are not claimed to have run in this Linux environment.
+
+### Hosted build confirmation
+
+GitHub Actions run 38593506190 passed for repair commit c95404d on both ubuntu-latest and windows-latest with Node 24. Installation, integrity regressions, the production-mode fixture build and output checks all succeeded. The observed result is retained in `tests/github-hosted-build.json`; it is not a Vercel hosting or whole-book correctness certificate. Runtime `tests/seo-build.json` is now ignored rather than tracked, avoiding build-generated changes during the pull/update workflow.
