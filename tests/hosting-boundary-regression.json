@@ -1,0 +1,25 @@
+{
+  "scope": "Hosting configuration versus precompiled-book boundary regression, not certification of the owner\u2019s unprovided local vercel.json or a real Vercel deployment.",
+  "result": "PASS",
+  "publication_fingerprint": "d2bfd8999d8dff68b5d17980ad8434731c62ed612025554a326e124c551d7a16",
+  "uploaded_vercel_config_diff_known": false,
+  "hosting_config_excluded_from_book_cache": true,
+  "full_QA_fingerprint_still_includes_hosting_config": true,
+  "compatible_hosting_changes_and_key_order": "PASS",
+  "current_tracked_cache_over_stale_ignored_cache": "PASS",
+  "actual_manuscript_edit_rejected": "PASS",
+  "dependency_edits_remain_protected": "PASS",
+  "incompatible_routing_and_output_settings_rejected": "PASS",
+  "source_html": 493,
+  "generated_html": 497,
+  "source_and_generated_nu_messages": 0,
+  "local_browser_engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "node_integrity_and_hosting_test_cases": 14,
+  "node_output_test_cases": 3,
+  "CLI_upload_ignores_local_build_directory": true,
+  "github_push_and_hosted_CI": "Pending publication of this repair; prior commit CI passed independently."
+}

@@ -31,7 +31,7 @@ def input_paths(root):
 
 
 def input_manifest(root):
-    return {'format_version': MANIFEST_VERSION, 'hash_policy': HASH_POLICY, 'scope': 'Maintained inputs; only insignificant JSON whitespace outside strings is normalized. Non-JSON bytes and all JSON string/token content remain protected. Generated output/evidence are not circular inputs.', 'files': {p.relative_to(root).as_posix(): input_digest(p) for p in input_paths(root)}}
+    return {'format_version': MANIFEST_VERSION, 'hash_policy': HASH_POLICY, 'scope': 'Maintained inputs; only insignificant JSON whitespace outside strings is normalized. Non-JSON bytes and all JSON string/token content remain protected. Runtime hosting configuration vercel.json is validated separately, not pinned to the Python book cache; full verification fingerprints still include it for QA provenance. Generated output/evidence are not circular inputs.', 'files': {p.relative_to(root).as_posix(): input_digest(p) for p in input_paths(root) if p != root/'vercel.json'}}
 
 
 def publication_fingerprint(root):

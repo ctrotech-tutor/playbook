@@ -36,7 +36,7 @@ jobs:
           cache: npm
       - name: Install pinned dependencies without lifecycle scripts
         run: npm ci --ignore-scripts
-      - name: Check meaningful versus formatting-only changes
+      - name: Check content integrity and hosting changes
         run: npm test
       - name: Build production output with a synthetic test origin
         run: npm run build

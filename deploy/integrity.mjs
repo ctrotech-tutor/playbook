@@ -46,3 +46,21 @@ export async function verifyInputs(root, manifest) {
     throw new Error('Precompiled site is stale: ' + changed.join(', ') + '. Formatting-only JSON whitespace is allowed; actual content, dependency and build-code edits require python3 tools/build.py (add --pdf for manuscript/PDF changes). Do not disable this check or replace hashes by hand.');
   }
 }
+
+
+// A git pull can update tracked site/ while leaving ignored build/site stale.
+// Use only a candidate whose complete protected-input manifest is current.
+export async function selectSource(root) {
+  const failures=[];
+  for (const name of ['build/site','site']) {
+    const candidate=path.join(root,name);
+    try {
+      const captured=JSON.parse(await fs.readFile(path.join(candidate,'build-inputs.json'),'utf8'));
+      await verifyInputs(root,captured);
+      return {directory:candidate, skipped:failures};
+    } catch (error) {
+      failures.push({directory:name, reason:error.message});
+    }
+  }
+  throw new Error('No current precompiled book snapshot. '+failures.map(x=>x.directory+': '+x.reason).join(' | '));
+}

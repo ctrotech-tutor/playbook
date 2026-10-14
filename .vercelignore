@@ -13,3 +13,6 @@ tests/*.log
 .npmrc
 *.pem
 *.key
+
+# Always deploy the tracked snapshot, never ignored local build artifacts.
+build

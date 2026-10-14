@@ -27,7 +27,7 @@
   "pdf_pages": 401,
   "pdf_bookmarks": 400,
   "pdf_sha256": "357e25c8d3a9cda70b984777117f0cd4c46d9503d03e8310d1ddf16ffd30a137",
-  "publication_fingerprint": "3233af9e33ec0d70d662936dde8f4d4d30c6f57719c95704e6a2334fbb96b7f5",
+  "publication_fingerprint": "d2bfd8999d8dff68b5d17980ad8434731c62ed612025554a326e124c551d7a16",
   "package_rebuild_evidence": "tests/package-rebuild.json",
   "not_certified": [
     "Independent technical or answer-key correctness",

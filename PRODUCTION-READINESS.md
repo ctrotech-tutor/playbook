@@ -70,3 +70,9 @@ Eight integrity regressions and three output checks are provided. A pinned-actio
 ### Hosted build confirmation
 
 GitHub Actions run 38593506190 passed for repair commit c95404d on both ubuntu-latest and windows-latest with Node 24. Installation, integrity regressions, the production-mode fixture build and output checks all succeeded. The observed result is retained in `tests/github-hosted-build.json`; it is not a Vercel hosting or whole-book correctness certificate. Runtime `tests/seo-build.json` is now ignored rather than tracked, avoiding build-generated changes during the pull/update workflow.
+
+### Hosting configuration boundary repair
+
+A subsequent owner log showed `vercel.json` triggering the book-cache guard. The uploaded file’s exact changes were not supplied. Inspection confirmed that the Node compiler does not consume it as manuscript input. Hosting configuration is now excluded from the precompiled-book input manifest and validated independently for compatible static output and routes. Book content and dependency inputs remain protected. A compiler regression changes hosting settings and property order, simulates stale local output, and confirms actual manuscript edits still fail. Local build/ is excluded from CLI uploads.
+
+The full verification fingerprint still includes vercel.json so local deployment-check receipts retain configuration provenance. This is separate from the narrower snapshot manifest used to decide whether a manuscript rebuild is necessary.

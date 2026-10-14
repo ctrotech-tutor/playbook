@@ -3,14 +3,14 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import * as cheerio from 'cheerio';
-import {verifyInputs} from './integrity.mjs';
+import {selectSource} from './integrity.mjs';
+import {readHostingConfig} from './hosting.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const out=path.join(root,'dist');
-let source=path.join(root,'build/site');
-try{await fs.access(source);}catch{source=path.join(root,'site');}
-const captured=JSON.parse(await fs.readFile(path.join(source,'build-inputs.json'),'utf8'));
-await verifyInputs(root,captured);
+await readHostingConfig(root);
+const selected=await selectSource(root);
+const source=selected.directory;
 const meta=JSON.parse(await fs.readFile(path.join(root,'content/publication.json'),'utf8'));
 const book=JSON.parse(await fs.readFile(path.join(root,'content/chapters.json'),'utf8'));
 const api=JSON.parse(await fs.readFile(path.join(root,'content/api-register.json'),'utf8'));

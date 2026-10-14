@@ -1,19 +1,16 @@
 {
   "result": "PASS",
-  "publication_fingerprint": "3233af9e33ec0d70d662936dde8f4d4d30c6f57719c95704e6a2334fbb96b7f5",
+  "publication_fingerprint": "d2bfd8999d8dff68b5d17980ad8434731c62ed612025554a326e124c551d7a16",
   "node": "v24.21.0",
   "fresh_extraction": true,
   "clean_npm_ci": "PASS",
   "node_only_build": "PASS",
   "precompiled_source_root": "site/",
-  "precompiled_site_tree_sha256": "c0e86ccc9179d8e5001f9395736e6208879af27981e5af2fd1f424852ff562a5",
+  "precompiled_site_tree_sha256": "80178e53474d4852ce576ecb00e16bd2d0e39ea9c7bc742df1357127c8bce877",
   "site_tree_hash_order": "Lexicographically sorted relative POSIX names; NUL after each name and file bytes",
-  "unconfigured_local_noindex": "PASS",
-  "synthetic_production_origin": "https://unpacked-bundle.example.test",
+  "compatible_hosting_edits_and_key_order": "PASS",
   "generated_html_documents": 497,
   "indexable_pages": 408,
-  "harmless_lockfile_blank_lines": "PASS",
-  "real_dependency_change_rejected": "PASS",
   "hosted_vercel_deployment_tested": false,
-  "scope": "Fresh extracted bundle, local and synthetic-production Node builds, output checks and semantic-change/formatting-change regressions. No Python or Java invoked by the deployment build."
+  "scope": "Fresh extracted archive, actual hosting-file changes, Node-only production build and output checks. Other content/dependency rejections are covered by the 14 integrity/hosting tests."
 }
