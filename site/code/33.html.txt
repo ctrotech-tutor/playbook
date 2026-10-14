@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100"
+     role="img" aria-labelledby="route-title route-desc">
+  <title id="route-title">Route to the reading room</title>
+  <desc id="route-desc">Reception connects directly to the reading room.</desc>
+  <path d="M40 50 H280" stroke="currentColor" stroke-width="4"/>
+  <circle cx="40" cy="50" r="10" fill="currentColor"/>
+  <circle cx="280" cy="50" r="10" fill="currentColor"/>
+</svg>

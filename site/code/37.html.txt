@@ -1,0 +1,4 @@
+<label for="copies">Number of copies</label>
+<input id="copies" name="copies" type="number" min="1" max="5" step="1">
+<label for="visit-date">Preferred visit date</label>
+<input id="visit-date" name="visitDate" type="date">

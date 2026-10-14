@@ -1,0 +1,4 @@
+<p>Bring a <strong>current membership card</strong>.</p>
+<img src="membership-card.svg" alt="Sample library membership card"
+     width="320" height="200">
+<p>Ask at the desk if you need a replacement.</p>

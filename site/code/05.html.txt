@@ -1,0 +1,6 @@
+<main>
+  <article>
+    <h1>A shelf for local writers</h1>
+    <p>Bring a book by an <em>independent</em> author.</p>
+  </article>
+</main>

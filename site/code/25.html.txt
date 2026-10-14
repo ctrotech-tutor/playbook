@@ -1,0 +1,9 @@
+<a href="#main-content">Skip to main content</a>
+<nav aria-label="Primary">
+  <a href="index.html">Home</a>
+  <a href="catalogue.html">Catalogue</a>
+</nav>
+<main id="main-content" tabindex="-1">
+  <h1>Library services</h1>
+  <p>Choose a service from the catalogue.</p>
+</main>

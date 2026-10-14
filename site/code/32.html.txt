@@ -1,0 +1,3 @@
+<iframe src="preview.html" title="Preview of the library notice"
+        sandbox="" loading="lazy" referrerpolicy="no-referrer"
+        width="640" height="360"></iframe>

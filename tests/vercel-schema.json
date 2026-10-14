@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "schema_url": "https://openapi.vercel.sh/vercel.json",
+  "schema_sha256": "4fe0327a23099e2a3f59fe62914eff614eea6f5d15eb90e02e641434a7fc5340",
+  "configuration_sha256": "08557ea81509ac20aa92914d99b32ba993d83c78899ffb98909e6919377a7d95",
+  "validation": "Configuration instance checked with Draft7Validator. Upstream schema meta-validation was not used because an unrelated service branch fails the local schema metaschema.",
+  "hosted_deployment_tested": false
+}

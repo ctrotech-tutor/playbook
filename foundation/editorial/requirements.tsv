@@ -1,0 +1,82 @@
+id	requirement	owner_chapters	verification
+C01	HTML purpose, history, scope and CSS/JavaScript relationship	CH-01;CH-02	Source review
+C02	Elements, tags, attributes, values, text nodes and comments	CH-04	Examples and conformance checks
+C03	Start/end tags, void elements and optional tags	CH-10;CH-13	Normative syntax review
+C04	Nesting, document hierarchy and DOM tree	CH-03;CH-05	DOM examples
+C05	Content categories and content models	CH-12;APP-E	Element/category audit
+C06	Permitted parents/children and transparent content models	CH-12;APP-A;APP-E	Per-element normative review
+C07	Quoting, case conventions, whitespace and escaping	CH-11;CH-13	Nu checker and normative syntax
+C08	Character encodings, Unicode and UTF-8	CH-09	Source review
+C09	Character references and reserved characters	CH-09;APP-J	Examples
+C10	Doctype, document element, head and body	CH-07;CH-08	Nu checker
+C11	HTML versus XHTML/XML serialization	CH-58	Paired MIME/parser examples
+C12	Parsing, tokenization, tree construction and recovery	CH-54;CH-55	Parsing fixtures
+C13	MIME types, loading and HTTP context	CH-56;CH-60;APP-H;APP-J	Source review and IANA boundary
+C14	Microsyntaxes, boolean/enumerated attributes and numbers	CH-11;CH-49;CH-53;APP-J	Attribute/microsyntax audit
+C15	Dates, times, URLs and URL resolution	CH-17;CH-20;APP-J	Edge-case fixtures
+E01	Document root and metadata elements	CH-08;CH-50;CH-51;APP-A	Full element inventory
+E02	Scripts and script support	CH-57;APP-A	Script ordering and noscript review
+E03	Sectioning, headings and semantic regions	CH-14;CH-23;CH-24;CH-25;APP-A	Full element and heading feature review
+E04	Text and grouping elements	CH-14;CH-18;CH-19;CH-22;APP-A	Content-model examples
+E05	Inline semantics	CH-15;CH-16;CH-17;CH-20;CH-21;APP-A	Full element inventory
+E06	Images and image maps	CH-28;CH-29;CH-31;APP-A	Text alternatives and image-map tests
+E07	Audio, video, source and tracks	CH-30;APP-A	Caption/subtitle and media review
+E08	Embedded content; param classified only as obsolete	CH-32;APP-A;APP-F	Normative classification and security review
+E09	Canvas plus SVG/MathML integration boundaries	CH-33;APP-A	HTML versus external vocabulary boundary
+E10	Tables and data relationships	CH-26;APP-A	Header associations and conformance
+E11	Forms and controls including selectedcontent	CH-34;CH-35;CH-36;CH-37;CH-38;CH-39;CH-40;CH-41;APP-A	Input-state and control-specific audit
+E12	Interactive/disclosure elements and popovers	CH-42;CH-43;CH-44;APP-A	Keyboard, focus and state tests
+E13	Templates, slots and custom-element integration	CH-46;APP-A	Declarative shadow DOM and custom elements
+E14	Editing and changes	CH-20;CH-45;APP-A	Semantics and interaction review
+E15	Microdata attributes, extraction and integration	CH-47;APP-B	Do not classify microdata attributes as elements
+E16	Obsolete and historical elements	APP-F	Separate conforming warnings and prohibited features
+A01	Global attributes and applicability	CH-48;APP-B	Normative global section and index reconciliation
+A02	id, class, style, title, lang and dir	CH-21;CH-48;APP-B	HTML/DOM ownership and contextual constraints
+A03	hidden, inert, tabindex, accesskey and autofocus	CH-45;CH-48;CH-62;APP-B	Behavior and accessibility review
+A04	contenteditable, draggable, spellcheck and translate	CH-45;CH-48;APP-B	Interactive tests
+A05	data-* and custom attribute naming	CH-47;APP-B	Naming examples
+A06	ARIA attributes, naming and HTML restrictions	CH-61;CH-62;APP-B	ARIA in HTML, WAI-ARIA, HTML-AAM and AccName audit
+A07	Link, URL and navigation attributes	CH-17;CH-51;CH-63;APP-C	Navigation and security review
+A08	Image attributes and responsive selection	CH-28;CH-29;CH-64;APP-C	Images and compatibility tests
+A09	Media attributes and track metadata	CH-30;APP-C	Autoplay, loading and media tests
+A10	Form action, method, encoding and related attributes	CH-34;CH-41;APP-C;APP-D	Submission fixtures
+A11	Input attributes and state-specific applicability	CH-36;CH-37;CH-38;CH-40;APP-D	Input applicability matrix
+A12	Script/resource attributes, integrity, CORS and nonce	CH-52;CH-57;CH-63;APP-C	Separate HTML integration from SRI/CSP/Fetch authority
+A13	Iframe sandbox, allow, loading and referrer policy	CH-32;CH-63;APP-C	Embedding threat models
+A14	Table attributes and obsolete distinctions	CH-26;APP-C;APP-F	Normative table audit
+A15	Element-specific and less common attributes	CH-49;APP-C	Generated row reconciliation
+A16	Values, defaults, restrictions, reflection and booleans	CH-49;CH-53;APP-C;APP-J	Per-definition audit
+A17	Obsolete attributes and historical syntax	APP-F	Conditional-conformance classification
+A18	New/evolving attributes and compatibility	CH-49;APP-K	Release-cutoff BCD and browser checks
+B01	DOM and document lifecycle	CH-05;CH-56	Concept and behavior examples
+B02	Parser behavior and malformed markup	CH-54;CH-55	Expected DOM fixtures
+B03	Resource discovery, fetching and loading	CH-52;CH-64	Browser measurements where feasible
+B04	Script execution and integration	CH-57	Classic/module/import-map fixtures
+B05	Metadata and resource hints	CH-50;CH-51;CH-52	Head examples
+B06	URL resolution and document base	CH-17;APP-J	Relative URL fixtures
+B07	Focus, keyboard interaction and native controls	CH-42;CH-44;CH-45;CH-62	Manual keyboard review
+B08	Accessibility tree and semantic roles	CH-61;CH-62	HTML-AAM, ARIA in HTML and AccName
+B09	Images, captions, transcripts and alternatives	CH-28;CH-30;CH-61	Accessible examples
+B10	Forms, errors and status messages	CH-35;CH-40;CH-61	Form and AT-oriented review
+B11	Table headers and data relationships	CH-26;CH-61	Screen-reader-oriented manual review
+B12	Language, internationalization and bidi	CH-21;CH-66	Multilingual examples
+B13	Security and safe embedding	CH-32;CH-63	Threat-specific evidence
+B14	Performance, images and priorities	CH-29;CH-52;CH-64	Measurements, not invented speedups
+B15	SEO metadata and semantic content	CH-50;CH-65	Qualified claims and external source boundaries
+B16	Validation and conformance	CH-13;CH-67	Nu checker output; not accessibility certification
+B17	Compatibility and progressive enhancement	CH-66;APP-K	BCD snapshot and browser evidence
+B18	Legacy migration	APP-F	Context-specific replacements
+B19	CSS, JS and web API boundaries	CH-01;CH-33;CH-59;CH-60;APP-I	Explicit integration depth
+B20	Maintainability, review and conventions	CH-66;CH-67	Final engineering checklist
+L01	Objectives, prerequisites and terminology	APP-G	Every chapter acceptance template
+L02	Basic/intermediate/advanced examples as appropriate	APP-G	Chapter review
+L03	Common mistakes and corrected alternatives	APP-G	Topic acceptance template
+L04	Exercises and explained solutions	APP-G	Verified answer key
+L05	Knowledge checks and quizzes	APP-G	Verified answers
+L06	Debugging and markup repair challenges	CH-55;APP-G	Expected outcomes
+L07	Small practical builds	CH-68;CH-69;CH-70;CH-71;CH-72;CH-73	Working source and conformance checks
+L08	Multi-page capstone and rubric	CH-74	Reference implementation and rubric
+L09	Quick-reference indexes	APP-A;APP-B;APP-C;APP-D;APP-E	Automated completeness checks
+L10	Glossary and further reading	APP-G;APP-H	Source review
+L11	Code example test suite	CH-67;APP-K	Repeatable validation and browser test evidence
+L12	Publication/update procedure	APP-H;APP-K	Release checklist and change detection

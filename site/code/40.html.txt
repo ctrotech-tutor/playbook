@@ -1,0 +1,4 @@
+<label for="card-number">Membership number</label>
+<input id="card-number" name="cardNumber" inputmode="numeric"
+       pattern="[0-9]{6}" aria-describedby="card-format" required>
+<p id="card-format">Enter the six digits printed on your card.</p>

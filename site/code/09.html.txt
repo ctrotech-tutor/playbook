@@ -1,0 +1,3 @@
+<p>Write <code>&lt;button&gt;</code> for an action.</p>
+<p>Research &amp; reading</p>
+<p title="She said &quot;welcome&quot;">A quoted greeting</p>

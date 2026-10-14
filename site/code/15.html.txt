@@ -1,0 +1,3 @@
+<p><strong>Return the key before closing time.</strong></p>
+<p>You may borrow <em>two</em> reference books.</p>
+<p>Our reading group chose <cite>Things Fall Apart</cite>.</p>

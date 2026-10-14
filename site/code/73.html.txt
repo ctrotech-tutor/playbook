@@ -1,0 +1,6 @@
+<ul>
+  <li><figure>
+    <img src="shelves.svg" alt="Three rows of books on a shelf" width="640" height="400">
+    <figcaption>A study in organising a small collection.</figcaption>
+  </figure></li>
+</ul>

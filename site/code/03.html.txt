@@ -1,0 +1,5 @@
+<p id="opening">Opening hours are being checked.</p>
+<script>
+  document.getElementById("opening").textContent =
+    "Open Tuesday to Saturday.";
+</script>

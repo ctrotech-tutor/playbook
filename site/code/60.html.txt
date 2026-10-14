@@ -1,0 +1,13 @@
+<button type="button" id="save-preference">Remember compact view</button>
+<p id="preference-result" role="status"></p>
+<script>
+  document.getElementById("save-preference").addEventListener("click", () => {
+    const result = document.getElementById("preference-result");
+    try {
+      localStorage.setItem("library.view", "compact");
+      result.textContent = "Preference saved in this browser.";
+    } catch {
+      result.textContent = "This browser could not save the preference.";
+    }
+  });
+</script>

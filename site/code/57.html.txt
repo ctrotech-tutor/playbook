@@ -1,0 +1,4 @@
+<script src="catalogue.js" defer></script>
+<noscript>
+  <p>The complete book list is available on the <a href="catalogue.html">catalogue page</a>.</p>
+</noscript>

@@ -1,0 +1,5 @@
+<fieldset>
+  <legend>How should we contact you?</legend>
+  <label><input type="radio" name="contact" value="email"> Email</label>
+  <label><input type="radio" name="contact" value="phone"> Phone</label>
+</fieldset>

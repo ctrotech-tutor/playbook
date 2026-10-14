@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "author": "Odejobi Abiola Samuel",
+  "pdf_font_notices_attached": true,
+  "examples_checked": 74,
+  "webidl_declarations_checked": 349,
+  "website_source_exact": true,
+  "raw_source_files_and_zip_exact": true,
+  "token_stream_and_prepared_rows_preserve_source": true,
+  "pdf_non_whitespace_code_characters_present": true,
+  "pdf_code_text_colours": 11,
+  "pdf_token_contrast_ratios": {
+    "Token.Comment": 5.42,
+    "Token.Keyword": 7.47,
+    "Token.Name.Tag": 6.87,
+    "Token.Name.Attribute": 6.96,
+    "Token.Name.Builtin": 7.18,
+    "Token.Name.Function": 7.47,
+    "Token.Literal.String": 7.33,
+    "Token.Literal.Number": 6.95,
+    "Token.Operator": 6.65,
+    "Token.Punctuation": 9.57,
+    "Token.Text": 11.86,
+    "label": 6.03
+  },
+  "minimum_pdf_token_contrast": 5.42,
+  "synthetic_multi_page_regression_pages": 4,
+  "copying_note": "PDF line wraps can change physical line breaks. Raw source downloads preserve exact UTF-8 bytes. Numerical contrast and text checks do not establish WCAG conformance or tagged-PDF accessibility."
+}

@@ -1,0 +1,16 @@
+[
+ {"title":"Boolean attributes","url":"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes","note":"Presence and absence, plus permitted serialized values."},
+ {"title":"Keywords and enumerated attributes","url":"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#keywords-and-enumerated-attributes","note":"Keywords, states and missing/invalid-value defaults."},
+ {"title":"Numbers","url":"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers","note":"Do not substitute JavaScript numeric parsing for an attribute's defined syntax."},
+ {"title":"Dates and times","url":"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#dates-and-times","note":"Separate dates, local times, offsets, durations and other temporal forms."},
+ {"title":"Space-separated tokens","url":"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens","note":"Token-list syntax does not define the meaning of every individual token."},
+ {"title":"URLs","url":"https://html.spec.whatwg.org/multipage/urls-and-fetching.html#urls","note":"Resolution, base URLs and URL-related authoring requirements."},
+ {"title":"Link types","url":"https://html.spec.whatwg.org/multipage/links.html#linkTypes","note":"Relationships and their allowed link/anchor contexts."},
+ {"title":"Metadata names","url":"https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names","note":"Defined names and the relevant extension mechanisms."},
+ {"title":"Autocomplete purposes","url":"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill","note":"Tokens describe field purpose and have ordering and applicability rules."},
+ {"title":"Input type states","url":"https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute","note":"22 states in the captured snapshot; state-specific constraints remain important."},
+ {"title":"Form submission","url":"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2","note":"Entry lists, methods, encodings, targets and overrides."},
+ {"title":"Iframe sandbox","url":"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox","note":"Permission tokens restore capabilities to a restricted browsing context."},
+ {"title":"Script processing","url":"https://html.spec.whatwg.org/multipage/scripting.html#the-script-element","note":"Classic/module behavior, recognized type values and processing rules."},
+ {"title":"HTML-defined HTTP headers and MIME discovery","url":"https://html.spec.whatwg.org/multipage/indices.html#http-headers","note":"Discovery lists are narrower than the entire HTTP and IANA registries."}
+]

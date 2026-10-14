@@ -1,0 +1,5 @@
+<p id="message"></p>
+<script>
+  const submittedText = "<strong>Recommended</strong>";
+  document.getElementById("message").textContent = submittedText;
+</script>

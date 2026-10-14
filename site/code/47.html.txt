@@ -1,0 +1,8 @@
+<button type="button" data-book-id="LIB-204" id="save-book">
+  Save Local histories
+</button>
+<script>
+  const saveButton = document.getElementById("save-book");
+  const bookId = saveButton.dataset.bookId;
+  // Use bookId as an identifier, never as an authorization decision.
+</script>

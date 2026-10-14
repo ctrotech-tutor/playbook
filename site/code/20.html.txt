@@ -1,0 +1,3 @@
+<p>Next meeting: <time datetime="2026-11-07">7 November 2026</time>.</p>
+<p>Book code: <data value="LIB-204">Local history collection</data>.</p>
+<p>The desk opens at <del>09:00</del> <ins>10:00</ins>.</p>

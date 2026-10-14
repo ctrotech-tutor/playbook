@@ -1,0 +1,5 @@
+<form action="catalogue.html" method="get">
+  <label for="accessible-search">Search books by title</label>
+  <input id="accessible-search" name="q" type="search">
+  <button type="submit">Search books</button>
+</form>

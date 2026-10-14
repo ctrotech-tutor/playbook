@@ -1,0 +1,6 @@
+<table>
+  <caption>Fictional loans by collection, October sample</caption>
+  <thead><tr><th scope="col">Collection</th><th scope="col">Loans</th></tr></thead>
+  <tbody><tr><th scope="row">Fiction</th><td>42</td></tr>
+  <tr><th scope="row">Local history</th><td>18</td></tr></tbody>
+</table>

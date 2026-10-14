@@ -1,0 +1,4 @@
+<img src="reading-room.jpg"
+     alt="Four study desks beside the reading room windows"
+     width="1200" height="800"
+     loading="lazy">

@@ -1,0 +1,5 @@
+<article>
+  <h1>Visit the reading room</h1>
+  <p>Check the current opening hours before travelling.</p>
+  <a href="opening-hours.html">Read the opening hours</a>
+</article>

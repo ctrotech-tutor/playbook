@@ -1,0 +1,31 @@
+{
+  "version": "0.2-planning",
+  "review_date": "2026-10-14",
+  "approval_status": "pending",
+  "parts": [
+    {"name":"I · Understanding HTML","chapters":["The web platform and the role of HTML","HTML's history, evolution and Living Standard","How browsers interpret web documents","Elements, tags, attributes and content","The DOM tree and document structure","Setting up a development environment and creating a first page"]},
+    {"name":"II · Syntax and Document Foundations","chapters":["HTML document anatomy and the doctype","The html, head and body elements","Character encoding, Unicode and character references","Nesting, void elements and optional tags","Attributes, quoting, whitespace and comments","Content categories and content models","HTML syntax, conformance and common errors"]},
+    {"name":"III · Text and Content Elements","chapters":["Headings, paragraphs, thematic breaks and heading-level features","Inline semantics, emphasis and quotations","Code, technical text and machine-readable values","Links, hyperlinks, fragments and navigation","Ordered, unordered and description lists","Figures, captions and self-contained content","Dates, times, abbreviations and document edits","International text, bidirectional text and language semantics"]},
+    {"name":"IV · Semantic Website Architecture","chapters":["Generic containers and grouping elements","Semantic regions and document organization","Articles, sections, headers, footers and asides","Navigation, landmarks and main content","Tables, captions, headers and accessible data relationships","Designing complete multi-page document structures"]},
+    {"name":"V · Images, Audio, Video and Embedded Content","chapters":["Images, alternative text and image dimensions","Responsive images: picture, source, srcset and sizes","Audio, video, source, captions and tracks","Image maps and interactive image regions","Iframes, embedded resources and sandboxing","Canvas, SVG, MathML and graphics integration boundaries"]},
+    {"name":"VI · Forms and Native Controls","chapters":["How HTML forms work","Labels, fieldsets, legends and accessible grouping","Text inputs, email, passwords and search","Numeric, date, time, color and range inputs","Checkboxes, radio buttons, files and hidden inputs","Select menus, selectedcontent, options, datalists and textareas","Native validation, constraints and error handling","Submission methods, encoding, server integration and secure handling"]},
+    {"name":"VII · Interaction and Modern HTML","chapters":["Buttons, commands and native interaction semantics","Disclosure widgets, details and summary","Dialogs, popovers, close requests and related patterns","Editing, focus, selection, drag-and-drop and user interaction","Templates, slots, custom elements and declarative shadow DOM","Custom data attributes, microdata and structured content"]},
+    {"name":"VIII · Attributes and Metadata","chapters":["Global attributes in depth","Element-specific attributes and valid values","Titles, metadata, icons and document descriptions","Links, resource hints and resource relationships","Loading, fetching, referrer policies, integrity, nonces and priorities","Attribute reflection, defaults and browser interpretation"]},
+    {"name":"IX · Browser Processing and Advanced Concepts","chapters":["HTML parsing and tokenization","Tree construction and error recovery","DOM interfaces and document lifecycle","Script loading, execution, import maps and integration","HTML/XML differences, XHTML and serialization","Rendering behavior and HTML's relationship with CSS","Web-platform APIs, communication, workers, worklets and storage: integration overview"]},
+    {"name":"X · Professional HTML Engineering","chapters":["Accessible HTML and WCAG-oriented implementation","Keyboard navigation, focus and assistive technology","Security, safe embedding, trust boundaries and policy integration","Performance, loading behavior and media optimization","SEO, metadata and structured content","Internationalization, maintainability and progressive enhancement","Validation, browser testing, code review and production checklists"]},
+    {"name":"XI · Practical Projects","chapters":["Build a well-structured personal profile","Build a multi-section portfolio","Create an accessible registration form","Build an article and documentation page","Structure a data-rich dashboard","Create a responsive media gallery","Capstone: a complete multi-page website with an assessment rubric"]}
+  ],
+  "appendices": [
+    {"id":"APP-A","title":"Alphabetical element reference: HTML names, foreign integration and custom-element rules"},
+    {"id":"APP-B","title":"Global attributes, wildcard families and cross-specification ownership"},
+    {"id":"APP-C","title":"Element-specific attributes, conditional applicability and event-handler attributes"},
+    {"id":"APP-D","title":"Input states, form attributes and control-specific restrictions"},
+    {"id":"APP-E","title":"Content categories, transparent models and conditional memberships"},
+    {"id":"APP-F","title":"Obsolete features, historical syntax and migration guide"},
+    {"id":"APP-G","title":"Glossary, troubleshooting, exercises and explained answer keys"},
+    {"id":"APP-H","title":"Standards bibliography, IANA context, compatibility links and maintenance log"},
+    {"id":"APP-I","title":"API/interface catalogue and explicit integration-depth boundaries (proposed addition)"},
+    {"id":"APP-J","title":"Microsyntaxes, link relationships, metadata keywords, headers and MIME types (proposed addition)"},
+    {"id":"APP-K","title":"Feature-status, compatibility-review and test-evidence register (proposed addition)"}
+  ]
+}

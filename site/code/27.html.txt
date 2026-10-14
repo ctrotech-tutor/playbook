@@ -1,0 +1,6 @@
+<nav aria-label="Primary">
+  <a href="index.html">Home</a>
+  <a href="catalogue.html" aria-current="page">Catalogue</a>
+  <a href="membership.html">Membership</a>
+  <a href="contact.html">Contact</a>
+</nav>

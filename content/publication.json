@@ -1,0 +1,20 @@
+{
+  "title": "The HTML Playbook",
+  "author": "Odejobi Abiola Samuel",
+  "imprint": "CTROTECH",
+  "edition": "0.3-rc",
+  "edition_label": "Vercel release candidate 0.3",
+  "publication_date": "2026-10-14",
+  "publication_month": "October 2026",
+  "copyright_year": 2026,
+  "copyright_notice": "© 2026 Odejobi Abiola Samuel. Third-party material retains its original rights and license terms.",
+  "reuse_license": "No new open license or blanket reuse permission is granted by this edition.",
+  "design_approval": "Approved by the author in this conversation",
+  "technical_release_status": "Expanded behavioral coverage and independent technical/answer reviews remain open.",
+  "preparation_note": "AI-assisted editorial preparation. Author credit does not imply an exclusively human-written manuscript.",
+  "author_bio_policy": "Only the author name supplied by the user is asserted. No qualifications, employment, endorsements or personal history have been invented.",
+  "reuse_license_selection": "No specific reuse-license option was selected by the author.",
+  "deployment_target": "Vercel, self-deployed by the author",
+  "deployment_approval": "Author requested a deployable package; no platform deployment performed.",
+  "rights_status": "Bundled source and font notices supplied. No open reuse license selected for the original editorial work."
+}

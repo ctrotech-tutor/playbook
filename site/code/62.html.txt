@@ -1,0 +1,5 @@
+<a href="#keyboard-main" class="skip-link">Skip to main content</a>
+<main id="keyboard-main" tabindex="-1">
+  <h1>Reading list</h1>
+  <button type="button">Add a book</button>
+</main>

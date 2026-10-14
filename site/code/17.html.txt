@@ -1,0 +1,6 @@
+<p><a href="catalogue.html">Browse the catalogue</a></p>
+<p><a href="#fees">Read the membership fees</a></p>
+<section id="fees">
+  <h2>Membership fees</h2>
+  <p>Ask the desk about the current membership options.</p>
+</section>

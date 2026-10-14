@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="author" content="Odejobi Abiola Samuel">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attributes and properties: example</title>
+
+</head>
+<body>
+<h1>Attributes and properties: example</h1>
+<label for="nickname">Reading-group name</label>
+<input id="nickname" name="nickname" value="Guest">
+<script>
+  const field = document.getElementById("nickname");
+  field.value = "Ada";
+  console.log(field.value);                 // Ada
+  console.log(field.getAttribute("value")); // Guest
+</script>
+</body>
+</html>

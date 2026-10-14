@@ -1,0 +1,5 @@
+<article>
+  <h1>How to renew your library membership</h1>
+  <p>Check the documents you need before visiting the desk.</p>
+  <a href="membership-documents.html">Documents accepted for renewal</a>
+</article>

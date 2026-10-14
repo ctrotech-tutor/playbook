@@ -1,0 +1,25 @@
+{
+  "recorded_date": "2026-10-14",
+  "source": "Installed Debian fonts-dejavu-core package",
+  "package_version": "2.37-8",
+  "upstream_project": "https://dejavu-fonts.github.io/",
+  "purpose": "Bundled PDF fonts for builds without a system-font dependency",
+  "files": {
+    "fonts/pdf/DejaVuSans-Bold.ttf": {
+      "sha256": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890",
+      "bytes": 708920
+    },
+    "fonts/pdf/DejaVuSans.ttf": {
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+      "bytes": 759720
+    },
+    "fonts/pdf/DejaVuSansMono.ttf": {
+      "sha256": "54bf827eb99404e8f430c330ad30f063334f637eba0109b6a18d4f566a8e9dd8",
+      "bytes": 343140
+    },
+    "fonts/pdf/LICENSE.txt": {
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "bytes": 3859
+    }
+  }
+}

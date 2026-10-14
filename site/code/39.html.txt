@@ -1,0 +1,8 @@
+<label for="branch">Preferred branch</label>
+<select id="branch" name="branch" required>
+  <option value="">Choose a branch</option>
+  <option value="central">Central</option>
+  <option value="east">East</option>
+</select>
+<label for="request">What would you like to read?</label>
+<textarea id="request" name="request" rows="4"></textarea>

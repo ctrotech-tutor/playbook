@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="author" content="Odejobi Abiola Samuel">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Templates and component boundaries: example</title>
+
+</head>
+<body>
+<h1>Templates and component boundaries: example</h1>
+<template id="book-template">
+  <article class="book">
+    <h2></h2>
+    <p></p>
+  </article>
+</template>
+<div id="book-results"></div>
+<script>
+  const template = document.getElementById("book-template");
+  const card = template.content.cloneNode(true);
+  card.querySelector("h2").textContent = "Local histories";
+  card.querySelector("p").textContent = "A collection of neighbourhood stories.";
+  document.getElementById("book-results").append(card);
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<figure>
+  <img src="floor-plan.svg"
+       alt="The reading room is left of reception; the lift is opposite."
+       width="640" height="360">
+  <figcaption>Ground-floor facilities near the entrance.</figcaption>
+</figure>

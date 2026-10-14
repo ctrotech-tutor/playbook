@@ -1,0 +1,12 @@
+{
+  "mode": "development",
+  "origin": null,
+  "indexable": false,
+  "html_documents": 497,
+  "indexable_pages": 0,
+  "markdown_chapters": 74,
+  "hashed_assets": 15,
+  "edition": "0.3-rc",
+  "created_from": "precompiled site/ plus canonical content metadata; no live source fetches during deployment",
+  "limitations": "No search ranking, rich-result eligibility, AI citation, universal compatibility or independent content approval is guaranteed."
+}

@@ -1,0 +1,8 @@
+<article>
+  <header>
+    <h2>A reading room after school</h2>
+    <p>Library programme notes</p>
+  </header>
+  <p>The room is available for supervised study.</p>
+  <footer><p>Contact the library desk for current sessions.</p></footer>
+</article>

@@ -1,0 +1,8 @@
+<form action="#registration-note" method="get">
+  <label for="project-name">Name</label>
+  <input id="project-name" name="name" autocomplete="name" required>
+  <label for="project-email">Email</label>
+  <input id="project-email" name="email" type="email" autocomplete="email" required>
+  <button type="submit">Check this demonstration</button>
+</form>
+<p id="registration-note">Demonstration only. No application service is connected.</p>

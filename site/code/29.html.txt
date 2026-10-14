@@ -1,0 +1,5 @@
+<img src="room-800.jpg"
+     srcset="room-400.jpg 400w, room-800.jpg 800w, room-1200.jpg 1200w"
+     sizes="(max-width: 40rem) 100vw, 50vw"
+     alt="The library reading room"
+     width="1200" height="800">

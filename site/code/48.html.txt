@@ -1,0 +1,4 @@
+<section id="renewal" class="notice compact" lang="en">
+  <h2>Renew your membership</h2>
+  <p>Use the same name as your current library card.</p>
+</section>

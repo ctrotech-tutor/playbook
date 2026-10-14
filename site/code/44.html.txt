@@ -1,0 +1,12 @@
+<button type="button" id="open-help">Membership help</button>
+<dialog id="help-dialog" aria-labelledby="help-title">
+  <h2 id="help-title">Membership help</h2>
+  <p>Ask at the desk if you cannot supply an address document.</p>
+  <form method="dialog"><button>Close help</button></form>
+</dialog>
+<script>
+  const help = document.getElementById("help-dialog");
+  document.getElementById("open-help").addEventListener("click", () => {
+    help.showModal();
+  });
+</script>

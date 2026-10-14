@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "publication_fingerprint": "c4b80bea5abe79778309d23644007ca41bd10daec65aa930efc15d970b4f1f2a",
+  "node": "v24.21.0",
+  "fresh_extraction": true,
+  "archive_per_file_hashes": "PASS",
+  "clean_npm_ci": "PASS",
+  "node_only_build": "PASS",
+  "precompiled_source_root": "site/",
+  "precompiled_site_tree_sha256": "9e03b50bf6571efe19c0e99c699cbcce086feb360dee51b403e0de03ff18c74e",
+  "unconfigured_local_noindex": "PASS",
+  "synthetic_production_origin": "https://unpacked-bundle.example.test",
+  "generated_html_documents": 497,
+  "indexable_pages": 408,
+  "stale_input_edit_rejected": "PASS",
+  "python_or_java_invoked_by_build": false,
+  "hosted_vercel_deployment_tested": false,
+  "scope": "Fresh extracted archive; npm ci and Node build only. Synthetic origin is a test fixture. The final bundle retains these same maintained input bytes and precompiled site tree; the receipt and archive manifest do not hash themselves.",
+  "site_tree_hash_order": "Lexicographically sorted relative POSIX file names; NUL after each name and file bytes"
+}

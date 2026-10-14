@@ -1,0 +1,4 @@
+<section aria-labelledby="list-title">
+  <h2 id="list-title" tabindex="-1">Your reading list</h2>
+  <ol><li>Local histories <button type="button">Move up</button></li></ol>
+</section>

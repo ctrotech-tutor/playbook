@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="author" content="Odejobi Abiola Samuel">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Where the wider APIs begin: example</title>
+
+</head>
+<body>
+<h1>Where the wider APIs begin: example</h1>
+<button type="button" id="save-preference">Remember compact view</button>
+<p id="preference-result" role="status"></p>
+<script>
+  document.getElementById("save-preference").addEventListener("click", () => {
+    const result = document.getElementById("preference-result");
+    try {
+      localStorage.setItem("library.view", "compact");
+      result.textContent = "Preference saved in this browser.";
+    } catch {
+      result.textContent = "This browser could not save the preference.";
+    }
+  });
+</script>
+</body>
+</html>

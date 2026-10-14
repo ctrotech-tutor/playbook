@@ -1,0 +1,6 @@
+<section aria-labelledby="eligibility">
+  <h2 id="eligibility">Who can join</h2>
+  <p>Membership options depend on the service you need.</p>
+  <h3>Young readers</h3>
+  <p>A guardian can help complete the application.</p>
+</section>

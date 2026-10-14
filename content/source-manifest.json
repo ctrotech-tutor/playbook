@@ -1,0 +1,145 @@
+[
+  {
+    "id": "indices",
+    "url": "https://html.spec.whatwg.org/multipage/indices.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:41:27 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:47 GMT",
+    "etag": "W/\"6acf1e13-77501\"",
+    "sha256": "099e04f3b25b48b37c6b5b7c63dc2466c6851868ead5f5c81ed6e5dc88e14444",
+    "bytes": 488705,
+    "note": "Live response retrieved during this session; logical review date uses the user-local date. Not a historical snapshot guarantee."
+  },
+  {
+    "id": "dom",
+    "url": "https://html.spec.whatwg.org/multipage/dom.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:41:28 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:45 GMT",
+    "etag": "W/\"6acf1e11-6b6c5\"",
+    "sha256": "d94b359c0d9693981e79896a5ebef58a1d5cb9587b6aaf1c850c128dd9e6a9c2",
+    "bytes": 440005,
+    "note": "Live response retrieved during this session; logical review date uses the user-local date. Not a historical snapshot guarantee."
+  },
+  {
+    "id": "obsolete",
+    "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:41:28 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:47 GMT",
+    "etag": "W/\"6acf1e13-2ab3f\"",
+    "sha256": "68722ca3bfa4baf5f43e14a9ac6b8fd72db3c2e465f16fd7d1a2078aa332daaf",
+    "bytes": 174911,
+    "note": "Live response retrieved during this session; logical review date uses the user-local date. Not a historical snapshot guarantee."
+  },
+  {
+    "id": "contents",
+    "url": "https://html.spec.whatwg.org/multipage/",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:41:29 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:45 GMT",
+    "etag": "W/\"6acf1e11-25d8a\"",
+    "sha256": "4498dd6428731fb321f2303f93b44e2828eeb23c92bdbc1ee4bad7ee8712d4e3",
+    "bytes": 155018,
+    "note": "Live response retrieved during this session; logical review date uses the user-local date. Not a historical snapshot guarantee."
+  },
+  {
+    "id": "input",
+    "url": "https://html.spec.whatwg.org/multipage/input.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:41:29 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:45 GMT",
+    "etag": "W/\"6acf1e11-a7d9b\"",
+    "sha256": "42e1c82cc134814892cce4a26caea437d4200c35e3d0440b9ecf971fa9dc1499",
+    "bytes": 687515,
+    "note": "Live response retrieved during this session; logical review date uses the user-local date. Not a historical snapshot guarantee."
+  },
+  {
+    "id": "mdn-elements",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:42:49 GMT",
+    "last_modified": "Wed, 14 Oct 2026 01:25:00 GMT",
+    "etag": "\"292ee5fc651fbb28fd74ac0d2a5e40e4\"",
+    "sha256": "09e7fe028ffcd63430466ce97f73051f560be2c7440528212fbebaeae0430986",
+    "bytes": 232235,
+    "note": "Secondary explanation/discovery only, not normative HTML authority."
+  },
+  {
+    "id": "mdn-global-attributes",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:42:49 GMT",
+    "last_modified": "Wed, 14 Oct 2026 01:25:02 GMT",
+    "etag": "\"d2fb6b7557c858f1d6d3e431885b8066\"",
+    "sha256": "014cfde6945a45a82fd16d5b4d1e81b8fd7b90b85c11cfdaf461540a3bf9cbf0",
+    "bytes": 217231,
+    "note": "Secondary explanation/discovery only, not normative HTML authority."
+  },
+  {
+    "id": "bcd-selectedcontent",
+    "url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/elements/selectedcontent.json",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:53 GMT",
+    "last_modified": null,
+    "etag": "W/\"80ba113dae5cec30a5fe88d823dace9b73bfb1a6331b1fe3026f22344acb94ff\"",
+    "sha256": "018dca78d45753b4dba9797da18d4313a4de20b5fdc74ff97c6785db9cbb4c1a",
+    "bytes": 1236,
+    "note": "Compatibility metadata; not a normative HTML definition."
+  },
+  {
+    "id": "bcd-global-attributes",
+    "url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/global_attributes.json",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:53 GMT",
+    "last_modified": null,
+    "etag": "W/\"e747e862248e82bb922f35ca769277fd43fae796d97dc87ac25353bc8a8ffc42\"",
+    "sha256": "962149bfd14e9c779d7a349efd47c579ee48f3bd07e8d33c361432b02ff52bc6",
+    "bytes": 54591,
+    "note": "Compatibility metadata; not a normative HTML definition."
+  },
+  {
+    "id": "bcd-button",
+    "url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/elements/button.json",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:53 GMT",
+    "last_modified": null,
+    "etag": "W/\"7a7bc82e60d1ba90ed246720147c780283a46e35c0d5f68337681225c67a2f0a\"",
+    "sha256": "716546afd4a5bfe84c9411f98629bc0385f1fbcb338375e66caa89c2b4bab1a2",
+    "bytes": 23316,
+    "note": "Compatibility metadata; not a normative HTML definition."
+  },
+  {
+    "id": "bcd-geolocation",
+    "url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/elements/geolocation.json",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:53 GMT",
+    "last_modified": null,
+    "etag": "W/\"5d4e730a45ad23785b72970d7e6628f0bd9a1de99f6e3516fb5b26bfe31110fb\"",
+    "sha256": "a927e874b4dcaa181c3b1330b6d7e1005cee1a20444db32fded6e4d4cb8bc9b2",
+    "bytes": 3501,
+    "note": "Compatibility metadata; not a normative HTML definition."
+  },
+  {
+    "id": "form-elements",
+    "url": "https://html.spec.whatwg.org/multipage/form-elements.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:53 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:45 GMT",
+    "etag": "W/\"6acf1e11-68560\"",
+    "sha256": "2008179089beb0eb6c7a2214bf0540981c0f909cde9b0cdc9fde56cc95817843",
+    "bytes": 427360,
+    "note": "Normative definition page; captured for targeted reconciliation."
+  },
+  {
+    "id": "sections",
+    "url": "https://html.spec.whatwg.org/multipage/sections.html",
+    "review_date": "2026-10-14",
+    "server_date": "Wed, 14 Oct 2026 10:43:54 GMT",
+    "last_modified": "Wed, 14 Oct 2026 06:15:45 GMT",
+    "etag": "W/\"6acf1e11-2c59d\"",
+    "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
+    "bytes": 181661,
+    "note": "Normative definition page; captured for targeted reconciliation."
+  }
+]

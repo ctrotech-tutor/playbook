@@ -1,0 +1,18 @@
+
+AI DETECTION PANEL
+==============================================================
+  BURSTINESS    ##########..............  42.2
+                variation 0.42 across 1733 sentences (want 0.55+)
+  SPECIFICITY   ........................   1.5
+                116 concrete markers, 0.6 per 100 words (want 4+)
+  SLOP DENSITY  ######################## 100.0
+                0 stock terms, 0.0 per 100 words
+  FINGERPRINT   ######################## 100.0
+                0 invisible, 0 em dash, 0 curly quote, 0 ellipsis, 0 hard space
+  VOICE         ########................  34.7
+                0.4 contractions, 0.5 personal pronouns per 100 words, 0 structural tell(s)
+--------------------------------------------------------------
+  HUMAN SCORE   ########................  34.0   FLAGGED
+
+  Weakest signal: SPECIFICITY. Fix that first.
+

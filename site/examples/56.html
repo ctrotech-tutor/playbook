@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="author" content="Odejobi Abiola Samuel">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The document lifecycle: example</title>
+
+</head>
+<body>
+<h1>The document lifecycle: example</h1>
+<p id="status-message">Preparing the catalogue view.</p>
+<script>
+  function initialize() {
+    document.getElementById("status-message").textContent = "Catalogue view ready.";
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initialize, { once: true });
+  } else {
+    initialize();
+  }
+</script>
+</body>
+</html>

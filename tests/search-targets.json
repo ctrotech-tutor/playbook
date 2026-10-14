@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "publication_fingerprint": "c4b80bea5abe79778309d23644007ca41bd10daec65aa930efc15d970b4f1f2a",
+  "search_entries": 1628,
+  "all_dynamic_search_routes_and_fragments": "PASS",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "keyword_search_and_fragment_navigation": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "keyword_search_and_fragment_navigation": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "keyword_search_and_fragment_navigation": "PASS"
+    }
+  ],
+  "scope": "All generated search destinations resolved statically; one keyword search/navigation flow executed in each engine with local HTTPS. Not a hosted Vercel test."
+}

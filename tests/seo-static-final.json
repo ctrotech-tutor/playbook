@@ -1,0 +1,42 @@
+{
+  "publication_fingerprint": "c4b80bea5abe79778309d23644007ca41bd10daec65aa930efc15d970b4f1f2a",
+  "scope": "Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.",
+  "node": "v24.21.0",
+  "checks": [
+    {
+      "check": "Missing and invalid production origins fail closed",
+      "result": "PASS"
+    },
+    {
+      "check": "Unconfigured local build emits no invented canonicals and is not indexable",
+      "result": "PASS"
+    },
+    {
+      "check": "Preview keeps production canonical but noindex directives and an empty sitemap",
+      "result": "PASS"
+    },
+    {
+      "check": "Optional verification and IndexNow key files are generated only from supplied values; no submission made",
+      "result": "PASS"
+    },
+    {
+      "check": "All output HTML metadata, unique indexed titles, real-target links, canonical routes, structured data, sitemaps, hashed assets and text exports",
+      "result": "PASS",
+      "html_documents": 497,
+      "indexed_pages": 408,
+      "internal_destinations": 17721,
+      "structured_data_pages": 408,
+      "markdown_chapters": 74,
+      "api_owner_pages": 314,
+      "pdf_sha256": "357e25c8d3a9cda70b984777117f0cd4c46d9503d03e8310d1ddf16ffd30a137",
+      "canonical_test_origin": "https://book.example.test (synthetic test fixture only)"
+    },
+    {
+      "check": "Generated Vercel HTML conformance",
+      "result": "PASS",
+      "documents": 497,
+      "nu_messages": 0
+    }
+  ],
+  "result": "PASS"
+}

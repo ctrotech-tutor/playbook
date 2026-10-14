@@ -1,0 +1,11 @@
+<p id="status-message">Preparing the catalogue view.</p>
+<script>
+  function initialize() {
+    document.getElementById("status-message").textContent = "Catalogue view ready.";
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initialize, { once: true });
+  } else {
+    initialize();
+  }
+</script>

@@ -1,0 +1,1 @@
+"use strict";const form=document.getElementById("demo-form");if(form){form.addEventListener("submit",event=>{event.preventDefault();document.getElementById("demo-result").textContent="The fields passed the browser checks. No application was sent or saved.";});document.getElementById("demo-fields").disabled=false;}

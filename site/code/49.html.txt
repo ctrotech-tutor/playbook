@@ -1,0 +1,4 @@
+<label for="age-years">Age in years</label>
+<input id="age-years" name="age" type="number" min="0" max="120">
+<label for="reader-name">Reader name</label>
+<input id="reader-name" name="readerName" type="text" maxlength="100">

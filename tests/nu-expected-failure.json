@@ -1,0 +1,16 @@
+{
+  "version": "26.10.12 (0a70d65)",
+  "messages": [
+    {
+      "type": "error",
+      "url": "file:/home/user/ctrotech-html-playbook/publication/tests/fixtures/invalid-interactive-nesting.html",
+      "lastLine": 1,
+      "lastColumn": 178,
+      "firstColumn": 159,
+      "message": "The element \u201ca\u201d with the attribute \u201chref\u201d must not appear as a descendant of the \u201cbutton\u201d element.",
+      "extract": "=\"button\"><a href=\"next.html\">Nested",
+      "hiliteStart": 10,
+      "hiliteLength": 20
+    }
+  ]
+}

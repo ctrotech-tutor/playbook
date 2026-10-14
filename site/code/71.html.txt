@@ -1,0 +1,5 @@
+<article>
+  <h1>How lending works</h1>
+  <nav aria-label="On this page"><a href="#borrowing">Borrowing</a></nav>
+  <section id="borrowing"><h2>Borrowing</h2><p>Ask at the desk about the current lending policy.</p></section>
+</article>

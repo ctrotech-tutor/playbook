@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Opening hours | Neighbourhood Library</title>
+</head>
+<body>
+  <h1>Opening hours</h1>
+  <p>Tuesday to Saturday, 10:00 to 17:00.</p>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<label>
+  <input type="checkbox" name="updates" value="yes">
+  Email me the reading-group schedule
+</label>
+<label for="attachment">Supporting document</label>
+<input id="attachment" name="attachment" type="file" accept=".pdf">
+<input type="hidden" name="formVersion" value="1">

@@ -1,0 +1,7 @@
+<div class="notice">
+  <p>Applications are open.</p>
+  <section>
+    <h2>How to apply</h2>
+    <p>Collect a form at the desk.</p>
+  </section>
+</div>

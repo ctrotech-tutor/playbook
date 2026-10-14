@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Find opening hours and contact details for the library.">
+  <title>Visit and contact | Neighbourhood Library</title>
+</head>
+<body><h1>Visit and contact</h1></body>
+</html>

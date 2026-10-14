@@ -1,0 +1,9 @@
+<section aria-labelledby="release-heading">
+  <h2 id="release-heading">Before publishing</h2>
+  <ul>
+    <li>Validate the built documents and record the output.</li>
+    <li>Test the main tasks with a keyboard.</li>
+    <li>Check paths under the deployment subdirectory.</li>
+    <li>Record remaining content and technical review work.</li>
+  </ul>
+</section>

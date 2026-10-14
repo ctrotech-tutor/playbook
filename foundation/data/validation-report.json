@@ -1,0 +1,1124 @@
+{
+  "result": "PASS",
+  "checks_run": 222,
+  "checks": [
+    {
+      "check": "source_hash:indices",
+      "passed": true,
+      "detail": "sources/indices.html"
+    },
+    {
+      "check": "source_hash:dom",
+      "passed": true,
+      "detail": "sources/dom.html"
+    },
+    {
+      "check": "source_hash:obsolete",
+      "passed": true,
+      "detail": "sources/obsolete.html"
+    },
+    {
+      "check": "source_hash:contents",
+      "passed": true,
+      "detail": "sources/contents.html"
+    },
+    {
+      "check": "source_hash:input",
+      "passed": true,
+      "detail": "sources/input.html"
+    },
+    {
+      "check": "source_hash:mdn-elements",
+      "passed": true,
+      "detail": "sources/mdn-elements.html"
+    },
+    {
+      "check": "source_hash:mdn-global-attributes",
+      "passed": true,
+      "detail": "sources/mdn-global-attributes.html"
+    },
+    {
+      "check": "source_hash:bcd-selectedcontent",
+      "passed": true,
+      "detail": "sources/bcd-selectedcontent.json"
+    },
+    {
+      "check": "source_hash:bcd-global-attributes",
+      "passed": true,
+      "detail": "sources/bcd-global-attributes.json"
+    },
+    {
+      "check": "source_hash:bcd-button",
+      "passed": true,
+      "detail": "sources/bcd-button.json"
+    },
+    {
+      "check": "source_hash:bcd-geolocation",
+      "passed": true,
+      "detail": "sources/bcd-geolocation.json"
+    },
+    {
+      "check": "source_hash:form-elements",
+      "passed": true,
+      "detail": "sources/form-elements.html"
+    },
+    {
+      "check": "source_hash:sections",
+      "passed": true,
+      "detail": "sources/sections.html"
+    },
+    {
+      "check": "unique_ids:chapters",
+      "passed": true,
+      "detail": "85 rows"
+    },
+    {
+      "check": "owners_exist:chapters",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:chapters",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:elements",
+      "passed": true,
+      "detail": "113 rows"
+    },
+    {
+      "check": "owners_exist:elements",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:elements",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:integration_entries",
+      "passed": true,
+      "detail": "3 rows"
+    },
+    {
+      "check": "owners_exist:integration_entries",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:integration_entries",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:global_attributes",
+      "passed": true,
+      "detail": "31 rows"
+    },
+    {
+      "check": "owners_exist:global_attributes",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:global_attributes",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:global_attribute_families",
+      "passed": true,
+      "detail": "8 rows"
+    },
+    {
+      "check": "owners_exist:global_attribute_families",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:global_attribute_families",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:attributes",
+      "passed": true,
+      "detail": "180 rows"
+    },
+    {
+      "check": "owners_exist:attributes",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:attributes",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:event_handler_attributes",
+      "passed": true,
+      "detail": "89 rows"
+    },
+    {
+      "check": "owners_exist:event_handler_attributes",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:event_handler_attributes",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:attribute_contexts",
+      "passed": true,
+      "detail": "387 rows"
+    },
+    {
+      "check": "owners_exist:attribute_contexts",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:attribute_contexts",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:content_categories",
+      "passed": true,
+      "detail": "15 rows"
+    },
+    {
+      "check": "owners_exist:content_categories",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:content_categories",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:interfaces",
+      "passed": true,
+      "detail": "166 rows"
+    },
+    {
+      "check": "owners_exist:interfaces",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:interfaces",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:events",
+      "passed": true,
+      "detail": "49 rows"
+    },
+    {
+      "check": "owners_exist:events",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:events",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:http_headers",
+      "passed": true,
+      "detail": "10 rows"
+    },
+    {
+      "check": "owners_exist:http_headers",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:http_headers",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:mime_types",
+      "passed": true,
+      "detail": "29 rows"
+    },
+    {
+      "check": "owners_exist:mime_types",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:mime_types",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:input_states",
+      "passed": true,
+      "detail": "22 rows"
+    },
+    {
+      "check": "owners_exist:input_states",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:input_states",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:input_applicability",
+      "passed": true,
+      "detail": "45 rows"
+    },
+    {
+      "check": "owners_exist:input_applicability",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:input_applicability",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:obsolete_elements",
+      "passed": true,
+      "detail": "29 rows"
+    },
+    {
+      "check": "owners_exist:obsolete_elements",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:obsolete_elements",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:obsolete_attributes",
+      "passed": true,
+      "detail": "143 rows"
+    },
+    {
+      "check": "owners_exist:obsolete_attributes",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:obsolete_attributes",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:obsolete_conforming_conditions",
+      "passed": true,
+      "detail": "7 rows"
+    },
+    {
+      "check": "owners_exist:obsolete_conforming_conditions",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:obsolete_conforming_conditions",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:spec_sections",
+      "passed": true,
+      "detail": "1236 rows"
+    },
+    {
+      "check": "owners_exist:spec_sections",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:spec_sections",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:mdn_element_reconciliation",
+      "passed": true,
+      "detail": "139 rows"
+    },
+    {
+      "check": "owners_exist:mdn_element_reconciliation",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:mdn_element_reconciliation",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:compatibility_checks",
+      "passed": true,
+      "detail": "6 rows"
+    },
+    {
+      "check": "owners_exist:compatibility_checks",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:compatibility_checks",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "unique_ids:requirements",
+      "passed": true,
+      "detail": "81 rows"
+    },
+    {
+      "check": "owners_exist:requirements",
+      "passed": true,
+      "detail": "Proposed assignment only, not content completion"
+    },
+    {
+      "check": "no_false_completion:requirements",
+      "passed": true,
+      "detail": "No chapter/example/normative completion asserted"
+    },
+    {
+      "check": "obsolete_element_count",
+      "passed": true,
+      "detail": "HTML5 parsing; grouped dt entries become individual element records"
+    },
+    {
+      "check": "obsolete_attribute_count",
+      "passed": true,
+      "detail": "Per dt context, not unique attribute names"
+    },
+    {
+      "check": "builtin_obsolete_disjoint",
+      "passed": true,
+      "detail": "param belongs only to obsolete set"
+    },
+    {
+      "check": "MDN_covers_named_HTML_set",
+      "passed": true,
+      "detail": "Secondary discovery check; normative HTML source remains authoritative"
+    },
+    {
+      "check": "all_input_states_accounted_for",
+      "passed": true,
+      "detail": "48 physical table rows include three group headings"
+    },
+    {
+      "check": "all_81_requirement_ids_present",
+      "passed": true,
+      "detail": "Wording and owner assignments provisional"
+    },
+    {
+      "check": "captured_global_anchor:dir",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir"
+    },
+    {
+      "check": "captured_global_anchor:headingoffset",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/sections.html#attr-headingoffset"
+    },
+    {
+      "check": "captured_global_anchor:headingreset",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/sections.html#attr-headingreset"
+    },
+    {
+      "check": "captured_global_anchor:lang",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang"
+    },
+    {
+      "check": "captured_global_anchor:style",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-style"
+    },
+    {
+      "check": "captured_global_anchor:title",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-title"
+    },
+    {
+      "check": "captured_global_anchor:translate",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate"
+    },
+    {
+      "check": "captured_global_anchor:id",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute"
+    },
+    {
+      "check": "captured_global_anchor:class",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#classes"
+    },
+    {
+      "check": "captured_global_anchor:slot",
+      "passed": true,
+      "detail": "https://html.spec.whatwg.org/multipage/dom.html#attr-slot"
+    },
+    {
+      "check": "source_locator:dom.html#ancestor-origins",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#attr-lang",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#authoring-conformance-criteria-for-bidirectional-algorithm-formatting-characters",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#content-models",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#documents",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#dom",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#dom-tree-accessors",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#element-definitions",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#elements",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#elements-in-the-dom",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#embedded-content-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#flow-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#global-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#heading-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#html-element-constructors",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#interactive-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#kinds-of-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#metadata-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#palpable-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#paragraphs",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#phrasing-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#render-blocking-mechanism",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#reporting-document-loading-status",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#requirements-relating-to-the-bidirectional-algorithm",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#resource-metadata-management",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#script-supporting-elements",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#sectioning-content",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#semantics-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-dir-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-document-object",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-documentorshadowroot-interface",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-innertext-idl-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-lang-and-xml:lang-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-nothing-content-model",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-style-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-title-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#the-translate-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#transparent-content-models",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#user-agent-conformance-criteria",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:dom.html#wai-aria",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-button-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-datalist-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-fieldset-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-legend-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-meter-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-optgroup-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-option-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-output-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-progress-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-select-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-selectedcontent-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:form-elements.html#the-textarea-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#all-interfaces",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#attributes-3",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#element-content-categories",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#element-interfaces",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#elements-3",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#events-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#http-headers",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#index",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:indices.html#mime-types-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#attr-input-type-keywords",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#button-state-(type=button)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#checkbox-state-(type=checkbox)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#color-state-(type=color)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#common-input-element-apis",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#common-input-element-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#common-input-element-events",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#date-state-(type=date)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#email-state-(type=email)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#file-upload-state-(type=file)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#hidden-state-(type=hidden)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#image-button-state-(type=image)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#input-impl-notes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#input-type-attr-summary",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#local-date-and-time-state-(type=datetime-local)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#month-state-(type=month)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#number-state-(type=number)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#password-state-(type=password)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#radio-button-state-(type=radio)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#range-state-(type=range)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#reset-button-state-(type=reset)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#states-of-the-type-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#submit-button-state-(type=submit)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#telephone-state-(type=tel)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#text-(type=text)-state-and-search-state-(type=search)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-input-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-list-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-maxlength-and-minlength-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-min-and-max-attributes",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-multiple-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-pattern-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-placeholder-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-readonly-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-required-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-size-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#the-step-attribute",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#time-state-(type=time)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#url-state-(type=url)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:input.html#week-state-(type=week)",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#frames",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#non-conforming-features",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#obsolete",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#obsolete-but-conforming-features",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#other-elements,-attributes-and-apis",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#requirements-for-implementations",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#the-marquee-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:obsolete.html#warnings-for-obsolete-but-conforming-features",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#article-or-section",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#exposing-outlines-to-users",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#heading-levels-&-offsets",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#headings-and-outlines-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#sample-outlines",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#sections",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-address-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-article-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-aside-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-body-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-footer-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-header-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-hgroup-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-nav-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#the-section-element",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    },
+    {
+      "check": "source_locator:sections.html#usage-summary-2",
+      "passed": true,
+      "detail": "Source locator present in captured file"
+    }
+  ],
+  "not_tested": [
+    "Full normative correctness of every feature",
+    "Browser runtime behavior",
+    "Accessibility compliance",
+    "Nu validation of teaching examples",
+    "PDF/website accessibility compliance",
+    "Chapter or final-publication completion"
+  ]
+}

@@ -1,0 +1,15 @@
+node_modules
+.cache
+dist
+.venv
+__pycache__
+deliverables
+.github
+.git
+tests/*.log
+
+.vercel
+.env*
+.npmrc
+*.pem
+*.key

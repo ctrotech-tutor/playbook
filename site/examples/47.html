@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="author" content="Odejobi Abiola Samuel">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Custom data and structured data: example</title>
+
+</head>
+<body>
+<h1>Custom data and structured data: example</h1>
+<button type="button" data-book-id="LIB-204" id="save-book">
+  Save Local histories
+</button>
+<script>
+  const saveButton = document.getElementById("save-book");
+  const bookId = saveButton.dataset.bookId;
+  // Use bookId as an identifier, never as an authorization decision.
+</script>
+</body>
+</html>

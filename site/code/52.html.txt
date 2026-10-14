@@ -1,0 +1,3 @@
+<a href="https://example.org/reading-list" referrerpolicy="no-referrer">
+  Read the example partner's list
+</a>

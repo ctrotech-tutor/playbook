@@ -1,0 +1,5 @@
+<main>
+  <h1>Neighbourhood Library</h1>
+  <p>Borrow books and find a quiet place to read.</p>
+  <a href="catalogue.html">Browse the catalogue</a>
+</main>

@@ -1,0 +1,5 @@
+<form action="/applications" method="post" enctype="multipart/form-data">
+  <label for="proof">Address document</label>
+  <input id="proof" name="proof" type="file" required>
+  <button type="submit" name="action" value="apply">Send application</button>
+</form>

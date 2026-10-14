@@ -1,0 +1,2 @@
+<img src="library-entrance.jpg" alt="The library entrance beside the reception desk"
+     width="1440" height="960" fetchpriority="high">

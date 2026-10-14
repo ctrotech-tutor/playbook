@@ -1,0 +1,5 @@
+<form action="/membership" method="post">
+  <label for="full-name">Full name</label>
+  <input id="full-name" name="fullName" autocomplete="name" required>
+  <button type="submit">Apply for membership</button>
+</form>

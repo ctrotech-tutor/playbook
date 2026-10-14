@@ -1,0 +1,6 @@
+<form action="catalogue.html" method="get">
+  <label for="baseline-query">Title or author</label>
+  <input id="baseline-query" name="q" type="search">
+  <button type="submit">Search catalogue</button>
+</form>
+<p><a href="all-books.html">Browse the complete list instead</a></p>

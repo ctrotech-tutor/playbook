@@ -1,0 +1,4 @@
+<label for="join-email">Email address</label>
+<input id="join-email" name="email" type="email" autocomplete="email"
+       aria-describedby="email-help" required>
+<p id="email-help">We use this address to contact you about your application.</p>

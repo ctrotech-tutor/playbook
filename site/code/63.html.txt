@@ -1,0 +1,5 @@
+<p id="reader-comment"></p>
+<script>
+  const commentFromAReader = "A useful guide <script>example</scr" + "ipt>";
+  document.getElementById("reader-comment").textContent = commentFromAReader;
+</script>
