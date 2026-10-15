@@ -1,15 +1,20 @@
-# Registration reference project
+# Build a registration form
 
-A static HTML teaching implementation for the CTROTECH HTML Playbook reading edition.
+By Odejobi Abiola Samuel | CTROTECH
 
-Use a local HTTP server or open index.html for the static documents. All included styles and image assets are local. Demo forms never submit when their script is active; fields remain disabled without script. They are not connected to a real service. Use fictional values only.
+A fictional static teaching implementation, not a real service. Open index.html for the offline documents, or serve this folder locally for request inspection. All styles, images and scripts are local. Never enter real personal data.
 
-## Review tasks
-- Check complete documents with a recorded Nu checker version.
-- Follow every internal navigation and fragment link.
-- Use the keyboard to reach available controls and keep focus visible.
-- Inspect labels, headings, table relationships and image alternatives as relevant.
-- Inspect the layout at narrow widths and with longer content.
-- Distinguish this static example from a deployed backend.
+Read BRIEF.md before comparing with SOLUTION.md. These notes are generated from the same maintained chapter source used by the website and PDF.
 
-Chapter briefs and explained exercises are in the book. The capstone rubric awards up to four points for each of seven areas: structure, semantic choice, keyboard/focus behavior, labels/errors, content clarity, resource reliability and maintainability. Record observations, not a certification claim.
+Forms begin disabled. Successful script setup installs its local handlers before enabling fields. Failed/disabled scripting leaves instructions and disabled fields, not a collection fallback. Browser autofill/history policy is separate from this demonstration not storing an application. There is no membership, reservation, messaging or search backend.
+
+© 2026 Odejobi Abiola Samuel. Third-party material retains its original rights and license terms.
+No new open license or blanket reuse permission is granted by this edition.
+
+## Files
+- BRIEF.md
+- README.md
+- SOLUTION.md
+- demo.js
+- index.html
+- styles.css

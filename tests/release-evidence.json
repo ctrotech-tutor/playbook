@@ -1,15 +1,15 @@
 {
-  "publication_fingerprint": "cec82d32c5a8573d5f96523cd66675b8ff50153b7a82bfb55dfbf347827c843a",
+  "publication_fingerprint": "52a7ade0076eb562764b1153f6b69d10d7ed7478ecc784b9a29d0cfb0bb79a73",
   "edition": "2026.1",
-  "review_date": "2026-10-14",
+  "review_date": "2026-10-15",
   "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
   "results": [
     {
       "check": "Built HTML conformance",
       "result": "PASS",
-      "scope": "495 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
+      "scope": "496 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
       "version": "26.10.12 (0a70d65)",
-      "files": 495,
+      "files": 496,
       "messages": 0,
       "jar_sha256": "19f89e204cb881e2d88c5d0cd451df6c1ee8334e7fe626f6694b64a129f6a813"
     },
@@ -28,8 +28,8 @@
     {
       "check": "Internal links and assets",
       "result": "PASS",
-      "scope": "13864 relative destinations checked across book/reference/project pages. Standalone media examples are excluded from resource-existence claims.",
-      "destinations": 13864
+      "scope": "13874 relative destinations checked across book/reference/project pages. Standalone media examples are excluded from resource-existence claims.",
+      "destinations": 13874
     },
     {
       "check": "Project downloads",
@@ -75,8 +75,8 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "438 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
-      "pages": 438,
+      "scope": "456 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
+      "pages": 456,
       "bookmarks": 401
     },
     {
@@ -104,7 +104,7 @@
     {
       "check": "Citation targets",
       "result": "PASS",
-      "scope": "2718 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
+      "scope": "2723 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
     }
   ],
   "not_certified": [

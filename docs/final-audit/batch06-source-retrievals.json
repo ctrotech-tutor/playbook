@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-10-15T16:20:40.713457+00:00",
+  "scope": "Dated HTTP/fragment retrieval and bounded excerpts, with compatibility sidebars omitted from excerpts only. Selected same-agent claim review, not exhaustive normative approval.",
+  "results": [
+    {
+      "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+      "target_found": true,
+      "sha256": "1c158e06c00ce0755aa4f677b34ee1d799fc3893d917e54e5926fb6360bdf563",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/embedded-content.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constraint-validation",
+      "target_found": true,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element",
+      "target_found": true,
+      "sha256": "2008179089beb0eb6c7a2214bf0540981c0f909cde9b0cdc9fde56cc95817843",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-elements.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element",
+      "target_found": true,
+      "sha256": "c8b381ad10cf560b80eb3450e8054c19c746d9ac4d7f1ab80661f28e9a9bad04",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/forms.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/links.html#links",
+      "target_found": true,
+      "sha256": "46c05b48250111c6d60b753a4fc708ff6df2b6162ca05c483e421eeb201b7705",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/links.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element",
+      "target_found": true,
+      "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/sections.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "target_found": true,
+      "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/sections.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
+      "target_found": true,
+      "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/sections.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element",
+      "target_found": true,
+      "sha256": "578c82123e3c1dbf61e920fd3e7f07f4b681732b5ff066cdaa4d3e504b8f2207",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/tables.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element",
+      "target_found": true,
+      "sha256": "8840761aaca056419ea931cd0c5f9877c1b21ba37e16530683361599b043f656",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "target_found": true,
+      "sha256": "d5f8571e397b91e54c58dc6a00eec27c4817305f84107f2252ef98be991489b5",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "target_found": true,
+      "sha256": "bc0b7f0afa54f9f3817026aa3e070251174ccf6db1244c927a1e83e9819a6183",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "target_found": true,
+      "sha256": "12b2442ff441d0d735fd1d484a0acc006144c476c5f0709be40cb1ab18089c67",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/tutorials/forms/notifications/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/images/informative/",
+      "target_found": true,
+      "sha256": "99d984054635caa99cf000085143905748caf6e7d75bafe5ed64593511f18d71",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/tutorials/images/informative/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/tables/two-headers/",
+      "target_found": true,
+      "sha256": "9a6eed852417ed20743065072602db56d3255a2af93edabd333f772b7d094cec",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/tutorials/tables/two-headers/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    }
+  ]
+}

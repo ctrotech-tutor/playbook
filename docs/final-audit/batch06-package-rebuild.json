@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "publication_fingerprint": "52a7ade0076eb562764b1153f6b69d10d7ed7478ecc784b9a29d0cfb0bb79a73",
+  "edition": "2026.1",
+  "fresh_extraction": true,
+  "clean_npm_ci": "PASS",
+  "node_only_build": "PASS",
+  "node_integrity_and_hosting_tests": 14,
+  "node_output_tests": 3,
+  "static_verification_with_site_fallback": "PASS",
+  "precompiled_source_root": "site/",
+  "precompiled_site_tree_sha256": "34fdd4d70befa4266c5062e20fb0b8b063787e3c149992f33409b5401c7f7790",
+  "site_tree_hash_order": "Lexicographically sorted relative POSIX names; NUL after each name and file bytes",
+  "generated_html_documents": 500,
+  "canonical_origin_initial_build": "https://ctrobook.vercel.app (local artifact only; no deployment performed)",
+  "hosted_vercel_deployment_tested": false,
+  "scope": "Fresh actual archive extraction, clean dependency install, Node-only production artifact build, integrity/output tests and static/Nu checks. Source and precompiled site inputs match the final payload fingerprint/tree; generated evidence/docs may be refreshed without changing those inputs. No independent approval."
+}

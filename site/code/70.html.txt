@@ -1,8 +1,33 @@
-<form action="#registration-note" method="get">
-  <label for="project-name">Name</label>
-  <input id="project-name" name="name" autocomplete="name" required>
-  <label for="project-email">Email</label>
-  <input id="project-email" name="email" type="email" autocomplete="email" required>
-  <button type="submit">Check this demonstration</button>
+<link rel="stylesheet" href="../assets/project-reference.css">
+<main><h1>Reading-group form study</h1>
+<!-- registration:start -->
+<p class="note" id="demo-note">Practice only. Use made-up details such as reader@example.invalid. This page checks fields locally; no application is sent or saved by its script. Browser autofill and history are separate browser features. JavaScript must load successfully to enable the fields. This is not a registration service.</p>
+<section id="demo-errors" class="errors" aria-labelledby="demo-errors-title" tabindex="-1" hidden>
+  <h2 id="demo-errors-title">Correct these fields</h2>
+  <ul id="demo-error-list"></ul>
+</section>
+<form id="demo-form" aria-describedby="demo-note" autocomplete="off">
+  <fieldset id="demo-fields" disabled>
+    <legend>Fictional practice details</legend>
+    <label for="demo-name">Practice name (required)</label>
+    <input id="demo-name" required aria-describedby="demo-name-error">
+    <p id="demo-name-error" class="field-error" hidden></p>
+    <label for="demo-email">Practice email (required)</label>
+    <input id="demo-email" type="email" required aria-describedby="demo-email-help demo-email-error">
+    <p id="demo-email-help">Use one made-up address, for example reader@example.invalid.</p>
+    <p id="demo-email-error" class="field-error" hidden></p>
+    <label for="demo-session">Practice session (required)</label>
+    <select id="demo-session" required aria-describedby="demo-session-error">
+      <option value="">Choose a practice session</option>
+      <option value="morning">Morning study</option>
+      <option value="afternoon">Afternoon study</option>
+    </select>
+    <p id="demo-session-error" class="field-error" hidden></p>
+    <button type="submit">Check this demonstration</button>
+    <button type="reset">Reset example fields</button>
+  </fieldset>
 </form>
-<p id="registration-note">Demonstration only. No application service is connected.</p>
+<p id="demo-result" role="status"></p>
+<!-- registration:end -->
+</main>
+<script src="../assets/project-registration.js" defer></script>

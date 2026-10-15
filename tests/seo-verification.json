@@ -1,5 +1,5 @@
 {
-  "publication_fingerprint": "cec82d32c5a8573d5f96523cd66675b8ff50153b7a82bfb55dfbf347827c843a",
+  "publication_fingerprint": "52a7ade0076eb562764b1153f6b69d10d7ed7478ecc784b9a29d0cfb0bb79a73",
   "scope": "Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.",
   "node": "v24.22.0",
   "checks": [
@@ -22,19 +22,19 @@
     {
       "check": "All output HTML metadata, unique indexed titles, real-target links, canonical routes, structured data, sitemaps, hashed assets and text exports",
       "result": "PASS",
-      "html_documents": 499,
+      "html_documents": 500,
       "indexed_pages": 410,
-      "internal_destinations": 18183,
+      "internal_destinations": 18189,
       "structured_data_pages": 410,
       "markdown_chapters": 74,
       "api_owner_pages": 314,
-      "pdf_sha256": "bba785c6de2160a179275f026ef90aa21ecb5d3d80163a7cb658361bcfd344b8",
+      "pdf_sha256": "64bf327a39212e81d36282aed40298324de0c28a4a35909d5f8dc414585cee0c",
       "canonical_test_origin": "https://book.example.test (synthetic test fixture only)"
     },
     {
       "check": "Generated Vercel HTML conformance",
       "result": "PASS",
-      "documents": 499,
+      "documents": 500,
       "nu_messages": 0
     },
     {

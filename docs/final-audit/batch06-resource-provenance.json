@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-15",
+  "publication_fingerprint": "52a7ade0076eb562764b1153f6b69d10d7ed7478ecc784b9a29d0cfb0bb79a73",
+  "inputs": {
+    "content/chapters.json": "a3c9e629e1f45b1f551faeba2e380fc5a843d8a5d95c962122611a6b9e97a105",
+    "tools/projects.py": "d0f64a5a923f92666697e806992258b82694606a87bb146d50fb71c78d92bc6f",
+    "tools/build.py": "b60691f001ec8daa24808d0ebc656880ec7a10ae070ba9d1bcd819be10b213d4",
+    "tools/pdf.py": "c1d802e8cf84c5d20610eab6624ea57a7e5a6a2f668fa8c2e9956cf54ed56a5c",
+    "tools/verify.py": "7dd737f1ddabca75ec610c25463a1bd933c5f0521d81f4a94d8380fca2a87a21",
+    "assets/project-registration.js": "d1c8ed2bf1c606bf961e5a4afc56878dc1b1eb162b0eb9668d4dd881bad03065",
+    "assets/project-reference.css": "fb4374b619be1b462f258cac6078bae1b17a0ada09c7cd9f9aae1a7a32566590"
+  },
+  "pdf": {
+    "pages": 456,
+    "bookmarks": 401,
+    "sha256": "64bf327a39212e81d36282aed40298324de0c28a4a35909d5f8dc414585cee0c",
+    "semantic_tag_tree": false
+  },
+  "scope": "Source/build/artifact traceability and selected executed evidence, not independent correctness or final publication."
+}

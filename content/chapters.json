@@ -2890,30 +2890,52 @@
     "title": "Build a personal profile",
     "architecture_title": "Build a well-structured personal profile",
     "part": "XI / Practical Projects",
-    "dek": "A complete first document with an honest scope.",
-    "lesson": "Build a profile for a fictional library volunteer. Include the person's name, a short introduction, relevant experience and a way to navigate to a contact section. Use fictional contact details and make that clear in the source notes.\n\nStart with a complete document shell. Give the page a useful title, a language and one clear main heading. Group experience under an appropriate subsection heading. A profile image is optional; if you use one, choose and review its alternative from the image's purpose.\n\n## Acceptance criteria\nThe document must pass the chosen conformance check, preserve a sensible reading order without CSS and use real links for navigation. A visible contact heading must remain understandable on its own. Do not add fabricated qualifications or testimonials to make the sample sound established.\n\nOpen the downloadable reference project only after attempting your version. Compare the semantics and relationships rather than copying its colours. The supplied project is static; it does not send messages or collect visitor data.",
-    "code": "<main>\n  <h1>Ada, library volunteer</h1>\n  <p>I help readers find their next book.</p>\n  <a href=\"#contact\">Contact information</a>\n  <section><h2>At the library</h2><p>Reading-group support and catalogue help.</p></section>\n  <section id=\"contact\"><h2>Contact information</h2><p>Ask at the desk for the volunteer coordinator.</p></section>\n</main>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "What makes the fragment link a genuine navigation feature rather than a decorative button?",
-    "answer": "It has an href that points to the unique contact id. The destination contains the promised contact information. Test the fragment and reading order in the built document.",
+    "dek": "Build a truthful volunteer profile whose headings and contact-status link work without scripts.",
+    "lesson": "## Before you start\n\nReview Chapters 7, 14, 17, 18, 23, 25. Create a document shell, choose headings, make a list and connect a same-page link.\n\n## Working terms\n\nA fragment is the part of a URL after # that can identify a document destination. A landmark identifies a major page region through native HTML or an appropriate role. Contact status explains whether a contact route actually exists; it is not itself a messaging service.\n\n## Build contract\nCreate a one-page profile for Ada, a fictional library volunteer. Include one page-level title, a short introduction, three relevant practice activities and a contact-status section. Make the fictional context visible rather than relying on a README. Do not invent a real address, availability claim or endorsement. The reference has no portrait because no visual information is needed to complete this task.\n\n## Implementation route\nBegin with the content, then choose the structure. Put the whole page topic in the main heading. Experience and contact status are separate sections with second-level headings. Use a list for the three activities, not a table or a row of decorative cards. A link to `#contact` takes the reader to the status section. It is navigation, so it remains an anchor even if styled prominently.\n\n## Acceptance and recovery\nOpen the file without JavaScript. Read it in document order, activate the contact-status link with Enter and confirm that the destination explains the absence of a contact service. Try a 320 CSS-pixel viewport and enlarge text. The profile should remain readable without page-wide horizontal scrolling. No-script operation is a property of this static design, not a claim that the reader has tested it.\n\n## Reference walkthrough\nThe download adds a language declaration, title, viewport metadata, a keyboard skip link and a local stylesheet around the subject content. Its activity statements are explicitly practice tasks. The contact section gives no coordinator instruction that might be mistaken for a real service. Replacing that status with a real route is a separate publishing decision requiring verified details and the person's agreement.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Content and truth (4 points)\n- Fictional context is visible.\n- Ada is named.\n- Introduction identifies the practice role.\n- No unverifiable service claim appears.\n\n### Structure (4 points)\n- One main landmark is present.\n- The page topic has an h1.\n- Experience has an h2.\n- Contact status has an h2.\n\n### Experience (4 points)\n- Three activities are supplied.\n- Activities form a native list.\n- Each activity is specific.\n- No table is used for layout.\n\n### Contact navigation (4 points)\n- The link says what it opens.\n- Its fragment matches a unique ID.\n- Keyboard activation reaches the section.\n- The section states no contact route is supplied.\n\n### Baseline (4 points)\n- No script is needed to read.\n- No script is needed to navigate.\n- Stylesheet failure leaves logical content.\n- No fabricated form is present.\n\n### Presentation (4 points)\n- Text remains readable at 320 CSS pixels.\n- The page has no horizontal overflow.\n- Keyboard focus is visible.\n- Text enlargement does not hide the contact section.\n\n### Delivery (4 points)\n- The HTML has a useful document title.\n- The language is declared.\n- All local links resolve.\n- The README explains how to open the page.",
+    "code": "<main>\n  <h1>Ada, a fictional library volunteer</h1>\n  <p>A made-up profile for practising HTML, not a real volunteer service.</p>\n  <p>In this exercise, Ada helps readers explore a small collection.</p>\n  <a href=\"#contact\">Read the contact status</a>\n  <section>\n    <h2>Practice experience</h2>\n    <ul><li>Preparing a fictional reading-group notice.</li>\n      <li>Organising a sample shelf list.</li>\n      <li>Writing a catalogue entry as a learning task.</li></ul>\n  </section>\n  <section id=\"contact\"><h2>Contact status</h2>\n    <p>No personal contact details or messaging service are supplied.</p>\n  </section>\n</main>",
+    "explanation": "The fragment teaches the profile content, not a complete document shell. The downloadable index.html supplies that shell and keeps the contact destination on the same page. A section heading identifies the contact topic; a link is appropriate because activation navigates rather than submitting data. The list expresses a collection of activities. Fictional status is part of the interface, not hidden assessment metadata.",
+    "mistake": "A prominent Contact button with no destination promises an action the page cannot provide. Use a descriptive link to the actual contact-status section, and state the absence of a service.",
+    "question": "A learner replaces the contact-status anchor with a button that does nothing and removes the fictional notice. Which checks fail, and what is the smallest truthful repair?",
+    "answer": "The contact-navigation checks fail because the button has neither a destination nor an implemented action. Content truth also fails: a reader can mistake the volunteer and contact route for real offerings. Restore an anchor whose href is #contact, retain a unique contact section that states no route is supplied, and restore the visible fictional notice. Test Enter activation and the narrow page again. Styling alone cannot repair the broken task.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Organise a fictional person's introduction and experience into a useful heading structure.",
+      "Make a descriptive contact-status link resolve to real content.",
+      "Distinguish a complete static profile from a working contact service."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: heading elements",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+      },
+      {
+        "title": "HTML Living Standard: links",
+        "url": "https://html.spec.whatwg.org/multipage/links.html#links"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Reflow",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Focus Order",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
       }
     ],
     "prerequisites": [
-      "CH-67"
+      "CH-07",
+      "CH-14",
+      "CH-17",
+      "CH-18",
+      "CH-23",
+      "CH-25"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "profile"
+    "project_slug": "profile",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   },
   {
     "id": "CH-69",
@@ -2921,30 +2943,51 @@
     "title": "Build a portfolio",
     "architecture_title": "Build a multi-section portfolio",
     "part": "XI / Practical Projects",
-    "dek": "Organize several pieces of work without inventing a career.",
-    "lesson": "Build a portfolio for a fictional front-end learner. Include an introduction, two project descriptions and a contact route. State what each sample actually does. A static form interface must not be described as a deployed application service.\n\nChoose whether each project description stands as an article or fits under a simpler section heading. Link text should identify the project or destination. Keep navigation consistent between the home page and a project page.\n\n## Acceptance criteria\nUse distinct page titles, correct relative links, useful headings and visible current-page navigation where relevant. Explain project limitations in ordinary prose. Keep code screenshots optional, with text and links that still communicate the work.\n\nThe downloadable version includes a second document so you can test navigation under a repository subpath. Check both directions. A successful trip from the home page to a project is only half of the link test.",
-    "code": "<section aria-labelledby=\"work-title\">\n  <h2 id=\"work-title\">Selected work</h2>\n  <article><h3>Library notice board</h3><p>A static page for public notices.</p>\n    <a href=\"project.html\">Read about the notice board</a></article>\n</section>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "What should the portfolio say about a contact form that has no processing endpoint?",
-    "answer": "It should identify the form as an interface demonstration or omit it in favour of an actual contact route. Do not tell readers it delivers messages.",
+    "dek": "Build a three-page learning portfolio with two distinct project notes and honest contact status.",
+    "lesson": "## Before you start\n\nReview Chapters 17, 24, 25, 27, 61. Resolve sibling-relative links, structure independent project notes and plan navigation across files.\n\n## Working terms\n\nA project summary introduces one item of work; a detail page supplies its substantive explanation. A current-page marker describes the document currently being viewed. A relative URL is resolved against a base URL, so moving files can change its destination.\n\n## Build contract\nDeliver `index.html`, `project.html` and `reading-list.html`. The index introduces a fictional front-end learner's work, summarises two different studies and links each to its own detail page. The notice-board note explains a document-structure study; the reading-list note explains why its collection is a list. Include a contact-status section on the index. No contact form or real personal information is required.\n\n## Implementation route\nWrite the two summaries before the navigation. Use articles for independently understandable project summaries, with third-level headings under Selected work. Give each link a destination-specific name. Reuse a primary navigation landmark across the three documents and mark only the current document's link with `aria-current=\"page\"`. This attribute supplies current-page information; visible styling and actual destinations still matter.\n\n## Acceptance and recovery\nOpen each detail page directly, not only through the index. Confirm that its title identifies its own subject and that its primary links still work. Return to `index.html#contact` from each detail. Remove scripting and check again. A browser reload, an extracted ZIP and a narrow viewport must not turn either project into an empty placeholder.\n\n## Reference walkthrough\nThe supplied files have real relative links, consistent local CSS and no client or revenue claims. Each detail page includes actual sample content and a short design decision. The contact section states that the site does not collect messages. This meets the fictional exercise contract. A real professional portfolio would require the owner's own work, permission to show it, evidence for outcomes and an appropriate verified contact route.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Portfolio content (4 points)\n- The fictional status is visible.\n- An introduction is supplied.\n- Two distinct studies are summarised.\n- No unsupported client or outcome claim appears.\n\n### Detail destinations (4 points)\n- The notice-board link opens project.html.\n- The reading-list link opens reading-list.html.\n- Both detail documents contain substantive content.\n- The two links do not lead to the same empty page.\n\n### Structure (4 points)\n- Selected work has a heading.\n- Each project summary has a subordinate heading.\n- Each page has a main landmark.\n- Document titles distinguish the three pages.\n\n### Navigation (4 points)\n- All three pages expose primary navigation.\n- All primary destinations resolve.\n- Exactly one link per primary navigation is current.\n- Both detail pages can reach the contact status.\n\n### Contact truth (4 points)\n- Contact status is present on the index.\n- Its ID is unique.\n- No fake message submission is offered.\n- No real personal details are invented.\n\n### Recovery (4 points)\n- Each detail opens directly.\n- Links work without JavaScript.\n- Links work after ZIP extraction.\n- 320-pixel reading does not cause page-wide overflow.\n\n### Delivery (4 points)\n- Each page declares its language.\n- Focus styling is visible.\n- All stylesheet references are local and resolve.\n- Assessment notes identify static limitations.",
+    "code": "<section aria-labelledby=\"work-title\">\n  <h2 id=\"work-title\">Selected work</h2>\n  <article><h3>Library notice board</h3>\n    <p>A static notice-page structure study.</p>\n    <a href=\"../projects/portfolio/project.html\">Read the notice-board note</a>\n  </article>\n  <article><h3>Reading list</h3>\n    <p>A semantic list study, not a reservation service.</p>\n    <a href=\"../projects/portfolio/reading-list.html\">Read the reading-list note</a>\n  </article>\n</section>",
+    "explanation": "These are two separate studies with separate destinations. The chapter fragment uses paths from the wrapped examples directory to the supplied reference documents. Inside the extracted project folder, the index uses sibling-relative URLs instead. The reference primary navigation marks only the active document with aria-current=\"page\". A current-page marker cannot fix a wrong href. Both detail pages include a return route to the index contact status, which is deliberately not a message service.",
+    "mistake": "Repeating one project description behind two different link labels makes the portfolio look more complete than it is. Build both detail pages and inspect each directly.",
+    "question": "Both project links currently open project.html, while reading-list.html contains only a title. Is the three-file count enough? Explain the repair and how to verify it.",
+    "answer": "No. A file count proves neither distinct work nor usable navigation. Write the reading-list sample and its list-design explanation, point the corresponding summary to reading-list.html, and keep the notice-board summary pointing to project.html. Open each detail directly, compare the content, inspect the document title and current-page link, then follow its contact-status return link. Repeat from the extracted ZIP with JavaScript disabled.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Connect two project summaries to separate working detail pages.",
+      "Keep primary navigation and current-page information consistent.",
+      "Describe static learning work without inventing clients, outcomes or a contact backend."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: the article element",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+      },
+      {
+        "title": "HTML Living Standard: the nav element",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element"
+      },
+      {
+        "title": "HTML Living Standard: links",
+        "url": "https://html.spec.whatwg.org/multipage/links.html#links"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Focus Order",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
       }
     ],
     "prerequisites": [
-      "CH-68"
+      "CH-17",
+      "CH-24",
+      "CH-25",
+      "CH-27",
+      "CH-61"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "portfolio"
+    "project_slug": "portfolio",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   },
   {
     "id": "CH-70",
@@ -2952,33 +2995,57 @@
     "title": "Build a registration form",
     "architecture_title": "Create an accessible registration form",
     "part": "XI / Practical Projects",
-    "dek": "Make the correction path as clear as the happy path.",
-    "lesson": "Build an application form for a fictional reading group. Ask only for a name, email address and session choice. Add a visible privacy/use explanation suited to the demonstration, not a claim about a real service. Use fictional names and addresses only, including when experimenting with the chapter fragment; its GET fallback can place values in the URL.\n\nUse labels, an appropriate email state, an autocomplete purpose and a labelled select. Required fields need visible guidance and appropriate native constraints. Include a conventional submit control and explain that a static reference file has no application backend.\n\n## Acceptance criteria\nThe interface needs a sensible keyboard order and readable instructions. It must not claim a submitted application was accepted unless an actual handler reports that result. In the supplied reference, JavaScript intercepts submission and explicitly says it is a local demonstration. The no-script path must disclose the limitation too.\n\nReview the request design separately before adapting this into a live service. Client validation, a success-looking animation and a disabled button do not provide server validation or authorization.",
-    "code": "<form action=\"#registration-note\" method=\"get\">\n  <label for=\"project-name\">Name</label>\n  <input id=\"project-name\" name=\"name\" autocomplete=\"name\" required>\n  <label for=\"project-email\">Email</label>\n  <input id=\"project-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required>\n  <button type=\"submit\">Check this demonstration</button>\n</form>\n<p id=\"registration-note\">Demonstration only. No application service is connected.</p>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "Why should a real application not send personal registration details in a GET query just because this demo uses a simple local action?",
-    "answer": "URLs can be retained or exposed through history, logs and other contexts. Design the live service with appropriate transport, method, privacy, validation and storage controls. The static demonstration is not a live collection endpoint.",
+    "dek": "Build an explicitly local form demonstration with linked errors, reset recovery and disabled no-script controls.",
+    "lesson": "## Before you start\n\nReview Chapters 34, 35, 36, 38, 40, 41, 53, 66. Build labelled controls, inspect browser validity, distinguish form submission from local script and preserve a safe failure baseline.\n\n## Working terms\n\nConstraint validation checks applicable browser-side rules, not server trust. An error summary collects correction links above a form. Custom validity is a script-supplied message that makes a control invalid while the message is nonempty. A disabled baseline keeps this practice task unavailable until its local handlers are installed.\n\n## Build contract\nCollect only fictional practice values for name, one email and a session choice. This is a browser-side interface study, not a registration service. The baseline fieldset is disabled. No control has a submission name and there is no application endpoint. Tell readers not to enter personal information. The local script must install its handlers before enabling fields, cancel submit, validate the fields and display only a local result.\n\n## Implementation route\nUse explicit labels and visible required indicators. Leave native `required` and `type=\"email\"` constraints on the controls. After setup, `form.noValidate = true` selects the custom-summary submit path; it does not remove ValidityState or make the values trusted. The script inspects each control's validity and adds a non-whitespace rule for the practice name with `setCustomValidity()`. The browser email syntax check cannot prove that an address exists or belongs to the user.\n\nPlace a summary before the form with links to invalid fields. Reveal inline error text, set `aria-invalid=\"true\"` only on failed fields and focus the summary after an unsuccessful submit. Use stable description IDs for the field messages and email hint. When the learner edits a failed field, revalidate it and remove that error when corrected. Clear any previous success message as soon as input changes. The script builds message nodes using text content, not HTML interpolation.\n\n## Acceptance and recovery\nSubmit all fields empty, then a whitespace-only name and malformed email, then a valid practice set. Follow every summary link with the keyboard. Confirm that no form navigation or application request occurs and the URL does not acquire query values. Reset after an error and after success; values, errors, invalid states and custom name validity must return to their initial state. With JavaScript disabled or `demo.js` blocked, the form remains disabled and its explanation stays readable. This is failure containment for this static reference, not a claim of universal browser privacy.\n\n## Reference walkthrough\nThe chapter's marked form content is reused in both the registration and capstone downloads. One maintained local script supplies both copies. The form has no named application controls, but that omission is not the primary no-submit mechanism: the disabled baseline and installed submit handler are essential. `autocomplete=\"off\"` is only a browser hint and cannot guarantee that a browser stores nothing. The demonstration does not write application data to cookies or Web Storage. A real service needs a real endpoint, server validation, an appropriate transport and request-security design, data minimisation and a truthful retention notice; enabling this static form is not that implementation.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Control contract (4 points)\n- The page visibly says practice only.\n- Exactly name/email/session data are requested.\n- All controls have explicit labels.\n- Required state is visible and programmatic.\n\n### Disabled baseline (4 points)\n- The initial fieldset is disabled.\n- No application endpoint is claimed.\n- Blocked scripting leaves the fields disabled.\n- Instructions remain readable without scripts.\n\n### Validation (4 points)\n- Empty values produce three errors.\n- Whitespace-only name is rejected.\n- Malformed single-email syntax is rejected.\n- A valid practice set produces only local success.\n\n### Error navigation (4 points)\n- The summary precedes the form.\n- The failed-submit summary receives focus.\n- Each error link focuses its field.\n- Each invalid field has an associated visible message.\n\n### Correction (4 points)\n- Invalid fields expose aria-invalid.\n- Correcting a failed field removes its error.\n- Editing removes an earlier success message.\n- Hidden summary content is not left visibly stale.\n\n### Reset (4 points)\n- Name/email/session values reset.\n- Custom name validity resets.\n- Inline and summary errors clear.\n- Invalid attributes and earlier success clear.\n\n### Boundary evidence (4 points)\n- Submit does not change the URL.\n- No application request is emitted.\n- The script writes no application storage.\n- Real-service requirements are clearly distinguished.",
+    "code": "<link rel=\"stylesheet\" href=\"../assets/project-reference.css\">\n<main><h1>Reading-group form study</h1>\n<!-- registration:start -->\n<p class=\"note\" id=\"demo-note\">Practice only. Use made-up details such as reader@example.invalid. This page checks fields locally; no application is sent or saved by its script. Browser autofill and history are separate browser features. JavaScript must load successfully to enable the fields. This is not a registration service.</p>\n<section id=\"demo-errors\" class=\"errors\" aria-labelledby=\"demo-errors-title\" tabindex=\"-1\" hidden>\n  <h2 id=\"demo-errors-title\">Correct these fields</h2>\n  <ul id=\"demo-error-list\"></ul>\n</section>\n<form id=\"demo-form\" aria-describedby=\"demo-note\" autocomplete=\"off\">\n  <fieldset id=\"demo-fields\" disabled>\n    <legend>Fictional practice details</legend>\n    <label for=\"demo-name\">Practice name (required)</label>\n    <input id=\"demo-name\" required aria-describedby=\"demo-name-error\">\n    <p id=\"demo-name-error\" class=\"field-error\" hidden></p>\n    <label for=\"demo-email\">Practice email (required)</label>\n    <input id=\"demo-email\" type=\"email\" required aria-describedby=\"demo-email-help demo-email-error\">\n    <p id=\"demo-email-help\">Use one made-up address, for example reader@example.invalid.</p>\n    <p id=\"demo-email-error\" class=\"field-error\" hidden></p>\n    <label for=\"demo-session\">Practice session (required)</label>\n    <select id=\"demo-session\" required aria-describedby=\"demo-session-error\">\n      <option value=\"\">Choose a practice session</option>\n      <option value=\"morning\">Morning study</option>\n      <option value=\"afternoon\">Afternoon study</option>\n    </select>\n    <p id=\"demo-session-error\" class=\"field-error\" hidden></p>\n    <button type=\"submit\">Check this demonstration</button>\n    <button type=\"reset\">Reset example fields</button>\n  </fieldset>\n</form>\n<p id=\"demo-result\" role=\"status\"></p>\n<!-- registration:end -->\n</main>\n<script src=\"../assets/project-registration.js\" defer></script>",
+    "explanation": "The download and wrapped chapter example load the same maintained local behaviour. Disabled fieldset descendants cannot be used for the application task before successful setup. Once handlers are installed, the script enables them and suppresses form navigation with preventDefault(). The summary supplies a focused overview and links that explicitly focus each failed control. A polite status reports only that the browser checks passed. No confirmation of membership, delivery or server acceptance is justified. See assets/project-registration.js in the site source, or demo.js in the ZIP, for the complete validation and reset implementation.",
+    "mistake": "A form with method=\"get\" and an action ending in #note is not a harmless no-backend fallback. Named successful controls can still enter a URL query. A success message must not imply that local validity created an application.",
+    "question": "Why must this static reference not use a GET-to-fragment fallback? Describe the failed-script behaviour, then explain what reset must clear after a whitespace-name error.",
+    "answer": "A fragment names a destination within a resource; it does not cancel form submission. A GET form with named controls can place values in the URL and navigate even without an application backend. This reference therefore starts with disabled fields and enables them only after the local submit/error/reset handlers are installed. If the script is blocked, the instructions remain and the fields stay disabled. Reset clears the controls, the summary list, inline messages, aria-invalid attributes and the custom validity message on the name. The result reports reset, not application acceptance. Test reset again after a valid local check, since stale success text can otherwise survive.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Associate required labels, instructions and field errors with three practice controls.",
+      "Keep a no-script or failed-script form disabled instead of falling back to GET collection.",
+      "Test linked error correction, reset and honest local-success messaging."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: the form element",
+        "url": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element"
+      },
+      {
+        "title": "HTML Living Standard: constraint validation",
+        "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constraint-validation"
+      },
+      {
+        "title": "HTML Living Standard: the fieldset element",
+        "url": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element"
+      },
+      {
+        "title": "WAI Forms Tutorial: user notifications",
+        "url": "https://www.w3.org/WAI/tutorials/forms/notifications/"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Focus Order",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
       }
     ],
     "prerequisites": [
-      "CH-69"
+      "CH-34",
+      "CH-35",
+      "CH-36",
+      "CH-38",
+      "CH-40",
+      "CH-41",
+      "CH-53",
+      "CH-66"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
     "project_slug": "registration",
     "publication_pass": {
-      "date": "2026-10-14",
-      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
     }
   },
   {
@@ -2987,30 +3054,51 @@
     "title": "Build an article page",
     "architecture_title": "Build an article and documentation page",
     "part": "XI / Practical Projects",
-    "dek": "Make long content navigable without turning every paragraph into a card.",
-    "lesson": "Build a documentation article called How lending works. Include a page title, introduction, an on-page contents list, three meaningful sections and an update date. Use time only when you can supply the appropriate machine-readable value.\n\nThe contents links must point to unique section ids. Keep heading levels consistent. An aside can hold genuinely supporting material, such as a definition of an unfamiliar term, but not the only copy of essential renewal instructions.\n\n## Acceptance criteria\nThe article must remain readable without its layout stylesheet. A keyboard user should reach the contents links and follow them. Code examples, if present, must be text rather than screenshot-only information. Do not add a fictional expert quotation for atmosphere.\n\nUse the reference project to inspect document structure, then improve the content for a real service. A guide is only useful while its instructions match the service it describes.",
-    "code": "<article>\n  <h1>How lending works</h1>\n  <nav aria-label=\"On this page\"><a href=\"#borrowing\">Borrowing</a></nav>\n  <section id=\"borrowing\"><h2>Borrowing</h2><p>Ask at the desk about the current lending policy.</p></section>\n</article>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "What should happen when the label Borrowing in the contents is activated?",
-    "answer": "It should reach the matching borrowing section in the same document. Test that the id exists exactly once and that the landing content matches the label.",
+    "dek": "Publish a complete fictional lending article with three destinations, a defined policy and a machine-readable review date.",
+    "lesson": "## Before you start\n\nReview Chapters 14, 17, 20, 24, 25. Organise a self-contained article, make fragment links and encode a date that matches its displayed text.\n\n## Working terms\n\nA policy model is the explicit fictional rule set used for this exercise. A review date identifies the stated editorial check date, not the date of every loan. Calendar-day arithmetic here follows the convention stated in the article; it does not infer a real organisation's counting rules.\n\n## Build contract\nWrite an article titled How lending works with an introduction, an on-page contents navigation, Borrowing, Renewal and Returns sections, and a review date. Label the policy fictional on the page. Give enough information to evaluate the model without contacting a nonexistent desk. This exercise supplies a 14-calendar-day loan, one eligible 14-calendar-day renewal before the due date, and a paper-log practice return. The page itself processes none of these actions.\n\n## Implementation route\nUse an article because the guide is a self-contained subject, and give each substantive section its own heading and stable ID. The contents landmark needs a name distinct from any site-wide primary navigation. Describe the loan date arithmetic explicitly: a loan starting 1 October 2026 is due 15 October; one eligible renewal extends that due date to 29 October. Define this convention in prose instead of asking the reader to infer inclusivity from a bare number. Mark the review date with `time datetime=\"2026-10-15\"` while displaying 15 October 2026.\n\n## Acceptance and recovery\nActivate all three contents links, inspect their fragments and verify each destination exists once. Read just the headings and confirm the policy sequence makes sense. Check the date attribute against the displayed review date. Disable scripts and repeat navigation. At narrow widths, the contents links must wrap without covering the article. A valid `time` value does not verify that an editor actually reviewed a policy; review provenance remains editorial evidence.\n\n## Reference walkthrough\nThe supplied article contains the entire practice policy rather than an instruction to ask someone for it. It distinguishes a possible model extension from an actual renewal operation. Returns are represented as a local paper exercise, not a real address or live record. The article footer belongs to that article's review information; the outer project footer carries publication credit. Adaptation to a real library requires replacing both the fictional policy and the unverified service context.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Article contract (4 points)\n- The article has the required title.\n- Fictional policy status is visible.\n- An introduction identifies the model.\n- No real service is implied.\n\n### Contents navigation (4 points)\n- The nav has a descriptive accessible name.\n- Borrowing links to its section.\n- Renewal links to its section.\n- Returns links to its section.\n\n### Borrowing (4 points)\n- The 14-calendar-day rule is stated.\n- A start date example is supplied.\n- Its due date is 15 October 2026.\n- The model date convention is understandable.\n\n### Renewal (4 points)\n- Only one renewal is allowed in the model.\n- Eligibility and before-due-date scope are stated.\n- The extension is 14 calendar days.\n- The sample extended due date is 29 October.\n\n### Returns (4 points)\n- A return procedure is actually described.\n- The procedure is identified as practice.\n- No real branch address is invented.\n- No live return recording is claimed.\n\n### Review and structure (4 points)\n- Review text displays 15 October 2026.\n- datetime contains 2026-10-15.\n- All three section IDs are unique.\n- The article headings form a coherent hierarchy.\n\n### Resilience (4 points)\n- Contents links work without scripts.\n- All fragments resolve.\n- The page reads at 320 CSS pixels.\n- README and solution distinguish static policy from service.",
+    "code": "<article>\n  <h1>How lending works</h1>\n  <p>Fictional practice policy, not a real lending service.</p>\n  <nav aria-label=\"On this page\"><a href=\"#borrowing\">Borrowing</a>\n    <a href=\"#renewal\">Renewal</a> <a href=\"#returns\">Returns</a></nav>\n  <section id=\"borrowing\"><h2>Borrowing</h2>\n    <p>A practice loan lasts 14 calendar days after its start date:\n      1 October 2026 gives a 15 October 2026 due date.</p></section>\n  <section id=\"renewal\"><h2>Renewal</h2>\n    <p>One eligible renewal before the due date adds 14 calendar days\n      to that date: 15 October becomes 29 October.</p></section>\n  <section id=\"returns\"><h2>Returns</h2>\n    <p>Mark the practice return in a local paper log.\n      This page records no real return.</p></section>\n  <footer>Reviewed <time datetime=\"2026-10-15\">15 October 2026</time>.</footer>\n</article>",
+    "explanation": "All contents links lead to real, distinct sections. The sample borrowing and renewal dates follow the explicitly supplied calendar-day convention; they are not claims about a real library policy. The time element encodes the same date that readers see. The reference supplies a complete explanation of the practice return, while making clear that HTML content does not update a lending system. Section headings, navigation and an article footer express different relationships rather than acting as interchangeable layout containers.",
+    "mistake": "A policy heading followed by “ask at the desk” does not meet a brief requiring the policy itself. A review date without a matching valid datetime also loses machine-readable precision.",
+    "question": "An article says loans last 14 days after 1 October and gives a 14 October due date. Its displayed review date is 15 October but datetime is 2026-10-14. What should change?",
+    "answer": "Use the stated model convention consistently: 14 calendar days after 1 October 2026 is 15 October, and the eligible 14-day extension is 29 October. If a real policy uses another counting convention, explain and apply that convention instead of silently changing the arithmetic. Match the reviewed date attribute to the displayed date as 2026-10-15. Verify all three section destinations after editing; date syntax and working links still do not prove that a real library approved the policy.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Write consistent borrowing, renewal and return explanations rather than policy placeholders.",
+      "Connect an on-page contents list to three unique section IDs.",
+      "Encode a displayed review date using the time element."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: the article element",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+      },
+      {
+        "title": "HTML Living Standard: the nav element",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element"
+      },
+      {
+        "title": "HTML Living Standard: the time element",
+        "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element"
+      },
+      {
+        "title": "HTML Living Standard: links",
+        "url": "https://html.spec.whatwg.org/multipage/links.html#links"
       }
     ],
     "prerequisites": [
-      "CH-70"
+      "CH-14",
+      "CH-17",
+      "CH-20",
+      "CH-24",
+      "CH-25"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "article"
+    "project_slug": "article",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   },
   {
     "id": "CH-72",
@@ -3018,30 +3106,49 @@
     "title": "Build a data dashboard",
     "architecture_title": "Structure a data-rich dashboard",
     "part": "XI / Practical Projects",
-    "dek": "Keep every displayed number understandable.",
-    "lesson": "Build a static dashboard with fictional lending data. Include a period label, a small summary and a data table. Label the data as fictional so it cannot be mistaken for evidence about the real library.\n\nEvery quantity needs a unit or context. A number card saying 42 does not say whether it means books, readers, days or percent. Use table headers for comparisons and a caption that identifies the dataset.\n\n## Acceptance criteria\nThe table must preserve row/column relationships and have a usable small-screen strategy. A graphical summary is optional and must have a meaningful equivalent. Do not communicate a status only through colour.\n\nThe reference project has no live data feed. It demonstrates structure and a clearly labelled static dataset. If you later connect a service, add timestamps, loading/error states and data-source explanations that reflect the actual implementation.",
-    "code": "<table>\n  <caption>Fictional loans by collection, October sample</caption>\n  <thead><tr><th scope=\"col\">Collection</th><th scope=\"col\">Loans</th></tr></thead>\n  <tbody><tr><th scope=\"row\">Fiction</th><td>42</td></tr>\n  <tr><th scope=\"row\">Local history</th><td>18</td></tr></tbody>\n</table>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "What is missing from a dashboard card that displays only 42?",
-    "answer": "A label, unit and time/context sufficient to interpret the number. If it is a change or percentage, the comparison basis must also be clear. Do not make the reader infer these from colour or position.",
+    "dek": "Make a static dashboard whose loan total, units, period and accessible table agree.",
+    "lesson": "## Before you start\n\nReview Chapters 26, 61, 62. Create a captioned simple table, distinguish headers from data and test a keyboard-accessible scrolling region.\n\n## Working terms\n\nA measure is the quantity counted, here loan entries. A unit tells readers how to interpret a value. Reconciliation checks that summary and rows describe the same dataset and arithmetic. A table header association connects a data cell with its relevant row or column heading.\n\n## Build contract\nBuild a static October 2026 dashboard for three fictional loan counts: Fiction 42, Local history 18 and Reference 9. Display their total, 69 loans, and the count of represented collections, three. Label the values as fictional loan entries, not unique people, stock levels or live availability. There is no comparison period, so do not invent a growth arrow or percentage.\n\n## Implementation route\nUse a description list for the named summary values and a table for the cross-row data relationships. Give the table a caption that identifies the subject and period. Mark column headers with `scope=\"col\"` and each collection's row header with `scope=\"row\"`. Include a period column so that a copied row retains useful context. Scope is suitable for this simple grid; complex multi-level tables need an explicit association review rather than a mechanical copy of this example.\n\n## Acceptance and recovery\nRecalculate the total from the rows, then compare every displayed summary against the table. At 320 CSS pixels, the document itself should fit the viewport. The wide table may scroll inside its labelled region; preserve the two-dimensional relationships instead of hiding columns. Tab to that region, check its visible focus and inspect horizontal scroll. Reflow permits exceptions for content that requires two-dimensional layout, but the exception does not excuse page-wide overflow or an inaccessible scrolling surface.\n\n## Reference walkthrough\nThe supplied dashboard is all static HTML. It exposes the period, units and fiction notice without hover, script or colour interpretation. Its summary cannot remain correct if someone changes a row without updating the total, so reconciliation is an explicit acceptance check. The scroll wrapper is focusable and named. Native markup provides associations for this simple table; confirming its actual presentation in a screen reader still requires an assistive-technology review.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Data truth (4 points)\n- Fictional status is visible.\n- The period is October 2026.\n- Units mean loan entries.\n- No live feed or unsupported comparison is claimed.\n\n### Rows (4 points)\n- Fiction is 42.\n- Local history is 18.\n- Reference is 9.\n- All three rows carry the period.\n\n### Summary (4 points)\n- Total is visibly 69 loans.\n- The total equals 42 + 18 + 9.\n- Three collections are reported.\n- Summary labels explain their quantities.\n\n### Table structure (4 points)\n- A subject-and-period caption is present.\n- A thead groups column headings.\n- Each column heading has scope=col.\n- Each collection heading has scope=row.\n\n### Narrow layout (4 points)\n- The 320-pixel document fits its viewport.\n- The table is inside a bounded scroll region.\n- No data column is hidden.\n- The scroll region has an accessible name.\n\n### Keyboard and baseline (4 points)\n- The table region can receive keyboard focus.\n- Focus is visible.\n- Data remain readable without scripts.\n- Reading order retains caption/headings/rows.\n\n### Delivery (4 points)\n- Local CSS resolves.\n- Document title identifies the dashboard.\n- No unexplained chart substitutes for data.\n- Solution notes require recalculation after edits.",
+    "code": "<p>Fictional October 2026 loan entries, not a live feed.</p>\n<dl><dt>Total across these collections</dt><dd>69 loans</dd></dl>\n<table>\n  <caption>Fictional loans by collection, October 2026</caption>\n  <thead><tr><th scope=\"col\">Collection</th><th scope=\"col\">Loans (count)</th>\n    <th scope=\"col\">Period</th></tr></thead>\n  <tbody><tr><th scope=\"row\">Fiction</th><td>42</td><td>October 2026</td></tr>\n    <tr><th scope=\"row\">Local history</th><td>18</td><td>October 2026</td></tr>\n    <tr><th scope=\"row\">Reference</th><td>9</td><td>October 2026</td></tr></tbody>\n</table>",
+    "explanation": "The total and rows now describe the same three collections: 42 + 18 + 9 = 69. No reader count or percentage can be inferred from those values. The caption supplies table context, while scoped headers express the simple row/column relationships. The fragment focuses on the data model; the complete reference adds the named scroll wrapper, focus styling and second summary value. A passing conformance checker does not establish that those associations were understood through a particular assistive technology.",
+    "mistake": "A summary showing 128 active readers above a table of 69 loan entries mixes incompatible quantities and has no supporting data. Reconcile the measure as well as the arithmetic.",
+    "question": "Someone changes Reference from 9 to 12 but leaves 69 loans in the summary and adds “69 readers.” What needs correction and why?",
+    "answer": "The revised loan total is 42 + 18 + 12 = 72. Update the summary and any explanatory arithmetic to 72 loans. Do not relabel it readers: one reader may have multiple loan entries and there is no distinct-person dataset. Keep the period and collection count explicit, then recheck all rows, scope attributes and the narrow scroll region. A matching number alone would not repair the unit error.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Reconcile a displayed total with all three fictional collection counts.",
+      "Provide a caption and explicit row and column headers for a simple data table.",
+      "Keep wide data readable in a labelled keyboard-focusable scroll region."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: table header cells",
+        "url": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element"
+      },
+      {
+        "title": "WAI Tables Tutorial: two headers",
+        "url": "https://www.w3.org/WAI/tutorials/tables/two-headers/"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Reflow",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Focus Order",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
       }
     ],
     "prerequisites": [
-      "CH-71"
+      "CH-26",
+      "CH-61",
+      "CH-62"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "dashboard"
+    "project_slug": "dashboard",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   },
   {
     "id": "CH-73",
@@ -3049,30 +3156,46 @@
     "title": "Build a media gallery",
     "architecture_title": "Create a responsive media gallery",
     "part": "XI / Practical Projects",
-    "dek": "Give the images a structure and a loading plan.",
-    "lesson": "Build a small gallery of three self-contained illustrations. The downloadable reference uses simple locally included SVG drawings rather than claiming to include photographs of a real place. Inspect each file before writing its alternative.\n\nUse a list when the gallery is a collection of items. A figure and caption can keep each illustration with its description. Decide whether the image repeats a caption or contributes additional information and write alt accordingly.\n\n## Acceptance criteria\nAll resources must resolve offline from the downloaded folder. Images need intentional dimensions. Links, if present, should name their destinations. Keep a clear heading and avoid loading delays for the first important visible image without a reason.\n\nResize the page and test the image/text relationships. The gallery is not complete because every image has some alt string; the alternatives must match what the actual images and task require.",
-    "code": "<ul>\n  <li><figure>\n    <img src=\"shelves.svg\" alt=\"Three rows of books on a shelf\" width=\"640\" height=\"400\">\n    <figcaption>A study in organising a small collection.</figcaption>\n  </figure></li>\n</ul>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "Why should you inspect the included SVGs instead of trusting their filenames when writing alt?",
-    "answer": "A filename does not establish the meaningful visible content or its role in the page. The alternative should represent the actual image in context, including whether the caption already supplies some information.",
+    "dek": "Present three original local SVG drawings with accurate alternatives, matching dimensions and honest loading choices.",
+    "lesson": "## Before you start\n\nReview Chapters 19, 28, 29, 33. Choose alternatives from an image's purpose, pair figures with captions and compare an asset's dimensions with its display.\n\n## Working terms\n\nA text alternative supplies image-equivalent meaning for its context. A caption adds related visible context. An intrinsic aspect ratio comes from the resource geometry; the supplied drawings are 640 by 400. Lazy loading is a browser loading hint, not a promise about a request time.\n\n## Build contract\nDeliver three self-contained drawings named `shelves.svg`, `window.svg` and `tables.svg`. State that these are illustrations, not photographs of a real library. Use a list of figures with an image and caption in each. The reference drawings are made from simple geometric shapes and need no external font, network image or attribution to an unknown photographer. Retain the publication credit and rights notice when using the supplied package; do not assume the whole book has an open licence.\n\n## Implementation route\nThe shelves drawing has three rows of six book shapes. The window has six panes. The tables drawing shows two tables from above, each with a book shape. Write alternatives from those visible facts. Captions provide the learning context, such as organising a collection, rather than repeating the full alternative. These images carry information in this exercise, so an empty alternative would remove part of the intended content. A genuinely decorative image in another context could require a different decision.\n\n## Acceptance and recovery\nSet both HTML dimensions and SVG viewBox to the same 640 by 400 ratio, then constrain display size with CSS without distorting the image. The first image uses eager loading; later images use lazy loading as a hint. This is an authoring choice, not a timing guarantee or a measured performance improvement. Check actual rendering after scrolling the lazy images into view. Extract the ZIP and confirm all three local files load without network access. Block image loading once and confirm the text alternatives and captions still preserve meaningful information.\n\n## Reference walkthrough\nThe generated SVGs contain their own drawing instructions and no remote URLs or scripts. The img elements supply alternatives in the embedding HTML. Width and height reserve the intended ratio even when display width changes. There is no lightbox or synthetic button because viewing these figures requires neither a custom interaction nor a modal. The layout uses a responsive list grid and keeps source order intact when it collapses to one column.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Asset delivery (4 points)\n- All three SVG files are supplied.\n- SVGs contain no remote resources.\n- The page says they are drawings.\n- No real venue photography is claimed.\n\n### Accurate alternatives (4 points)\n- The shelves alternative describes three rows.\n- The shelves alternative matches six shapes per row.\n- The window alternative matches six panes.\n- The tables alternative matches two tables with book shapes.\n\n### Figure relationships (4 points)\n- The gallery is a native list.\n- Each list item contains a figure.\n- Each image has its caption in that figure.\n- Captions add context instead of duplicating alternatives.\n\n### Geometry (4 points)\n- HTML width is 640 for every image.\n- HTML height is 400 for every image.\n- Each SVG viewBox is 0 0 640 400.\n- Narrow rendering preserves the ratio.\n\n### Loading (4 points)\n- The first image is not lazy.\n- Later images carry the lazy hint.\n- All images render after scrolling into view.\n- No measured speed claim is invented.\n\n### Fallback (4 points)\n- Local files load after ZIP extraction.\n- Images require no network resource.\n- Blocked images leave meaningful alternatives.\n- Captions remain readable with images blocked.\n\n### Presentation and rights (4 points)\n- The 320-pixel page has no horizontal overflow.\n- The list reading order is meaningful.\n- No unnecessary lightbox control is offered.\n- Publication credit and rights limits are retained.",
+    "code": "<ul>\n  <li><figure>\n    <img src=\"../projects/gallery/shelves.svg\"\n      alt=\"Three shelf rows, each holding six book shapes\"\n      width=\"640\" height=\"400\" style=\"max-width:100%;height:auto\" loading=\"eager\" decoding=\"async\">\n    <figcaption>Organising a small collection.</figcaption>\n  </figure></li>\n  <li><figure>\n    <img src=\"../projects/gallery/window.svg\"\n      alt=\"A rectangular window divided into six panes\"\n      width=\"640\" height=\"400\" style=\"max-width:100%;height:auto\" loading=\"lazy\" decoding=\"async\">\n    <figcaption>Light in a reading space.</figcaption>\n  </figure></li>\n  <li><figure>\n    <img src=\"../projects/gallery/tables.svg\"\n      alt=\"Two reading tables seen from above, each with a book shape\"\n      width=\"640\" height=\"400\" style=\"max-width:100%;height:auto\" loading=\"lazy\" decoding=\"async\">\n    <figcaption>A study in shared space.</figcaption>\n  </figure></li>\n</ul>",
+    "explanation": "The three alternatives match the actual geometric drawings and do not describe people, colours or photographic settings that the files do not show. Captions explain why each subject appears in the gallery. The wrapped chapter example links to the supplied project image files; the extracted gallery uses sibling-relative paths. HTML width/height and SVG viewBox all share a 1.6:1 ratio. Local assets and explicit dimensions make the reference self-contained, but loading=\"lazy\" remains a browser hint rather than proof of faster loading.",
+    "mistake": "Describing a generated drawing as a photograph, or using an alternative with more objects than the asset contains, makes the text fallback inaccurate. Inspect the delivered image, not a remembered prompt.",
+    "question": "The window SVG has six panes, but its alternative says four and its HTML height is changed to 640 while width stays 640. What should be repaired?",
+    "answer": "Restore an accurate six-pane alternative. Keep the supplied 640 by 400 width/height pair so its reserved ratio matches the 0 0 640 400 SVG viewBox; CSS may scale the display while height remains automatic. Check the actual loaded image and the blocked-image state, then verify all three files from the extracted ZIP. Neither a plausible alternative nor successful image loading proves the other requirement.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Describe the supplied drawings accurately rather than inventing photographic detail.",
+      "Pair each image with a caption that contributes context instead of duplicating its alternative.",
+      "Keep local image assets usable offline and reserve a matching aspect ratio."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: the img element",
+        "url": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element"
+      },
+      {
+        "title": "WAI Images Tutorial: informative images",
+        "url": "https://www.w3.org/WAI/tutorials/images/informative/"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Reflow",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
       }
     ],
     "prerequisites": [
-      "CH-72"
+      "CH-19",
+      "CH-28",
+      "CH-29",
+      "CH-33"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "gallery"
+    "project_slug": "gallery",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   },
   {
     "id": "CH-74",
@@ -3080,29 +3203,67 @@
     "title": "Capstone: the library site",
     "architecture_title": "Capstone: a complete multi-page website with an assessment rubric",
     "part": "XI / Practical Projects",
-    "dek": "Bring the document, forms, data and navigation into one reviewable project.",
-    "lesson": "Build a multi-page library site with Home, Catalogue, Membership and Visit pages. This capstone is a static reference implementation, not a live lending system. Use that limitation in its public copy rather than implying real reservations or accepted applications.\n\nReuse a consistent document shell and navigation. Give each page its own title, main heading and current-page state. Include a catalogue table or list, a clearly identified demonstration form and an accessible visit/contact structure.\n\n## Review against the rubric\nAward up to four points each for document structure, semantic choice, keyboard/focus behavior, labels and errors, content clarity, resource/path reliability and maintainability. A score is a review aid, not a WCAG or security certification. Record a concrete observation for each awarded point.\n\nTest every page at the repository subpath as well as locally. Check back navigation, fragment links, file downloads and the no-script form explanation. Use the example source and release checklist to document what passed and what still needs work. A real deployment needs an actual service design before it can accept private member data.",
-    "code": "<main>\n  <h1>Neighbourhood Library</h1>\n  <p>A static reference site for learning HTML.</p>\n  <a href=\"catalogue.html\">Explore the example catalogue</a>\n  <p>No books can be reserved and no applications are collected on this site.</p>\n</main>",
-    "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
-    "mistake": "Treating a static reference project as a connected production service.",
-    "question": "What changes before this capstone can become a real membership service?",
-    "answer": "Implement and test the server workflow, appropriate authentication/authorization, input and upload handling as needed, privacy and retention rules, transport and deployment policies, and honest user-visible results. Re-review the final experience for accessibility and security.",
+    "dek": "Integrate four honest library pages, then verify navigation, local form recovery, data and offline delivery as one system.",
+    "lesson": "## Before you start\n\nReview Chapters 27, 61, 62, 66, 68, 69, 70, 71, 72, 73. Complete the six smaller projects, plan file routes and test both successful enhancement and failed-script recovery.\n\n## Working terms\n\nIntegration testing checks connected components as one task flow. A service boundary identifies what the static interface cannot do. An acceptance blocker is a critical failure that prevents readiness even when other rubric points are earned. Offline delivery means the supplied local documents and resources can be used without fetching a remote dependency.\n\n## Build contract\nDeliver four documents: `index.html`, `catalogue.html`, `membership.html` and `visit.html`. The fictional context must be visible throughout the site. Home links readers to the other tasks. Catalogue contains three fictional titles and their collections. Membership reuses the Chapter 70 local demonstration, not a collection endpoint. Visit supplies fictional practice hours and explicitly says that no actual destination, access conditions or contact route have been verified.\n\n## Implementation route\nUse the same primary-navigation labels and destinations on every page, with exactly one current-page marker. Give each document its own title and main heading. Keep the catalogue caption and headers meaningful. Bound its wide table inside a labelled, focusable scroll region rather than hiding its second column on a phone. Reuse the form markup and maintained script from Chapter 70, then test that the integration still preserves all error, correction, reset and failed-script behaviours.\n\n## Truthful visit information\nThe practice timetable is Tuesday to Saturday, 09:00 to 17:00, closed Sunday and Monday. These are example hours, not a real timetable. Do not infer step-free access from an invented building or publish an imaginary address as a destination. The reference clearly states that entrance routes, parking and facilities are unverified. A real service needs verified location and relevant access details, not a generic accessible badge.\n\n## Acceptance and recovery\nEnter the site through every page directly and follow every primary link. Check all four at 320 CSS pixels, with keyboard-only navigation and without scripting. Use valid and invalid fictional values on Membership and inspect requests and the URL. Re-run the form suite rather than assuming component reuse proves correct integration. Extract the ZIP and inspect the same tasks offline. Styles or images failing should not remove the page's content, and script failure must leave the form disabled.\n\n## Reference walkthrough\nThe supplied site offers only reading and local validation tasks. It cannot reserve a title, accept an application, search a catalogue or record a visit. Catalogue entries are static HTML, not a backend disguised by a polished layout. The Visit page makes its missing real-service details explicit. README, BRIEF and SOLUTION describe these limits from the same chapter source. This reference is a teaching implementation, not independent accessibility approval, a security audit or a production service.\n\n## Assessment rubric: 28 observable points\nAward one point for each demonstrated check below, four per area. Record the evidence next to the check; untested checks receive no point. These points are an authoring assessment aid, not WCAG conformance or security certification. A broken primary task, a misleading service claim, unsafe data collection or a dead required destination blocks readiness regardless of the score.\n\n### Four-page contract (4 points)\n- All four required documents exist.\n- Every page has its own document title.\n- Every page has a main heading.\n- Fictional static-service status is visible.\n\n### Navigation (4 points)\n- All primary labels are consistent.\n- All primary destinations resolve from every page.\n- Exactly one current-page link appears per page.\n- The skip link reaches each main landmark.\n\n### Catalogue (4 points)\n- Three fictional entries are supplied.\n- The caption describes the data.\n- Row and column headers identify relationships.\n- The table scrolls inside a named keyboard-focusable region.\n\n### Membership safety (4 points)\n- The no-script baseline is disabled.\n- Setup enables only local validation.\n- Invalid submit provides linked field errors.\n- Valid submit claims no sent application.\n\n### Membership recovery (4 points)\n- Correcting failed fields removes their errors.\n- Editing clears prior success.\n- Reset clears values/errors/custom validity.\n- Blocked script leaves instructions and disabled fields.\n\n### Visit truth (4 points)\n- Practice hours are explicitly fictional.\n- Sunday/Monday closure is stated.\n- No real address or contact is invented.\n- Access conditions are explicitly unverified.\n\n### Integrated evidence (4 points)\n- Every page opens directly after extraction.\n- All four pages fit a 320-pixel viewport outside tables.\n- Keyboard focus remains visible.\n- Submit emits no application request or URL values.",
+    "code": "<nav aria-label=\"Primary\">\n  <a href=\"../projects/capstone/index.html\" aria-current=\"page\">Home</a>\n  <a href=\"../projects/capstone/catalogue.html\">Catalogue</a>\n  <a href=\"../projects/capstone/membership.html\">Membership</a>\n  <a href=\"../projects/capstone/visit.html\">Visit</a>\n</nav>\n<main><h1>Neighbourhood Library</h1>\n  <p>A fictional static reference site, not a real library service.</p>\n  <p>No books can be reserved and no applications are collected here.</p>\n  <ul><li><a href=\"../projects/capstone/catalogue.html\">Browse fictional book data</a></li>\n    <li><a href=\"../projects/capstone/membership.html\">Inspect the demonstration form</a></li>\n    <li><a href=\"../projects/capstone/visit.html\">Read the fictional visit information</a></li></ul>\n</main>",
+    "explanation": "The chapter fragment previews Home and links into the four-document reference; it is not the entire capstone. Within the download, the four pages use sibling-relative links and each updates its own current-page marker. The generated membership form comes from Chapter 70 and uses the same script, so its privacy and error-recovery boundaries stay aligned. Catalogue and Visit contain actual explanatory content, not headings awaiting a backend. A static reference can be complete against this contract while remaining insufficient as a real public library service.",
+    "mistake": "A working Home page does not prove the capstone works. Dead catalogue links, an enabled no-script membership form or unverified step-free claims are critical failures even if the visual design scores well.",
+    "question": "Home passes a visual check, but Membership submits named values with GET when its script is blocked and Visit claims step-free access without evidence. Can a high rubric total make this ready?",
+    "answer": "No. Privacy/task and truthful-service blockers prevent readiness regardless of points. Restore the disabled fieldset baseline and install the local submit/error/reset handlers before enabling it; confirm the blocked-script test leaves it unusable for collection and emits no application query. Remove the unsupported access claim and state what has not been verified. Then test all four pages directly, all navigation routes, membership errors and reset, narrow table scrolling and the extracted offline package. Do not convert same-assistant checks into independent accessibility or security approval.",
     "objectives": [
-      "Build the described project",
-      "Evaluate it against explicit acceptance criteria"
+      "Integrate Home, Catalogue, Membership and Visit with consistent navigation and truthful service boundaries.",
+      "Reuse and retest the disabled-baseline local form instead of implying a real membership backend.",
+      "Assess the whole extracted site against observable functional, accessibility and privacy checks."
     ],
     "sources": [
       {
-        "title": "HTML Living Standard: authoring requirements",
-        "url": "https://html.spec.whatwg.org/multipage/introduction.html#conformance-requirements-for-authors"
+        "title": "HTML Living Standard: the nav element",
+        "url": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element"
+      },
+      {
+        "title": "HTML Living Standard: links",
+        "url": "https://html.spec.whatwg.org/multipage/links.html#links"
+      },
+      {
+        "title": "HTML Living Standard: the form element",
+        "url": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element"
+      },
+      {
+        "title": "WAI Forms Tutorial: user notifications",
+        "url": "https://www.w3.org/WAI/tutorials/forms/notifications/"
+      },
+      {
+        "title": "HTML Living Standard: table header cells",
+        "url": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Reflow",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+      },
+      {
+        "title": "WCAG 2.2 Understanding: Focus Order",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html"
       }
     ],
     "prerequisites": [
+      "CH-27",
+      "CH-61",
+      "CH-62",
+      "CH-66",
+      "CH-68",
+      "CH-69",
+      "CH-70",
+      "CH-71",
+      "CH-72",
       "CH-73"
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "capstone"
+    "project_slug": "capstone",
+    "publication_pass": {
+      "date": "2026-10-15",
+      "scope": "Projects and capstone manuscript/reference alignment first pass. Executed check scope is recorded separately; independent approval remains open."
+    }
   }
 ]

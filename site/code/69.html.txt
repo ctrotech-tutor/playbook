@@ -1,5 +1,11 @@
 <section aria-labelledby="work-title">
   <h2 id="work-title">Selected work</h2>
-  <article><h3>Library notice board</h3><p>A static page for public notices.</p>
-    <a href="project.html">Read about the notice board</a></article>
+  <article><h3>Library notice board</h3>
+    <p>A static notice-page structure study.</p>
+    <a href="../projects/portfolio/project.html">Read the notice-board note</a>
+  </article>
+  <article><h3>Reading list</h3>
+    <p>A semantic list study, not a reservation service.</p>
+    <a href="../projects/portfolio/reading-list.html">Read the reading-list note</a>
+  </article>
 </section>

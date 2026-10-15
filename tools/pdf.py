@@ -25,6 +25,9 @@ def build_pdf(root,site,book,inv):
     body=ParagraphStyle('body',fontName='Body',fontSize=9.4,leading=14,textColor=ink,spaceAfter=8)
     h1=ParagraphStyle('bookH1',fontName='Display',fontSize=34,leading=37,textColor=ink,spaceAfter=16,keepWithNext=True)
     h2=ParagraphStyle('bookH2',fontName='Display',fontSize=23,leading=27,textColor=green,spaceBefore=17,spaceAfter=9,keepWithNext=True)
+    h3=ParagraphStyle('bookH3',parent=h2,fontSize=18,leading=22)
+    h4=ParagraphStyle('bookH4',parent=h2,fontSize=14,leading=18)
+    bullet=ParagraphStyle('bullet',parent=body,leftIndent=12,firstLineIndent=-9,spaceAfter=4)
     small=ParagraphStyle('small',parent=body,fontSize=8,leading=12,textColor=muted,spaceAfter=5)
     label=ParagraphStyle('label',parent=small,fontName='BodyBold',fontSize=8,textColor=orange,spaceBefore=10,spaceAfter=9)
     guideLabel=ParagraphStyle('guideLabel',parent=label,keepWithNext=True)
@@ -72,11 +75,15 @@ def build_pdf(root,site,book,inv):
     def heading(title,key):
         p=Paragraph(text(title),h1);p.bookmark=key;flow.append(p)
     def paras(s):
-        for p in s.split('\n\n'):
-            if p.startswith('## '):
-                lines=p.split('\n',1);flow.append(Paragraph(text(lines[0][3:]),h2))
-                if len(lines)>1:flow.append(Paragraph(text(lines[1]),body))
-            elif p.strip():flow.append(Paragraph(text(p),body))
+        for block in s.strip().split('\n\n'):
+            lines=block.splitlines()
+            match=re.fullmatch(r'(#{2,4}) (.+)',lines[0]) if lines else None
+            if match:
+                flow.append(Paragraph(text(match[2]),{2:h2,3:h3,4:h4}[len(match[1])]))
+                lines=lines[1:]
+            if lines and all(line.startswith('- ') for line in lines):
+                for line in lines:flow.append(Paragraph('• '+text(line[2:]),bullet))
+            elif lines:flow.append(Paragraph(text('\n'.join(lines)),body))
     for c in book:
         flow.append(CondPageBreak(390))
         flow.append(Paragraph(text(c['part']),label));heading(f'{c["number"]:02}. {c["title"]}',c['id']);flow.append(Paragraph(text(c['dek']),body))

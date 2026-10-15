@@ -12,7 +12,7 @@ This is the self-deployable Vercel delivery of the playbook. No GitHub integrati
 
 ## Content checkpoint: 15 October 2026
 
-**67/74 chapters have received a substantive first pass; seven remain.** Chapters 1–67 have cumulative corrections. Chapters 54–67 now add supplied local filtering, storage recovery, a bounded worker and real removal/restoration focus behavior, with parser/lifecycle/API and professional-practice teaching. Source, the compiled `site/` and the reading PDF are updated together. All 81 requirements and four final-publication gates remain open. See [the current audit](docs/final-audit/README.md) and [batch 05 evidence](docs/final-audit/batch05-report.md). This is not the final tagged accessible edition.
+**74/74 chapters have received a substantive same-assistant first pass.** Chapters 68–74 now have concrete project contracts, prerequisites/terms, project-specific rubrics, matched reference implementations and explained answers. The seven ZIPs include chapter-derived briefs/solutions. Source, compiled `site/` and the 456-page reading PDF are synchronized. All 81 requirements and four final-publication gates remain open. See [the current audit](docs/final-audit/README.md) and [batch 06 evidence](docs/final-audit/batch06-report.md). Batch06 is locally verified; its main push is pending renewed secure write authorization. No new hosted CI or Vercel deployment is claimed. This is not the final tagged accessible edition.
 
 ## Reading and corrections
 

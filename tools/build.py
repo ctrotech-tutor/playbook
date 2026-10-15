@@ -24,11 +24,15 @@ def inline(s):
 
 def prose(s):
     out=[]
-    for part in s.strip().split('\n\n'):
-        if part.startswith('## '):
-            lines=part.split('\n',1);heading=lines[0][3:];out.append('<h2>'+inline(heading)+'</h2>')
-            if len(lines)>1:out.append('<p>'+inline(lines[1])+'</p>')
-        else:out.append('<p>'+inline(part)+'</p>')
+    for block in s.strip().split('\n\n'):
+        lines=block.splitlines()
+        heading=re.fullmatch(r'(#{2,4}) (.+)',lines[0]) if lines else None
+        if heading:
+            level=len(heading[1]);out.append(f'<h{level}>'+inline(heading[2])+f'</h{level}>')
+            lines=lines[1:]
+        if lines and all(line.startswith('- ') for line in lines):
+            out.append('<ul>'+''.join('<li>'+inline(line[2:])+'</li>' for line in lines)+'</ul>')
+        elif lines:out.append('<p>'+inline('\n'.join(lines))+'</p>')
     return '\n'.join(out)
 
 def write(path,html):
