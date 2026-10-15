@@ -2,9 +2,19 @@
 
 By **Odejobi Abiola Samuel**. © 2026 Odejobi Abiola Samuel. Third-party rights are retained.
 
-This is the self-deployable Vercel delivery of the playbook. No GitHub repository or integration is required. The ZIP contains the precompiled reading site, matching PDF, canonical content, local fonts, source notices, builders and verification receipts.
+**October 2026 reading edition / edition 2026.1**
 
-**Content status:** all 74 chapter drafts are present. The declaration register is substantially expanded, but exhaustive behavioral documentation and independent technical/answer review remain open. This package is not represented as a completed whole-Standard audit or a tagged accessible PDF.
+The public site is https://ctrobook.vercel.app/. The author confirmed successful delivery, and representative public routes were checked on 14 October 2026. This reading edition is now maintained in the repository. A repository update is not a claim that the edition is already deployed.
+
+This is the self-deployable Vercel delivery of the playbook. No GitHub integration is required to use the ZIP. The ZIP contains the precompiled reading site, matching PDF, canonical content, local fonts, source notices, builders and verification receipts.
+
+**Content status:** a 74-chapter reading curriculum, a shared reading guide, explained exercises and seven static projects are included. Internal independent-review states remain open. The declaration register is substantially expanded, but exhaustive behavioral documentation and independent technical/answer review remain open. This package is not represented as a completed whole-Standard audit or a tagged accessible PDF.
+
+## Reading and corrections
+
+Open `site/start.html` in the compiled reading site for the reading routes, practice routine, format notes and edition changes. The PDF carries the same guide. Use exact code downloads when copying examples, and fictional values in forms. The original editorial work has no newly granted open license.
+
+For corrections, use the repository issues route with a chapter/page, passage, expected result and source. Do not include private data. The supplied `.github/ISSUE_TEMPLATE/content-correction.yml` becomes available when this edition is pushed.
 
 ## Repository updates and build checks
 
@@ -22,7 +32,7 @@ npm run check:site
 
 Commit or stash your own edits before pulling. Do not use a hard reset to discard work. Updates become available through `git pull` only after someone with repository write access has pushed them. Repository updates are pushed only with the author’s explicit authorization and write credentials. Credentials must remain outside the repository; pull only retrieves commits that have actually been pushed.
 
-The included GitHub Actions workflow checks Node 24 on Linux and Windows. Both hosted jobs passed for the first repair commit; the observed run is recorded in `tests/github-hosted-build.json`. It runs integrity regressions, a synthetic-production build and generated-output checks. It also checks that a build does not change tracked source files. Environment-specific `tests/seo-build.json` is generated locally and ignored by Git, so normal builds do not create a tracked edit that interferes with future pulls. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
+The included GitHub Actions workflow checks Node 24 on Linux and Windows. Both hosted jobs passed for the previous hosting repair, commit `d5ef36c`, run 38597536097. That is historical evidence, not a hosted CI result for this unpushed reading edition. It runs integrity regressions, a synthetic-production build and generated-output checks. It also checks that a build does not change tracked source files. Environment-specific `tests/seo-build.json` is generated locally and ignored by Git, so normal builds do not create a tracked edit that interferes with future pulls. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
 
 To deploy, run `vercel deploy --prod`, or connect this repository to the existing `ctrobook` project under Vercel project settings. A local `git pull` alone does not deploy a website.
 
@@ -42,7 +52,7 @@ vercel deploy --prod
 
 `vercel.json` selects the static/Other preset, runs `npm ci --ignore-scripts` and `npm run build`, and publishes only `dist/`. There are no application functions or collection backends. Hosting plan limits and terms still apply.
 
-The author has created the `ctrobook` Vercel project, according to the supplied CLI log. That log shows a failed build, not a successful hosted deployment. The agent has not signed in, linked an account, created a project or deployed this package.
+The author created and successfully deployed the `ctrobook` Vercel project. Representative public GET checks are recorded in `tests/hosted-observation.json` for the existing release candidate. The agent has not signed in to Vercel or deployed this new edition. A working earlier deployment is not evidence that later repository changes are live.
 
 ### Production domain and canonicals
 
@@ -58,12 +68,12 @@ Preview and development builds are intentionally not indexable. A local build wi
 
 ## What is included
 
-- 74 chapter drafts with objectives, examples, common mistakes, source routes and explained exercises
+- 74 chapters with objectives, examples, common mistakes, source routes and explained exercises, plus a reading guide and correction route
 - 113 named built-in HTML element entries, with integration/custom-element boundaries kept separate
 - 314 named WebIDL declaration owners and 1,574 direct member declarations, including 1,398 matched member routes and labelled owner-route fallbacks
 - 437 public keyword, state, enumeration-value and event definition records
 - Seven complete static reference projects and 74 exact UTF-8 example files
-- A 401-page PDF with 400 bookmarks, selectable syntax-coloured HTML/WebIDL, author metadata, XMP metadata, language metadata and attached font/source notices
+- A 405-page PDF with 401 bookmarks, selectable syntax-coloured HTML/WebIDL, author metadata, XMP metadata, language metadata and attached font/source notices
 - Search, chapter navigation, reading settings, local progress, exact copying and an opaque-origin editable preview
 - Production-domain SEO, social cards, JSON-LD, XML/HTML sitemaps, a release feed, Markdown chapters and plain-text discovery exports
 
@@ -83,7 +93,7 @@ Open the server's displayed address. The default port is 3000. Local output is d
 
 ## Maintain the book
 
-The authoritative content is in `content/chapters.json`, `content/publication.json`, `content/reference-snapshot.json`, `content/api-register.json`, `content/glossary.json` and `content/value-routes.json`.
+The authoritative content is in `content/chapters.json`, `content/publication.json`, `content/reference-snapshot.json`, `content/api-register.json`, `content/glossary.json`, `content/value-routes.json` and `content/reading-guide.json`.
 
 After changing maintained content or build inputs, rebuild the precompiled site and PDF:
 
@@ -110,15 +120,15 @@ This explicitly retrieves current W3C Webref extraction files. Review the differ
 
 The retained receipts cover:
 
-- 493 source-built HTML documents with zero Nu messages
-- 497 generated Vercel HTML documents with zero Nu messages
-- 2,654 live source URL/fragment targets in 75 documents
+- 494 source-built HTML documents with zero Nu messages
+- 498 generated Vercel HTML documents with zero Nu messages
+- 2,661 live source URL/fragment targets in 81 documents
 - Exact chapter-code preservation in website code, raw UTF-8 files and archive entries
 - All 349 consolidated/partial WebIDL declaration blocks found in extracted PDF code text
 - PDF token contrast of at least 5.42:1 and a four-page wrapping/splitting regression
 - Chromium 156.0.8078.4, Firefox 157.0 and WebKit 27.2 smoke tests using local HTTPS fixtures
-- No mobile page overflow at 390px across 397 tested pages in Chromium, with 12 representative routes in each additional engine
-- Zero automated axe violations on 16 representative pages, not a WCAG certificate
+- No mobile page overflow at 390px across 398 tested pages in Chromium, with 13 representative routes in each additional engine
+- Zero automated axe violations on 17 representative pages, not a WCAG certificate
 - Correct local 308 redirects, genuine 404 responses, non-submitting demo forms and parent-blocked editable iframes
 
 The synthetic `.example.test` origin appearing in verification receipts is a test fixture. It is not a production domain and is not embedded as a canonical in the supplied precompiled source.

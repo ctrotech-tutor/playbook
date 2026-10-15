@@ -1,6 +1,6 @@
 # Portfolio reference project
 
-A static HTML teaching implementation for the CTROTECH HTML Playbook review edition.
+A static HTML teaching implementation for the CTROTECH HTML Playbook reading edition.
 
 Use a local HTTP server or open index.html for the static documents. All included styles and image assets are local. Demo forms never submit when their script is active; fields remain disabled without script. They are not connected to a real service. Use fictional values only.
 

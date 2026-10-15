@@ -1,16 +1,21 @@
 {
   "result": "PASS",
-  "publication_fingerprint": "d2bfd8999d8dff68b5d17980ad8434731c62ed612025554a326e124c551d7a16",
+  "publication_fingerprint": "5ac544ee48fb3facad06f21ff66244c04a42ee17ce7898d4ea2cb77c05e4ec83",
+  "edition": "2026.1",
   "node": "v24.21.0",
   "fresh_extraction": true,
   "clean_npm_ci": "PASS",
   "node_only_build": "PASS",
+  "node_integrity_and_hosting_tests": 14,
+  "node_output_tests": 3,
+  "static_verification_with_site_fallback": "PASS",
   "precompiled_source_root": "site/",
-  "precompiled_site_tree_sha256": "80178e53474d4852ce576ecb00e16bd2d0e39ea9c7bc742df1357127c8bce877",
+  "precompiled_site_tree_sha256": "d53470539f115fc4aaa2f3fd9b590c5684068c4e7526085d915207bd98fa2f79",
   "site_tree_hash_order": "Lexicographically sorted relative POSIX names; NUL after each name and file bytes",
   "compatible_hosting_edits_and_key_order": "PASS",
-  "generated_html_documents": 497,
-  "indexable_pages": 408,
+  "generated_html_documents": 498,
+  "indexable_pages": 409,
+  "canonical_origin_tested": "https://ctrobook.vercel.app (local artifact only; no deployment performed)",
   "hosted_vercel_deployment_tested": false,
-  "scope": "Fresh extracted archive, actual hosting-file changes, Node-only production build and output checks. Other content/dependency rejections are covered by the 14 integrity/hosting tests."
+  "scope": "Fresh archive with CRC and every payload hash checked; Node-only install/build/output tests, then compatible hosting edits. Real domain used only for generated metadata, not deployment. Whole-book independent approval is not implied."
 }

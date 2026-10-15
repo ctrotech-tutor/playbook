@@ -61,7 +61,7 @@ test('actual compiler accepts changed hosting config and stale local cache, but 
     await fs.writeFile(path.join(dir,'vercel.json'),JSON.stringify(Object.fromEntries(Object.entries(config).reverse()),null,4)+'\r\n\r\n');
     const run=()=>spawnSync(process.execPath,['deploy/build.mjs'],{cwd:dir,env:process.env,encoding:'utf8',timeout:90000});
     let result=run();assert.equal(result.status,0,result.stdout+result.stderr);
-    const first=JSON.parse(await fs.readFile(path.join(dir,'tests/seo-build.json'),'utf8'));assert.equal(first.html_documents,497);
+    const first=JSON.parse(await fs.readFile(path.join(dir,'tests/seo-build.json'),'utf8'));const sourceHtml=(await fs.readdir(source.directory,{recursive:true})).filter(name=>name.endsWith('.html')).length;assert.equal(first.html_documents,sourceHtml+4);
     await fs.mkdir(path.join(dir,'build/site'),{recursive:true});const stale=JSON.parse(await fs.readFile(path.join(dir,'site/build-inputs.json'),'utf8'));
     stale.files['content/chapters.json']='0'.repeat(64);await fs.writeFile(path.join(dir,'build/site/build-inputs.json'),JSON.stringify(stale));
     result=run();assert.equal(result.status,0,result.stdout+result.stderr);

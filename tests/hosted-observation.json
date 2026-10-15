@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-10-14T16:40:31.772474+00:00",
+  "scope": "Public unauthenticated GET reachability of the existing deployed edition. This is not deployment or verification of the newly rebuilt 2026.1 edition, a full task audit, domain-ownership verification or search indexing proof.",
+  "existing_public_source_commit": "d5ef36c111f87776176e1ff00c5f9fe63de45376",
+  "result": "PASS",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The HTML Playbook by Odejobi Abiola Samuel | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/",
+      "observed_edition": "Vercel release candidate 0.3"
+    },
+    {
+      "path": "/chapters/34",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/chapters/34",
+      "content_type": "text/html; charset=utf-8",
+      "title": "How forms send data | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/chapters/34"
+    },
+    {
+      "path": "/reference/api-members",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/reference/api-members",
+      "content_type": "text/html; charset=utf-8",
+      "title": "HTML API members and declarations | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/reference/api-members"
+    },
+    {
+      "path": "/author",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/author",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Odejobi Abiola Samuel | Author and publication credits | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/author"
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/privacy",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Privacy and local browser data | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/privacy"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/llms.txt",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/sitemap.xml",
+      "content_type": "application/xml"
+    },
+    {
+      "path": "/downloads/ctrotech-html-playbook.pdf",
+      "status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/downloads/ctrotech-html-playbook.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "path": "/this-route-is-an-observation-not-a-page",
+      "status": 404,
+      "resolved_url": "https://ctrobook.vercel.app/this-route-is-an-observation-not-a-page",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Page not found | CTROTECH",
+      "canonical": "https://ctrobook.vercel.app/404"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Start here",
+  "intro": "Read a chapter, predict what its markup means, then test your explanation. You do not need to memorise an element list before you can build a useful page.",
+  "routes": [
+    {
+      "title": "I am starting with HTML",
+      "text": "Begin with Chapters 1 to 6 for the document and browser model. Continue through Chapters 7 to 27 for syntax, text and structure. Then attempt the profile project before looking at its reference files.",
+      "chapters": [
+        1,
+        7,
+        14,
+        22,
+        68
+      ]
+    },
+    {
+      "title": "I can build a page, but want stronger decisions",
+      "text": "Work through images and media in Chapters 28 to 33, forms in 34 to 41 and interactions in 42 to 47. Move to browser behavior in 54 to 60 and the professional checks in 61 to 67. Use the earlier chapters whenever a term or content rule needs another look.",
+      "chapters": [
+        28,
+        34,
+        42,
+        54,
+        61,
+        74
+      ]
+    },
+    {
+      "title": "I need a specific definition",
+      "text": "Use search or the reference desk. Element and attribute summaries lead to their source definitions. The API register gives captured declarations and member routes, not a complete behavioral manual. Check the normative definition and current implementation evidence before relying on an edge case.",
+      "chapters": []
+    }
+  ],
+  "practice": [
+    {
+      "title": "Predict before running",
+      "text": "Read the objective and example. Describe the expected document relationships, submitted entries or interaction in your own words. Separate the markup rule from a styling choice."
+    },
+    {
+      "title": "Inspect the result",
+      "text": "Use a complete document where a fragment needs one. Compare the source with the live DOM. Use the keyboard for interactive examples and check the console or network panel when the lesson concerns requests or loading."
+    },
+    {
+      "title": "Answer before opening the solution",
+      "text": "Write a short answer and a reason. Then compare the explained answer with your reasoning, not just its vocabulary. A mismatch is a prompt to revisit the example and source, not a score."
+    },
+    {
+      "title": "Change one requirement",
+      "text": "Try a longer label, a missing resource, a narrow viewport or a different control state. State what should remain true. Use fictional values, especially in forms. The book sandbox deliberately prevents network requests and submissions."
+    }
+  ],
+  "formats": "Website and PDF share the maintained chapter source. Use the exact code download for copying: some files are fragments and some media or server resources are illustrative. The seven project downloads are complete static teaching folders, not live services. Reading progress stays in this browser when storage is available; it is not an assessment or certificate.",
+  "sources": "WHATWG defines HTML. MDN helps explain features and implementation support. WAI and WCAG provide accessibility guidance and requirements. A conformance checker, browser test and accessibility review answer different questions. Follow the source links and read the scope of each recorded check.",
+  "scope": "This is a published reading curriculum with captured reference inventories. It is not a completed whole-Standard behavioral reference. Independent technical, answer-key, accessibility and security reviews remain open. The PDF has selectable text, links and bookmarks, but is not a tagged accessible PDF.",
+  "corrections": "Report a correction with the page URL or chapter number, the passage, the expected result and a supporting source. For browser-dependent behavior, include the browser version and a small reproducible example. GitHub requires an account. Never include secrets or personal form data in a public issue.",
+  "edition_notes": [
+    "First published reading edition, dated 14 October 2026. Release-candidate and predeployment wording have been replaced with reader-facing publication details.",
+    "Chapter 60 now distinguishes the 166 foundation interface discovery routes from the 314 WebIDL declaration owners and 1,574 direct member declarations. Declaration coverage is not described as completed behavioral review.",
+    "Expanded practical explanations of responsive-image descriptors, form entries and submission paths, dialog interactions, script loading, storage failure and discovery controls. Added an explicit fictional-data warning to the registration brief.",
+    "Added this reading guide, a correction route and consistent website/PDF publication notes. Existing independent-review states remain open."
+  ]
+}

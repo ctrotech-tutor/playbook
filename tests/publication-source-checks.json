@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-14",
+  "scope": "Sources retrieved for assisted publication clarifications. This is not independent whole-book review.",
+  "sources": [
+    {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "http_status": 200,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/images.html",
+      "http_status": 200,
+      "sha256": "e79b3edb1c5786e7a75d486053e3776309adc9ca020b5db262893ec6831a7321",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/interactive-elements.html",
+      "http_status": 200,
+      "sha256": "f0e1f0418ae20d3950408468590e5fb8a6131ca1de4d529a254aabbbff04ebdb",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html",
+      "http_status": 200,
+      "sha256": "540ea5aabeec839a6ed51df7940145b87f4a201d5c0dcb70439b81b2469d7e84",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/scripting.html",
+      "http_status": 200,
+      "sha256": "0bca5c38a42ffb760f307bd950421d15e84db4c289ac132aba0a0610469d1c75",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "http_status": 200,
+      "sha256": "4c13caaf0e28422eda1776d824341b552ede7946984e3ec73b7675ba9b473f76",
+      "retrieved_date": "2026-10-14"
+    },
+    {
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "http_status": 200,
+      "sha256": "29edf0efc3ede2f56942c5454013445c77e38d7254f218536622d3a1b6509ce9",
+      "retrieved_date": "2026-10-14"
+    }
+  ]
+}

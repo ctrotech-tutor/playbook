@@ -1,78 +1,59 @@
-# Delivery status and production readiness
+# Publication and delivery status
 
-CTROTECH / The HTML Playbook / Vercel candidate 0.3 / 14 October 2026
+CTROTECH / The HTML Playbook / October 2026 reading edition / edition 2026.1
 
-Author: **Odejobi Abiola Samuel**
+Author: **Odejobi Abiola Samuel**. Publication date: 14 October 2026.
 
-## Decision
+## Decision and scope
 
-The **self-deployment package is prepared and locally verified**. It can be deployed to the author's Vercel account without GitHub. This is not a claim that every requested behavior, cross-specification API, exercise answer or accessibility requirement has received exhaustive independent review.
+The reading edition is prepared as a matching website and PDF, with a reader-facing publication pass and executed checks. It is not an exhaustive whole-Standard behavioral reference or an independently approved technical, answer-key, accessibility or security publication. Existing internal review states remain open; they were not changed to make the edition appear complete.
 
-The author created the `ctrobook` Vercel project and published the source to GitHub. The agent has not created, linked or deployed a project. The supplied Vercel log shows a failed build, not a successful hosted deployment. Actual Vercel routing, domain ownership, TLS, search-engine ownership verification and search indexing remain untested on a hosted destination. These are distinct from the checks already executed.
+The public site at https://ctrobook.vercel.app/ works. The author confirmed this, and nine representative unauthenticated GET routes were checked: eight returned 200, including the PDF, and a deliberately nonexistent route returned 404. The homepage still identifies release candidate 0.3. `tests/hosted-observation.json` records that limited observation, not deployment of this reading edition, domain ownership or search indexing.
 
-## Delivered
+The author authorized repository publication of this edition on 15 October 2026. The earlier package was prepared without repository write authentication; that limitation has now been resolved for the authorized push. Deployment to Vercel is separate and is not claimed here. The previous source commit, d5ef36c111f87776176e1ff00c5f9fe63de45376, passed actual Node 24 Linux and Windows CI in run 38597536097. That historical run does not certify these new changes. The agent did not sign in to Vercel or deploy this package.
 
-- All 74 chapter drafts, exact example downloads and seven static reference projects
-- An expanded, retained HTML WebIDL register with 314 owners, 1,574 direct members and 73 includes statements
-- 1,398 direct member-definition routes and 176 explicitly labelled owner-route fallbacks
-- 437 keyword/event/state/enumeration-value records, plus an owner/keyword search index
-- A 401-page PDF with 400 bookmarks, selectable coloured code, language/XMP/author metadata and all five applicable notice attachments
-- Local assets and fonts, functional local reading controls, draft exercise explanations and opaque-origin editable previews
-- A Node 24 static compiler, root `vercel.json`, clean routes, security/cache headers and real 404 handling
-- Domain-aware metadata, JSON-LD, social images, sitemaps, a release feed, Markdown and plain-text discovery documents
-- Full original/third-party notices and explicit reuse-status wording without inventing an open editorial license
+## Publication improvements
 
-The declaration register closes a substantial inventory/discovery gap. It is a source-linked declaration reference, not a substitute for algorithm-level explanations, edge-case tests, complete browser compatibility analysis or all APIs imported from other standards.
+- Replaced reader-facing release-candidate, owner-review and predeployment language with accurate reading-edition information.
+- Added a shared reading guide with three routes, a practice loop, source-literacy notes, format limits, correction guidance and edition notes.
+- Corrected Chapter 60: 166 foundation interface discovery routes and 314 WebIDL declaration owners count different inventories. The expanded register contains 1,574 direct member declarations; it is not a complete inherited-member or behavioral reference.
+- Expanded targeted explanations in Chapters 29, 34, 41, 44, 57, 60, 65 and 67. Added a fictional-data warning to the Chapter 70 registration brief. This was an AI-assisted, bounded publication pass, not an independent review of all 74 lessons.
+- Preserved the author name, local fonts, syntax highlighting, original and third-party notices, exact code files and seven static projects. No author biography, endorsement, open license or certification was invented.
+- Preserved hosting configuration and the content-integrity boundary. Page-count checks now derive the expected output count from the source, so adding a reading page does not require pretending the old count is still correct.
 
-## Executed evidence
+## Executed evidence for this edition
 
 | Check | Result and scope | Receipt |
 | --- | --- | --- |
-| Source HTML conformance | 493 documents, zero Nu messages; deliberately invalid fixture rejected | `tests/nu-full-result.json`, `tests/nu-expected-failure.json` |
-| Generated Vercel HTML | 497 documents, zero Nu messages | `tests/seo-nu-result.json` |
-| Sources | 2,654 URL/document/fragment targets resolved in 75 fetched documents | `tests/citation-checks.json` |
-| Metadata and graph integrity | All 497 output documents checked; 408 intended indexable pages; real route/asset/fragment targets checked | `tests/seo-verification.json`, `tests/seo-static-final.json` |
-| Deployment modes | Missing/invalid production origin rejected; local noindex; preview noindex with production canonical; synthetic production build indexable | `tests/seo-verification.json` |
-| Exact code | 74 HTML examples match the canonical code, raw files and ZIP entries; 349 WebIDL declaration blocks preserve their source | `tests/syntax-verification.json` |
-| PDF | Author, language, XMP, all five notice attachments, text recovery and geometric checks passed | `tests/syntax-verification.json`, `tests/release-evidence.json` |
-| Syntax palette | Minimum PDF code-token contrast 5.42:1; four-page split/wrap regression passed | `tests/syntax-verification.json` |
-| Browser flows | Chromium 156.0.8078.4, Firefox 157.0, WebKit 27.2; local HTTPS, real production security policy | `tests/seo-verification.json` |
-| Mobile overflow | None at 390px across 397 Chromium pages; 12 representative pages in each other engine | `tests/seo-verification.json` |
-| Automated accessibility | 16 representative pages; zero axe violations, not a WCAG or assistive-technology certification | `tests/seo-verification.json` |
-| Vercel configuration | Official schema instance validation, not a real hosted deployment test | `tests/vercel-schema.json` |
-| Package | ZIP CRC, duplicate/path checks, per-file SHA-256 manifest and Node-only clean-room rebuild | `PACKAGE-MANIFEST.json`, `tests/package-rebuild.json` |
+| Source HTML | 494 HTTP-served documents, zero Nu messages; deliberately invalid fixture rejected | `tests/release-evidence.json`, `tests/nu-full-result.json` |
+| Output HTML | 498 generated documents, zero Nu messages | `tests/seo-verification.json`, `tests/seo-static-final.json` |
+| Source links | 2,661 URL/document/fragment targets resolved in 81 documents; link availability is not assertion correctness | `tests/citation-checks.json` |
+| SEO and graph | 409 intended indexable pages in a synthetic production-origin fixture; real targets, metadata, canonicals, code and assets checked | `tests/seo-verification.json`, `tests/seo-static-final.json` |
+| Deployment modes | Missing/invalid origin rejected; local and preview noindex; production fixture indexable | `tests/seo-verification.json` |
+| Shared guide | Reading routes, practice routine, scope, corrections and edition notes found in both HTML and selectable PDF text | `tests/release-evidence.json` |
+| Exact syntax | All 74 HTML examples and 349 WebIDL blocks preserved; syntax colours and synthetic splitting/wrapping checked | `tests/syntax-verification.json` |
+| PDF | 405 pages, 401 bookmarks, author/language/XMP metadata, five notice attachments and text bounds checked | `tests/release-evidence.json` |
+| Browser flows | Local HTTPS smoke tests in Chromium 156.0.8078.4, Firefox 157.0 and WebKit 27.2 | `tests/seo-verification.json` |
+| Narrow layout | No page-level overflow at 390px on 398 Chromium routes and 13 representative routes in each other engine | `tests/seo-verification.json` |
+| Automated accessibility | Zero axe violations on 17 representative pages; not WCAG or assistive-technology approval | `tests/seo-verification.json` |
+| Added form claims | Isolated three-engine tests of entry eligibility, repeated names, submitter data, validation and submit versus requestSubmit; requests intercepted | `tests/publication-behavior-checks.json` |
+| Archive | ZIP CRC, exact payload SHA-256 manifest and extracted Node-only rebuild | `deliverables/package-checksums.json`, `tests/package-rebuild.json` |
 
-Synthetic verification origins and tokens are test fixtures, not claimed owned domains or submitted verification credentials. The final local preview is intentionally noindex. Deployment does not need Python, Java, browser binaries or the Nu JAR.
+Verification origins under `.example.test` and intercepted form requests under `.example.invalid` are fixtures, not owned production services. Historical receipts with a different publication fingerprint describe their own earlier artifacts, not this edition. The final local build is intentionally noindex. Deployment needs neither Python, Java, browser binaries nor a specification fetch.
 
-## Still open
+## Remaining work
 
-1. Exhaustive behavior/value/default/algorithm coverage, including non-HTML-standard interfaces and imported members.
-2. Individual editorial reconciliation of every inventory/coverage ID against substantive teaching, exceptions and evidence. Historical foundation ledgers remain audit inputs, not completed coverage claims.
+1. Exhaustive behavior, algorithm, conversion, exception, keyword/value/default and cross-specification coverage.
+2. Individual reconciliation of every inventory and coverage ID against substantive teaching and evidence. Historical foundation ledgers remain audit inputs, not completed coverage claims.
 3. Independent technical and explained-answer review across the complete manuscript.
-4. Broader real-device, assistive-technology, keyboard and cognitive/usability testing beyond automated samples.
-5. Complete security and privacy assessment, and any legal certification appropriate to the author's actual publication use.
-6. Tagged PDF remediation and independent PDF accessibility testing. Language metadata, selectable text and bookmarks do not supply a semantic tag tree.
-7. Hosted Vercel deployment, primary-domain redirects and live response checks.
-8. Optional Search Console/Bing/Yandex/Pinterest verification, crawler-policy choices, sitemap submission and actual indexing. None is guaranteed or silently performed.
+4. Broader real-device, keyboard, assistive-technology and usability review beyond the executed samples.
+5. Complete security/privacy assessment and any appropriate legal review.
+6. Tagged PDF remediation and independent PDF accessibility testing. Selectable text, bookmarks and language metadata do not create a semantic tag tree.
+7. Push and deployment of this edition, then checks of the new live pages, downloads and primary-domain redirects.
+8. Optional search-console ownership verification, sitemap submission and observation of actual indexing. No ranking, AI inclusion or search-engine approval is guaranteed.
 
-The author already supplied the name, design approval and permission to proceed. The remaining manuscript/review work is not caused by missing author permission, and independent review is not a demand that the author personally become the reviewer.
+These are not caused by missing author permission. The author has already supplied the name, visual approval and permission to proceed. Independent review does not mean the author must personally become the reviewer. Repository authorization does not close the acknowledged content-review work.
 
-## Rights and publication
+## Rights
 
-No open reuse license was selected for original editorial work. Upstream permissions and font rights remain intact. The author can self-deploy; an editorial reuse choice is not being manufactured as a blocker. This file is a factual release-status record, not legal advice or a certification.
-
-## Git-backed build repair
-
-The public repository at commit `c4f2ebd` contains a lockfile with one extra blank line compared with the original archive. This was enough to fail the old raw-byte guard. The version-2 manifest now ignores only insignificant JSON whitespace outside strings. Actual source strings, dependencies and non-JSON edits still invalidate the compiled snapshot. It also reports all mismatches rather than sending the owner through one-file-at-a-time repairs. A clean-source Python build now creates missing parent directories.
-
-Eight integrity regressions and three output checks are provided. A pinned-action, read-only GitHub workflow is configured for Node 24 on Linux and Windows. Hosted Actions and Windows execution are not claimed to have run in this Linux environment.
-
-### Hosted build confirmation
-
-GitHub Actions run 38593506190 passed for repair commit c95404d on both ubuntu-latest and windows-latest with Node 24. Installation, integrity regressions, the production-mode fixture build and output checks all succeeded. The observed result is retained in `tests/github-hosted-build.json`; it is not a Vercel hosting or whole-book correctness certificate. Runtime `tests/seo-build.json` is now ignored rather than tracked, avoiding build-generated changes during the pull/update workflow.
-
-### Hosting configuration boundary repair
-
-A subsequent owner log showed `vercel.json` triggering the book-cache guard. The uploaded file’s exact changes were not supplied. Inspection confirmed that the Node compiler does not consume it as manuscript input. Hosting configuration is now excluded from the precompiled-book input manifest and validated independently for compatible static output and routes. Book content and dependency inputs remain protected. A compiler regression changes hosting settings and property order, simulates stale local output, and confirms actual manuscript edits still fail. Local build/ is excluded from CLI uploads.
-
-The full verification fingerprint still includes vercel.json so local deployment-check receipts retain configuration provenance. This is separate from the narrower snapshot manifest used to decide whether a manuscript rebuild is necessary.
+No open reuse license was selected for original editorial work. Upstream permissions and font notices remain intact. This status document is not a legal opinion or certification.

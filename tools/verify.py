@@ -49,7 +49,7 @@ for c in book:
     assert '\u2014' not in json.dumps(c,ensure_ascii=False),c['id']
     assert not re.search(r'\b(TODO|TBD|lorem ipsum)\b',c['lesson'],re.I),c['id']
     assert c['editorial_status']=='draft_for_review'
-passed('Manuscript structure','74 populated chapter drafts, 74 explained exercises, no em dashes in authored chapter data; no independent answer correctness approval is implied.',chapters=74,exercises=74)
+passed('Manuscript structure','74 populated chapter records with open independent review, 74 explained exercises, no em dashes in authored chapter data; no independent answer correctness approval is implied.',chapters=74,exercises=74)
 link_errors=[];checked_links=0;docs={}
 for p in SITE.rglob('*.html'):docs[p.resolve()]=BeautifulSoup(p.read_text(),'html5lib')
 for path,soup in docs.items():
@@ -74,6 +74,14 @@ passed('Project downloads','All seven ZIPs pass integrity checks and contain a s
 pdf=pymupdf.open(R/'deliverables/ctrotech-html-playbook.pdf');assert pdf.metadata['author']==meta['author'];alltext=' '.join(page.get_text() for page in pdf)
 for c in book:assert c['title'] in alltext or re.sub(r'\s+',' ',c['title']) in re.sub(r'\s+',' ',alltext),c['title']
 assert len(pdf.get_toc())>=74
+guide=json.loads((R/'content/reading-guide.json').read_text())
+normal=lambda value:re.sub(r'\s+',' ',value).strip()
+guide_html=BeautifulSoup((SITE/'start.html').read_text(),'html.parser').get_text(' ',strip=True)
+for value in [guide['intro'],guide['formats'],guide['sources'],guide['scope'],guide['corrections']]+[r['text'] for r in guide['routes']]+[r['text'] for r in guide['practice']]+guide['edition_notes']:
+    assert normal(value.replace('`','')) in normal(guide_html),value
+    assert normal(value.replace('`','')) in normal(alltext),value
+assert any(row[1]=='Start here: a reading guide' for row in pdf.get_toc())
+passed('Reading guide and edition consistency','Shared reading routes, practice routine, scope, corrections and edition notes appear in both HTML and selectable PDF text. Independent review states are unchanged.')
 syntax=check_syntax()
 (R/'tests/syntax-verification.json').write_text(json.dumps(syntax,indent=2)+'\n')
 passed('Syntax and author credits','74 selectable, token-coloured PDF examples; exact website/code downloads; author credit and PDF metadata. Token contrast and synthetic multi-page wrapping checked; this is not an accessibility certification.',**syntax)
@@ -131,6 +139,6 @@ try:
 finally:server.shutdown();server.server_close()
 passed('Browser smoke tests',f'{len(browser_rows)} checks using Chromium {browser_version}; desktop and 390px mobile, served under /review-repo/. No general cross-browser or assistive-technology claim.',details=browser_rows,browser_version=browser_version)
 citations=json.loads((R/'tests/citation-checks.json').read_text());assert citations['checked']==citations['passed'];passed('Citation targets',f'{citations["passed"]} HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion.')
-output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':'2026-10-14','state':'Executed checks passed; publication approval still pending','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Tagged accessible PDF','Legal certification or actual hosted deployment verification']}
+output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':'2026-10-14','state':'Executed checks passed; independent content and whole-Standard coverage approval remain open','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Tagged accessible PDF','Legal certification or hosted deployment verification of this rebuilt edition']}
 (R/'tests/release-evidence.json').write_text(json.dumps(output,indent=2)+'\n')
 print(json.dumps(output,indent=2))

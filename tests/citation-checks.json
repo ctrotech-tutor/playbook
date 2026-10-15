@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-14T13:47:24.803439+00:00",
-  "checked": 2654,
-  "passed": 2654,
-  "documents_retrieved": 75,
+  "checked_at": "2026-10-14T16:39:10.253028+00:00",
+  "checked": 2661,
+  "passed": 2661,
+  "documents_retrieved": 81,
   "scope": "Live HTTP/document/fragment availability. This does not prove correctness of the publication’s assertions.",
   "results": [
     {
@@ -19,6 +19,22 @@
       "sha256": "f4114aeba34f8c395ee3964a191445bb3e31bdef50fd70623257a8a5a1f34a7b",
       "http_status": 200,
       "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://ctrobook.vercel.app/",
+      "target_found": true,
+      "sha256": "1aebe7b85d65e207e6cfb50771c3b22f868dca5eee033db30dd07a7ac4178630",
+      "http_status": 200,
+      "resolved_url": "https://ctrobook.vercel.app/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_FormData_Objects",
+      "target_found": true,
+      "sha256": "091733308e0b60f459936f01186b8ed1e26c1177824f397c3085855d900bf269",
+      "http_status": 200,
+      "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_FormData_Objects",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -54,6 +70,22 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "target_found": true,
+      "sha256": "eb0b308312f90700c0bef8a0c035185fe7f7d76f96737a4b89ff47a0b693fd9d",
+      "http_status": 200,
+      "resolved_url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "target_found": true,
+      "sha256": "51774dce5dc827006ec94296033769653b181431a702ecd73e9bebeaac3cd89a",
+      "http_status": 200,
+      "resolved_url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://dom.spec.whatwg.org/#interface-element",
       "target_found": true,
       "sha256": "034b308db8482bddb37070849e9d4ab40bcb2d10e6494cffad14678a252a58b1",
@@ -80,9 +112,25 @@
     {
       "url": "https://github.com/blader/humanizer",
       "target_found": true,
-      "sha256": "b1a83c0fdada7ecaff0a3d52dbfa99827334161cedfdce966290c7efc6ba8fa4",
+      "sha256": "778ba96e921d3c1be0faf845eabdda948c741180ed7236ac50a190af7a7555b6",
       "http_status": 200,
       "resolved_url": "https://github.com/blader/humanizer",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://github.com/ctrotech-tutor/playbook",
+      "target_found": true,
+      "sha256": "92d318693e2e9a491f84b6ee14b71f1efe200bae4624e123d3d5bc53bb44a7cb",
+      "http_status": 200,
+      "resolved_url": "https://github.com/ctrotech-tutor/playbook",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://github.com/ctrotech-tutor/playbook/issues/new?template=content-correction.yml",
+      "target_found": true,
+      "sha256": "0ebc596c7beb71b356423dddb528d72570c2518477c798d34a413dbf5d2b33f2",
+      "http_status": 200,
+      "resolved_url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fctrotech-tutor%2Fplaybook%2Fissues%2Fnew%3Ftemplate%3Dcontent-correction.yml",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -5055,6 +5103,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill",
+      "target_found": true,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-form-data-set",
       "target_found": true,
       "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
       "http_status": 200,
@@ -21168,7 +21224,7 @@
     {
       "url": "https://w3c.github.io/svgwg/svg2-draft/struct.html#elementdef-svg",
       "target_found": true,
-      "sha256": "f17620742483109fbdce9753fb78f69c77961c03af6291776b5683a30058f6d2",
+      "sha256": "5df88082a130b2b1756d880fbfdaa5b14a7ed326c36c31f691e9cda50838c9de",
       "http_status": 200,
       "resolved_url": "https://w3c.github.io/svgwg/svg2-draft/struct.html",
       "source": "Live HTTP retrieval; not an independent interpretation review."

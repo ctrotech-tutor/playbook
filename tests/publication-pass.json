@@ -1,0 +1,50 @@
+{
+  "edition": "2026.1",
+  "date": "2026-10-14",
+  "publication_fingerprint": "5ac544ee48fb3facad06f21ff66244c04a42ee17ce7898d4ea2cb77c05e4ec83",
+  "state": "Prepared and locally verified; not pushed or deployed",
+  "scope": "AI-assisted targeted publication pass. No independent whole-book approval is inferred.",
+  "chapter_clarifications": [
+    29,
+    34,
+    41,
+    44,
+    57,
+    60,
+    65,
+    67,
+    70
+  ],
+  "all_independent_chapter_statuses_unchanged": true,
+  "shared_guide_html_and_pdf_verified": true,
+  "source_html": 494,
+  "output_html": 498,
+  "pdf_pages": 405,
+  "pdf_bookmarks": 401,
+  "node_tests": {
+    "integrity_and_hosting": 14,
+    "output": 3,
+    "passed": 17
+  },
+  "automated_accessibility_sample": {
+    "pages": 17,
+    "violations": 0,
+    "not_wcag_certification": true
+  },
+  "browser_engines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "repository_publish": {
+    "pushed": false,
+    "reason": "GitHub write authentication unavailable in this session; unauthenticated dry-run could not authenticate.",
+    "previous_public_commit": "d5ef36c111f87776176e1ff00c5f9fe63de45376",
+    "previous_CI_run": 38597536097,
+    "previous_CI_result": "SUCCESS; not a run for this edition"
+  },
+  "live_site_observation": "tests/hosted-observation.json",
+  "source_checks": "tests/publication-source-checks.json",
+  "targeted_behavior_checks": "tests/publication-behavior-checks.json",
+  "status_as_of": "Prepared-edition receipt dated 14 October 2026. See the later repository publication receipts for push and hosted CI status."
+}

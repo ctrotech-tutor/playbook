@@ -12,6 +12,7 @@ from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from threading import Thread
 from fingerprint import publication_fingerprint
 R=Path(__file__).resolve().parents[1];D=R/'dist';NODE=os.environ.get('NODE_BINARY','node')
+SOURCE=Path(subprocess.check_output([NODE,'--input-type=module','-e',"import {selectSource} from './deploy/integrity.mjs'; console.log((await selectSource(process.cwd())).directory);"],cwd=R,text=True).strip())
 META=json.loads((R/'content/publication.json').read_text());BOOK=json.loads((R/'content/chapters.json').read_text());API=json.loads((R/'content/api-register.json').read_text())
 report={'publication_fingerprint':publication_fingerprint(R),'scope':'Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.','node':subprocess.check_output([NODE,'--version'],text=True).strip(),'checks':[]}
 def passed(name,**details):report['checks'].append({'check':name,'result':'PASS',**details})
@@ -93,7 +94,7 @@ for owner in API['records']:
     slug=re.sub(r'[^a-z0-9]+','-',owner['name'].lower()).strip('-');p=D/'reference/api'/f'{slug}.html'
     assert docs[p.resolve()].select_one('.idl-source code').get_text()=='\n\n'.join(owner['definitions']),owner['name']
 xml=ET.parse(D/'sitemap.xml');sitemap=[x.text for x in xml.findall('{*}url/{*}loc')];assert sorted(sitemap)==sorted(indexed)
-assert len(sitemap)==len(set(sitemap));assert len(html)==497 and len(indexed)>400
+assert len(sitemap)==len(set(sitemap));assert len(html)==len(list(SOURCE.rglob("*.html")))+4 and len(indexed)>400
 for file in (D/'assets').rglob('*'):
     if file.is_file():assert re.search(r'\.[a-f0-9]{12}\.[a-z0-9]+$',file.name),file.name
 manifest=json.loads((D/'site.webmanifest').read_text());assert len(manifest['icons'])==2 and all((D/icon['src'].lstrip('/')).exists() for icon in manifest['icons'])
@@ -141,6 +142,7 @@ try:
             assert response.headers['x-content-type-options']=='nosniff';assert "frame-ancestors 'none'" in response.headers['content-security-policy']
             page.locator('[data-open-search]').click();page.locator('#book-search').fill('HTMLInputElement');expect(page.locator('#search-results a').first).to_have_attribute('href','/reference/api/htmlinputelement')
             page.keyboard.press('Escape');expect(page.locator('#search-dialog')).not_to_be_visible()
+            page.goto(base+'/start',wait_until='networkidle');assert page.locator('h1').inner_text()=='Start here.';assert page.locator('#edition-notes').count()==1;assert page.locator('a[href*="template=content-correction.yml"]').count()==1;page.locator('a[href="/chapters/01"]').click();assert '/chapters/01' in page.url
             page.goto(base+'/chapters/44',wait_until='networkidle');page.locator('[data-open-lab]').click();page.locator('#lab-code').fill('<!doctype html><title>Isolation probe</title><p id="probe">Waiting</p><script>let result;try{parent.document.body.dataset.probe="wrong";result="parent accessible"}catch{result="parent blocked"}document.getElementById("probe").textContent=result;</script>');page.locator('#lab-run').click();expect(page.frame_locator('#lab-output').locator('#probe')).to_have_text('parent blocked');assert page.locator('body').get_attribute('data-probe') is None;page.locator('[data-close-dialog="lab-dialog"]').click()
             page.goto(base+'/examples/44',wait_until='load');page.locator('#open-help').click();assert page.locator('#help-dialog').evaluate('(d)=>d.open');page.locator('#help-dialog button').click();assert not page.locator('#help-dialog').evaluate('(d)=>d.open')
             page.goto(base+'/reference/api-members',wait_until='networkidle');page.locator('#reference-search').fill('HTMLInputElement');assert page.locator('[data-reference-entry]:visible').count()==1
@@ -148,7 +150,7 @@ try:
             response=page.goto(base+'/a-route-that-does-not-exist',wait_until='load');assert response.status==404;assert page.locator('h1').inner_text()=='Page not found'
             response=context.request.get(base+'/chapters/44.html',max_redirects=0);assert response.status==308 and response.headers['location']=='/chapters/44'
             page.set_viewport_size({'width':390,'height':844});overflow=[]
-            mobile_paths=['/','/contents','/author','/reference','/reference/api-members','/reference/api/htmlinputelement','/reference/api/window','/reference/keywords','/privacy','/accessibility','/site-map','/chapters/44']
+            mobile_paths=['/','/start','/contents','/author','/reference','/reference/api-members','/reference/api/htmlinputelement','/reference/api/window','/reference/keywords','/privacy','/accessibility','/site-map','/chapters/44']
             if name=='chromium':mobile_paths += ['/chapters/'+f'{c["number"]:02}' for c in BOOK if c['number']!=44]+['/reference/api/'+re.sub(r'[^a-z0-9]+','-',r['name'].lower()).strip('-') for r in API['records'] if r['name'] not in ['Window','HTMLInputElement']]
             for route in mobile_paths:
                 page.goto(base+route,wait_until='load')
@@ -156,7 +158,7 @@ try:
             assert not overflow,(name,overflow)
             if name=='chromium':
                 page.goto(base+'/chapters/44',wait_until='networkidle');page.screenshot(path=str(R/'.cache/vercel-chapter-mobile.png'),full_page=False)
-                audit_paths=['/','/contents','/author','/about','/projects','/chapters/34','/chapters/44','/reference','/reference/api-members','/reference/api/htmlinputelement','/reference/api/window','/reference/keywords','/privacy','/accessibility','/site-map','/projects/registration']
+                audit_paths=['/','/start','/contents','/author','/about','/projects','/chapters/34','/chapters/44','/reference','/reference/api-members','/reference/api/htmlinputelement','/reference/api/window','/reference/keywords','/privacy','/accessibility','/site-map','/projects/registration']
                 axe=R/'node_modules/axe-core/axe.min.js';assert axe.exists(),'npm ci must install the audit dependency.'
                 for route in audit_paths:
                     page.goto(base+route,wait_until='networkidle');page.add_script_tag(path=str(axe))

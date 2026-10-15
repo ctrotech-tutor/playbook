@@ -1,0 +1,33 @@
+name: Content correction
+description: Report a problem in a chapter, answer, reference entry or publication format.
+title: "[Content] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for helping improve the book. This is a public issue. Do not include passwords, tokens, personal form data or unpublished security details."
+  - type: input
+    id: location
+    attributes:
+      label: Page or chapter
+      description: Paste the page URL, chapter number, or PDF page and edition.
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: Passage or example
+      description: Quote the smallest passage or code example that shows the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Expected result and supporting source
+      description: Explain what should change and why. Include a specification or other authoritative source if available.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction details, if relevant
+      description: Include a minimal example, browser/version, keyboard steps or format issue. Use fictional values only.

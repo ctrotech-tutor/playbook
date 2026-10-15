@@ -1,15 +1,15 @@
 {
-  "publication_fingerprint": "d2bfd8999d8dff68b5d17980ad8434731c62ed612025554a326e124c551d7a16",
-  "edition": "0.3-rc",
+  "publication_fingerprint": "5ac544ee48fb3facad06f21ff66244c04a42ee17ce7898d4ea2cb77c05e4ec83",
+  "edition": "2026.1",
   "review_date": "2026-10-14",
-  "state": "Executed checks passed; publication approval still pending",
+  "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
   "results": [
     {
       "check": "Built HTML conformance",
       "result": "PASS",
-      "scope": "493 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
+      "scope": "494 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
       "version": "26.10.12 (0a70d65)",
-      "files": 493,
+      "files": 494,
       "messages": 0,
       "jar_sha256": "19f89e204cb881e2d88c5d0cd451df6c1ee8334e7fe626f6694b64a129f6a813"
     },
@@ -21,20 +21,25 @@
     {
       "check": "Manuscript structure",
       "result": "PASS",
-      "scope": "74 populated chapter drafts, 74 explained exercises, no em dashes in authored chapter data; no independent answer correctness approval is implied.",
+      "scope": "74 populated chapter records with open independent review, 74 explained exercises, no em dashes in authored chapter data; no independent answer correctness approval is implied.",
       "chapters": 74,
       "exercises": 74
     },
     {
       "check": "Internal links and assets",
       "result": "PASS",
-      "scope": "13422 relative destinations checked across book/reference/project pages. Standalone media examples are excluded from resource-existence claims.",
-      "destinations": 13422
+      "scope": "13864 relative destinations checked across book/reference/project pages. Standalone media examples are excluded from resource-existence claims.",
+      "destinations": 13864
     },
     {
       "check": "Project downloads",
       "result": "PASS",
       "scope": "All seven ZIPs pass integrity checks and contain a standalone index document."
+    },
+    {
+      "check": "Reading guide and edition consistency",
+      "result": "PASS",
+      "scope": "Shared reading routes, practice routine, scope, corrections and edition notes appear in both HTML and selectable PDF text. Independent review states are unchanged."
     },
     {
       "check": "Syntax and author credits",
@@ -70,9 +75,9 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "401 pages; all chapter titles found; 400 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
-      "pages": 401,
-      "bookmarks": 400
+      "scope": "405 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
+      "pages": 405,
+      "bookmarks": 401
     },
     {
       "check": "Browser smoke tests",
@@ -99,7 +104,7 @@
     {
       "check": "Citation targets",
       "result": "PASS",
-      "scope": "2654 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
+      "scope": "2661 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
     }
   ],
   "not_certified": [
@@ -109,6 +114,6 @@
     "WCAG conformance or complete assistive-technology behavior",
     "Complete security review",
     "Tagged accessible PDF",
-    "Legal certification or actual hosted deployment verification"
+    "Legal certification or hosted deployment verification of this rebuilt edition"
   ]
 }

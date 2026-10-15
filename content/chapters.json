@@ -936,7 +936,7 @@
     "architecture_title": "Responsive images: picture, source, srcset and sizes",
     "part": "V / Images, Audio, Video and Embedded Content",
     "dek": "Offer candidates without pretending the browser follows a simple width switch.",
-    "lesson": "srcset gives the browser image candidates. Width descriptors describe candidate resource widths; sizes describes the expected rendered slot width for selecting among width candidates. A misleading sizes value can cause an unnecessarily large or blurry choice.\n\npicture is useful for art direction or format alternatives. Its source elements appear before the fallback img. The img remains required for the actual image and its alternative text. A source inside picture has rules different from a source inside audio or video.\n\n## Match the markup to the layout\nIf the slot is full width on small screens and half the viewport on wider screens, describe that relationship accurately. Keep a src fallback and test actual selections in the network panel at different viewport sizes and device pixel ratios.\n\nDo not write a fixed candidate table and promise a particular resource in every browser condition. Selection can account for implementation and device considerations. For art direction, inspect that each crop still communicates the intended content and that the single alternative text remains appropriate.",
+    "lesson": "srcset gives the browser image candidates. Width descriptors describe candidate resource widths; sizes describes the expected rendered slot width for selecting among width candidates. A misleading sizes value can cause an unnecessarily large or blurry choice.\n\npicture is useful for art direction or format alternatives. Its source elements appear before the fallback img. The img remains required for the actual image and its alternative text. A source inside picture has rules different from a source inside audio or video.\n\n## Match the markup to the layout\nIf the slot is full width on small screens and half the viewport on wider screens, describe that relationship accurately. Keep a src fallback and test actual selections in the network panel at different viewport sizes and device pixel ratios.\n\nDo not write a fixed candidate table and promise a particular resource in every browser condition. Selection can account for implementation and device considerations. For art direction, inspect that each crop still communicates the intended content and that the single alternative text remains appropriate.\n\n## Read the descriptors literally\nA `640w` descriptor says that the candidate resource has an intrinsic width of 640 pixels. It is not a breakpoint and does not mean \"use this file on a 640-pixel screen.\" A `2x` descriptor expresses pixel density instead. Do not mix width and density descriptors in one candidate list.\n\nWith width candidates, `sizes` describes the intended image slot, not the width of the image file. It helps resource selection; it does not set the CSS layout. Check that the layout and the declared slot agree. When testing, inspect the image's `currentSrc` as well as its rendered dimensions. A previously cached resource can affect what you observe, so one resize is not a complete loading test.",
     "code": "<img src=\"room-800.jpg\"\n     srcset=\"room-400.jpg 400w, room-800.jpg 800w, room-1200.jpg 1200w\"\n     sizes=\"(max-width: 40rem) 100vw, 50vw\"\n     alt=\"The library reading room\"\n     width=\"1200\" height=\"800\">",
     "explanation": "The candidates must exist and have the stated widths. sizes describes a layout assumption; change it when the actual CSS slot no longer follows that assumption.",
     "mistake": "Using width descriptors with an inaccurate sizes value, or believing srcset is a guaranteed breakpoint-to-file mapping.",
@@ -961,7 +961,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-30",
@@ -1098,7 +1102,7 @@
     "architecture_title": "How HTML forms work",
     "part": "VI / Forms and Native Controls",
     "dek": "Start with the request, then choose the controls.",
-    "lesson": "A form collects successful control data and submits it according to its action, method and encoding rules. A visible input without a name usually does not contribute the expected name-value entry. An id connects labels and references; it is not the submission key.\n\nGET commonly expresses retrieval by placing the encoded query in the URL. POST sends a request body under the selected encoding. Neither method provides encryption by itself. Use HTTPS for transport protection where appropriate and implement the server's validation, permissions and storage handling.\n\n## Make the simple path work\nA search form can submit without JavaScript. Build that path first when the service supports it. Scripts can enhance the experience without becoming the only way to reach the result.\n\nControls outside a form can be associated through a form attribute when their element supports it. Avoid relying on visual proximity as a submission relationship. Check actual submitted entries, including unchecked controls, disabled fields and the button used to submit. A browser preview without a backend cannot prove a successful application workflow.",
+    "lesson": "A form constructs an entry list from eligible controls and submits it according to its action, method and encoding rules. A visible input without a name usually does not contribute the expected name-value entry. An id connects labels and references; it is not the submission key.\n\nGET commonly expresses retrieval by placing the encoded query in the URL. POST sends a request body under the selected encoding. Neither method provides encryption by itself. Use HTTPS for transport protection where appropriate and implement the server's validation, permissions and storage handling.\n\n## Make the simple path work\nA search form can submit without JavaScript. Build that path first when the service supports it. Scripts can enhance the experience without becoming the only way to reach the result.\n\nControls outside a form can be associated through a form attribute when their element supports it. Avoid relying on visual proximity as a submission relationship. Check actual submitted entries, including unchecked controls, disabled fields and the button used to submit. A browser preview without a backend cannot prove a successful application workflow.\n\n## Predict the entry list\nFor an ordinary named text input, the name becomes the entry key and the current value becomes its value. A disabled control is omitted. An unchecked checkbox or radio button is omitted too; it does not automatically send a false value. A readonly text input can still contribute an entry. Repeated names can produce multiple entries, so do not assume that every form is a one-value-per-key object.\n\nGive the server a deliberate interpretation for missing and repeated entries. Do not trust a disabled field, a hidden field or a client-side constraint to enforce a permission. Someone can construct a request without using your interface.",
     "code": "<form action=\"catalogue.html\" method=\"get\">\n  <label for=\"query\">Search the catalogue</label>\n  <input id=\"query\" name=\"q\" type=\"search\">\n  <button type=\"submit\">Search</button>\n</form>",
     "explanation": "The query key is q because that is the name. A real catalogue endpoint must read the query and return results; a static catalogue file does not implement that search service automatically.",
     "mistake": "Assuming that giving a control an id is enough to send its value under that key.",
@@ -1116,6 +1120,10 @@
       {
         "title": "HTML Living Standard: submission",
         "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2"
+      },
+      {
+        "title": "HTML Living Standard: constructing the entry list",
+        "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-form-data-set"
       }
     ],
     "prerequisites": [
@@ -1123,7 +1131,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-35",
@@ -1336,7 +1348,7 @@
     "architecture_title": "Submission methods, encoding, server integration and secure handling",
     "part": "VI / Forms and Native Controls",
     "dek": "A finished form includes what happens after the request.",
-    "lesson": "Form submission produces an entry list and a request under defined rules. application/x-www-form-urlencoded is the common default encoding. File uploads through a conventional POST form need multipart/form-data. Do not choose text/plain as a general production data format merely because it looks readable.\n\nA submit button can override supported submission attributes for that submission. The button used can also contribute its own name and value. Test these details when one form supports several actions.\n\n## Protect and explain the result\nUse server-side validation, appropriate authorization and protections suited to the application, including CSRF defenses where the authentication and request model need them. HTTPS protects transport; it does not decide whether the requester may change a record.\n\nA successful HTTP response is not necessarily a successful business operation. Show whether the application accepted, rejected or queued the action, and explain the next step. Handle retries and duplicate submissions according to the service's data model. Static GitHub Pages hosts HTML assets but does not provide a form-processing backend by itself.",
+    "lesson": "Form submission produces an entry list and a request under defined rules. application/x-www-form-urlencoded is the common default encoding. File uploads through a conventional POST form need multipart/form-data. Do not choose text/plain as a general production data format merely because it looks readable.\n\nA submit button can override supported submission attributes for that submission. The button used can also contribute its own name and value. Test these details when one form supports several actions.\n\n## Protect and explain the result\nUse server-side validation, appropriate authorization and protections suited to the application, including CSRF defenses where the authentication and request model need them. HTTPS protects transport; it does not decide whether the requester may change a record.\n\nA successful HTTP response is not necessarily a successful business operation. Show whether the application accepted, rejected or queued the action, and explain the next step. Handle retries and duplicate submissions according to the service's data model. Static hosting serves the interface; a working submission service needs a separately implemented handler.\n\n## Choose the submission path deliberately\nCalling `form.requestSubmit()` runs the applicable constraint validation and, if submission proceeds, dispatches a `submit` event. Calling `form.submit()` directly bypasses that validation step and does not fire the `submit` event. Do not treat those methods as interchangeable shortcuts. Pass the intended submit button to `requestSubmit()` when its name, value or overrides matter.\n\nFor a multipart upload sent with `fetch` and `FormData`, let the browser generate the `Content-Type` boundary rather than hand-writing a bare multipart header. Read the service's expected request format and response contract before adapting a markup-only example. Use fictional data in local demonstrations. GET query values appear in the URL, and switching to POST does not replace HTTPS or careful logging and storage policies.",
     "code": "<form action=\"/applications\" method=\"post\" enctype=\"multipart/form-data\">\n  <label for=\"proof\">Address document</label>\n  <input id=\"proof\" name=\"proof\" type=\"file\" required>\n  <button type=\"submit\" name=\"action\" value=\"apply\">Send application</button>\n</form>",
     "explanation": "The endpoint is illustrative and is not implemented by this static book. A real service needs a handler, storage rules, privacy information and testable success and failure states.",
     "mistake": "Claiming a contact or application form works because the browser renders the fields and button.",
@@ -1350,6 +1362,18 @@
       {
         "title": "HTML Living Standard: form submission",
         "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2"
+      },
+      {
+        "title": "HTML Living Standard: constructing the entry list",
+        "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#constructing-form-data-set"
+      },
+      {
+        "title": "HTML Living Standard: the form element and its methods",
+        "url": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element"
+      },
+      {
+        "title": "MDN: using FormData objects",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_FormData_Objects"
       }
     ],
     "prerequisites": [
@@ -1357,7 +1381,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-42",
@@ -1426,7 +1454,7 @@
     "architecture_title": "Dialogs, popovers, close requests and related patterns",
     "part": "VII / Interaction and Modern HTML",
     "dek": "Choose the interaction before choosing the container.",
-    "lesson": "A dialog can be shown modally with showModal or non-modally with show. A modal dialog changes interaction with the rest of the page. Opening it requires an intentional focus destination, a usable close path and sensible focus restoration when it closes.\n\nWriting open in source displays a dialog in its non-modal open state; it does not reproduce every part of showModal. Use the dialog API or an appropriately supported invoker relationship for the intended behavior.\n\n## A popover is not automatically a dialog\npopover controls display and dismissal behavior for a popover element. It does not assign the semantics of a menu, dialog or tooltip. Choose markup and accessibility behavior for the actual content. The auto, manual and newer hint behaviors need their own defined handling and compatibility review.\n\nclosedby and declarative commands are newer parts of this area. Keep a compatible close mechanism and test Escape, focus, pointer dismissal and small-screen scrolling. Avoid using a modal merely to deliver a short message that could be shown in the page.",
+    "lesson": "A dialog can be shown modally with showModal or non-modally with show. A modal dialog changes interaction with the rest of the page. Opening it requires an intentional focus destination, a usable close path and sensible focus restoration when it closes.\n\nWriting open in source displays a dialog in its non-modal open state; it does not reproduce every part of showModal. Use the dialog API or an appropriately supported invoker relationship for the intended behavior.\n\n## A popover is not automatically a dialog\npopover controls display and dismissal behavior for a popover element. It does not assign the semantics of a menu, dialog or tooltip. Choose markup and accessibility behavior for the actual content. The auto, manual and newer hint behaviors need their own defined handling and compatibility review.\n\nclosedby and declarative commands are newer parts of this area. Keep a compatible close mechanism and test Escape, focus, pointer dismissal and small-screen scrolling. Avoid using a modal merely to deliver a short message that could be shown in the page.\n\n## Inspect the whole interaction\nA modal dialog opened with `showModal()` makes the surrounding document inert under the defined modal-dialog rules. A popover does not make the rest of the document inert merely by being open. Neither feature supplies an appropriate accessible name for your content automatically. Give a dialog a meaningful name, choose its initial focus from the task and verify that closing leaves focus somewhere useful.\n\nIn the example, a valid form submission with `method=\"dialog\"` closes its containing dialog rather than sending a network request. The activated submit button can supply the dialog's return value. That is a local interaction result, not confirmation that a server has saved anything.",
     "code": "<button type=\"button\" id=\"open-help\">Membership help</button>\n<dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n  <h2 id=\"help-title\">Membership help</h2>\n  <p>Ask at the desk if you cannot supply an address document.</p>\n  <form method=\"dialog\"><button>Close help</button></form>\n</dialog>\n<script>\n  const help = document.getElementById(\"help-dialog\");\n  document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n    help.showModal();\n  });\n</script>",
     "explanation": "The close button submits the method=\"dialog\" form, closing the dialog rather than posting to a server. Test the actual focus behavior and decide whether a more specific initial focus target is needed for longer content.",
     "mistake": "Assuming that adding the popover attribute supplies menu keyboard navigation or a dialog role.",
@@ -1451,7 +1479,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-45",
@@ -1856,7 +1888,7 @@
     "architecture_title": "Script loading, execution, import maps and integration",
     "part": "IX / Browser Processing and Advanced Concepts",
     "dek": "Order, dependencies and origin rules affect the result.",
-    "lesson": "An ordinary external classic script without async or defer can block parsing while it is fetched and executed. defer allows eligible external classic scripts to run after parsing, preserving their deferred execution order. async allows independent loading and execution without that dependency ordering guarantee.\n\nModule scripts have their own loading, dependency, scope and CORS behavior. They are deferred by default in the usual parser-inserted case. Do not assume that adding type=\"module\" to an existing global script preserves every behavior.\n\n## Give dependency rules a home\nIf one script relies on another, represent the dependency through an appropriate module graph or a deliberately ordered loading strategy. Import maps define supported module-specifier mappings under their own processing rules. Newer script types, including speculation rules, need their own review.\n\nnoscript provides content for defined scripting-disabled cases. It is not a catch-all for script download failures or runtime exceptions. A progressively enhanced page should keep useful content and a clear failure path even when one script fails.",
+    "lesson": "An ordinary external classic script without async or defer can block parsing while it is fetched and executed. defer allows eligible external classic scripts to run after parsing, preserving their deferred execution order. async allows independent loading and execution without that dependency ordering guarantee.\n\nModule scripts have their own loading, dependency, scope and CORS behavior. They are deferred by default in the usual parser-inserted case. Do not assume that adding type=\"module\" to an existing global script preserves every behavior.\n\n## Give dependency rules a home\nIf one script relies on another, represent the dependency through an appropriate module graph or a deliberately ordered loading strategy. Import maps define supported module-specifier mappings under their own processing rules. Newer script types, including speculation rules, need their own review.\n\nnoscript provides content for defined scripting-disabled cases. It is not a catch-all for script download failures or runtime exceptions. A progressively enhanced page should keep useful content and a clear failure path even when one script fails.\n\n## Check which rules apply\nFor a classic script, `defer` is useful on an external script with `src`; adding it to an inline classic script does not defer that inline code. An async script must tolerate running when its own download is ready rather than relying on document order. Keep shared setup explicit instead of hoping the network will deliver files in the right order.\n\nModule code runs in strict mode and has module scope. Top-level declarations do not become window properties merely because the module is loaded by a page. Check any code that expects globals, and test a failed dependency as well as the successful path.",
     "code": "<script src=\"catalogue.js\" defer></script>\n<noscript>\n  <p>The complete book list is available on the <a href=\"catalogue.html\">catalogue page</a>.</p>\n</noscript>",
     "explanation": "The file catalogue.js must exist and implement its behavior. The noscript fallback concerns disabled scripting; a failed request for catalogue.js still needs a resilient baseline or another failure strategy.",
     "mistake": "Using async on two dependent classic scripts and relying on their tag order for execution order.",
@@ -1881,7 +1913,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-58",
@@ -1954,7 +1990,7 @@
     "architecture_title": "Web-platform APIs, communication, workers, worklets and storage: integration overview",
     "part": "IX / Browser Processing and Advanced Concepts",
     "dek": "Know the boundary before calling the reference exhaustive.",
-    "lesson": "The HTML Standard includes more than markup. It defines navigation and history behavior, messaging, workers, worklets, storage, event loops and many interfaces. A language guide can introduce their integration, but a named-interface list does not document every member or algorithm.\n\nlocalStorage is synchronous, origin-scoped storage with its own access and failure behavior. It is not a suitable place for secrets simply because it is local. Workers run script in a different execution environment, not a second DOM you can manipulate directly. Messaging needs explicit origin and data validation where relevant.\n\n## Treat integration as a design decision\nA history update needs a corresponding content and navigation strategy. A cross-document message needs an expected sender and validated payload. A background task needs cancellation and failure handling. These responsibilities do not disappear because the API call is short.\n\nThe API catalogue in this review edition routes to 166 named interfaces from the captured index. It does not claim member-level completeness. That remaining work is recorded in the release checklist; a finished whole-Standard reference needs a larger inventory and review than this chapter provides.",
+    "lesson": "The HTML Standard includes more than markup. It defines navigation and history behavior, messaging, workers, worklets, storage, event loops and many interfaces. A language guide can introduce their integration, but a named-interface list does not document every member or algorithm.\n\nlocalStorage is synchronous, origin-scoped storage with its own access and failure behavior. It is not a suitable place for secrets simply because it is local. Workers run script in a different execution environment, not a second DOM you can manipulate directly. Messaging needs explicit origin and data validation where relevant.\n\n## Treat integration as a design decision\nA history update needs a corresponding content and navigation strategy. A cross-document message needs an expected sender and validated payload. A background task needs cancellation and failure handling. These responsibilities do not disappear because the API call is short.\n\n## What the catalogue actually contains\nThe foundation catalogue retains 166 named interface discovery routes. The expanded declaration register separately records 314 named WebIDL declaration owners and 1,574 direct member declarations in the captured source. Owners include more than interfaces, and direct declarations do not expand every inherited member. These are different inventories, not competing counts of the same thing.\n\nUse the declaration register for signatures and links to definitions. A declaration alone does not explain an algorithm, an exception, an event sequence or a security boundary. Some member links deliberately fall back to their owning definition and are labelled accordingly. Whole-Standard behavioral coverage, imported cross-specification APIs and independent review remain open.\n\nStorage can fail. Access may be restricted by the document's origin or browser policy, and writes can fail when storage limits are reached. Keep the page usable when a preference cannot be saved. Do not assume that a successful write is a durable backup or that any script running in the same origin is barred from reading the stored data.",
     "code": "<button type=\"button\" id=\"save-preference\">Remember compact view</button>\n<p id=\"preference-result\" role=\"status\"></p>\n<script>\n  document.getElementById(\"save-preference\").addEventListener(\"click\", () => {\n    const result = document.getElementById(\"preference-result\");\n    try {\n      localStorage.setItem(\"library.view\", \"compact\");\n      result.textContent = \"Preference saved in this browser.\";\n    } catch {\n      result.textContent = \"This browser could not save the preference.\";\n    }\n  });\n</script>",
     "explanation": "Storage can be unavailable or fail. The book's isolated example sandbox may not allow localStorage, so the failure path is intentional. No data is sent to a server.",
     "mistake": "Calling a reference complete because every interface name appears somewhere in it.",
@@ -1979,7 +2015,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-61",
@@ -2132,7 +2172,7 @@
     "architecture_title": "SEO, metadata and structured content",
     "part": "X / Professional HTML Engineering",
     "dek": "Describe the page accurately before chasing a search treatment.",
-    "lesson": "Use descriptive titles, meaningful headings and links, useful body content and accurate metadata. A crawler cannot discover a resource through a private thought or a button whose only destination exists in opaque application state.\n\nCanonical URLs should identify the intended canonical document, not point every page to the home page. Alternate-language relationships need correct URLs and language relationships. Structured data should match the visible content and an actual supported vocabulary.\n\n## Keep promises narrow\nA meta description can help summarize a page but does not force a search snippet. Structured data does not guarantee a rich result. Social-card previews depend on platform behavior, caching and the accessible resource URLs.\n\nTest the deployed output, not only templates. A robots restriction, a wrong status code, an inaccessible asset or a repository subpath error can undo otherwise tidy head markup. Do not add a measurement claim or an SEO guarantee to sales copy without actual evidence.",
+    "lesson": "Use descriptive titles, meaningful headings and links, useful body content and accurate metadata. A crawler cannot discover a resource through a private thought or a button whose only destination exists in opaque application state.\n\nCanonical URLs should identify the intended canonical document, not point every page to the home page. Alternate-language relationships need correct URLs and language relationships. Structured data should match the visible content and an actual supported vocabulary.\n\n## Keep promises narrow\nA meta description can help summarize a page but does not force a search snippet. Structured data does not guarantee a rich result. Social-card previews depend on platform behavior, caching and the accessible resource URLs.\n\nTest the deployed output, not only templates. A robots restriction, a wrong status code, an inaccessible asset or a repository subpath error can undo otherwise tidy head markup. Do not add a measurement claim or an SEO guarantee to sales copy without actual evidence.\n\n## Discovery is not access control\nA crawler needs to fetch a page to read its `noindex` instruction. Blocking that fetch in `robots.txt` is not a reliable way to make the crawler process the page's noindex metadata. Neither directive protects private information. Use actual authentication and authorization for private content.\n\nAn `llms.txt` file can offer a plain-text route through a publication, but it is not a universal crawler protocol or a promise of inclusion in AI answers. Keep any discovery export consistent with the visible book. Search visibility, snippet choice and model use remain outside the publisher's control.",
     "code": "<article>\n  <h1>How to renew your library membership</h1>\n  <p>Check the documents you need before visiting the desk.</p>\n  <a href=\"membership-documents.html\">Documents accepted for renewal</a>\n</article>",
     "explanation": "The heading and link describe a specific task. The actual accepted-document page must exist and give current information. HTML alone does not ensure indexing or ranking.",
     "mistake": "Using the same generic summary and title on every page, then adding unsupported ranking claims.",
@@ -2150,6 +2190,14 @@
       {
         "title": "HTML Living Standard: link types",
         "url": "https://html.spec.whatwg.org/multipage/links.html#linkTypes"
+      },
+      {
+        "title": "Google Search Central: block indexing with noindex",
+        "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing"
+      },
+      {
+        "title": "Google Search Central: AI features and your website",
+        "url": "https://developers.google.com/search/docs/appearance/ai-features"
       }
     ],
     "prerequisites": [
@@ -2157,7 +2205,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-66",
@@ -2196,7 +2248,7 @@
     "architecture_title": "Validation, browser testing, code review and production checklists",
     "part": "X / Professional HTML Engineering",
     "dek": "An unchecked box is an open task, not a smaller font.",
-    "lesson": "Check the built documents with a recorded checker version. Test internal links and referenced assets under the real deployment base path. Inspect the browser console and run behavior tests for the examples that make behavior claims.\n\nReview keyboard navigation, focus, names, text alternatives, form errors, reflow and relevant assistive-technology use. Record what was tested and what was not. Security and accessibility reviews need named responsibilities and evidence rather than decorative badges.\n\n## Separate authoring from approval\nAn answer being written does not mean it has been independently checked. A chapter existing does not mean every assigned feature is fully documented. Keep drafting, example conformance, browser behavior, compatibility and editorial approval as separate states.\n\nFor publication, verify the PDF's text, links, navigation and accessibility workflow; do not call an untagged export an accessible PDF. Check downloads in a logged-out browser and test the promised delivery method. This review edition is for that inspection, not a claim that every whole-Standard coverage gate has closed.",
+    "lesson": "Check the built documents with a recorded checker version. Test internal links and referenced assets under the real deployment base path. Inspect the browser console and run behavior tests for the examples that make behavior claims.\n\nReview keyboard navigation, focus, names, text alternatives, form errors, reflow and relevant assistive-technology use. Record what was tested and what was not. Security and accessibility reviews need named responsibilities and evidence rather than decorative badges.\n\n## Separate authoring from approval\nAn answer being written does not mean it has been independently checked. A chapter existing does not mean every assigned feature is fully documented. Keep drafting, example conformance, browser behavior, compatibility and editorial approval as separate states.\n\nFor publication, verify the PDF's text, links, navigation and accessibility workflow; do not call an untagged export an accessible PDF. Check downloads in a logged-out browser and test the promised delivery method. The published reading edition keeps its executed checks and open reviews separate. Being available on the web does not mean every whole-Standard coverage gate has closed.\n\n## Record an observation, not a badge\nA useful release note identifies the artifact, the date, the tool or browser, the action performed and the observed result. \"The homepage loaded\" is useful delivery evidence, but it says nothing about an untested registration handler. \"Zero automated accessibility violations\" describes that scan, not a complete keyboard or screen-reader review. Keep the original limits beside the result so the next reader knows what still needs testing.\n\nFor this book, report corrections with the chapter or reference URL, the passage, a reproducible example when relevant and the source that supports the proposed change. Do not include personal form data, private credentials or unpublished security details in a public issue.",
     "code": "<section aria-labelledby=\"release-heading\">\n  <h2 id=\"release-heading\">Before publishing</h2>\n  <ul>\n    <li>Validate the built documents and record the output.</li>\n    <li>Test the main tasks with a keyboard.</li>\n    <li>Check paths under the deployment subdirectory.</li>\n    <li>Record remaining content and technical review work.</li>\n  </ul>\n</section>",
     "explanation": "This is a visible checklist, not an assertion that its tasks passed. A project should link each claimed result to the relevant command output, environment or review note.",
     "mistake": "Renaming a draft final and carrying its unchecked review states into the release unchanged.",
@@ -2217,7 +2269,11 @@
     ],
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
-    "exercise_review": "editorial_answer_present_not_independently_reviewed"
+    "exercise_review": "editorial_answer_present_not_independently_reviewed",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-68",
@@ -2288,7 +2344,7 @@
     "architecture_title": "Create an accessible registration form",
     "part": "XI / Practical Projects",
     "dek": "Make the correction path as clear as the happy path.",
-    "lesson": "Build an application form for a fictional reading group. Ask only for a name, email address and session choice. Add a visible privacy/use explanation suited to the demonstration, not a claim about a real service.\n\nUse labels, an appropriate email state, an autocomplete purpose and a labelled select. Required fields need visible guidance and appropriate native constraints. Include a conventional submit control and explain that a static reference file has no application backend.\n\n## Acceptance criteria\nThe interface needs a sensible keyboard order and readable instructions. It must not claim a submitted application was accepted unless an actual handler reports that result. In the supplied reference, JavaScript intercepts submission and explicitly says it is a local demonstration. The no-script path must disclose the limitation too.\n\nReview the request design separately before adapting this into a live service. Client validation, a success-looking animation and a disabled button do not provide server validation or authorization.",
+    "lesson": "Build an application form for a fictional reading group. Ask only for a name, email address and session choice. Add a visible privacy/use explanation suited to the demonstration, not a claim about a real service. Use fictional names and addresses only, including when experimenting with the chapter fragment; its GET fallback can place values in the URL.\n\nUse labels, an appropriate email state, an autocomplete purpose and a labelled select. Required fields need visible guidance and appropriate native constraints. Include a conventional submit control and explain that a static reference file has no application backend.\n\n## Acceptance criteria\nThe interface needs a sensible keyboard order and readable instructions. It must not claim a submitted application was accepted unless an actual handler reports that result. In the supplied reference, JavaScript intercepts submission and explicitly says it is a local demonstration. The no-script path must disclose the limitation too.\n\nReview the request design separately before adapting this into a live service. Client validation, a success-looking animation and a disabled button do not provide server validation or authorization.",
     "code": "<form action=\"#registration-note\" method=\"get\">\n  <label for=\"project-name\">Name</label>\n  <input id=\"project-name\" name=\"name\" autocomplete=\"name\" required>\n  <label for=\"project-email\">Email</label>\n  <input id=\"project-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required>\n  <button type=\"submit\">Check this demonstration</button>\n</form>\n<p id=\"registration-note\">Demonstration only. No application service is connected.</p>",
     "explanation": "The fragment shows the core relationship. Download the complete reference project for its document shell, local assets and implementation notes. Compare your work against the acceptance criteria before reading the reference answer.",
     "mistake": "Treating a static reference project as a connected production service.",
@@ -2310,7 +2366,11 @@
     "editorial_status": "draft_for_review",
     "technical_review": "example_conformance_passed_independent_definition_review_pending",
     "exercise_review": "editorial_answer_present_not_independently_reviewed",
-    "project_slug": "registration"
+    "project_slug": "registration",
+    "publication_pass": {
+      "date": "2026-10-14",
+      "scope": "AI-assisted publication clarification; independent technical and answer-key approval not inferred."
+    }
   },
   {
     "id": "CH-71",
