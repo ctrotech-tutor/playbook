@@ -6,9 +6,9 @@ Author: **Odejobi Abiola Samuel**. Publication date: 14 October 2026.
 
 ## Current content checkpoint: 15 October 2026
 
-**53 of 74 substantive first passes are recorded; 21 remain.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and the four final-publication gates remain open. The website and 427-page reading PDF are rebuilt from the same maintained source. This is not the final tagged PDF.
+**67 of 74 substantive first passes are recorded; seven remain.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and the four final-publication gates remain open. The website and 438-page reading PDF are rebuilt from the same maintained source. This is not the final tagged PDF.
 
-See `docs/final-audit/README.md`, `batch04-report.md`, the 74-chapter register and current fingerprinted receipts. Current checks cover 495 source HTML documents, 499 generated documents and 2,701 citation targets; Node 24 integrity/hosting/output checks and scoped native browser regressions pass. They do not establish exhaustive API behavior, OS assistive-technology approval or complete security review.
+See `docs/final-audit/README.md`, `batch05-report.md`, the 74-chapter register and current fingerprinted receipts. Current checks cover 495 source HTML documents, 499 generated documents and 2,718 citation targets; Node 24 integrity/hosting/output checks and scoped native browser regressions pass. They do not establish exhaustive API behavior, OS assistive-technology approval or complete security review.
 
 The reading-edition account and metrics below are retained as **historical baseline details**, not current whole-candidate counts or proof that this later checkpoint is deployed. Repository synchronization and live deployment are separate operations.
 

@@ -1,5 +1,10 @@
 <article>
-  <h1>Visit the reading room</h1>
-  <p>Check the current opening hours before travelling.</p>
-  <a href="opening-hours.html">Read the opening hours</a>
+  <h1>Visit the fictional reading room</h1>
+  <p>These are teaching values, not a real service timetable.</p>
+  <a href="#example-hours">Read the example hours</a>
+  <section id="example-hours" aria-labelledby="hours-heading">
+    <h2 id="hours-heading">Example opening hours</h2>
+    <p>Tuesday to Saturday, <time datetime="09:00">09:00</time>
+       to <time datetime="17:00">17:00</time>.</p>
+  </section>
 </article>

@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-15T11:36:25.519156+00:00",
-  "checked": 2701,
-  "passed": 2701,
-  "documents_retrieved": 96,
+  "checked_at": "2026-10-15T12:41:17.244086+00:00",
+  "checked": 2718,
+  "passed": 2718,
+  "documents_retrieved": 106,
   "scope": "Live HTTP/document/fragment availability. This does not prove correctness of the publication’s assertions.",
   "results": [
     {
@@ -14,11 +14,27 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+      "target_found": true,
+      "sha256": "7d6e64f2f86509a490080301aa8101da4351211dc52004ef276ae4806a31ddcc",
+      "http_status": 200,
+      "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
       "target_found": true,
-      "sha256": "d9f7e34eede44d2e143f440090d06ef397e0416ddfd312e92d800481faa9fc36",
+      "sha256": "ed0f6af65d7c9d9ce0092a6d4185a056826513fb074e861f8d874324c3610915",
       "http_status": 200,
       "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "target_found": true,
+      "sha256": "cd44319ce21cf19bfb9823e52076f2705589deedee20818f6d1d576886ec6695",
+      "http_status": 200,
+      "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -40,7 +56,7 @@
     {
       "url": "https://ctrobook.vercel.app/",
       "target_found": true,
-      "sha256": "3e294c197233cc54420ab1db153f7306ded600dff69ec8f4d5ba7684f6fc2303",
+      "sha256": "604e2cbbbf2cac756c18029d905dcc3ede4e987a081147b5efa27f7fe27d2dc6",
       "http_status": 200,
       "resolved_url": "https://ctrobook.vercel.app/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -88,7 +104,7 @@
     {
       "url": "https://developers.google.com/search/docs/appearance/ai-features",
       "target_found": true,
-      "sha256": "af43757c0b3a685950a456b0ea61a8314c4503fcc95826cb97023d6dea03930d",
+      "sha256": "e1c19a3477b823e46166ea1d8a923729324f02fad5c0f45aef9990ad856bc6c6",
       "http_status": 200,
       "resolved_url": "https://developers.google.com/search/docs/appearance/ai-features",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -96,9 +112,17 @@
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
       "target_found": true,
-      "sha256": "1ae954a2b701f139cef70d1999e9fb5aa0b4dea67c6713173027e783720306df",
+      "sha256": "b5a5e4ecd10f99913656f199394285aa96bc1e664e6eea9f68769b840d6a3d46",
       "http_status": 200,
       "resolved_url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "target_found": true,
+      "sha256": "83fa91a989dd1eebf33b6f353aed7417283605e270d091d7e6ab3847620cc042",
+      "http_status": 200,
+      "resolved_url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -168,7 +192,7 @@
     {
       "url": "https://github.com/blader/humanizer",
       "target_found": true,
-      "sha256": "90bd9df378b3aef6424b8552cec6b9b64c0a39c02c60083c0d0cfd2b57d56bcf",
+      "sha256": "7d1d7198e2a686fd7e9d9fc16267d4683f60b2d713a56d8990ca0ac89cde4b6d",
       "http_status": 200,
       "resolved_url": "https://github.com/blader/humanizer",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -176,7 +200,7 @@
     {
       "url": "https://github.com/ctrotech-tutor/playbook",
       "target_found": true,
-      "sha256": "5fde8b1ce457844d773f518a57a041cf0241b986835c6596deb0a81adad64f29",
+      "sha256": "b5076957cb9f1f55178832ea5b3899251b8896f8e3f00e2eb4999385fc80cc36",
       "http_status": 200,
       "resolved_url": "https://github.com/ctrotech-tutor/playbook",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -184,7 +208,7 @@
     {
       "url": "https://github.com/ctrotech-tutor/playbook/issues/new?template=content-correction.yml",
       "target_found": true,
-      "sha256": "cbe988ad7ab951ae7b989c4d97f85700c13d8f9c9724107bcce2658dc75c950c",
+      "sha256": "57c4a9d4fd5d621f09e1d6652c6d833438af8ffbd74ee9139e6812df7bb7bc6b",
       "http_status": 200,
       "resolved_url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fctrotech-tutor%2Fplaybook%2Fissues%2Fnew%3Ftemplate%3Dcontent-correction.yml",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -7694,6 +7718,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
+      "target_found": true,
+      "sha256": "e134a1d31acc1b0d5dd4e2cf645edb3201eaaa5461653e1aee9cb327b56b37b4",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider",
       "target_found": true,
       "sha256": "e134a1d31acc1b0d5dd4e2cf645edb3201eaaa5461653e1aee9cb327b56b37b4",
@@ -14126,6 +14158,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-interface",
+      "target_found": true,
+      "sha256": "b35ee303411c1700ebdcf2d164a88666fee2cc03d985ffb8099362abab252732",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#window",
       "target_found": true,
       "sha256": "b35ee303411c1700ebdcf2d164a88666fee2cc03d985ffb8099362abab252732",
@@ -16783,6 +16823,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/parsing.html#parsing",
+      "target_found": true,
+      "sha256": "aeb8d0c0ba9aa3fac4050d785bda9a9978ee0e42d140fed1e3cac1bc5d555d97",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/parsing.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/parsing.html#parsing-html-fragments",
       "target_found": true,
       "sha256": "aeb8d0c0ba9aa3fac4050d785bda9a9978ee0e42d140fed1e3cac1bc5d555d97",
       "http_status": 200,
@@ -19542,6 +19590,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
+      "target_found": true,
+      "sha256": "c886571888674821a700cb978fd93d13125c52f8146a995bd13c6ad654ffed78",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword",
       "target_found": true,
       "sha256": "46588cf9b0e792b7a424cb90d1843e1d1d6674f211bddb2f5c8e449fa0b648be",
@@ -19798,6 +19854,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/web-messaging.html#web-messaging",
+      "target_found": true,
+      "sha256": "2670fd1de62f415ae87cb2c057f442b36aae634a6cb5f3281d2453f99b54a881",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/web-messaging.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-atob",
       "target_found": true,
       "sha256": "e74d93b6b2eca137430388540ab2afb8adf47322e9dae68a286f81d560ce7e49",
@@ -19919,6 +19983,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers",
+      "target_found": true,
+      "sha256": "e74d93b6b2eca137430388540ab2afb8adf47322e9dae68a286f81d560ce7e49",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/webappapis.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loops",
       "target_found": true,
       "sha256": "e74d93b6b2eca137430388540ab2afb8adf47322e9dae68a286f81d560ce7e49",
       "http_status": 200,
@@ -20966,6 +21038,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/workers.html#dedicated-workers-and-the-worker-interface",
+      "target_found": true,
+      "sha256": "5fbaf5f4f68764581b4d35962c510bec4d68252de154a068333a79fcdadad924",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/workers.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope",
       "target_found": true,
       "sha256": "5fbaf5f4f68764581b4d35962c510bec4d68252de154a068333a79fcdadad924",
@@ -21406,6 +21486,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://w3c.github.io/DOM-Parsing/",
+      "target_found": true,
+      "sha256": "a9b3a8c3384fae494a868f542a3ae8e069145420dfb46617f76cb30641b3fd8e",
+      "http_status": 200,
+      "resolved_url": "https://w3c.github.io/DOM-Parsing/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://w3c.github.io/mathml-core/#the-top-level-math-element",
       "target_found": true,
       "sha256": "57cd75da4bedaf4f7fd7860b49b8502ab04935f5a151316164a83724ab77bfcc",
@@ -21419,6 +21507,14 @@
       "sha256": "5df88082a130b2b1756d880fbfdaa5b14a7ed326c36c31f691e9cda50838c9de",
       "http_status": 200,
       "resolved_url": "https://w3c.github.io/svgwg/svg2-draft/struct.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://web.dev/articles/vitals",
+      "target_found": true,
+      "sha256": "184090054ebc011ae3e04a5d544133a71dc9dcf0a02eb26d11a40591e26d468b",
+      "http_status": 200,
+      "resolved_url": "https://web.dev/articles/vitals",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -21542,6 +21638,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://www.w3.org/TR/resource-timing/",
+      "target_found": true,
+      "sha256": "bc9099e1f54b9dca199d69ea7b9f34f7fc082696a9bd2e3219eb018df79f2519",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/resource-timing/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://www.w3.org/TR/wai-aria-1.2/#aria-current",
       "target_found": true,
       "sha256": "c0fea16fc747779569ab754d2d25bca3e2b7e8a673b8ef5362aeb9ebc73a4849",
@@ -21550,11 +21654,43 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF3",
+      "target_found": true,
+      "sha256": "550d1cda5ee440d4c323a1e910f503296d354412f5ab0d2e3c8c8515795a7177",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF3",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
       "target_found": true,
       "sha256": "c3905630a35b6e8246aba32c1769f3ff82b217d464d41e4b1b2a34b9df5771c6",
       "http_status": 200,
       "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "target_found": true,
+      "sha256": "9515bdd0faab14d62528c5b1af1ea03383409c651b551c4e9b708c6f5bc8b607",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "target_found": true,
+      "sha256": "d5f8571e397b91e54c58dc6a00eec27c4817305f84107f2252ef98be991489b5",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html",
+      "target_found": true,
+      "sha256": "56c1f7c367df6b55119d34ce09bb1a036b14a1b3236212470dbbd8ac24f5f290",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {

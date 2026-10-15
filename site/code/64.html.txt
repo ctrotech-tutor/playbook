@@ -1,2 +1,7 @@
-<img src="library-entrance.jpg" alt="The library entrance beside the reception desk"
-     width="1440" height="960" fetchpriority="high">
+<figure>
+  <img src="../assets/media/floor-plan-800.png"
+       alt="Fictional schematic showing entrance, reception and reading room."
+       width="800" height="450" style="max-width: 100%; height: auto"
+       loading="eager" fetchpriority="high">
+  <figcaption>A supplied teaching schematic, not a real entrance photograph.</figcaption>
+</figure>

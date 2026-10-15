@@ -88,8 +88,8 @@ Outstanding work includes streaming template updates and scoped registries; full
 
 ## Repository synchronization
 
-The checked source, compiled website, reading PDF and audit records were committed and pushed to `main` as **`8b0228f640e4f056c11b2b65ff98e004d153d7ce`**. The remote head was read back and matched. No force push was used. `repository-sync.json` records delivery separately from content and deployment approval.
+The checked source, compiled website, reading PDF and audit records were committed and pushed to `main` as **`8b0228f640e4f056c11b2b65ff98e004d153d7ce`**. The remote head was read back and matched. No force push was used. `batch04-repository-sync.json` records delivery separately from content and deployment approval.
 
 On your local `main`, run `git pull --ff-only origin main`. Local changes are not discarded. The new Vercel deployment has not been verified.
 
-Hosted **Node 24 / Ubuntu and Windows CI both passed for this content commit**. The exact run and job URLs are retained in `repository-sync.json`. Hosted CI checks the build/integrity/output contract; it is not independent content approval or deployment verification.
+Hosted **Node 24 / Ubuntu and Windows CI both passed for this content commit**. The exact run and job URLs are retained in `batch04-repository-sync.json`. Hosted CI checks the build/integrity/output contract; it is not independent content approval or deployment verification.

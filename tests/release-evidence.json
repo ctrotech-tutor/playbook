@@ -1,5 +1,5 @@
 {
-  "publication_fingerprint": "439f8ba540d68e88145e2be29719eddb1249f0dbe3242638edd882de7b015a94",
+  "publication_fingerprint": "cec82d32c5a8573d5f96523cd66675b8ff50153b7a82bfb55dfbf347827c843a",
   "edition": "2026.1",
   "review_date": "2026-10-14",
   "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
@@ -75,8 +75,8 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "427 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
-      "pages": 427,
+      "scope": "438 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
+      "pages": 438,
       "bookmarks": 401
     },
     {
@@ -104,7 +104,7 @@
     {
       "check": "Citation targets",
       "result": "PASS",
-      "scope": "2701 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
+      "scope": "2718 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
     }
   ],
   "not_certified": [

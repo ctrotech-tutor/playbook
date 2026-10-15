@@ -8,11 +8,23 @@
 </head>
 <body>
 <h1>Maintainable HTML: example</h1>
-<form action="catalogue.html" method="get">
-  <label for="baseline-query">Title or author</label>
-  <input id="baseline-query" name="q" type="search">
-  <button type="submit">Search catalogue</button>
-</form>
-<p><a href="all-books.html">Browse the complete list instead</a></p>
+<section aria-labelledby="catalogue-heading">
+  <h2 id="catalogue-heading">Supplied fictional titles</h2>
+  <form id="local-filter">
+    <label for="catalogue-query">Filter supplied titles</label>
+    <input id="catalogue-query" name="q" type="search" disabled>
+    <button type="submit" disabled>Filter titles</button>
+    <button type="reset" disabled>Show all titles</button>
+  </form>
+  <p id="catalogue-result" role="status">All three teaching titles are listed below.</p>
+  <ul id="catalogue-list">
+    <li>Local histories</li>
+    <li>Poetry</li>
+    <li>Fiction</li>
+  </ul>
+  <p><a href="#catalogue-list">Browse the supplied list</a></p>
+</section>
+<script src="../assets/catalogue-demo.js" defer></script>
+<noscript><p>Filtering needs JavaScript; the supplied list remains readable.</p></noscript>
 </body>
 </html>

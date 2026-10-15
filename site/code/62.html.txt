@@ -1,5 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Local reading-list focus review</title>
+<style>
+  .skip-link { position: absolute; left: .5rem; top: .5rem;
+    transform: translateY(-180%); background: white; color: black;
+    padding: .5rem; z-index: 2; }
+  .skip-link:focus { transform: none; }
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+    outline: 3px solid #163fc2; outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
 <a href="#keyboard-main" class="skip-link">Skip to main content</a>
 <main id="keyboard-main" tabindex="-1">
-  <h1>Reading list</h1>
-  <button type="button">Add a book</button>
+  <h1 id="list-heading" tabindex="-1">Fictional reading list</h1>
+  <ul id="removable-list">
+    <li><span>Local histories</span> <button type="button" disabled>Remove Local histories</button></li>
+    <li><span>Poetry</span> <button type="button" disabled>Remove Poetry</button></li>
+    <li><span>Fiction</span> <button type="button" disabled>Remove Fiction</button></li>
+  </ul>
+  <p id="remove-status" role="status">Changes stay in this page only.</p>
+  <button id="restore-list" type="button" disabled>Restore initial titles</button>
 </main>
+<script>
+  const list = document.getElementById("removable-list");
+  const note = document.getElementById("remove-status");
+  const heading = document.getElementById("list-heading");
+  function enableItems() {
+    list.querySelectorAll("button").forEach(button => button.disabled = false);
+  }
+  list.addEventListener("click", event => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest("button");
+    if (!button || button.disabled) return;
+    const item = button.closest("li");
+    const next = item.nextElementSibling || item.previousElementSibling;
+    const destination = next ? next.querySelector("button") : heading;
+    const title = item.querySelector("span").textContent;
+    item.remove();
+    destination.focus();
+    note.textContent = title + " removed from this local list.";
+  });
+  const restore = document.getElementById("restore-list");
+  restore.addEventListener("click", () => {
+    list.replaceChildren();
+    for (const title of ["Local histories", "Poetry", "Fiction"]) {
+      const item = document.createElement("li");
+      const text = document.createElement("span");
+      const button = document.createElement("button");
+      text.textContent = title;
+      button.type = "button";
+      button.textContent = "Remove " + title;
+      item.append(text, " ", button);
+      list.append(item);
+    }
+    heading.focus();
+    note.textContent = "The initial teaching list was restored.";
+  });
+  enableItems();
+  restore.disabled = false;
+</script>
+</body>
+</html>

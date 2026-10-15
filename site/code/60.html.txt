@@ -1,13 +1,86 @@
-<button type="button" id="save-preference">Remember compact view</button>
-<p id="preference-result" role="status"></p>
+<form id="example-preference">
+  <label for="example-view">Example view preference</label>
+  <select id="example-view" name="view">
+    <option value="comfortable">Comfortable</option>
+    <option value="compact">Compact</option>
+  </select>
+  <button type="submit" disabled>Store example preference</button>
+  <button type="button" id="remove-preference" disabled>Remove stored preference</button>
+</form>
+<p id="preference-result" role="status">No storage result yet.</p>
+<button type="button" id="run-worker" disabled>Run background sum</button>
+<p id="worker-result" role="status">No calculation requested.</p>
+<p><a id="worker-source" href="../assets/worker-demo.js" download="worker-demo.js">Download the supplied worker source</a></p>
 <script>
-  document.getElementById("save-preference").addEventListener("click", () => {
-    const result = document.getElementById("preference-result");
+  const form = document.getElementById("example-preference");
+  const choice = document.getElementById("example-view");
+  const note = document.getElementById("preference-result");
+  const key = "ctrotech.teaching.view";
+  try {
+    const stored = localStorage.getItem(key);
+    if (stored === "compact" || stored === "comfortable") {
+      choice.value = stored;
+      note.textContent = "Stored example preference restored.";
+    } else {
+      note.textContent = "No recognized stored preference; choose a local value.";
+    }
+  } catch {
+    note.textContent = "Storage unavailable; the selection still works locally.";
+  }
+  form.addEventListener("submit", event => {
+    event.preventDefault();
     try {
-      localStorage.setItem("library.view", "compact");
-      result.textContent = "Preference saved in this browser.";
+      localStorage.setItem(key, choice.value);
+      note.textContent = "Example preference stored in this browser.";
     } catch {
-      result.textContent = "This browser could not save the preference.";
+      note.textContent = "Not stored; the selection still works locally.";
     }
   });
+  const remove = document.getElementById("remove-preference");
+  remove.addEventListener("click", () => {
+    try {
+      localStorage.removeItem(key);
+      note.textContent = "The example's stored preference was removed.";
+    } catch {
+      note.textContent = "Storage unavailable; no removal confirmed.";
+    }
+  });
+  form.querySelector("button[type=submit]").disabled = false;
+  remove.disabled = false;
+  const run = document.getElementById("run-worker");
+  const workerNote = document.getElementById("worker-result");
+  run.addEventListener("click", () => {
+    run.disabled = true;
+    workerNote.textContent = "Calculating the teaching sum.";
+    let worker;
+    let finished = false;
+    let timer;
+    const finish = text => {
+      if (finished) return;
+      finished = true;
+      clearTimeout(timer);
+      workerNote.textContent = text;
+      if (worker) worker.terminate();
+      run.disabled = false;
+    };
+    timer = setTimeout(() => finish("Calculation timed out; try again."), 5000);
+    try {
+      worker = new Worker(document.getElementById("worker-source").href);
+      worker.addEventListener("message", event => {
+        const data = event.data;
+        finish(data && data.kind === "sum" && Number.isFinite(data.total)
+          ? "Background sum: " + data.total
+          : "The worker returned an unusable result.");
+      }, { once: true });
+      worker.addEventListener("error", event => {
+        event.preventDefault();
+        finish("Background calculation unavailable.");
+      }, { once: true });
+      worker.addEventListener("messageerror", () => finish("Worker message could not be read."), { once: true });
+      worker.postMessage([2, 3, 5]);
+    } catch {
+      finish("Background calculation unavailable.");
+    }
+  });
+  run.disabled = false;
 </script>
