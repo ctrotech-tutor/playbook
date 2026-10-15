@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-14T16:39:10.253028+00:00",
-  "checked": 2661,
-  "passed": 2661,
-  "documents_retrieved": 81,
+  "checked_at": "2026-10-15T11:36:25.519156+00:00",
+  "checked": 2701,
+  "passed": 2701,
+  "documents_retrieved": 96,
   "scope": "Live HTTP/document/fragment availability. This does not prove correctness of the publication’s assertions.",
   "results": [
     {
@@ -11,6 +11,22 @@
       "sha256": "ef90d31f45bc6018ed7d859d341c1339499f036128c85f0fd5eccd08850537b9",
       "http_status": 200,
       "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "target_found": true,
+      "sha256": "d9f7e34eede44d2e143f440090d06ef397e0416ddfd312e92d800481faa9fc36",
+      "http_status": 200,
+      "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+      "target_found": true,
+      "sha256": "7dc83809e70820674c1fc2a2956eb86888433a5ac9362f33fb74b9b0c61e8f28",
+      "http_status": 200,
+      "resolved_url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -24,7 +40,7 @@
     {
       "url": "https://ctrobook.vercel.app/",
       "target_found": true,
-      "sha256": "1aebe7b85d65e207e6cfb50771c3b22f868dca5eee033db30dd07a7ac4178630",
+      "sha256": "3e294c197233cc54420ab1db153f7306ded600dff69ec8f4d5ba7684f6fc2303",
       "http_status": 200,
       "resolved_url": "https://ctrobook.vercel.app/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -32,7 +48,7 @@
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_FormData_Objects",
       "target_found": true,
-      "sha256": "091733308e0b60f459936f01186b8ed1e26c1177824f397c3085855d900bf269",
+      "sha256": "43fc1139f9b92402dd91b3aacae87656c33a6922200f99c832da688425f80784",
       "http_status": 200,
       "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_FormData_Objects",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -40,7 +56,7 @@
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
       "target_found": true,
-      "sha256": "09e7fe028ffcd63430466ce97f73051f560be2c7440528212fbebaeae0430986",
+      "sha256": "dd04bada69d14fdef77a4735fc5dde186cabe7a1e880cb65cca52107e2bd2755",
       "http_status": 200,
       "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -48,7 +64,7 @@
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
       "target_found": true,
-      "sha256": "014cfde6945a45a82fd16d5b4d1e81b8fd7b90b85c11cfdaf461540a3bf9cbf0",
+      "sha256": "9d0d76e9355e6ebc56f45d7c3f726c83ff0bee310c0cf7a6f06b2d5d07788862",
       "http_status": 200,
       "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -56,7 +72,7 @@
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/exportparts",
       "target_found": true,
-      "sha256": "02801d9ee3c06f7aef072748b16ce6d0d99ead362ccdf0694c59eecde1fac458",
+      "sha256": "391a276ab9e1b8515f0553779dc74111be506e4a5fa4a6f4bc84dc10ede18f7d",
       "http_status": 200,
       "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/exportparts",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -64,7 +80,7 @@
     {
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/part",
       "target_found": true,
-      "sha256": "9b99708ddca559754e1018d0d32fb1ecafd33e87f2756d69256d73e8647ac5af",
+      "sha256": "94f8e8f161e3f0ed5a47cea8a7d1a2c4c9316856ade9bd15c491bffaf14bc4d9",
       "http_status": 200,
       "resolved_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/part",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -72,7 +88,7 @@
     {
       "url": "https://developers.google.com/search/docs/appearance/ai-features",
       "target_found": true,
-      "sha256": "eb0b308312f90700c0bef8a0c035185fe7f7d76f96737a4b89ff47a0b693fd9d",
+      "sha256": "af43757c0b3a685950a456b0ea61a8314c4503fcc95826cb97023d6dea03930d",
       "http_status": 200,
       "resolved_url": "https://developers.google.com/search/docs/appearance/ai-features",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -80,9 +96,17 @@
     {
       "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
       "target_found": true,
-      "sha256": "51774dce5dc827006ec94296033769653b181431a702ecd73e9bebeaac3cd89a",
+      "sha256": "1ae954a2b701f139cef70d1999e9fb5aa0b4dea67c6713173027e783720306df",
       "http_status": 200,
       "resolved_url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://dom.spec.whatwg.org/#dom-node-textcontent",
+      "target_found": true,
+      "sha256": "034b308db8482bddb37070849e9d4ab40bcb2d10e6494cffad14678a252a58b1",
+      "http_status": 200,
+      "resolved_url": "https://dom.spec.whatwg.org/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -110,9 +134,41 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://dom.spec.whatwg.org/#shadow-trees",
+      "target_found": true,
+      "sha256": "034b308db8482bddb37070849e9d4ab40bcb2d10e6494cffad14678a252a58b1",
+      "http_status": 200,
+      "resolved_url": "https://dom.spec.whatwg.org/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://dom.spec.whatwg.org/#trees",
+      "target_found": true,
+      "sha256": "034b308db8482bddb37070849e9d4ab40bcb2d10e6494cffad14678a252a58b1",
+      "http_status": 200,
+      "resolved_url": "https://dom.spec.whatwg.org/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://drafts.csswg.org/css-shadow-parts/",
+      "target_found": true,
+      "sha256": "06426a89742e4b4235ed58dbe1215ab82b079582f74fd677b4e111a8e1e94992",
+      "http_status": 200,
+      "resolved_url": "https://drafts.csswg.org/css-shadow-parts/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://fetch.spec.whatwg.org/",
+      "target_found": true,
+      "sha256": "81b021244f1b9a2c3e4b8dfd55721bb79f1ac54f5529119db166ff9f8dfa8be9",
+      "http_status": 200,
+      "resolved_url": "https://fetch.spec.whatwg.org/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://github.com/blader/humanizer",
       "target_found": true,
-      "sha256": "778ba96e921d3c1be0faf845eabdda948c741180ed7236ac50a190af7a7555b6",
+      "sha256": "90bd9df378b3aef6424b8552cec6b9b64c0a39c02c60083c0d0cfd2b57d56bcf",
       "http_status": 200,
       "resolved_url": "https://github.com/blader/humanizer",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -120,7 +176,7 @@
     {
       "url": "https://github.com/ctrotech-tutor/playbook",
       "target_found": true,
-      "sha256": "92d318693e2e9a491f84b6ee14b71f1efe200bae4624e123d3d5bc53bb44a7cb",
+      "sha256": "5fde8b1ce457844d773f518a57a041cf0241b986835c6596deb0a81adad64f29",
       "http_status": 200,
       "resolved_url": "https://github.com/ctrotech-tutor/playbook",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -128,7 +184,7 @@
     {
       "url": "https://github.com/ctrotech-tutor/playbook/issues/new?template=content-correction.yml",
       "target_found": true,
-      "sha256": "0ebc596c7beb71b356423dddb528d72570c2518477c798d34a413dbf5d2b33f2",
+      "sha256": "cbe988ad7ab951ae7b989c4d97f85700c13d8f9c9724107bcce2658dc75c950c",
       "http_status": 200,
       "resolved_url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fctrotech-tutor%2Fplaybook%2Fissues%2Fnew%3Ftemplate%3Dcontent-correction.yml",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -2198,6 +2254,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time",
+      "target_found": true,
+      "sha256": "af48bab2e417a11f0032acfdf1108fcec9683d177ba07bf82867d9599d4c5533",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-data",
       "target_found": true,
       "sha256": "d8d2698529103b000be1ff7e2d8f1394000f01c24d20e7266df5c0a2485403b6",
@@ -2775,6 +2839,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/dnd.html#functionstringcallback",
+      "target_found": true,
+      "sha256": "f680d5c2b1d611805e35627e4d8bebb58ac65ab8669d61f0d9f2958ba4f0ec7f",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/dnd.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
       "target_found": true,
       "sha256": "f680d5c2b1d611805e35627e4d8bebb58ac65ab8669d61f0d9f2958ba4f0ec7f",
       "http_status": 200,
@@ -4070,6 +4142,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/edits.html#attributes-common-to-ins-and-del-elements",
+      "target_found": true,
+      "sha256": "469427ea6f266fbb0eeae444b449e848e8edbcd7ea55f0c56cc574106d2c7648",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/edits.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/edits.html#dom-mod-cite",
       "target_found": true,
       "sha256": "469427ea6f266fbb0eeae444b449e848e8edbcd7ea55f0c56cc574106d2c7648",
@@ -5102,6 +5182,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attributes-for-form-submission",
+      "target_found": true,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill",
       "target_found": true,
       "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
@@ -5462,6 +5550,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#enabling-and-disabling-form-controls:-the-disabled-attribute",
+      "target_found": true,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2",
       "target_found": true,
       "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
@@ -5479,6 +5575,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit",
+      "target_found": true,
+      "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#limiting-user-input-length:-the-maxlength-attribute",
       "target_found": true,
       "sha256": "e0568a5d3c907c584f4bb17dc1de559b099fc82e07f44babb9699a9a72026163",
       "http_status": 200,
@@ -7982,6 +8086,22 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/images.html#sizes-attributes",
+      "target_found": true,
+      "sha256": "e79b3edb1c5786e7a75d486053e3776309adc9ca020b5db262893ec6831a7321",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/images.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/images.html#srcset-attributes",
+      "target_found": true,
+      "sha256": "e79b3edb1c5786e7a75d486053e3776309adc9ca020b5db262893ec6831a7321",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/images.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/indices.html",
       "target_found": true,
       "sha256": "099e04f3b25b48b37c6b5b7c63dc2466c6851868ead5f5c81ed6e5dc88e14444",
@@ -9766,6 +9886,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
+      "target_found": true,
+      "sha256": "f85a963f72b9d14b0c6d1ae3e73a25693ffb9743532b78de8a43a451a76b9c60",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/interaction.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/interaction.html#designMode",
       "target_found": true,
       "sha256": "f85a963f72b9d14b0c6d1ae3e73a25693ffb9743532b78de8a43a451a76b9c60",
@@ -10102,6 +10230,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute",
+      "target_found": true,
+      "sha256": "f85a963f72b9d14b0c6d1ae3e73a25693ffb9743532b78de8a43a451a76b9c60",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/interaction.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute",
       "target_found": true,
       "sha256": "f85a963f72b9d14b0c6d1ae3e73a25693ffb9743532b78de8a43a451a76b9c60",
@@ -10366,6 +10502,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/introduction.html#history-2",
+      "target_found": true,
+      "sha256": "397cd799b87121beb4b672eb21c6c5a9d53034c6f070ef174e355f716b6c190f",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/introduction.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/introduction.html#introduction",
       "target_found": true,
       "sha256": "397cd799b87121beb4b672eb21c6c5a9d53034c6f070ef174e355f716b6c190f",
@@ -10535,6 +10679,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-username",
+      "target_found": true,
+      "sha256": "46c05b48250111c6d60b753a4fc708ff6df2b6162ca05c483e421eeb201b7705",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/links.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/links.html#downloading-resources",
       "target_found": true,
       "sha256": "46c05b48250111c6d60b753a4fc708ff6df2b6162ca05c483e421eeb201b7705",
       "http_status": 200,
@@ -17214,6 +17366,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/sections.html#heading-levels-&-offsets",
+      "target_found": true,
+      "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/sections.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/sections.html#htmlbodyelement",
       "target_found": true,
       "sha256": "a2d8e77e33e329eaa034b69f8055a30a4bd689ad427fa2be5efc5c16433a9863",
@@ -18574,6 +18734,14 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://html.spec.whatwg.org/multipage/tables.html#attributes-common-to-td-and-th-elements",
+      "target_found": true,
+      "sha256": "578c82123e3c1dbf61e920fd3e7f07f4b681732b5ff066cdaa4d3e504b8f2207",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/tables.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://html.spec.whatwg.org/multipage/tables.html#dom-colgroup-span",
       "target_found": true,
       "sha256": "578c82123e3c1dbf61e920fd3e7f07f4b681732b5ff066cdaa4d3e504b8f2207",
@@ -18791,6 +18959,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/tables.html#dom-tr-sectionrowindex",
+      "target_found": true,
+      "sha256": "578c82123e3c1dbf61e920fd3e7f07f4b681732b5ff066cdaa4d3e504b8f2207",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/tables.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/tables.html#header-and-data-cell-semantics",
       "target_found": true,
       "sha256": "578c82123e3c1dbf61e920fd3e7f07f4b681732b5ff066cdaa4d3e504b8f2207",
       "http_status": 200,
@@ -19735,6 +19911,14 @@
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit",
+      "target_found": true,
+      "sha256": "e74d93b6b2eca137430388540ab2afb8adf47322e9dae68a286f81d560ce7e49",
+      "http_status": 200,
+      "resolved_url": "https://html.spec.whatwg.org/multipage/webappapis.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers",
       "target_found": true,
       "sha256": "e74d93b6b2eca137430388540ab2afb8adf47322e9dae68a286f81d560ce7e49",
       "http_status": 200,
@@ -21208,9 +21392,17 @@
     {
       "url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/global_attributes.json",
       "target_found": true,
-      "sha256": "962149bfd14e9c779d7a349efd47c579ee48f3bd07e8d33c361432b02ff52bc6",
+      "sha256": "7da7f4598c2295e646d34d7a997ab9e313edc1e6c5f30809595099a0e4c1f17d",
       "http_status": 200,
       "resolved_url": "https://raw.githubusercontent.com/mdn/browser-compat-data/main/html/global_attributes.json",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://schema.org/Book",
+      "target_found": true,
+      "sha256": "a74e75ae0e9122cfacaddcc2b44f25921ffeaeecc817b0b92a1da3bddbbac8ba",
+      "http_status": 200,
+      "resolved_url": "https://schema.org/Book",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
@@ -21238,6 +21430,30 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://www.w3.org/TR/CSP3/",
+      "target_found": true,
+      "sha256": "df90a9028632b39c70d9ed40dadfadbc2f3f690621ecf6212ef4f1376005738e",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/CSP3/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/SRI/",
+      "target_found": true,
+      "sha256": "d6eacb528f89ca8df9b0f6ae602490e102cb3d98ee87c5a9bffb164b4fb5d4ff",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/sri/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/SVG2/struct.html",
+      "target_found": true,
+      "sha256": "66fbee96b6bd0b04f1784f3fbc12dadd157250d87143b1f7f1d364f22886b50b",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/SVG2/struct.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://www.w3.org/TR/WCAG22/",
       "target_found": true,
       "sha256": "6e3c5fe397257cae509a2fb4752b73062cf8cbeb92c2cec618989b17e4cf7057",
@@ -21262,6 +21478,54 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-footer",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-footer-ancestorbody",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-header",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-header-ancestorbody",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-search",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/html-aam-1.0/#el-section",
+      "target_found": true,
+      "sha256": "578cf2ab4d691ae3c55b85c1bdc09d1c7cc83e021a35231bcd00fe957d793e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/html-aam-1.0/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://www.w3.org/TR/html-aria/",
       "target_found": true,
       "sha256": "b80a2a4ae66bdb95910f44682e2f2d0874affb77b39ab8ed5de956f2159b7ee2",
@@ -21270,9 +21534,41 @@
       "source": "Live HTTP retrieval; not an independent interpretation review."
     },
     {
+      "url": "https://www.w3.org/TR/referrer-policy/",
+      "target_found": true,
+      "sha256": "4e60be213bbe74353fd4be29e519c9dd046f3dc6f012cc1149a7d50234a81e81",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/referrer-policy/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/TR/wai-aria-1.2/#aria-current",
+      "target_found": true,
+      "sha256": "c0fea16fc747779569ab754d2d25bca3e2b7e8a673b8ef5362aeb9ebc73a4849",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/TR/wai-aria-1.2/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
+      "target_found": true,
+      "sha256": "c3905630a35b6e8246aba32c1769f3ff82b217d464d41e4b1b2a34b9df5771c6",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/media/av/",
+      "target_found": true,
+      "sha256": "7f0047d6b734eca768df04a7f8da9e6a7564d1de78f65ce3ae41db0fb814704b",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/media/av/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
       "url": "https://www.w3.org/WAI/tutorials/",
       "target_found": true,
-      "sha256": "a0c98dad76f48fc07df3a9d9aaba0e7f7c32270a640ba704b4bb73582a774993",
+      "sha256": "8ff1fcd2487ab1503b1fcf2fdd84985c543cea12bdbd1cb2ce6f9e74fd467f53",
       "http_status": 200,
       "resolved_url": "https://www.w3.org/WAI/tutorials/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -21280,7 +21576,7 @@
     {
       "url": "https://www.w3.org/WAI/tutorials/forms/",
       "target_found": true,
-      "sha256": "e73fe279c46a3e04b641188cfbda7648a11b07fd1df76c5faab2efe1a0c3c25a",
+      "sha256": "5a5885d64c4d08370d634ffafc2f70b521a5a28d8f697f9894ab5a60080cc0e9",
       "http_status": 200,
       "resolved_url": "https://www.w3.org/WAI/tutorials/forms/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
@@ -21288,9 +21584,33 @@
     {
       "url": "https://www.w3.org/WAI/tutorials/images/",
       "target_found": true,
-      "sha256": "1710d0515fb34d5d752c22866ad9620e0947d362f951e3f8a352237126706d16",
+      "sha256": "935d42de127fa0b77982fd156b3cd0125978572b0dbbe5be343ea51e40c58d5a",
       "http_status": 200,
       "resolved_url": "https://www.w3.org/WAI/tutorials/images/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "target_found": true,
+      "sha256": "90e36de7b9979a01b2f6caf3e77bea402b24622f8fe90069e123504da2602c29",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/tutorials/images/complex/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/tables/irregular/",
+      "target_found": true,
+      "sha256": "6557556d857b8ea3d3b76bba0f280b1fa5d75cc6609239805ee0d47e27b1b1bc",
+      "http_status": 200,
+      "resolved_url": "https://www.w3.org/WAI/tutorials/tables/irregular/",
+      "source": "Live HTTP retrieval; not an independent interpretation review."
+    },
+    {
+      "url": "https://xhr.spec.whatwg.org/#interface-formdata",
+      "target_found": true,
+      "sha256": "6c52a7f84144c212ebd99c47627ef5c86d156214bc02c08973884359cf68ca24",
+      "http_status": 200,
+      "resolved_url": "https://xhr.spec.whatwg.org/",
       "source": "Live HTTP retrieval; not an independent interpretation review."
     }
   ]

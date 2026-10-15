@@ -2,3 +2,6 @@
 *.ttf -text
 *.pdf -text
 *.zip -text
+
+# Preserve PDF bytes and offsets across clones and platforms.
+*.pdf binary

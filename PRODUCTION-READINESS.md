@@ -4,6 +4,14 @@ CTROTECH / The HTML Playbook / October 2026 reading edition / edition 2026.1
 
 Author: **Odejobi Abiola Samuel**. Publication date: 14 October 2026.
 
+## Current content checkpoint: 15 October 2026
+
+**53 of 74 substantive first passes are recorded; 21 remain.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and the four final-publication gates remain open. The website and 427-page reading PDF are rebuilt from the same maintained source. This is not the final tagged PDF.
+
+See `docs/final-audit/README.md`, `batch04-report.md`, the 74-chapter register and current fingerprinted receipts. Current checks cover 495 source HTML documents, 499 generated documents and 2,701 citation targets; Node 24 integrity/hosting/output checks and scoped native browser regressions pass. They do not establish exhaustive API behavior, OS assistive-technology approval or complete security review.
+
+The reading-edition account and metrics below are retained as **historical baseline details**, not current whole-candidate counts or proof that this later checkpoint is deployed. Repository synchronization and live deployment are separate operations.
+
 ## Decision and scope
 
 The reading edition is prepared as a matching website and PDF, with a reader-facing publication pass and executed checks. It is not an exhaustive whole-Standard behavioral reference or an independently approved technical, answer-key, accessibility or security publication. Existing internal review states remain open; they were not changed to make the edition appear complete.
@@ -49,7 +57,7 @@ Verification origins under `.example.test` and intercepted form requests under `
 4. Broader real-device, keyboard, assistive-technology and usability review beyond the executed samples.
 5. Complete security/privacy assessment and any appropriate legal review.
 6. Tagged PDF remediation and independent PDF accessibility testing. Selectable text, bookmarks and language metadata do not create a semantic tag tree.
-7. Push and deployment of this edition, then checks of the new live pages, downloads and primary-domain redirects.
+7. Verified repository synchronization and separately verified deployment, including checks of the new live pages, downloads and primary-domain redirects. A push alone does not establish deployment.
 8. Optional search-console ownership verification, sitemap submission and observation of actual indexing. No ranking, AI inclusion or search-engine approval is guaranteed.
 
 These are not caused by missing author permission. The author has already supplied the name, visual approval and permission to proceed. Independent review does not mean the author must personally become the reviewer. Repository authorization does not close the acknowledged content-review work.

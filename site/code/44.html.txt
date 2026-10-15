@@ -2,7 +2,7 @@
 <dialog id="help-dialog" aria-labelledby="help-title">
   <h2 id="help-title">Membership help</h2>
   <p>Ask at the desk if you cannot supply an address document.</p>
-  <form method="dialog"><button>Close help</button></form>
+  <form method="dialog"><button type="submit" autofocus>Close help</button></form>
 </dialog>
 <script>
   const help = document.getElementById("help-dialog");
@@ -10,3 +10,10 @@
     help.showModal();
   });
 </script>
+<button type="button" popovertarget="reading-tip">Reading tip</button>
+<div id="reading-tip" popover>
+  <h2>A note about renewals</h2>
+  <p>This is a fictional teaching note, not a real lending policy.</p>
+  <button type="button" popovertarget="reading-tip"
+          popovertargetaction="hide">Dismiss reading tip</button>
+</div>

@@ -1,7 +1,12 @@
-<img src="library-floor.png" alt="Library floor plan"
-     usemap="#facilities" width="600" height="400">
-<map name="facilities">
-  <area shape="rect" coords="20,20,200,140" href="reading-room.html"
-        alt="Reading room">
+<img src="../assets/library-floor-plan.svg"
+     alt="Teaching plan: reading room left of reception, lift opposite"
+     usemap="#facilities" width="640" height="360">
+<map name="facilities" id="facilities">
+  <area shape="rect" coords="26,240,290,322" href="#reading-room"
+        alt="Reading room details">
 </map>
-<p><a href="reading-room.html">Reading room details</a></p>
+<p><a href="#reading-room">Reading room details</a></p>
+<section id="reading-room">
+  <h2>Reading room</h2>
+  <p>This fictional schematic places the reading room left of reception.</p>
+</section>

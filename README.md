@@ -10,6 +10,10 @@ This is the self-deployable Vercel delivery of the playbook. No GitHub integrati
 
 **Content status:** a 74-chapter reading curriculum, a shared reading guide, explained exercises and seven static projects are included. Internal independent-review states remain open. The declaration register is substantially expanded, but exhaustive behavioral documentation and independent technical/answer review remain open. This package is not represented as a completed whole-Standard audit or a tagged accessible PDF.
 
+## Content checkpoint: 15 October 2026
+
+**53/74 chapters have received a substantive first pass; 21 remain.** Chapters 1–53 have cumulative corrections, and Chapters 42–53 now include working local reordering, popover/data examples and a real integrity-checked script. Source, the compiled `site/` and the reading PDF are updated together. All 81 requirements and four final-publication gates remain open. See [the current audit](docs/final-audit/README.md) and [batch 04 evidence](docs/final-audit/batch04-report.md). This is not the final tagged accessible edition.
+
 ## Reading and corrections
 
 Open `site/start.html` in the compiled reading site for the reading routes, practice routine, format notes and edition changes. The PDF carries the same guide. Use exact code downloads when copying examples, and fictional values in forms. The original editorial work has no newly granted open license.
@@ -32,7 +36,7 @@ npm run check:site
 
 Commit or stash your own edits before pulling. Do not use a hard reset to discard work. Updates become available through `git pull` only after someone with repository write access has pushed them. Repository updates are pushed only with the author’s explicit authorization and write credentials. Credentials must remain outside the repository; pull only retrieves commits that have actually been pushed.
 
-The included GitHub Actions workflow checks Node 24 on Linux and Windows. Both hosted jobs passed for the previous hosting repair, commit `d5ef36c`, run 38597536097. That is historical evidence, not a hosted CI result for this unpushed reading edition. It runs integrity regressions, a synthetic-production build and generated-output checks. It also checks that a build does not change tracked source files. Environment-specific `tests/seo-build.json` is generated locally and ignored by Git, so normal builds do not create a tracked edit that interferes with future pulls. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
+The included GitHub Actions workflow checks Node 24 on Linux and Windows. Both hosted jobs passed for the previous hosting repair, commit `d5ef36c`, run 38597536097. That is historical evidence, not a hosted CI result for the current content checkpoint. It runs integrity regressions, a synthetic-production build and generated-output checks. It also checks that a build does not change tracked source files. Environment-specific `tests/seo-build.json` is generated locally and ignored by Git, so normal builds do not create a tracked edit that interferes with future pulls. It does not deploy, use Vercel credentials or certify the manuscript. Hosted Actions results are available only after the workflow is pushed and actually runs.
 
 To deploy, run `vercel deploy --prod`, or connect this repository to the existing `ctrobook` project under Vercel project settings. A local `git pull` alone does not deploy a website.
 

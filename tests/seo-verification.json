@@ -1,7 +1,7 @@
 {
-  "publication_fingerprint": "5ac544ee48fb3facad06f21ff66244c04a42ee17ce7898d4ea2cb77c05e4ec83",
+  "publication_fingerprint": "439f8ba540d68e88145e2be29719eddb1249f0dbe3242638edd882de7b015a94",
   "scope": "Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.",
-  "node": "v24.21.0",
+  "node": "v24.22.0",
   "checks": [
     {
       "check": "Missing and invalid production origins fail closed",
@@ -22,19 +22,19 @@
     {
       "check": "All output HTML metadata, unique indexed titles, real-target links, canonical routes, structured data, sitemaps, hashed assets and text exports",
       "result": "PASS",
-      "html_documents": 498,
-      "indexed_pages": 409,
-      "internal_destinations": 18173,
-      "structured_data_pages": 409,
+      "html_documents": 499,
+      "indexed_pages": 410,
+      "internal_destinations": 18183,
+      "structured_data_pages": 410,
       "markdown_chapters": 74,
       "api_owner_pages": 314,
-      "pdf_sha256": "576713fee61e7abb6c47da56849a2ada36236b0833d4a095dbc254c3d0e3f21d",
+      "pdf_sha256": "81d0efc5a69d7bf743708375b9a251f676f3838cf44eb319fd513239ef7b99e2",
       "canonical_test_origin": "https://book.example.test (synthetic test fixture only)"
     },
     {
       "check": "Generated Vercel HTML conformance",
       "result": "PASS",
-      "documents": 498,
+      "documents": 499,
       "nu_messages": 0
     },
     {

@@ -9,8 +9,48 @@
 <body>
 <h1>Focus, editing and dragging: example</h1>
 <section aria-labelledby="list-title">
-  <h2 id="list-title" tabindex="-1">Your reading list</h2>
-  <ol><li>Local histories <button type="button">Move up</button></li></ol>
+  <h2 id="list-title" tabindex="-1">Your fictional reading list</h2>
+  <ol id="reading-list">
+    <li tabindex="-1"><span>Local histories</span>
+      <button type="button" data-shift="-1" disabled>Move up</button>
+      <button type="button" data-shift="1" disabled>Move down</button></li>
+    <li tabindex="-1"><span>Poetry</span>
+      <button type="button" data-shift="-1" disabled>Move up</button>
+      <button type="button" data-shift="1" disabled>Move down</button></li>
+    <li tabindex="-1"><span>Fiction</span>
+      <button type="button" data-shift="-1" disabled>Move up</button>
+      <button type="button" data-shift="1" disabled>Move down</button></li>
+  </ol>
+  <p id="move-status" role="status">Changes stay in this page only.</p>
 </section>
+<script>
+  const list = document.getElementById("reading-list");
+  const status = document.getElementById("move-status");
+  function updateMoves() {
+    [...list.children].forEach((item, index, items) => {
+      const title = item.querySelector("span").textContent;
+      item.querySelectorAll("button").forEach(button => {
+        const up = button.dataset.shift === "-1";
+        button.disabled = up ? index === 0 : index === items.length - 1;
+        button.setAttribute("aria-label", (up ? "Move up: " : "Move down: ") + title);
+      });
+    });
+  }
+  list.addEventListener("click", event => {
+    const button = event.target.closest("button[data-shift]");
+    if (!button || button.disabled) return;
+    const item = button.closest("li");
+    const shift = Number(button.dataset.shift);
+    if (shift !== -1 && shift !== 1) return;
+    const peer = shift === -1 ? item.previousElementSibling : item.nextElementSibling;
+    if (!peer) return;
+    list.insertBefore(item, shift === -1 ? peer : peer.nextElementSibling);
+    updateMoves();
+    item.focus();
+    status.textContent = item.querySelector("span").textContent + " moved " +
+      (shift === -1 ? "up." : "down.");
+  });
+  updateMoves();
+</script>
 </body>
 </html>

@@ -46,7 +46,7 @@
     },
     {
       "title": "Change one requirement",
-      "text": "Try a longer label, a missing resource, a narrow viewport or a different control state. State what should remain true. Use fictional values, especially in forms. The book sandbox deliberately prevents network requests and submissions."
+      "text": "Try a longer label, a missing resource, a narrow viewport or a different control state. State what should remain true. Use fictional values, especially in forms. The book sandbox restricts resource loading and form submissions. It runs inline scripts; do not paste secrets or run code you do not trust."
     }
   ],
   "formats": "Website and PDF share the maintained chapter source. Use the exact code download for copying: some files are fragments and some media or server resources are illustrative. The seven project downloads are complete static teaching folders, not live services. Reading progress stays in this browser when storage is available; it is not an assessment or certificate.",

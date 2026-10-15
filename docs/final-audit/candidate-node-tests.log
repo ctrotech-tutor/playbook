@@ -1,0 +1,26 @@
+
+> ctrotech-html-playbook@0.3.0 test
+> node --test tests/build-integrity.test.mjs tests/hosting-contract.test.mjs
+
+✔ JSON indentation, blank lines, trailing whitespace and Windows line endings are harmless (3.075238ms)
+✔ whitespace inside JSON strings is protected (0.448295ms)
+✔ dependency versions and added dependencies are protected (0.240425ms)
+✔ non-JSON source and binary assets remain byte-exact (1.778932ms)
+✔ invalid JSON is rejected rather than repaired by normalization (0.851239ms)
+✔ Python and Node use the same normalization, including every retained input (401.180854ms)
+✔ guard accepts harmless formatting, reports all stale inputs and rejects missing files (4.964086ms)
+✔ old manifests and out-of-root paths fail closed (0.382591ms)
+✔ hosting metadata, property order, regions and redirects are not manuscript changes (1.867542ms)
+✔ incompatible output and routing settings fail with hosting-specific guidance (0.955447ms)
+✔ an ignored stale local snapshot cannot shadow the current tracked snapshot (20.986761ms)
+✔ all stale candidates still reject a real content edit (3.8206ms)
+✔ the snapshot manifest excludes hosting config but protects book data and dependencies (110.68216ms)
+✔ actual compiler accepts changed hosting config and stale local cache, but rejects manuscript edits (9840.743538ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10581.947757

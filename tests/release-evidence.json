@@ -1,5 +1,5 @@
 {
-  "publication_fingerprint": "5ac544ee48fb3facad06f21ff66244c04a42ee17ce7898d4ea2cb77c05e4ec83",
+  "publication_fingerprint": "439f8ba540d68e88145e2be29719eddb1249f0dbe3242638edd882de7b015a94",
   "edition": "2026.1",
   "review_date": "2026-10-14",
   "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
@@ -7,9 +7,9 @@
     {
       "check": "Built HTML conformance",
       "result": "PASS",
-      "scope": "494 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
+      "scope": "495 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
       "version": "26.10.12 (0a70d65)",
-      "files": 494,
+      "files": 495,
       "messages": 0,
       "jar_sha256": "19f89e204cb881e2d88c5d0cd451df6c1ee8334e7fe626f6694b64a129f6a813"
     },
@@ -75,8 +75,8 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "405 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
-      "pages": 405,
+      "scope": "427 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
+      "pages": 427,
       "bookmarks": 401
     },
     {
@@ -104,7 +104,7 @@
     {
       "check": "Citation targets",
       "result": "PASS",
-      "scope": "2661 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
+      "scope": "2701 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
     }
   ],
   "not_certified": [

@@ -8,13 +8,18 @@
 </head>
 <body>
 <h1>Custom data and structured data: example</h1>
-<button type="button" data-book-id="LIB-204" id="save-book">
-  Save Local histories
-</button>
+<article id="book-record" data-book-id="LIB-204" data-copy-count="3">
+  <h2>Local histories</h2>
+  <p id="copy-note">This is a fictional record.</p>
+</article>
 <script>
-  const saveButton = document.getElementById("save-book");
-  const bookId = saveButton.dataset.bookId;
-  // Use bookId as an identifier, never as an authorization decision.
+  const record = document.getElementById("book-record");
+  const rawCount = record.dataset.copyCount;
+  const count = Number(rawCount);
+  const valid = /^[0-9]+$/.test(rawCount) && Number.isSafeInteger(count);
+  document.getElementById("copy-note").textContent = valid
+    ? count + " copies listed in this fictional record."
+    : "No usable quantity in this fictional record.";
 </script>
 </body>
 </html>

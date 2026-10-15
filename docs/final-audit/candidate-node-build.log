@@ -1,0 +1,16 @@
+
+> ctrotech-html-playbook@0.3.0 build
+> node deploy/build.mjs
+
+{
+  "mode": "production",
+  "origin": "https://ci.example.test",
+  "indexable": true,
+  "html_documents": 499,
+  "indexable_pages": 410,
+  "markdown_chapters": 74,
+  "hashed_assets": 24,
+  "edition": "2026.1",
+  "created_from": "precompiled site/ plus canonical content metadata; no live source fetches during deployment",
+  "limitations": "No search ranking, rich-result eligibility, AI citation, universal compatibility or independent content approval is guaranteed."
+}
