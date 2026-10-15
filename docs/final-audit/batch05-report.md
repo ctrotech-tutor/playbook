@@ -94,3 +94,11 @@ Still required: every promised parser/serialization/scripting/timing/navigation/
 ## Next
 
 **Chapters 68–74: projects and capstone.** Completing those first passes will still not close the final gates. The remaining coverage reconciliation and reviews are part of finishing this publication, not work reassigned to the author.
+
+## Repository delivery
+
+The source, compiled website, reading PDF and audit records were pushed to `main` as **`4f98969345cd203bce3e59fbda945ab91cf0f2a9`**. The remote head was read back and matched. No force push was used. `repository-sync.json` records actual delivery and any observed hosted CI separately from content and deployment approval.
+
+On your local `main`, run `git pull --ff-only origin main`. A new Vercel deployment has not been verified.
+
+Hosted **Node 24 Ubuntu and Windows CI passed for source commit `4f98969`**. Run/job URLs are retained in `repository-sync.json`. These jobs check their defined build/integrity/output contract, not the final manuscript or production deployment.
