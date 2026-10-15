@@ -9,7 +9,13 @@ Updated: **15 October 2026**
 
 The correction candidate includes Chapters 1 to 53, supplied teaching media and the new actual integrity-check script. The website and reading PDF were rebuilt from the maintained source and checked. The durable original release ZIP/PDF remains a historical baseline. The current reading PDF is not the final accessible tagged edition.
 
-Repository delivery is to `main` in `ctrotech-tutor/playbook`. The repository contains the maintained source, compiled website, reading PDF and audit documentation. A repository update is not proof of a new Vercel deployment. Current hosted-CI/deployment claims require their own receipts, not an old run.
+**Pushed and remote-verified:** commit `8b0228f640e4f056c11b2b65ff98e004d153d7ce` on `main` in `ctrotech-tutor/playbook`.
+
+```sh
+git pull --ff-only origin main
+```
+
+Run this from your repository while on `main`; keep your own uncommitted edits safe. The repository contains the maintained source, compiled website, reading PDF and audit documentation. A repository update is not proof of a new Vercel deployment. Hosted Node 24 Ubuntu and Windows CI passed for content commit `8b0228f`; `repository-sync.json` contains its run/job evidence. A deployment claim still requires its own live checks.
 
 ## Read the work
 
