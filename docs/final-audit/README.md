@@ -9,7 +9,7 @@ Updated: **15 October 2026**
 
 The current reading PDF has 456 pages and 401 bookmarks. Website/PDF use the same maintained source. It is still untagged, not the final accessible PDF.
 
-**Batch06 is locally verified, but its main push is blocked by unavailable transient write authorization.** Last verified remote main: `2b756c2bed268cd562cbe4ed34171c7f18df7a99` (Batch05). The old CI result and git pull do not deliver or certify this new batch. Read `repository-sync.json`; no new Vercel deployment is verified.
+**Batch06 content delivery is verified on main.** Content commit `37402404842572d9aa150c3561a9182e818a9a1f` was pushed non-force and read back on 16 October 2026. Its hosted workflow is in progress, not yet claimed successful. Read `repository-sync.json` for the delivery record. No new Vercel deployment is verified.
 
 ## Read the work
 

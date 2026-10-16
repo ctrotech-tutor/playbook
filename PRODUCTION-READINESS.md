@@ -6,7 +6,7 @@ Author: **Odejobi Abiola Samuel**. Publication date: 14 October 2026.
 
 ## Current content checkpoint: 15 October 2026
 
-**74 of 74 substantive same-assistant first passes are recorded.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and four final-publication gates remain open. The website and 456-page reading PDF use the same maintained source. This is not the final tagged PDF. Batch06 is locally verified; repository delivery is blocked by unavailable transient write authorization. The previous checkpoint's CI is not evidence for this batch.
+**74 of 74 substantive same-assistant first passes are recorded.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and four final-publication gates remain open. The website and 456-page reading PDF use the same maintained source. This is not the final tagged PDF. Batch06 content commit `37402404842572d9aa150c3561a9182e818a9a1f` was pushed and read back on `main` on 16 October 2026. Its own hosted workflow has started; success has not yet been verified. Production deployment is separate.
 
 See `docs/final-audit/README.md`, `batch05-report.md`, the 74-chapter register and current fingerprinted receipts. Current checks cover 495 source HTML documents, 499 generated documents and 2,718 citation targets; Node 24 integrity/hosting/output checks and scoped native browser regressions pass. They do not establish exhaustive API behavior, OS assistive-technology approval or complete security review.
 

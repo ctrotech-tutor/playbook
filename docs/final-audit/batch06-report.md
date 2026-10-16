@@ -7,7 +7,7 @@ Review date: **15 October 2026**
 
 **74 of 74 chapters have now received a substantive same-assistant first pass.** This batch covers Chapters 68–74. This is not final approval: zero independent chapter approvals, all 81 requirements open, no exclusions, and all four final-publication gates remain open. There are 37 recorded findings.
 
-**Delivery is locally checked, not yet pushed to main.** The earlier temporary write authorization is unavailable in this resumed environment. The last verified remote main is `2b756c2bed268cd562cbe4ed34171c7f18df7a99`, which delivers the previous batch. Running git pull now does not obtain this unfinished repository delivery. No new hosted CI result or Vercel deployment is claimed. Current state is in `repository-sync.json`.
+**Content delivery is now pushed and verified on main.** On 16 October 2026, content commit `37402404842572d9aa150c3561a9182e818a9a1f` was pushed non-force and read back from `refs/heads/main`. Its own hosted workflow [38938639858](https://github.com/ctrotech-tutor/playbook/actions/runs/38938639858) was in progress when this receipt was prepared; no success claim is made yet. No new Vercel deployment is claimed. See `repository-sync.json`. The review date above remains the original manuscript/checkpoint review date.
 
 ## Actual revisions
 
