@@ -1,0 +1,186 @@
+{
+  "result": "PASS",
+  "scope": "Selected native project behaviour plus automated WCAG-tagged checks. Same-agent and headless, not independent/OS-assistive-technology review, full WCAG conformance, exhaustive security or accessible-PDF approval.",
+  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "tree": "build/site",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "project_documents": 12,
+      "form_paths": 3,
+      "reflow_paths": 26,
+      "width_css_px": 320,
+      "no_script_project_documents": 12,
+      "blocked_script_form_paths": 3,
+      "native_file_zip_documents": 12,
+      "errors": [],
+      "failed_http_responses": [],
+      "automated_a11y": [
+        {
+          "path": "projects/article/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/capstone/catalogue.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/capstone/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/capstone/membership.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/capstone/visit.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/dashboard/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/gallery/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/portfolio/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/portfolio/project.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/portfolio/reading-list.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/profile/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/registration/index.html",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/registration/index.html",
+          "state": "invalid",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "projects/capstone/membership.html",
+          "state": "invalid",
+          "violations": 0,
+          "incomplete": 0
+        },
+        {
+          "path": "examples/70.html",
+          "state": "invalid",
+          "violations": 0,
+          "incomplete": 0
+        }
+      ],
+      "flows": [
+        "skip-to-main keyboard",
+        "distinct portfolio notes and return",
+        "article fragment/date consistency",
+        "loan arithmetic and units",
+        "all SVGs decoded and blocked-image text fallback",
+        "empty/whitespace/malformed-email errors",
+        "error link keyboard focus",
+        "live correction and stale success clearing",
+        "reset invalid and success states and implicit Enter submission",
+        "local success no request/URL/storage write",
+        "markup-shaped practice input inert",
+        "failed-script disabled fields",
+        "no-script complete project baseline",
+        "320px chapter/example/project reflow",
+        "named focusable table scroll",
+        "byte-exact ZIP members and chapter-derived brief/answers",
+        "all extracted document file URLs"
+      ]
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "project_documents": 12,
+      "form_paths": 3,
+      "reflow_paths": 26,
+      "width_css_px": 320,
+      "no_script_project_documents": 12,
+      "blocked_script_form_paths": 3,
+      "native_file_zip_documents": 12,
+      "errors": [],
+      "failed_http_responses": [],
+      "automated_a11y": [],
+      "flows": [
+        "skip-to-main keyboard",
+        "distinct portfolio notes and return",
+        "article fragment/date consistency",
+        "loan arithmetic and units",
+        "all SVGs decoded and blocked-image text fallback",
+        "empty/whitespace/malformed-email errors",
+        "error link keyboard focus",
+        "live correction and stale success clearing",
+        "reset invalid and success states and implicit Enter submission",
+        "local success no request/URL/storage write",
+        "markup-shaped practice input inert",
+        "failed-script disabled fields",
+        "no-script complete project baseline",
+        "320px chapter/example/project reflow",
+        "named focusable table scroll",
+        "byte-exact ZIP members and chapter-derived brief/answers",
+        "all extracted document file URLs"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "project_documents": 12,
+      "form_paths": 3,
+      "reflow_paths": 26,
+      "width_css_px": 320,
+      "no_script_project_documents": 12,
+      "blocked_script_form_paths": 3,
+      "native_file_zip_documents": 12,
+      "errors": [],
+      "failed_http_responses": [],
+      "automated_a11y": [],
+      "flows": [
+        "skip-to-main keyboard",
+        "distinct portfolio notes and return",
+        "article fragment/date consistency",
+        "loan arithmetic and units",
+        "all SVGs decoded and blocked-image text fallback",
+        "empty/whitespace/malformed-email errors",
+        "error link keyboard focus",
+        "live correction and stale success clearing",
+        "reset invalid and success states and implicit Enter submission",
+        "local success no request/URL/storage write",
+        "markup-shaped practice input inert",
+        "failed-script disabled fields",
+        "no-script complete project baseline",
+        "320px chapter/example/project reflow",
+        "named focusable table scroll",
+        "byte-exact ZIP members and chapter-derived brief/answers",
+        "all extracted document file URLs"
+      ]
+    }
+  ]
+}

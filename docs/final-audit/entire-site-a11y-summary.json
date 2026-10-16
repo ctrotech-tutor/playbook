@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-16",
+  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "result": "PASS_AUTOMATED_SCOPE",
+  "reading_pages": 422,
+  "standalone_teaching_examples_excluded": 74,
+  "axe_detected_violations": 0,
+  "page_wide_overflow_320px": 0,
+  "pages_with_incomplete_checks": 3,
+  "manual_review_queue": [
+    {
+      "path": "reference/attributes.html",
+      "incomplete_checks": 1
+    },
+    {
+      "path": "reference/elements.html",
+      "incomplete_checks": 1
+    },
+    {
+      "path": "reference/obsolete.html",
+      "incomplete_checks": 1
+    }
+  ],
+  "page_structure": "All 422 have one main, one h1, and language=en.",
+  "all_current_document_hashes_checked": true,
+  "scope": "Every reading page in this exact source tree. Headless Chromium axe WCAG-tagged and 320px reflow, not independent/manual/OS AT, real zoom or WCAG certification."
+}

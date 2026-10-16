@@ -3,9 +3,13 @@
 **The HTML Playbook | Odejobi Abiola Samuel | CTROTECH**  
 Updated: **15 October 2026**
 
-## Current position
+## Current full-gates work
 
-**74 of 74 chapters have received a substantive same-assistant first pass.** This is not final-publication approval. All 81 requirements, all independent reviews and all four final gates remain open; zero exclusions, zero independently approved chapters, 37 findings.
+See **[Full-gates report](full-gates-report.md)**. A 594-page full-book tagged candidate now passes veraPDF's PDF/UA-1 machine profile. All 422 reading pages passed the expanded automated accessibility/reflow audit after fixing real reference-link target-size failures. The 3,471-row coverage-gap ledger retains all promised scope, including 176 non-exact member routes. Independent/OS AT/full security and exhaustive teaching/claim review remain open. The original 456-page reading PDF is still a separate, untagged export.
+
+## Previous chapter-checkpoint position
+
+**74 of 74 chapters have received a substantive same-assistant first pass.** This is not final-publication approval. All 81 requirements, all independent reviews and all four final gates remain open; zero exclusions, zero independently approved chapters, 38 findings.
 
 The current reading PDF has 456 pages and 401 bookmarks. Website/PDF use the same maintained source. It is still untagged, not the final accessible PDF.
 
@@ -15,7 +19,7 @@ The current reading PDF has 456 pages and 401 bookmarks. Website/PDF use the sam
 
 - [Batch06 report](batch06-report.md), `batch06-chapters68-74.md.gz`, native source/compiled evidence and `batch06-project-crosswalk.csv.gz`.
 - [Batch05 report](batch05-report.md), [Batch04 report](batch04-report.md), [Batch03 report](batch03-report.md), [Batch02 report](batch02-report.md) and [Batch01 report](batch01-report.md). Historical reports keep their original counts/fingerprints.
-- `audit-register.json`: all chapter states, 81 open requirements, 37 findings and explicit boundary notes.
+- `audit-register.json`: all chapter states, 81 open requirements, 38 findings and explicit boundary notes.
 - `candidate-verification.json`, `candidate-static-verification.json`, current Node logs and `sandbox-candidate-regression.json`: scoped current-fingerprint evidence.
 - `batch06-prior05-regression.json`: CH54–67 selected cases rerun against this batch. Earlier batch02–04 evidence is historical, not automatically current.
 

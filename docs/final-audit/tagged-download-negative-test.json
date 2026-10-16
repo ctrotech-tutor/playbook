@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-16",
+  "result": "PASS",
+  "case": "Altered optional tagged artifact does not match recorded validation hash",
+  "observed": "Build raises before publishing the candidate or its validation claim",
+  "scope": "Artifact/proof consistency guard, not independent accessibility review"
+}

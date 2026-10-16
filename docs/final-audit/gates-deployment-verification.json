@@ -1,0 +1,195 @@
+{
+  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "scope": "Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.",
+  "node": "v24.22.0",
+  "checks": [
+    {
+      "check": "Missing and invalid production origins fail closed",
+      "result": "PASS"
+    },
+    {
+      "check": "Unconfigured local build emits no invented canonicals and is not indexable",
+      "result": "PASS"
+    },
+    {
+      "check": "Preview keeps production canonical but noindex directives and an empty sitemap",
+      "result": "PASS"
+    },
+    {
+      "check": "Optional verification and IndexNow key files are generated only from supplied values; no submission made",
+      "result": "PASS"
+    },
+    {
+      "check": "All output HTML metadata, unique indexed titles, real-target links, canonical routes, structured data, sitemaps, hashed assets and text exports",
+      "result": "PASS",
+      "html_documents": 500,
+      "indexed_pages": 410,
+      "internal_destinations": 18190,
+      "structured_data_pages": 410,
+      "markdown_chapters": 74,
+      "api_owner_pages": 314,
+      "pdf_sha256": "64bf327a39212e81d36282aed40298324de0c28a4a35909d5f8dc414585cee0c",
+      "canonical_test_origin": "https://book.example.test (synthetic test fixture only)"
+    },
+    {
+      "check": "Generated Vercel HTML conformance",
+      "result": "PASS",
+      "documents": 500,
+      "nu_messages": 0
+    },
+    {
+      "check": "Cross-engine local route/header and UI smoke tests",
+      "result": "PASS",
+      "browsers": [
+        {
+          "engine": "chromium",
+          "version": "156.0.8078.4",
+          "transport": "local HTTPS fixture; self-signed certificate accepted for testing only",
+          "flows": [
+            "clean routes and 308 legacy URLs",
+            "working search routes",
+            "opaque-origin editable sandbox",
+            "native dialog open/close",
+            "API filtering",
+            "non-submitting local form",
+            "genuine 404 response"
+          ],
+          "mobile_width": 390,
+          "overflow_pages_checked": 398,
+          "javascript_errors": 0
+        },
+        {
+          "engine": "firefox",
+          "version": "157.0",
+          "transport": "local HTTPS fixture; self-signed certificate accepted for testing only",
+          "flows": [
+            "clean routes and 308 legacy URLs",
+            "working search routes",
+            "opaque-origin editable sandbox",
+            "native dialog open/close",
+            "API filtering",
+            "non-submitting local form",
+            "genuine 404 response"
+          ],
+          "mobile_width": 390,
+          "overflow_pages_checked": 13,
+          "javascript_errors": 0
+        },
+        {
+          "engine": "webkit",
+          "version": "27.2",
+          "transport": "local HTTPS fixture; self-signed certificate accepted for testing only",
+          "flows": [
+            "clean routes and 308 legacy URLs",
+            "working search routes",
+            "opaque-origin editable sandbox",
+            "native dialog open/close",
+            "API filtering",
+            "non-submitting local form",
+            "genuine 404 response"
+          ],
+          "mobile_width": 390,
+          "overflow_pages_checked": 13,
+          "javascript_errors": 0
+        }
+      ]
+    },
+    {
+      "check": "Automated accessibility sample",
+      "result": "PASS",
+      "engine": "Chromium",
+      "axe_version": "4.14.0",
+      "pages": 17,
+      "violations": 0,
+      "results": [
+        {
+          "path": "/",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/start",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/contents",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/author",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/about",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/projects",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/chapters/34",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/chapters/44",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/reference",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/reference/api-members",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/reference/api/htmlinputelement",
+          "violations": [],
+          "incomplete_checks": 1
+        },
+        {
+          "path": "/reference/api/window",
+          "violations": [],
+          "incomplete_checks": 1
+        },
+        {
+          "path": "/reference/keywords",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/privacy",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/accessibility",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/site-map",
+          "violations": [],
+          "incomplete_checks": 0
+        },
+        {
+          "path": "/projects/registration",
+          "violations": [],
+          "incomplete_checks": 0
+        }
+      ],
+      "note": "Incomplete axe checks and manual/assistive-technology review remain. Zero automated violations is not WCAG conformance."
+    }
+  ],
+  "result": "PASS"
+}

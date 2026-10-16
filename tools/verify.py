@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Executed publication checks, deliberately narrower than whole-book approval."""
 from pathlib import Path
+from datetime import datetime,timezone
 from urllib.parse import urlparse,unquote,urlsplit
 from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from threading import Thread
@@ -139,6 +140,6 @@ try:
 finally:server.shutdown();server.server_close()
 passed('Browser smoke tests',f'{len(browser_rows)} checks using Chromium {browser_version}; desktop and 390px mobile, served under /review-repo/. No general cross-browser or assistive-technology claim.',details=browser_rows,browser_version=browser_version)
 citations=json.loads((R/'tests/citation-checks.json').read_text());assert citations['checked']==citations['passed'];passed('Citation targets',f'{citations["passed"]} HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion.')
-output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':'2026-10-15','state':'Executed checks passed; independent content and whole-Standard coverage approval remain open','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Tagged accessible PDF','Legal certification or hosted deployment verification of this rebuilt edition']}
+output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':datetime.now(timezone.utc).date().isoformat(),'state':'Executed checks passed; independent content and whole-Standard coverage approval remain open','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Tagged accessible PDF','Legal certification or hosted deployment verification of this rebuilt edition']}
 (R/'tests/release-evidence.json').write_text(json.dumps(output,indent=2)+'\n')
 print(json.dumps(output,indent=2))

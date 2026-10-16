@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-16",
+  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "result": "PASS_NATIVE_SCOPE",
+  "scope": "All reference-card link target dimensions on the three affected pages at 1280/320 CSS pixels in three engines. Not full WCAG, focus-order or OS AT approval.",
+  "results": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 1280,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 1280,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 1280,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 320,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 320,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "width": 320,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 1280,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 1280,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 1280,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 320,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 320,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "width": 320,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 1280,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 1280,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 1280,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 320,
+      "path": "reference/attributes.html",
+      "targets_checked": 832,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 320,
+      "path": "reference/elements.html",
+      "targets_checked": 237,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "width": 320,
+      "path": "reference/globals.html",
+      "targets_checked": 79,
+      "all_targets_at_least_24_by_24": true,
+      "minimum_height": 28
+    }
+  ]
+}

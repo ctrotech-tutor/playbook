@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-16",
+  "artifact": "ctrotech-html-playbook-tagged-review.pdf",
+  "artifact_sha256": "f566e0f49c2886adb0d438d8d95b6b23165dbe5752aec7efd7c45530178b7e69",
+  "engine": "veraPDF 1.30.3",
+  "profile": "PDF/UA-1 validation profile",
+  "isCompliant": true,
+  "details": {
+    "passedRules": "106",
+    "failedRules": "0",
+    "passedChecks": "2827594",
+    "failedChecks": "0"
+  },
+  "installer_url": "https://software.verapdf.org/releases/verapdf-installer.zip",
+  "installer_sha256": "b512bf24945503a33fc10738ecffc1f2dccaaf8593a448e94ee9ac86a9559a59",
+  "installer_signature": "Good GPG signature, published fingerprint matched; this is installer integrity, not independent publication certification.",
+  "published_key_fingerprint": "13DD102B4DD69354D12DE5A83184863278B17FE7",
+  "installer_instructions": "https://docs.verapdf.org/install/",
+  "manual_review": "pending",
+  "os_assistive_technology_review": "not_performed",
+  "scope": "Machine validation profile for this exact full-book candidate, not a universal accessibility certification or independent reading-order review."
+}

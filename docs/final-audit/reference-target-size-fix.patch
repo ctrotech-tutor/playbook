@@ -1,0 +1,12 @@
+diff --git a/assets/site.css b/assets/site.css
+index efebd77..01111cf 100644
+--- a/assets/site.css
++++ b/assets/site.css
+@@ -17,3 +17,7 @@
+ .idl-source{font:13px/1.8 ui-monospace,monospace;background:var(--code);color:var(--code-ink);padding:22px;overflow:auto;border-radius:5px}.reference-table td,.reference-table th{overflow-wrap:anywhere}.reference-table code{white-space:normal}.ref-card{content-visibility:auto;contain-intrinsic-size:auto 260px}.reference-body .idl-source code{background:transparent;color:inherit;padding:0}.seo-breadcrumbs{font-size:12px;color:var(--muted);margin-bottom:22px}button,a,input,select,textarea{touch-action:manipulation}dialog{overscroll-behavior:contain}h1,h2{text-wrap:balance}pre,code{font-variant-ligatures:none}
+ .page-heading h1,.ref-card h2{overflow-wrap:anywhere}.ref-card{min-width:0}
+ .breadcrumbs a{text-decoration:underline;text-underline-offset:3px}.code-head button{min-height:32px;min-width:48px}.delivery-links{display:flex;flex-wrap:wrap;gap:20px;font-size:12px;margin:20px 0 35px}
++
++/* Reference destinations are separate targets, not a dense inline text run. */
++.ref-links{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:flex-start}
++.ref-links a{display:inline-flex;align-items:center;min-block-size:28px;padding:3px 4px;max-inline-size:100%;overflow-wrap:anywhere}

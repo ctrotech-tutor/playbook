@@ -65,3 +65,7 @@ These are not caused by missing author permission. The author has already suppli
 ## Rights
 
 No open reuse license was selected for original editorial work. Upstream permissions and font notices remain intact. This status document is not a legal opinion or certification.
+
+## Full-gates checkpoint, 16 October 2026
+
+A separate 594-page full-book tagged candidate passes veraPDF 1.30.3 PDF/UA-1 machine validation (106 passed rules, zero failed). The primary 456-page reading export remains separate and untagged. All 422 reading documents passed the broadened automated accessibility/reflow scan after reference target-size repairs. The captured gap ledger accounts for 3,471 rows, with 176 non-exact member routes and all 81 requirements still open. No independent, actual OS AT, exhaustive behavioural or full security approval is inferred. See docs/final-audit/full-gates-report.md.

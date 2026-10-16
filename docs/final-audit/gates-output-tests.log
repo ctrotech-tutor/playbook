@@ -1,0 +1,15 @@
+
+> ctrotech-html-playbook@0.3.0 check:site
+> node --test tests/deployment-output.test.mjs
+
+✔ every generated HTML document has valid author, title and mode-dependent metadata (1335.186598ms)
+✔ sitemap and crawler policy agree with production versus preview/local mode (2.296378ms)
+✔ output includes discovery files and PDF, but not source manifests or credentials (2.691837ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1587.323848

@@ -1,0 +1,755 @@
+{
+  "date": "2026-10-16",
+  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "scope": "Full captured-row gap accounting and live discovery/declaration comparison. Not completed teaching or full normative/algorithm reconciliation.",
+  "retrievals": [
+    {
+      "url": "https://html.spec.whatwg.org/multipage/indices.html",
+      "resolved_url": "https://html.spec.whatwg.org/multipage/indices.html",
+      "status": 200,
+      "sha256": "0e2921dfe3d6bbf828b6d05959b0e7e80a7bef316cb27b9a143c5ee14924436f",
+      "bytes": 488705,
+      "cache_name": "5c675c630c0a8a",
+      "retrieved_at": "2026-10-16T18:21:19.064339+00:00"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+      "resolved_url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+      "status": 200,
+      "sha256": "20cf0e84efd8803c6999c26f89f80db22d50f3f11d80e93431ec15048a1e8617",
+      "bytes": 174911,
+      "cache_name": "7403be7109f599",
+      "retrieved_at": "2026-10-16T18:21:19.007333+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/w3c/webref/main/ed/idl/html.idl",
+      "resolved_url": "https://raw.githubusercontent.com/w3c/webref/main/ed/idl/html.idl",
+      "status": 200,
+      "sha256": "0724d0388dda843da7dd1de2da1b9dac90f3acedd21edae16c34e47df66bcf5f",
+      "bytes": 109352,
+      "cache_name": "327fdd1752aa75",
+      "retrieved_at": "2026-10-16T18:21:18.406234+00:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/w3c/webref/main/ed/dfns/html.json",
+      "resolved_url": "https://raw.githubusercontent.com/w3c/webref/main/ed/dfns/html.json",
+      "status": 200,
+      "sha256": "825b47ee8b986c84a2bbb71e0aeb09b7a0e2a7e244e66555d771dcfbefc8210a",
+      "bytes": 4241442,
+      "cache_name": "c357ba67ac8747",
+      "retrieved_at": "2026-10-16T18:21:18.619148+00:00"
+    }
+  ],
+  "live_element_index": {
+    "captured_conforming_elements": 113,
+    "live_discovery_names": 115,
+    "only_in_live_index": [
+      "math",
+      "svg"
+    ],
+    "only_in_snapshot": [],
+    "boundary": "Discovery table row names, not independent per-element content-model approval.",
+    "interpretation": "113 conforming HTML names match the captured built-ins. The two extra named rows are the separately classified math and svg integration roots; the autonomous-custom-element category is not a new built-in tag."
+  },
+  "webref_idl_bytes_equal_snapshot": true,
+  "webref_public_definitions_bytes_equal_snapshot": true,
+  "ledger_rows": 3471,
+  "ledger_rows_by_type": {
+    "api-owner": 314,
+    "direct-member": 1574,
+    "inheritance": 135,
+    "mixin-inclusion": 73,
+    "keyword-state-event": 437,
+    "inventory-elements": 113,
+    "inventory-integration_entries": 3,
+    "inventory-attributes": 180,
+    "inventory-event_handler_attributes": 89,
+    "inventory-global_attributes": 31,
+    "inventory-global_attribute_families": 8,
+    "inventory-input_states": 22,
+    "inventory-content_categories": 15,
+    "inventory-obsolete_elements": 29,
+    "inventory-obsolete_attributes": 143,
+    "inventory-obsolete_conforming_conditions": 7,
+    "inventory-interfaces": 166,
+    "inventory-compatibility_checks": 6,
+    "inventory-input_applicability": 45,
+    "requirement": 81
+  },
+  "direct_members": 1574,
+  "non_exact_member_routes": 176,
+  "external_parent_edges": [
+    {
+      "owner": "AudioTrackList",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "BeforeUnloadEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "BroadcastChannel",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "CloseWatcher",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "CommandEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "CommandEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "DragEvent",
+      "parent": "MouseEvent"
+    },
+    {
+      "owner": "DragEventInit",
+      "parent": "MouseEventInit"
+    },
+    {
+      "owner": "ErrorEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "ErrorEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "EventSource",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "FormDataEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "FormDataEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "HashChangeEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "HashChangeEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "HTMLFormControlsCollection",
+      "parent": "HTMLCollection"
+    },
+    {
+      "owner": "HTMLOptionsCollection",
+      "parent": "HTMLCollection"
+    },
+    {
+      "owner": "MessageEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "MessageEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "MessagePort",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "NavigateEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "NavigateEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "Navigation",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "NavigationCurrentEntryChangeEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "NavigationCurrentEntryChangeEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "NavigationHistoryEntry",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "OffscreenCanvas",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "PageRevealEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "PageRevealEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "PageSwapEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "PageSwapEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "PageTransitionEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "PageTransitionEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "PopStateEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "PopStateEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "PromiseRejectionEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "PromiseRejectionEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "RadioNodeList",
+      "parent": "NodeList"
+    },
+    {
+      "owner": "SharedWorker",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "StorageEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "StorageEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "SubmitEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "SubmitEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "TextTrack",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "TextTrackCue",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "TextTrackList",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "ToggleEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "ToggleEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "TrackEvent",
+      "parent": "Event"
+    },
+    {
+      "owner": "TrackEventInit",
+      "parent": "EventInit"
+    },
+    {
+      "owner": "VideoTrackList",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "VisibilityStateEntry",
+      "parent": "PerformanceEntry"
+    },
+    {
+      "owner": "Window",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "Worker",
+      "parent": "EventTarget"
+    },
+    {
+      "owner": "WorkerGlobalScope",
+      "parent": "EventTarget"
+    }
+  ],
+  "all_required_requirements_accounted": true,
+  "requirements_closed": 0,
+  "exclusions": 0,
+  "chapter_record_checks": [
+    {
+      "chapter": "CH-01",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-02",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-03",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-04",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-05",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-06",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-07",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-08",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-09",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-10",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-11",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-12",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-13",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-14",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-15",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-16",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-17",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-18",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-19",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-20",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-21",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-22",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-23",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-24",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-25",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-26",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-27",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-28",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-29",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-30",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-31",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-32",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-33",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-34",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-35",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-36",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-37",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-38",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-39",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-40",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-41",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-42",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-43",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-44",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-45",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-46",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-47",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-48",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-49",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-50",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-51",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-52",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-53",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-54",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-55",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-56",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-57",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-58",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-59",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-60",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-61",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-62",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-63",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-64",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-65",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-66",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-67",
+      "structural_errors": [],
+      "terminology_review": "no explicitly labelled terminology section; claim-level check remains open",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-68",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-69",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-70",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-71",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-72",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-73",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    },
+    {
+      "chapter": "CH-74",
+      "structural_errors": [],
+      "terminology_review": "explicit heading present",
+      "independent_answer_correctness": "pending"
+    }
+  ],
+  "ledger_sha256": "964ac2bcca86f01f1d6d388039d5164ffa6102bcb4fc54cabb09f634fc5afd2b",
+  "critical_interpretation": "No open flag is a claim that a feature is absent from every chapter. Selected teaching exists, but exhaustive dimensions have not received evidence sufficient for closure.",
+  "dimension_interpretation": "Open means applicability must be established and behaviour evidenced. It does not assert that, for example, a constant has overload resolution. No feature or requirement has been silently excluded."
+}

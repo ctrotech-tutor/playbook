@@ -172,6 +172,8 @@ def reading_guide():
         else:content+='<p><a href="reference/index.html">Open the reference desk</a> or <a href="reference/api-members.html">browse the declaration register</a>.</p>'
     content+='<h2>One useful practice loop</h2><ol>'+''.join('<li><h3>'+e(step['title'])+'</h3><p>'+inline(step['text'])+'</p></li>' for step in GUIDE['practice'])+'</ol>'
     content+='<h2>Website, PDF and code</h2><p>'+inline(GUIDE['formats'])+'</p><p><a href="downloads/ctrotech-html-playbook.pdf">Download the PDF</a> · <a href="downloads/code-examples.zip" download>Get exact chapter code</a> · <a href="projects.html">Explore the seven projects</a></p><h2>Know what a source tells you</h2><p>'+inline(GUIDE['sources'])+'</p><h2>Scope of this edition</h2><p>'+inline(GUIDE['scope'])+'</p><h2 id="corrections">Help correct the book</h2><p>'+inline(GUIDE['corrections'])+'</p><p><a href="'+e(META['corrections_url'])+'">Report a content correction on GitHub</a>.</p><h2 id="edition-notes">October 2026 edition notes</h2><ul>'+''.join('<li>'+inline(note)+'</li>' for note in GUIDE['edition_notes'])+'</ul></div></main>'
+    if (R/'deliverables/ctrotech-html-playbook-tagged-review.pdf').exists():
+        content=content.replace('</div></main>','<h2>Full-book tagged PDF candidate</h2><p><a href="downloads/ctrotech-html-playbook-tagged-review.pdf">Download the full-book tagged review candidate</a>. Its PDF/UA-1 machine-validation report passes, but independent accessibility and actual assistive-technology review remain open. This is separate from the reading PDF above, not a final accessibility certification.</p></div></main>')
     write('start.html',shell('Start here',content))
 
 
@@ -209,6 +211,11 @@ def main():
     SITE.mkdir(parents=True,exist_ok=True)
     shutil.copytree(R/'assets',SITE/'assets',dirs_exist_ok=True)
     (SITE/'downloads').mkdir(exist_ok=True)
+    tagged=R/'deliverables/ctrotech-html-playbook-tagged-review.pdf'
+    if tagged.exists():
+        proof=json.loads((R/'docs/final-audit/tagged-full-validation.json').read_text())
+        assert proof.get('isCompliant') is True and proof['artifact_sha256']==hashlib.sha256(tagged.read_bytes()).hexdigest(),'Tagged candidate does not match its recorded validation report.'
+        shutil.copy2(tagged,SITE/'downloads'/tagged.name)
     with zipfile.ZipFile(SITE/'downloads/code-examples.zip','w',zipfile.ZIP_DEFLATED) as archive:
         for c in BOOK:archive.writestr(f'example-{c["number"]:02}.html',c['code'].encode('utf-8'))
         archive.writestr('README.md',f'# CTROTECH / Exact chapter code\n\nBy {META["author"]}. {META["edition_label"]}.\n\nThese 74 files preserve the exact UTF-8 code in content/chapters.json. Some are HTML fragments. Insert fragments in a complete UTF-8 HTML document before running them. External media, modules and server handlers may be reader-supplied; read the chapter explanation. File numbering matches chapter numbering. Wrapped browser examples and the seven complete projects are separate downloads.\n\n{META["copyright_notice"]}\n{META["reuse_license"]}\n')

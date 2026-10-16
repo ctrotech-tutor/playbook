@@ -12,7 +12,7 @@ This is the self-deployable Vercel delivery of the playbook. No GitHub integrati
 
 ## Content checkpoint: 15 October 2026
 
-**74/74 chapters have received a substantive same-assistant first pass.** Chapters 68–74 now have concrete project contracts, prerequisites/terms, project-specific rubrics, matched reference implementations and explained answers. The seven ZIPs include chapter-derived briefs/solutions. Source, compiled `site/` and the 456-page reading PDF are synchronized. All 81 requirements and four final-publication gates remain open. See [the current audit](docs/final-audit/README.md) and [batch 06 evidence](docs/final-audit/batch06-report.md). Batch06 content commit `37402404842572d9aa150c3561a9182e818a9a1f` was pushed non-force to `main` and read back on 16 October 2026. Hosted checks were in progress when the receipt was prepared; see `docs/final-audit/repository-sync.json` for scope. No new Vercel deployment is claimed. This is not the final tagged accessible edition.
+**74/74 chapters have received a substantive same-assistant first pass.** The current full-gates checkpoint adds a [594-page full-book tagged PDF candidate](deliverables/ctrotech-html-playbook-tagged-review.pdf), a passing veraPDF PDF/UA-1 machine-validation report, an expanded all-422-reading-page automated accessibility/reflow audit and a 3,471-row captured coverage-gap ledger. Real reference-link target-size failures were fixed and retested. All 81 requirements and final independent/manual/coverage gates remain open. This is not independent accessibility certification or a final whole-Standard publication. See [the full-gates report](docs/final-audit/full-gates-report.md).
 
 ## Reading and corrections
 
