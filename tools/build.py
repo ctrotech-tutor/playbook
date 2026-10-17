@@ -200,6 +200,8 @@ def search_data():
             for r in INV[key]:entries.append(dict(title=r['name']+' / '+title,text=clean(r.get('description',r.get('scope',''))),path=f'reference/{slug}.html#{r["id"].replace(":","-")}',kind='REFERENCE'))
     api=json.loads((R/'content/api-register.json').read_text())
     for row in api['records']:entries.append(dict(title=row['name'],text=' '.join(m['name'] for m in row['members'])+' '+row['type'],path='reference/api/'+re.sub(r'[^a-z0-9]+','-',row['name'].lower()).strip('-')+'.html',kind='API'))
+    from behavior_reference import units
+    for unit in units(R):entries.append(dict(title=unit['title'],text=unit['introduction']+' '+' '.join(m['meaning']+' '+m['errors_and_restrictions'] for m in unit['members']),path='reference/api/'+re.sub(r'[^a-z0-9]+','-',unit['owner'].lower()).strip('-')+'.html#'+unit['id'],kind='BEHAVIOUR'))
     for index,row in enumerate(api['keyword_records'],1):entries.append(dict(title=' / '.join(row['names'])+' / '+row['type'],text=' '.join(row['contexts'])+' '+row['section'],path='reference/keywords.html#'+row['id']+'-'+str(index),kind='DEFINITION'))
     write('assets/search.js','window.BOOK_SEARCH = '+json.dumps(entries,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n')
 

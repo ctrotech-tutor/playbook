@@ -1,0 +1,22 @@
+dbus-daemon[18248]: [session uid=1000 pid=18248 pidfd=4] Activating service name='ca.desrt.dconf' requested by ':1.1' (uid=1000 pid=18262 comm="gsettings set org.gnome.desktop.a11y.applications" label="kernel")
+dbus-daemon[18248]: [session uid=1000 pid=18248 pidfd=4] Successfully activated service 'ca.desrt.dconf'
+dbus-daemon[18248]: [session uid=1000 pid=18248 pidfd=4] Activating service name='org.a11y.Bus' requested by ':1.3' (uid=1000 pid=18293 comm="/usr/bin/python3 /usr/bin/orca --replace --user-pr" label="kernel")
+dbus-daemon[18248]: [session uid=1000 pid=18248 pidfd=4] Successfully activated service 'org.a11y.Bus'
+dbus-daemon[18303]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=18293 comm="/usr/bin/python3 /usr/bin/orca --replace --user-pr" label="kernel")
+dbus-daemon[18303]: Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+settled-first-tab-1 completed
+reverse-tab-to-skip-1 completed
+settled-first-tab-2 completed
+reverse-tab-to-skip-2 completed
+settled-first-tab-3 completed
+reverse-tab-to-skip-3 completed
+dialog-original completed
+restore-original completed
+dialog-title-focus completed
+restore-title-focus completed
+dialog-brief-description completed
+restore-brief-description completed
+dialog-title-and-description completed
+restore-title-and-description completed
+NATIVE_TASKS_RECORDED 14 cases

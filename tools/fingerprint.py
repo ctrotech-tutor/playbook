@@ -25,7 +25,7 @@ def input_digest(path):
 
 def input_paths(root):
     paths = [p for directory in ['content', 'assets', 'fonts', 'deploy'] for p in (root/directory).rglob('*') if p.is_file()]
-    paths += [root/'tools'/name for name in ['build.py', 'pdf.py', 'tagged_pdf.py', 'validate_pdf.py', 'pdf_syntax.py', 'projects.py', 'fingerprint.py', 'verify.py', 'check_build.py', 'check_syntax.py', 'check_sources.py', 'install_nu.py', 'api_reference.py', 'identity.py', 'verify_seo.py', 'update_api_register.mjs']]
+    paths += [root/'tools'/name for name in ['build.py', 'pdf.py', 'tagged_pdf.py', 'validate_pdf.py', 'pdf_syntax.py', 'projects.py', 'fingerprint.py', 'verify.py', 'check_build.py', 'check_syntax.py', 'check_sources.py', 'install_nu.py', 'api_reference.py', 'behavior_reference.py', 'identity.py', 'verify_seo.py', 'update_api_register.mjs']]
     paths += [root/name for name in ['requirements-build.txt', 'requirements-verify.txt', 'package.json', 'package-lock.json', 'vercel.json', 'tests/nu-download-provenance.json']]
     return sorted(paths)
 

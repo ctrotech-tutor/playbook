@@ -1,5 +1,5 @@
 {
-  "publication_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
+  "publication_fingerprint": "8c085ae092383c4c44f9d27149b561067440d2ee191ee9785b258166f9a7bd40",
   "edition": "2026.1",
   "review_date": "2026-10-17",
   "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
@@ -75,9 +75,9 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "594 pages; all chapter titles found; 404 bookmarks; text bounds checked. Semantically tagged; the separate exact-artifact PDF/UA-1 validation report is checked. Not independently accessibility-audited.",
-      "pages": 594,
-      "bookmarks": 404
+      "scope": "607 pages; all chapter titles found; 405 bookmarks; text bounds checked. Semantically tagged; the separate exact-artifact PDF/UA-1 validation report is checked. Not independently accessibility-audited.",
+      "pages": 607,
+      "bookmarks": 405
     },
     {
       "check": "Browser smoke tests",

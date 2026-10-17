@@ -1,5 +1,10 @@
 # The HTML Playbook
 
+## Storage behaviour update
+
+The maintained Storage reference now includes all six direct-member teaching contracts and a worked preference exercise. Website and tagged PDF are generated from `content/api-behavior.json`. Read [the integration and review limits](docs/review-work/storage-02/README.md) and [the exact new PDF checks](docs/releases/2026.1-storage-update/README.md). The `v2026.1` release remains a frozen earlier artifact; its bytes are not silently relabelled as this update. Independent and human cross-platform review remain open.
+
+
 **Odejobi Abiola Samuel | CTROTECH | October 2026 production edition | 2026.1**
 
 Write pages you can explain.

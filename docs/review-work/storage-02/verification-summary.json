@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-17",
+  "scope": "Current Storage update and controlled follow-up. No independent approval or hosted delivery claim.",
+  "publication_fingerprint": "8c085ae092383c4c44f9d27149b561067440d2ee191ee9785b258166f9a7bd40",
+  "pdf_sha256": "6e4fa0ac5f64d32e3053d22014efed2b09dcc472b2109cce0a548c2e2a302720",
+  "unit_integration_tests": {
+    "passed": 10
+  },
+  "pdf_guard_tests": {
+    "passed": 8
+  },
+  "node_input_hosting_tests": {
+    "passed": 14
+  },
+  "compiled_output_tests": {
+    "passed": 3
+  },
+  "source_conformance": {
+    "documents": 496,
+    "nu_messages": 0
+  },
+  "source_relative_targets": 13875,
+  "compiled_graph": {
+    "documents": 500,
+    "local_targets": 18578
+  },
+  "unit_page_axe_reflow_combinations": 12,
+  "controlled_initialization_observations": 45,
+  "native_orca_windows": 14,
+  "storage_regression": {
+    "observations": 267,
+    "open_findings": 1
+  },
+  "exercise_regression": {
+    "scenarios": 30,
+    "all_passed": true
+  },
+  "independent_approval": false,
+  "open_observations": [
+    "Mixed-workload WebKit delivery",
+    "Initial-Tab Orca announcement",
+    "Practice-dialog Orca verbosity",
+    "Exhaustive legacy named-property semantics",
+    "Unchanged progress-clear failure-status path, code inspection only"
+  ]
+}

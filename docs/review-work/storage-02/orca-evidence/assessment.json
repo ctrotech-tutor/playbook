@@ -1,0 +1,294 @@
+{
+  "date": "2026-10-17T03:48:32.645398+00:00",
+  "error": null,
+  "result": "NATIVE_TASKS_RECORDED",
+  "browser_version": "156.0.8078.4",
+  "orca_version": "Orca version 48.1, AT-SPI2 version: 2.56.2",
+  "baseline_commit": "495d6989b9a906b7b0ff329acc6f8e32a7c54045",
+  "baseline_chapter_sha256": "09c0b0a0d1f9eed67c061e37bdf7ec2ea41313ef7785942d55c37f1a31e67359",
+  "independent": false,
+  "human_listener": false,
+  "scope": "Three settled-load skip-link trials plus original and three runtime-only dialog fixture variants, actual headed Chromium/Orca and native X11 keys. CDP dialog values are diagnostic only, not substituted for Orca output.",
+  "cases": [
+    {
+      "id": "settled-first-tab-1",
+      "trace_window_start_local": "03:47:15.969391",
+      "trace_window_end_local": "03:47:18.428644",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:15.986379 - SPEECH OUTPUT: 'tab' {'established': False}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "reverse-tab-to-skip-1",
+      "trace_window_start_local": "03:47:18.436607",
+      "trace_window_end_local": "03:47:21.292291",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:18.452715 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:47:18.539309 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:18.541296 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:18.864796 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:47:18.922870 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:18.924490 - SPEECH OUTPUT: 'Skip to main content link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": true,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "settled-first-tab-2",
+      "trace_window_start_local": "03:47:26.310462",
+      "trace_window_end_local": "03:47:28.772063",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:26.339325 - SPEECH OUTPUT: 'tab' {'established': False}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "reverse-tab-to-skip-2",
+      "trace_window_start_local": "03:47:28.776559",
+      "trace_window_end_local": "03:47:31.636613",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:28.787405 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:47:28.836071 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:28.837292 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:29.202438 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:47:29.262200 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:29.263666 - SPEECH OUTPUT: 'Skip to main content link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": true,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "settled-first-tab-3",
+      "trace_window_start_local": "03:47:36.626912",
+      "trace_window_end_local": "03:47:39.071279",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:36.637886 - SPEECH OUTPUT: 'tab' {'established': False}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "reverse-tab-to-skip-3",
+      "trace_window_start_local": "03:47:39.075775",
+      "trace_window_end_local": "03:47:41.927053",
+      "keyboard_focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "utterances": [
+        "03:47:39.088496 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:47:39.145807 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:39.147133 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:39.505979 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:47:39.565616 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:39.567066 - SPEECH OUTPUT: 'Skip to main content link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": true,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "dialog-original",
+      "trace_window_start_local": "03:47:49.613052",
+      "trace_window_end_local": "03:47:52.068780",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close example"
+      },
+      "variant": "original",
+      "accessible_dialog_diagnostic": [
+        {
+          "role": "dialog",
+          "name": "Try the markup",
+          "description": null
+        }
+      ],
+      "fixture_note": "Original served page with explicitly recorded runtime-only test modifications; not a published fix.",
+      "utterances": [
+        "03:47:49.625637 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:47:49.776385 - SPEECH OUTPUT: 'Try the markup <!doctype html>\n                  <html lang=\"en\">\n                  <head>\n                  <meta charset=\"utf-8\">\n                  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n                  <title>Dialogs and popovers: example</title>\n                  \n                  </head>\n                  <body>\n                  <h1>Dialogs and popovers: example</h1>\n                  <button type=\"button\" id=\"open-help\">Membership help</button>\n                  <dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n                    <h2 id=\"help-title\">Membership help</h2>\n                    <p>Ask at the desk if you cannot supply an address document.</p>\n                    <form method=\"dialog\"><button type=\"submit\" autofocus>Close help</button></form>\n                  </dialog>\n                  <script>\n                    const help = document.getElementById(\"help-dialog\");\n                    document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n                      help.showModal();\n                    });\n                  </script>\n                  <button type=\"button\" popovertarget=\"reading-tip\">Reading tip</button>\n                  <div id=\"reading-tip\" popover>\n                    <h2>A note about renewals</h2>\n                    <p>This is a fictional teaching note, not a real lending policy.</p>\n                    <button type=\"button\" popovertarget=\"reading-tip\"\n                            popovertargetaction=\"hide\">Dismiss reading tip</button>\n                  </div>\n                  </body>\n                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:49.779167 - SPEECH OUTPUT: 'Close example button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": true
+    },
+    {
+      "id": "restore-original",
+      "trace_window_start_local": "03:47:52.072157",
+      "trace_window_end_local": "03:47:54.506874",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "utterances": [
+        "03:47:52.087681 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:47:52.204420 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:47:52.205921 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "dialog-title-focus",
+      "trace_window_start_local": "03:48:02.178773",
+      "trace_window_end_local": "03:48:04.618600",
+      "keyboard_focus": {
+        "tag": "H2",
+        "id": "lab-title",
+        "text": "Try the markup"
+      },
+      "variant": "title-focus",
+      "accessible_dialog_diagnostic": [
+        {
+          "role": "dialog",
+          "name": "Try the markup",
+          "description": null
+        }
+      ],
+      "fixture_note": "Original served page with explicitly recorded runtime-only test modifications; not a published fix.",
+      "utterances": [
+        "03:48:02.188712 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:48:02.338953 - SPEECH OUTPUT: 'Try the markup <!doctype html>\n                  <html lang=\"en\">\n                  <head>\n                  <meta charset=\"utf-8\">\n                  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n                  <title>Dialogs and popovers: example</title>\n                  \n                  </head>\n                  <body>\n                  <h1>Dialogs and popovers: example</h1>\n                  <button type=\"button\" id=\"open-help\">Membership help</button>\n                  <dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n                    <h2 id=\"help-title\">Membership help</h2>\n                    <p>Ask at the desk if you cannot supply an address document.</p>\n                    <form method=\"dialog\"><button type=\"submit\" autofocus>Close help</button></form>\n                  </dialog>\n                  <script>\n                    const help = document.getElementById(\"help-dialog\");\n                    document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n                      help.showModal();\n                    });\n                  </script>\n                  <button type=\"button\" popovertarget=\"reading-tip\">Reading tip</button>\n                  <div id=\"reading-tip\" popover>\n                    <h2>A note about renewals</h2>\n                    <p>This is a fictional teaching note, not a real lending policy.</p>\n                    <button type=\"button\" popovertarget=\"reading-tip\"\n                            popovertargetaction=\"hide\">Dismiss reading tip</button>\n                  </div>\n                  </body>\n                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:02.344586 - SPEECH OUTPUT: 'Try the markup heading 2 clickable.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": true
+    },
+    {
+      "id": "restore-title-focus",
+      "trace_window_start_local": "03:48:04.622291",
+      "trace_window_end_local": "03:48:07.053258",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "utterances": [
+        "03:48:04.641356 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:48:04.818428 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:04.820052 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "dialog-brief-description",
+      "trace_window_start_local": "03:48:14.993721",
+      "trace_window_end_local": "03:48:17.440492",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close example"
+      },
+      "variant": "brief-description",
+      "accessible_dialog_diagnostic": [
+        {
+          "role": "dialog",
+          "name": "Try the markup",
+          "description": "Edit the HTML source, then choose Run changes. The preview is isolated. Never paste secrets."
+        }
+      ],
+      "fixture_note": "Original served page with explicitly recorded runtime-only test modifications; not a published fix.",
+      "utterances": [
+        "03:48:15.002378 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:48:15.153926 - SPEECH OUTPUT: 'Try the markup Edit the HTML source, then choose Run changes. The preview is isolated. Never paste secrets. <!doctype html>\n                  <html lang=\"en\">\n                  <head>\n                  <meta charset=\"utf-8\">\n                  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n                  <title>Dialogs and popovers: example</title>\n                  \n                  </head>\n                  <body>\n                  <h1>Dialogs and popovers: example</h1>\n                  <button type=\"button\" id=\"open-help\">Membership help</button>\n                  <dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n                    <h2 id=\"help-title\">Membership help</h2>\n                    <p>Ask at the desk if you cannot supply an address document.</p>\n                    <form method=\"dialog\"><button type=\"submit\" autofocus>Close help</button></form>\n                  </dialog>\n                  <script>\n                    const help = document.getElementById(\"help-dialog\");\n                    document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n                      help.showModal();\n                    });\n                  </script>\n                  <button type=\"button\" popovertarget=\"reading-tip\">Reading tip</button>\n                  <div id=\"reading-tip\" popover>\n                    <h2>A note about renewals</h2>\n                    <p>This is a fictional teaching note, not a real lending policy.</p>\n                    <button type=\"button\" popovertarget=\"reading-tip\"\n                            popovertargetaction=\"hide\">Dismiss reading tip</button>\n                  </div>\n                  </body>\n                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:15.158407 - SPEECH OUTPUT: 'Close example button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": true
+    },
+    {
+      "id": "restore-brief-description",
+      "trace_window_start_local": "03:48:17.443192",
+      "trace_window_end_local": "03:48:19.870621",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "utterances": [
+        "03:48:17.452788 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:48:17.574000 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:17.575152 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    },
+    {
+      "id": "dialog-title-and-description",
+      "trace_window_start_local": "03:48:27.603823",
+      "trace_window_end_local": "03:48:30.041950",
+      "keyboard_focus": {
+        "tag": "H2",
+        "id": "lab-title",
+        "text": "Try the markup"
+      },
+      "variant": "title-and-description",
+      "accessible_dialog_diagnostic": [
+        {
+          "role": "dialog",
+          "name": "Try the markup",
+          "description": "Edit the HTML source, then choose Run changes. The preview is isolated. Never paste secrets."
+        }
+      ],
+      "fixture_note": "Original served page with explicitly recorded runtime-only test modifications; not a published fix.",
+      "utterances": [
+        "03:48:27.613013 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:48:27.758772 - SPEECH OUTPUT: 'Try the markup Edit the HTML source, then choose Run changes. The preview is isolated. Never paste secrets. <!doctype html>\n                  <html lang=\"en\">\n                  <head>\n                  <meta charset=\"utf-8\">\n                  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n                  <title>Dialogs and popovers: example</title>\n                  \n                  </head>\n                  <body>\n                  <h1>Dialogs and popovers: example</h1>\n                  <button type=\"button\" id=\"open-help\">Membership help</button>\n                  <dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n                    <h2 id=\"help-title\">Membership help</h2>\n                    <p>Ask at the desk if you cannot supply an address document.</p>\n                    <form method=\"dialog\"><button type=\"submit\" autofocus>Close help</button></form>\n                  </dialog>\n                  <script>\n                    const help = document.getElementById(\"help-dialog\");\n                    document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n                      help.showModal();\n                    });\n                  </script>\n                  <button type=\"button\" popovertarget=\"reading-tip\">Reading tip</button>\n                  <div id=\"reading-tip\" popover>\n                    <h2>A note about renewals</h2>\n                    <p>This is a fictional teaching note, not a real lending policy.</p>\n                    <button type=\"button\" popovertarget=\"reading-tip\"\n                            popovertargetaction=\"hide\">Dismiss reading tip</button>\n                  </div>\n                  </body>\n                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:27.761796 - SPEECH OUTPUT: 'Try the markup heading 2 clickable.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": true
+    },
+    {
+      "id": "restore-title-and-description",
+      "trace_window_start_local": "03:48:30.044589",
+      "trace_window_end_local": "03:48:32.481875",
+      "keyboard_focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "utterances": [
+        "03:48:30.056065 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:48:30.175413 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:48:30.176949 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "skip_label_observed": false,
+      "example_source_in_opening_speech": false
+    }
+  ],
+  "raw_trace_sha256": "2a9d1127c939bde5234cf8b76d2353fb482dc4ee25b96048aaddb7187b075f70",
+  "utterance_count": 512,
+  "trace_assignment": "Complete multiline utterances parsed after private session teardown; local-clock windows from recorded native tasks."
+}

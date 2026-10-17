@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-17",
+  "official_instructions": "https://docs.verapdf.org/install/",
+  "key_fingerprint": "13DD102B4DD69354D12DE5A83184863278B17FE7",
+  "signature_verified": true,
+  "version": "veraPDF 1.30.3\nBuilt: Wed Oct 07 13:52:00 UTC 2026\nDeveloped and released by the veraPDF Consortium.\nFunded by the PREFORMA project.\nReleased under the GNU General Public License v3\nand the Mozilla Public License v2 or later.",
+  "downloads": [
+    {
+      "url": "https://software.verapdf.org/releases/verapdf-installer.zip",
+      "bytes": 32971125,
+      "sha256": "b512bf24945503a33fc10738ecffc1f2dccaaf8593a448e94ee9ac86a9559a59"
+    },
+    {
+      "url": "https://software.verapdf.org/releases/verapdf-installer.zip.asc",
+      "bytes": 659,
+      "sha256": "88567a5c0784039c7e004a164ff8433552d32c12e8d8f29382f8a1558de71b9a"
+    },
+    {
+      "url": "https://software.verapdf.org/keys/KEY",
+      "bytes": 5613,
+      "sha256": "30f1dc7fb7c9f3d9796dd9f9dd5d344ebbcf45bef9632d9c47c39cdf254249f2"
+    }
+  ]
+}

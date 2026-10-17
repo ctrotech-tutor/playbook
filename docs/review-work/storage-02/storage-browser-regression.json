@@ -1,0 +1,1818 @@
+{
+  "date": "2026-10-17T04:06:03.323481+00:00",
+  "result": "PASS_TESTED_STORAGE_SCOPE_WITH_FINDINGS",
+  "open_findings": [
+    {
+      "engine": "webkit",
+      "case": {
+        "id": "unrelated-automated-page-event-delivery",
+        "result": "NEEDS_TRIAGE",
+        "actual": {
+          "sharedValue": "observed",
+          "events": []
+        },
+        "observation_window_ms": 1200,
+        "scope": "Separate Playwright context pages. Bounded absence is not proof of permanent non-delivery or universal engine nonconformance; opener-connected delivery is tested separately."
+      }
+    }
+  ],
+  "scope": "Six Storage members in both local and session areas; binding/conversion/mutation and bounded quota probes; local peer events; session frame/tab/opener-copy boundaries; opaque origins; distinct origins and worker exposure. Not exhaustive policy, all-device, full Web IDL/WPT conformance, real AT or independent review.",
+  "fixture": "Fresh browser context and disposable loopback HTTP origins. No production or reader data touched.",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "cases": [
+        {
+          "id": "window-exposure",
+          "result": "PASS",
+          "actual": "function"
+        },
+        {
+          "id": "not-public-constructor",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "localStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "localStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "localStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "localStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "localStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "localStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "localStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "localStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "localStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "length",
+            "null",
+            "preserved",
+            "empty",
+            "getItem",
+            "7",
+            "undefined",
+            "ordered"
+          ]
+        },
+        {
+          "id": "localStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "localStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "localStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "sessionStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "sessionStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "sessionStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "sessionStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "sessionStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "sessionStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "sessionStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "sessionStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "length",
+            "null",
+            "preserved",
+            "empty",
+            "getItem",
+            "7",
+            "undefined",
+            "ordered"
+          ]
+        },
+        {
+          "id": "sessionStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "sessionStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "sessionStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "unrelated-automated-page-event-delivery",
+          "result": "OBSERVED_DELIVERY",
+          "actual": {
+            "sharedValue": "observed",
+            "events": [
+              "ctro:unrelated-probe"
+            ]
+          },
+          "observation_window_ms": 1200,
+          "scope": "Separate Playwright context pages. Bounded absence is not proof of permanent non-delivery or universal engine nonconformance; opener-connected delivery is tested separately."
+        },
+        {
+          "id": "local-events-and-noop-observation",
+          "result": "PASS",
+          "events": [
+            {
+              "key": "ctro:event",
+              "oldValue": null,
+              "newValue": "one",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "one",
+              "newValue": "two",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "two",
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:clear",
+              "oldValue": null,
+              "newValue": "x",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": null,
+              "oldValue": null,
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            }
+          ],
+          "settling_observation_ms": 300,
+          "scope": "Positive delivery and bounded no-op/same-mutator silence, not a proof about all future time."
+        },
+        {
+          "id": "session-same-tab-frame-versus-separate-tab",
+          "result": "PASS",
+          "separate_tab_observation_ms": 300
+        },
+        {
+          "id": "auxiliary-session-initial-copy-not-live-sharing",
+          "result": "PASS"
+        },
+        {
+          "id": "different-host-origin-isolation",
+          "result": "PASS"
+        },
+        {
+          "id": "opaque-origin-getters",
+          "result": "PASS",
+          "actual": {
+            "localStorage": "SecurityError",
+            "sessionStorage": "SecurityError"
+          }
+        },
+        {
+          "id": "worker-exposure-boundary",
+          "result": "PASS",
+          "actual": {
+            "storage": "undefined",
+            "local": "undefined",
+            "session": "undefined"
+          }
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "cases": [
+        {
+          "id": "window-exposure",
+          "result": "PASS",
+          "actual": "function"
+        },
+        {
+          "id": "not-public-constructor",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "localStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "localStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "localStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "localStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "localStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "localStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "localStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "localStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "localStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "preserved",
+            "empty",
+            "ordered",
+            "length",
+            "undefined",
+            "getItem",
+            "7"
+          ]
+        },
+        {
+          "id": "localStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "localStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "localStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "sessionStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "sessionStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "sessionStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "sessionStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "sessionStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "sessionStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "sessionStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "sessionStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "preserved",
+            "empty",
+            "ordered",
+            "length",
+            "undefined",
+            "getItem",
+            "7"
+          ]
+        },
+        {
+          "id": "sessionStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "sessionStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "sessionStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "unrelated-automated-page-event-delivery",
+          "result": "OBSERVED_DELIVERY",
+          "actual": {
+            "sharedValue": "observed",
+            "events": [
+              "ctro:unrelated-probe"
+            ]
+          },
+          "observation_window_ms": 1200,
+          "scope": "Separate Playwright context pages. Bounded absence is not proof of permanent non-delivery or universal engine nonconformance; opener-connected delivery is tested separately."
+        },
+        {
+          "id": "local-events-and-noop-observation",
+          "result": "PASS",
+          "events": [
+            {
+              "key": "ctro:event",
+              "oldValue": null,
+              "newValue": "one",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "one",
+              "newValue": "two",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "two",
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:clear",
+              "oldValue": null,
+              "newValue": "x",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": null,
+              "oldValue": null,
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            }
+          ],
+          "settling_observation_ms": 300,
+          "scope": "Positive delivery and bounded no-op/same-mutator silence, not a proof about all future time."
+        },
+        {
+          "id": "session-same-tab-frame-versus-separate-tab",
+          "result": "PASS",
+          "separate_tab_observation_ms": 300
+        },
+        {
+          "id": "auxiliary-session-initial-copy-not-live-sharing",
+          "result": "PASS"
+        },
+        {
+          "id": "different-host-origin-isolation",
+          "result": "PASS"
+        },
+        {
+          "id": "opaque-origin-getters",
+          "result": "PASS",
+          "actual": {
+            "localStorage": "SecurityError",
+            "sessionStorage": "SecurityError"
+          }
+        },
+        {
+          "id": "worker-exposure-boundary",
+          "result": "PASS",
+          "actual": {
+            "storage": "undefined",
+            "local": "undefined",
+            "session": "undefined"
+          }
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "cases": [
+        {
+          "id": "window-exposure",
+          "result": "PASS",
+          "actual": "function"
+        },
+        {
+          "id": "not-public-constructor",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "localStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "localStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "localStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "localStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "localStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "localStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "localStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "localStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "localStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "localStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "localStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "length",
+            "preserved",
+            "empty",
+            "7",
+            "getItem",
+            "undefined",
+            "ordered",
+            "null"
+          ]
+        },
+        {
+          "id": "localStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "localStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "localStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "localStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "localStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "sessionStorage:empty-count",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:missing",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:absent-property",
+          "result": "PASS",
+          "actual": "undefined"
+        },
+        {
+          "id": "sessionStorage:set-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:empty-vs-absent",
+          "result": "PASS",
+          "actual": [
+            "",
+            null,
+            1
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-count",
+          "result": "PASS",
+          "actual": 1
+        },
+        {
+          "id": "sessionStorage:index-conversions",
+          "result": "PASS",
+          "actual": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        {
+          "id": "sessionStorage:outside-index",
+          "result": "PASS",
+          "actual": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "id": "sessionStorage:missing-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:missing-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:no-write-on-missing-value",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:key-bigint",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:key-symbol",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:symbol-set-value",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:DOMString-conversions",
+          "result": "PASS",
+          "actual": [
+            "null",
+            "undefined",
+            "false"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-order",
+          "result": "PASS",
+          "actual": [
+            "key",
+            "value"
+          ]
+        },
+        {
+          "id": "sessionStorage:conversion-error-propagates-and-preserves",
+          "result": "PASS",
+          "actual": [
+            true,
+            "old"
+          ]
+        },
+        {
+          "id": "sessionStorage:brand-key",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-getItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-setItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-removeItem",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-clear",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:brand-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:strict-readonly-length",
+          "result": "PASS",
+          "actual": "TypeError"
+        },
+        {
+          "id": "sessionStorage:readonly-count-preserved",
+          "result": "PASS",
+          "actual": 6
+        },
+        {
+          "id": "sessionStorage:named-set-and-read",
+          "result": "PASS",
+          "actual": [
+            "named",
+            "named"
+          ]
+        },
+        {
+          "id": "sessionStorage:named-delete",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:prototype-name-collision",
+          "result": "PASS",
+          "actual": [
+            "stored length",
+            "stored method name",
+            "function"
+          ]
+        },
+        {
+          "id": "sessionStorage:replace-does-not-reorder",
+          "result": "PASS",
+          "actual": [
+            "length",
+            "preserved",
+            "empty",
+            "7",
+            "getItem",
+            "undefined",
+            "ordered",
+            "null"
+          ]
+        },
+        {
+          "id": "sessionStorage:remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:missing-remove-return",
+          "result": "PASS",
+          "actual": null
+        },
+        {
+          "id": "sessionStorage:clear-extra-argument-is-not-prefix-filter",
+          "result": "PASS",
+          "actual": 0
+        },
+        {
+          "id": "sessionStorage:clear-ignores-object-extra",
+          "result": "PASS",
+          "actual": [
+            false,
+            0
+          ]
+        },
+        {
+          "id": "sessionStorage:quota-failed-replacement-preserves-value",
+          "result": "PASS",
+          "actual": "old"
+        },
+        {
+          "id": "sessionStorage:bounded-quota-observation",
+          "result": "PASS_OBSERVED",
+          "actual": "QuotaExceededError",
+          "max_attempt_value_code_units": 16777216,
+          "scope": "One bounded allocation. Not a universal quota size or free-space measurement."
+        },
+        {
+          "id": "unrelated-automated-page-event-delivery",
+          "result": "NEEDS_TRIAGE",
+          "actual": {
+            "sharedValue": "observed",
+            "events": []
+          },
+          "observation_window_ms": 1200,
+          "scope": "Separate Playwright context pages. Bounded absence is not proof of permanent non-delivery or universal engine nonconformance; opener-connected delivery is tested separately."
+        },
+        {
+          "id": "local-events-and-noop-observation",
+          "result": "PASS",
+          "events": [
+            {
+              "key": "ctro:event",
+              "oldValue": null,
+              "newValue": "one",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "one",
+              "newValue": "two",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:event",
+              "oldValue": "two",
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": "ctro:clear",
+              "oldValue": null,
+              "newValue": "x",
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            },
+            {
+              "key": null,
+              "oldValue": null,
+              "newValue": null,
+              "url": "http://127.0.0.1:45247/mutator",
+              "area": true
+            }
+          ],
+          "settling_observation_ms": 300,
+          "scope": "Positive delivery and bounded no-op/same-mutator silence, not a proof about all future time."
+        },
+        {
+          "id": "session-same-tab-frame-versus-separate-tab",
+          "result": "PASS",
+          "separate_tab_observation_ms": 300
+        },
+        {
+          "id": "auxiliary-session-initial-copy-not-live-sharing",
+          "result": "PASS"
+        },
+        {
+          "id": "different-host-origin-isolation",
+          "result": "PASS"
+        },
+        {
+          "id": "opaque-origin-getters",
+          "result": "PASS",
+          "actual": {
+            "localStorage": "SecurityError",
+            "sessionStorage": "SecurityError"
+          }
+        },
+        {
+          "id": "worker-exposure-boundary",
+          "result": "PASS",
+          "actual": {
+            "storage": "undefined",
+            "local": "undefined",
+            "session": "undefined"
+          }
+        }
+      ]
+    }
+  ]
+}

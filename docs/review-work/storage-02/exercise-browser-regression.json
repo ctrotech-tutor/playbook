@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-17T04:06:18.862731+00:00",
+  "result": "PASS_TESTED_EXERCISE_SCOPE",
+  "scope": "Exact authored exercise code and DOM wiring; allowlist, untrusted values, normal saves, invalid requests and injected access/quota failures. Not real policy/quota measurements, independent security review or AT testing.",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "scenarios": [
+        {
+          "id": "absent",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "paper",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "night",
+          "result": "PASS",
+          "initial": {
+            "theme": "night",
+            "rendered": "night",
+            "selected": "night",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "empty",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "unexpected-truthy",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "untrusted-markup",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "getter-denied",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "write-quota-failure",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "invalid-next-value",
+          "result": "PASS",
+          "actual": {
+            "error": "TypeError",
+            "value": "paper",
+            "stored": "paper"
+          },
+          "fault_injection": false
+        },
+        {
+          "id": "read-failure-preserves-memory",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Preference storage is unavailable."
+          },
+          "fault_injection": true
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "scenarios": [
+        {
+          "id": "absent",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "paper",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "night",
+          "result": "PASS",
+          "initial": {
+            "theme": "night",
+            "rendered": "night",
+            "selected": "night",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "empty",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "unexpected-truthy",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "untrusted-markup",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "getter-denied",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "write-quota-failure",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "invalid-next-value",
+          "result": "PASS",
+          "actual": {
+            "error": "TypeError",
+            "value": "paper",
+            "stored": "paper"
+          },
+          "fault_injection": false
+        },
+        {
+          "id": "read-failure-preserves-memory",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Preference storage is unavailable."
+          },
+          "fault_injection": true
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "scenarios": [
+        {
+          "id": "absent",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "paper",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "night",
+          "result": "PASS",
+          "initial": {
+            "theme": "night",
+            "rendered": "night",
+            "selected": "night",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "empty",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "unexpected-truthy",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "untrusted-markup",
+          "result": "PASS",
+          "initial": {
+            "theme": "paper",
+            "rendered": "paper",
+            "selected": "paper",
+            "status": "Preference read; saving is not yet verified.",
+            "images": 0,
+            "injected": false
+          },
+          "successful_save_verified": true
+        },
+        {
+          "id": "getter-denied",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "write-quota-failure",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Theme changed for this page only."
+          },
+          "fault_injection": true
+        },
+        {
+          "id": "invalid-next-value",
+          "result": "PASS",
+          "actual": {
+            "error": "TypeError",
+            "value": "paper",
+            "stored": "paper"
+          },
+          "fault_injection": false
+        },
+        {
+          "id": "read-failure-preserves-memory",
+          "result": "PASS",
+          "actual": {
+            "in_memory_theme": "night",
+            "status": "Preference storage is unavailable."
+          },
+          "fault_injection": true
+        }
+      ]
+    }
+  ]
+}

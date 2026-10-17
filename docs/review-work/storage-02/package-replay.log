@@ -1,0 +1,52 @@
+
+added 25 packages in 648ms
+
+> ctrotech-html-playbook@1.0.0 test
+> node --test tests/build-integrity.test.mjs tests/hosting-contract.test.mjs
+
+✔ JSON indentation, blank lines, trailing whitespace and Windows line endings are harmless (2.073092ms)
+✔ whitespace inside JSON strings is protected (0.428556ms)
+✔ dependency versions and added dependencies are protected (0.244192ms)
+✔ non-JSON source and binary assets remain byte-exact (1.367974ms)
+✔ invalid JSON is rejected rather than repaired by normalization (0.558717ms)
+✔ Python and Node use the same normalization, including every retained input (323.651486ms)
+✔ guard accepts harmless formatting, reports all stale inputs and rejects missing files (4.580295ms)
+✔ old manifests and out-of-root paths fail closed (0.393465ms)
+✔ hosting metadata, property order, regions and redirects are not manuscript changes (1.388067ms)
+✔ incompatible output and routing settings fail with hosting-specific guidance (0.64117ms)
+✔ an ignored stale local snapshot cannot shadow the current tracked snapshot (14.157633ms)
+✔ all stale candidates still reject a real content edit (3.507279ms)
+✔ the snapshot manifest excludes hosting config but protects book data and dependencies (95.557587ms)
+✔ actual compiler accepts changed hosting config and stale local cache, but rejects manuscript edits (7503.767762ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8092.685122
+{
+  "mode": "production",
+  "origin": "https://ctrobook.vercel.app",
+  "indexable": true,
+  "html_documents": 500,
+  "indexable_pages": 410,
+  "markdown_chapters": 74,
+  "hashed_assets": 29,
+  "edition": "2026.1",
+  "created_from": "precompiled site/ plus canonical content metadata; no live source fetches during deployment",
+  "limitations": "No search ranking, rich-result eligibility, AI citation, universal compatibility or independent content approval is guaranteed."
+}
+✔ every generated HTML document has valid author, title and mode-dependent metadata (1357.510066ms)
+✔ sitemap and crawler policy agree with production versus preview/local mode (3.757451ms)
+✔ output includes discovery files and PDF, but not source manifests or credentials (3.560872ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1603.90965
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation

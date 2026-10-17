@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-17",
+  "owner": "Storage",
+  "authored_direct_member_contracts": 6,
+  "same_source_html_pdf_integrated": true,
+  "captured_owner_count_unchanged": 314,
+  "captured_direct_member_count_unchanged": 1574,
+  "formal_requirements_closed": [],
+  "exclusions_added": [],
+  "independent_approval": false,
+  "scope": "First authored behaviour unit now included in matching website/PDF artifacts. Does not complete Window getter, StorageEvent, inherited/legacy binding or other owner contracts."
+}

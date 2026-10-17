@@ -4,6 +4,7 @@ from pygments import highlight
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
 from html import escape as esc
+from behavior_reference import render_behavior,units,markdown
 
 def slug(name):return re.sub(r'[^a-z0-9]+','-',name.lower()).strip('-')
 def build_api(root,write,shell):
@@ -26,6 +27,11 @@ def build_api(root,write,shell):
             for i,m in enumerate(r['members']):
                 body+=f'<tr id="member-{i+1}"><th scope="row"><code>{esc(m["signature"])}</code></th><td>{esc(m["kind"])}'+(' / read-only' if m['readonly'] else '')+'</td><td><a href="'+esc(m['definition_url'],quote=True)+'">'+esc(m['definition_match'])+'</a></td></tr>'
             body+='</tbody></table></div>'
+        def behavior_code(source,language):
+            return '<pre class="codebox" tabindex="0" role="region" aria-label="Scrollable '+esc(language,quote=True)+' example"><code>'+highlight(source,get_lexer_by_name(language,ensurenl=False,stripnl=False),HtmlFormatter(nowrap=True)).removesuffix('\n')+'</code></pre>'
+        def behavior_inline(text):
+            return re.sub(r'`([^`]+)`',r'<code>\1</code>',esc(str(text)))
+        body+=render_behavior(root,name,behavior_inline,behavior_code)
         body+='<h2>Check behavior before using it</h2><p>Exposed globals, secure-context requirements, overload resolution and conversions can change which operation is available or chosen. A signature alone does not list every exception or permission rule. Check the linked algorithm and current implementation evidence.</p></div></main>'
         write('reference/api/'+slug(name)+'.html',shell(name+' API reference',body,base='../../',description=f'Inspect {name}: captured WebIDL declarations, direct member signatures, inheritance, mixins and normative definition links.'))
     index+='</div><div class="reference-body"><h2>Snapshot and scope</h2><p>Derived from the HTML Standard through W3C Webref. Extraction is not independent technical review. The <a href="../data/api-register.json">machine-readable register</a> includes source URLs, hashes, match labels and capture date. <a href="keywords.html">Look up attribute keywords, input states and events</a>.</p><p><a href="https://whatwg.org/ipr-policy#copyright-license-grant">WHATWG source terms</a>; <a href="../assets/webref-MIT.txt">Webref extraction software notice</a>.</p></div></main>'
@@ -36,3 +42,6 @@ def build_api(root,write,shell):
         keywords+=f'<article class="ref-card" id="{esc(d["id"],quote=True)}-{definition_index}" data-reference-entry data-category="{d["type"]}" data-search="{esc(search,quote=True)}"><h2>{esc(" / ".join(d["names"]))}</h2><span class="badge">{d["type"]}</span><p>Contexts: {esc(", ".join(d["contexts"]) or "See definition")}</p><p>{esc(d["section"])}</p><a href="{esc(d["url"],quote=True)}">Normative definition</a></article>'
     write('reference/keywords.html',shell('Keywords, states and events',keywords+'</div></main>',base='../',description='Find captured HTML attribute keywords, input states, enumeration values and event definition routes by context and name.'))
     write('data/api-register.json',json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
+
+    write('data/api-behavior.json',json.dumps({'schema_version':1,'units':units(root)},ensure_ascii=False,separators=(',',':'))+'\n')
+    for unit in units(root):write('markdown/'+unit['id']+'.md',markdown(unit))

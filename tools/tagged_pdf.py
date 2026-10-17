@@ -15,6 +15,7 @@ ROOT=Path(sys.argv[1]).resolve();OUT=Path(sys.argv[2]).resolve();OUT.mkdir(paren
 sys.path.insert(0,str(ROOT/'tools'))
 from pdf_syntax import source_tokens,token_colour
 from fingerprint import publication_fingerprint
+from behavior_reference import render_behavior,units
 book=json.loads((ROOT/'content/chapters.json').read_text());meta=json.loads((ROOT/'content/publication.json').read_text());guide=json.loads((ROOT/'content/reading-guide.json').read_text());inv=json.loads((ROOT/'content/reference-snapshot.json').read_text())['inventories'];register=json.loads((ROOT/'content/api-register.json').read_text())
 clean=lambda s:str(s).replace('\u2014',', ').replace('\u2013','-')
 def cjk(s):
@@ -46,7 +47,7 @@ read+='<h3>One useful practice loop</h3><ol>'+''.join('<li><strong>'+inline(x['t
 for title,key in [('Website, PDF and code','formats'),('Know what a source tells you','sources'),('Scope of this edition','scope'),('Corrections','corrections')]:read+='<h3>'+title+'</h3>'+p(guide[key])
 read+='<h3>Edition notes</h3><ul>'+''.join('<li>'+inline(x)+'</li>' for x in guide['edition_notes'])+'</ul>'
 body+=section('Start here: a reading guide','reading-guide',read)
-rows=[('Publication acceptance','Author accepted this edition on 17 October 2026; reported general-reader feedback is not specialist certification'),('Exhaustive coverage','Member/default/value/algorithm and cross-specification reconciliation remains open'),('Accessibility and security','Automated/native work is not actual OS assistive technology or full independent security assessment'),('Tagged PDF','Semantic tags and machine validation are separate from independent reading-order and actual assistive-technology review')]
+rows=[('Publication acceptance','Author accepted this edition on 17 October 2026; reported general-reader feedback is not specialist certification'),('Exhaustive coverage','Member/default/value/algorithm and cross-specification reconciliation remains open'),('Accessibility and security','Bounded desktop-Linux Orca evidence does not establish cross-platform human AT usability or independent security approval'),('Tagged PDF','Semantic tags and machine validation are separate from independent reading-order and actual assistive-technology review')]
 table='<table><caption>Production edition: acceptance and review scope</caption><thead><tr><th scope="col">Gate</th><th scope="col">State and limit</th></tr></thead><tbody>'+''.join('<tr><th scope="row">'+inline(a)+'</th><td>'+inline(b)+'</td></tr>' for a,b in rows)+'</tbody></table>'
 body+=section('Publication and review scope','candidate-scope',p('Tags, bookmarks, text extraction, links and a validator report are different evidence. No PDF/UA or WCAG certification is asserted merely because a PDF/UA generation target was selected. Tables shown inside source-code examples remain code, not executable document tables. Use the seven supplied projects for their actual rendered tables and forms.')+table)
 body+=section('Contents','contents','<ol class="toc">'+''.join('<li>'+link(f'{c["number"]:02}. '+c['title'],'#'+c['id'])+'</li>' for c in book)+'</ol>')
@@ -71,6 +72,7 @@ for rec in register['records']:
  for declaration in rec['definitions']:text+=code(declaration,'webidl')
  text+=link('Normative owner definition',rec['source_url'])
 body+=section('API declaration register','api-declaration-register',text)
+body+=''.join(render_behavior(ROOT,u['owner'],inline,code,level=2) for u in units(ROOT))
 body+=section('Keyword, state and event routes','keyword-register',p('437 captured public definition routes, not a complete missing-value/default/applicability table.')+''.join('<h3>'+inline(' / '.join(rec['names']))+'</h3>'+p(rec['type']+' / '+(', '.join(rec['contexts']) or rec['section']))+link('Normative definition',rec['url']) for rec in register['keyword_records']))
 body+=section('Glossary','glossary',''.join('<h3>'+inline(term)+'</h3>'+p(value) for term,value in json.loads((ROOT/'content/glossary.json').read_text()).items()))
 body+=section('Source and release notes','sources',p('Reference records derive from the WHATWG snapshot dated 14 October 2026. Bounded source retrieval and current audit records have their own dates. An index or link is not complete technical approval. Copyright and source rights remain with their owners.')+'<ul>'+''.join('<li>'+link(s['id'],s['url'])+'</li>' for s in json.loads((ROOT/'content/source-manifest.json').read_text()))+'</ul>'+p('Still open: independent chapter/answer review; exhaustive behaviour, value/default and cross-specification contracts; actual OS assistive-technology and full security assessment; full-book tagged PDF accessibility approval. A repository push is not a production deployment.'))
@@ -135,6 +137,12 @@ with pymupdf.open(target) as pdf:
  missing_code=[c['id'] for c in book if norm(c['code']) not in norm(text)]
  assert not missing_titles,missing_titles
  assert not missing_code,missing_code
+ for unit in units(ROOT):
+  for m in unit['members']:
+   for field in ['meaning','inputs_and_conversions','returns_and_defaults','errors_and_restrictions','effects_and_ordering','code','explanation']:
+    assert norm(m[field].replace('`','')) in norm(text),(unit['owner'],m['name'],field)
+  for field in ['html','code','usage_code']:
+   assert norm(unit['exercise'][field]) in norm(text),(unit['owner'],'exercise',field)
  declaration_strings=[value for row in register['records'] for value in row['definitions']]
  assert all(norm(value) in norm(text) for value in declaration_strings),'Captured WebIDL declaration text missing from PDF'
  for c in book:

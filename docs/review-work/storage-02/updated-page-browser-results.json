@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-17T03:58:39.438069+00:00",
+  "result": "PASS_SCOPED_AUTOMATED_CHECKS",
+  "scope": "Two actual compiled pages in three engines at desktop and 390px; axe WCAG rule subsets and page-level horizontal overflow. Incomplete/manual targets retained. Not independent WCAG approval, actual AT or whole-site recertification.",
+  "observations": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": null,
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1",
+                    "shadowColor": null,
+                    "colorParse": null
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body data-base=\"\">",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a href=\"/llms.txt\">Text index</a>",
+              "target": [
+                "a[href$=\"llms.txt\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "path": "reference/api/storage.html",
+      "sha256": "df38c30140e2c070aa802c92b38c623900dadf16bee2f417149ecfe8ab0d3477",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 1280,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 1280,
+        "scroll": 1280
+      },
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "path": "accessibility.html",
+      "sha256": "249ce4d5e1d34b0fae5d646b92abdc1e1cdc878093eab70cd3ba15d63cd0b22c",
+      "viewport_width": 390,
+      "axe_version": "4.14.0",
+      "violations": [],
+      "incomplete": [],
+      "reflow": {
+        "width": 390,
+        "scroll": 390
+      },
+      "passed": true
+    }
+  ]
+}

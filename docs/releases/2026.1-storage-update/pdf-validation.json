@@ -1,0 +1,19 @@
+{
+  "validated_at": "2026-10-17T03:54:03.503925+00:00",
+  "artifact": "ctrotech-html-playbook.pdf",
+  "artifact_sha256": "6e4fa0ac5f64d32e3053d22014efed2b09dcc472b2109cce0a548c2e2a302720",
+  "publication_fingerprint": "8c085ae092383c4c44f9d27149b561067440d2ee191ee9785b258166f9a7bd40",
+  "engine": "veraPDF 1.30.3",
+  "profile": "PDF/UA-1",
+  "isCompliant": true,
+  "details": {
+    "passedRules": "106",
+    "failedRules": "0",
+    "passedChecks": "2897068",
+    "failedChecks": "0"
+  },
+  "scope": "Exact-artifact machine PDF/UA-1 profile validation. Not independent semantic reading-order, usability, WCAG or actual OS assistive-technology approval.",
+  "independent_accessibility_approved": false,
+  "os_assistive_technology_reviewed": false,
+  "diagnostics": "pdf-verapdf-diagnostics.log.gz; font diagnostics are retained, not hidden by the compliant profile result."
+}

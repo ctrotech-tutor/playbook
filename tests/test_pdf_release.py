@@ -56,6 +56,21 @@ class ReleaseGuard(unittest.TestCase):
         with self.assertRaises(FileNotFoundError):
             pdf.verify_primary_pdf(self.root)
 
+    def test_selects_current_records_without_overwriting_history(self):
+        (self.root/'content').mkdir()
+        (self.root/'content/publication.json').write_text(json.dumps({'pdf_validation_directory':'docs/releases/update-test'}))
+        records=self.root/'docs/releases/update-test'
+        records.mkdir()
+        (records/'pdf-validation.json').write_text(json.dumps(self.proof))
+        self.proof_path.write_text('historical record deliberately not the active proof')
+        self.assertTrue(pdf.verify_primary_pdf(self.root)['isCompliant'])
+
+    def test_rejects_out_of_release_records(self):
+        (self.root/'content').mkdir()
+        (self.root/'content/publication.json').write_text(json.dumps({'pdf_validation_directory':'../outside'}))
+        with self.assertRaisesRegex(AssertionError,'inside docs/releases'):
+            pdf.verify_primary_pdf(self.root)
+
     def test_renderer_failure_preserves_old_artifact_and_proof(self):
         original = self.target.read_bytes(), self.proof_path.read_bytes()
         with patch.object(pdf.subprocess, 'run', side_effect=subprocess.CalledProcessError(1, 'renderer')):

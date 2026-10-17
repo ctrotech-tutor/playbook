@@ -1,3 +1,5 @@
+> **Historical first checkpoint.** The integrated follow-up is documented in [Storage-02](storage-02/README.md). The manuscript and counts below describe the earlier review-only baseline, not the current maintained website/PDF source. Its evidence manifest and frozen verifier belong to that recorded baseline.
+
 # Next-edition work: behaviour depth and specialist review
 
 **CTROTECH HTML Playbook | 17 October 2026**

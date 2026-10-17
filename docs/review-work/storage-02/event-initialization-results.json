@@ -1,0 +1,1199 @@
+{
+  "date": "2026-10-17T03:44:57.572194+00:00",
+  "scope": "Fresh unrelated Playwright pages in one browser context; same origin; listener registration precedes initialization and mutation. Shared getter value measured after event window. Not a Safari/device matrix, full WPT run, or proof of an engine-internal cause.",
+  "independent": false,
+  "result": "CONTROLLED_OBSERVATIONS_RECORDED",
+  "observations": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "listener-only",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "listener-only",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "listener-only",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "object-getter",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "object-getter",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "object-getter",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "length-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "length-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "length-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "missing-entry-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "missing-entry-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "missing-entry-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "peer-write",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "peer-write",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "initialization": "peer-write",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "listener-only",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "listener-only",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "listener-only",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "object-getter",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "object-getter",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "object-getter",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "length-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "length-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "length-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "missing-entry-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "missing-entry-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "missing-entry-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "peer-write",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "peer-write",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "initialization": "peer-write",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "listener-only",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [],
+        "sharedValue": "new-value"
+      },
+      "delivery": "NOT_OBSERVED_WITHIN_WINDOW"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "listener-only",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [],
+        "sharedValue": "new-value"
+      },
+      "delivery": "NOT_OBSERVED_WITHIN_WINDOW"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "listener-only",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [],
+        "sharedValue": "new-value"
+      },
+      "delivery": "NOT_OBSERVED_WITHIN_WINDOW"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "object-getter",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "object-getter",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "object-getter",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "length-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "length-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "length-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "missing-entry-read",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "missing-entry-read",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "missing-entry-read",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "peer-write",
+      "repetition": 1,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "peer-write",
+      "repetition": 2,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "initialization": "peer-write",
+      "repetition": 3,
+      "window_ms": 800,
+      "state_before_mutation": {
+        "visibility": "visible",
+        "focused": true,
+        "opener": false,
+        "origin": "http://127.0.0.1:43339",
+        "isolated": false
+      },
+      "actual": {
+        "events": [
+          {
+            "key": "follow-up-key",
+            "oldValue": null,
+            "newValue": "new-value",
+            "url": "http://127.0.0.1:43339/mutator",
+            "receivingArea": true
+          }
+        ],
+        "sharedValue": "new-value"
+      },
+      "delivery": "OBSERVED"
+    }
+  ]
+}

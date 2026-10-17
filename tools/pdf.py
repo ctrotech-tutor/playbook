@@ -9,10 +9,19 @@ import hashlib, json, shutil, subprocess, sys
 from fingerprint import publication_fingerprint
 
 
+def validation_directory(root):
+    root=Path(root).resolve()
+    metadata=root/'content/publication.json'
+    configured=json.loads(metadata.read_text()).get('pdf_validation_directory','docs/releases/2026.1') if metadata.exists() else 'docs/releases/2026.1'
+    records=(root/configured).resolve()
+    assert records.is_relative_to(root/'docs/releases'), 'PDF validation records must stay inside docs/releases.'
+    return records
+
+
 def verify_primary_pdf(root):
     root = Path(root)
     target = root/'deliverables/ctrotech-html-playbook.pdf'
-    proof = json.loads((root/'docs/releases/2026.1/pdf-validation.json').read_text())
+    proof = json.loads((validation_directory(root)/'pdf-validation.json').read_text())
     assert proof.get('isCompliant') is True and proof.get('profile') == 'PDF/UA-1', 'Primary PDF has no passing machine validation evidence.'
     assert proof['artifact_sha256'] == hashlib.sha256(target.read_bytes()).hexdigest(), 'Primary PDF does not match its exact validation report.'
     assert proof['publication_fingerprint'] == publication_fingerprint(root), 'Primary PDF was not generated and validated for the current publication inputs.'
@@ -30,7 +39,7 @@ def build_pdf(root, site, book, inv):
     artifact = staging/'ctrotech-html-playbook.pdf'
     proof = json.loads((staging/'pdf-validation.json').read_text())
     assert proof['artifact_sha256'] == hashlib.sha256(artifact.read_bytes()).hexdigest()
-    records = root/'docs/releases/2026.1'
+    records = validation_directory(root)
     records.mkdir(parents=True, exist_ok=True)
     for name in ['pdf-structure-checks.json', 'pdf-validation.json', 'pdf-verapdf.xml', 'pdf-verapdf-diagnostics.log.gz']:
         shutil.copy2(staging/name, records/name)

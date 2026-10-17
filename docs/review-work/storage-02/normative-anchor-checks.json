@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-17",
+  "result": "PASS_CAPTURED_ANCHORS",
+  "scope": "Targets in the preserved dated normative source captures, not independent claim correctness or a fresh live-link survey.",
+  "targets": [
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-broadcast",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-reorder",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#cross-directory-attacks",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dns-spoofing-attacks",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage-dev",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-getitem",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-length",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-removeitem",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-setitem",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#introduction-16",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#privacy",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#security-storage",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#storage-2",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html#the-storageevent-interface",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://storage.spec.whatwg.org/#storage-keys",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#LegacyPlatformObjectGetOwnProperty",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#abstract-opdef-converttoint",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#dfn-named-property-visibility",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#dfn-overload-resolution-algorithm",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#invoke-named-setter",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#js-DOMString",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#js-attributes",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#js-unsigned-long",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#legacy-platform-object-getownproperty",
+      "captured_anchor_exists": true
+    },
+    {
+      "url": "https://webidl.spec.whatwg.org/#legacy-platform-object-set",
+      "captured_anchor_exists": true
+    }
+  ]
+}
