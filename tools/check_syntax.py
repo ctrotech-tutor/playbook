@@ -14,7 +14,7 @@ from pdf_syntax import SyntaxCodeBlock,source_tokens,TOKEN_PALETTE
 ROOT=Path(__file__).resolve().parents[1]
 def flat(text):return re.sub(r'\s+','',text)
 def code_text(document):
-    return ''.join(span['text'] for page in document for block in page.get_text('dict')['blocks'] if 'lines' in block for line in block['lines'] for span in line['spans'] if 'Mono' in span['font'] and abs(span['size']-8.5)<.01)
+    return ''.join(span['text'] for page in document for block in page.get_text('dict')['blocks'] if 'lines' in block for line in block['lines'] for span in line['spans'] if ('Mono' in span['font'] or 'BookCJK' in span['font']) and any(abs(span['size']-size)<.01 for size in (8.2,8.5)))
 def luminance(value):
     rgb=[int(value[i:i+2],16)/255 for i in (1,3,5)]
     channels=[x/12.92 if x<=.04045 else ((x+.055)/1.055)**2.4 for x in rgb]
@@ -32,8 +32,8 @@ def check():
     document=pymupdf.open(ROOT/'deliverables/ctrotech-html-playbook.pdf')
     printed=flat(code_text(document))
     assert document.metadata['author']==meta['author']
-    for filename in ['OFL.txt','DejaVu-COPYRIGHT.txt','WHATWG-LICENSE.txt','BCD-LICENSE.txt','webref-MIT.txt']:
-        expected=(ROOT/'assets/fonts'/filename) if filename in ['OFL.txt','DejaVu-COPYRIGHT.txt'] else (ROOT/'assets'/filename)
+    for filename in ['OFL.txt','DejaVu-COPYRIGHT.txt','Noto-CJK-OFL.txt','WHATWG-LICENSE.txt','BCD-LICENSE.txt','webref-MIT.txt']:
+        expected=(ROOT/'assets/fonts'/filename) if filename in ['OFL.txt','DejaVu-COPYRIGHT.txt','Noto-CJK-OFL.txt'] else (ROOT/'assets'/filename)
         assert document.embfile_get(filename)==expected.read_bytes()
     assert meta['author'] in document.get_xml_metadata()
     assert document.xref_get_key(document.pdf_catalog(),'Lang')[1]=='en'

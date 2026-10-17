@@ -1,6 +1,6 @@
 {
   "name": "ctrotech-html-playbook",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": true,
   "license": "UNLICENSED",
   "description": "CTROTECH HTML Playbook: static reading site, PDF and Vercel deployment build",

@@ -1,71 +1,59 @@
-# Publication and delivery status
+# Production edition 2026.1
 
-CTROTECH / The HTML Playbook / October 2026 reading edition / edition 2026.1
+**Release date: 17 October 2026. Author: Odejobi Abiola Samuel. Imprint: CTROTECH.**
 
-Author: **Odejobi Abiola Samuel**. Publication date: 14 October 2026.
+## Publication decision
 
-## Current content checkpoint: 15 October 2026
+The author explicitly accepted the current edition and requested final production completion. He also reported positive reviews from approximately five friends. Their identities, specialist qualifications and detailed review scope were not supplied. Record this as author acceptance and reported general-reader feedback, not independent technical, answer-key, accessibility or security approval.
 
-**74 of 74 substantive same-assistant first passes are recorded.** There are zero independent chapter approvals and no approved exclusions. All 81 original requirements and four final-publication gates remain open. The website and 456-page reading PDF use the same maintained source. This is not the final tagged PDF. Batch06 content commit `37402404842572d9aa150c3561a9182e818a9a1f` was pushed and read back on `main` on 16 October 2026. Its own hosted workflow has started; success has not yet been verified. Production deployment is separate.
+This release is a production edition of the 74-chapter curriculum, seven static projects and captured reference. It is not represented as an exhaustive whole-HTML-Standard behavioural manual. The original requirements and known gaps remain tracked without exclusions. Specialist/expanded-coverage work is not silently marked complete by this release decision.
 
-See `docs/final-audit/README.md`, `batch05-report.md`, the 74-chapter register and current fingerprinted receipts. Current checks cover 495 source HTML documents, 499 generated documents and 2,718 citation targets; Node 24 integrity/hosting/output checks and scoped native browser regressions pass. They do not establish exhaustive API behavior, OS assistive-technology approval or complete security review.
+## Deliverables
 
-The reading-edition account and metrics below are retained as **historical baseline details**, not current whole-candidate counts or proof that this later checkpoint is deployed. Repository synchronization and live deployment are separate operations.
+- One standard full-book tagged PDF at `deliverables/ctrotech-html-playbook.pdf` and `site/downloads/ctrotech-html-playbook.pdf`.
+- The same maintained chapter, publication, reading-guide and reference source for HTML and PDF.
+- Syntax-coloured selectable code, 74 exact-code examples, seven complete static project downloads and bundled font/source notices.
+- Precompiled website, deterministic input manifest, production metadata/search builder and existing Vercel configuration.
+- Exact-artifact PDF/UA-1 machine-validation evidence and scoped source/build/browser/security/accessibility evidence under `docs/releases/2026.1/`.
+- A downloadable ZIP with every payload file hashed in its package manifest and a fresh-extraction build check.
 
-## Decision and scope
+The earlier tagged-review artifact and audit reports are historical checkpoints. They are not the current standard download or evidence for changed release bytes.
 
-The reading edition is prepared as a matching website and PDF, with a reader-facing publication pass and executed checks. It is not an exhaustive whole-Standard behavioral reference or an independently approved technical, answer-key, accessibility or security publication. Existing internal review states remain open; they were not changed to make the edition appear complete.
+## Repeatable maintainer checks
 
-The public site at https://ctrobook.vercel.app/ works. The author confirmed this, and nine representative unauthenticated GET routes were checked: eight returned 200, including the PDF, and a deliberately nonexistent route returned 404. The homepage still identifies release candidate 0.3. `tests/hosted-observation.json` records that limited observation, not deployment of this reading edition, domain ownership or search indexing.
+Node-only deployment uses the checked-in precompiled source and does not require a PDF renderer:
 
-The author authorized repository publication of this edition on 15 October 2026. The earlier package was prepared without repository write authentication; that limitation has now been resolved for the authorized push. Deployment to Vercel is separate and is not claimed here. The previous source commit, d5ef36c111f87776176e1ff00c5f9fe63de45376, passed actual Node 24 Linux and Windows CI in run 38597536097. That historical run does not certify these new changes. The agent did not sign in to Vercel or deploy this package.
+```sh
+npm ci --ignore-scripts
+npm test
+npm run build
+npm run check:site
+```
 
-## Publication improvements
+The production environment must provide the real canonical origin using the existing deployment configuration. A local/development build is deliberately non-indexable; do not treat its metadata as production metadata.
 
-- Replaced reader-facing release-candidate, owner-review and predeployment language with accurate reading-edition information.
-- Added a shared reading guide with three routes, a practice loop, source-literacy notes, format limits, correction guidance and edition notes.
-- Corrected Chapter 60: 166 foundation interface discovery routes and 314 WebIDL declaration owners count different inventories. The expanded register contains 1,574 direct member declarations; it is not a complete inherited-member or behavioral reference.
-- Expanded targeted explanations in Chapters 29, 34, 41, 44, 57, 60, 65 and 67. Added a fictional-data warning to the Chapter 70 registration brief. This was an AI-assisted, bounded publication pass, not an independent review of all 74 lessons.
-- Preserved the author name, local fonts, syntax highlighting, original and third-party notices, exact code files and seven static projects. No author biography, endorsement, open license or certification was invented.
-- Preserved hosting configuration and the content-integrity boundary. Page-count checks now derive the expected output count from the source, so adding a reading page does not require pretending the old count is still correct.
+For a manuscript or renderer change, install `requirements-verify.txt`, the browser engines and the recorded Nu checker with Java 21. Install the reviewed veraPDF CLI and set `VERAPDF` if it is not at `.cache/verapdf/verapdf`. Then build the PDF and source site, run the Python source checks, rebuild to incorporate current evidence, synchronise `site/`, and execute the Node/deployment checks. The builders preserve checks rather than accepting stale fingerprints.
 
-## Executed evidence for this edition
+```sh
+python3 tools/build.py --pdf
+python3 tools/verify.py
+python3 tools/build.py
+python3 tools/check_build.py
+python3 tests/test_pdf_release.py
+```
 
-| Check | Result and scope | Receipt |
-| --- | --- | --- |
-| Source HTML | 494 HTTP-served documents, zero Nu messages; deliberately invalid fixture rejected | `tests/release-evidence.json`, `tests/nu-full-result.json` |
-| Output HTML | 498 generated documents, zero Nu messages | `tests/seo-verification.json`, `tests/seo-static-final.json` |
-| Source links | 2,661 URL/document/fragment targets resolved in 81 documents; link availability is not assertion correctness | `tests/citation-checks.json` |
-| SEO and graph | 409 intended indexable pages in a synthetic production-origin fixture; real targets, metadata, canonicals, code and assets checked | `tests/seo-verification.json`, `tests/seo-static-final.json` |
-| Deployment modes | Missing/invalid origin rejected; local and preview noindex; production fixture indexable | `tests/seo-verification.json` |
-| Shared guide | Reading routes, practice routine, scope, corrections and edition notes found in both HTML and selectable PDF text | `tests/release-evidence.json` |
-| Exact syntax | All 74 HTML examples and 349 WebIDL blocks preserved; syntax colours and synthetic splitting/wrapping checked | `tests/syntax-verification.json` |
-| PDF | 405 pages, 401 bookmarks, author/language/XMP metadata, five notice attachments and text bounds checked | `tests/release-evidence.json` |
-| Browser flows | Local HTTPS smoke tests in Chromium 156.0.8078.4, Firefox 157.0 and WebKit 27.2 | `tests/seo-verification.json` |
-| Narrow layout | No page-level overflow at 390px on 398 Chromium routes and 13 representative routes in each other engine | `tests/seo-verification.json` |
-| Automated accessibility | Zero axe violations on 17 representative pages; not WCAG or assistive-technology approval | `tests/seo-verification.json` |
-| Added form claims | Isolated three-engine tests of entry eligibility, repeated names, submitter data, validation and submit versus requestSubmit; requests intercepted | `tests/publication-behavior-checks.json` |
-| Archive | ZIP CRC, exact payload SHA-256 manifest and extracted Node-only rebuild | `deliverables/package-checksums.json`, `tests/package-rebuild.json` |
+The primary-PDF guard rejects a missing/failed/wrong-profile proof, altered PDF bytes or a stale source fingerprint. Rendering, structural/text checks and veraPDF validation must succeed before a new artifact is promoted. A renderer failure does not overwrite the previous artifact/proof. A PDF/UA generation target alone is not a validation result.
 
-Verification origins under `.example.test` and intercepted form requests under `.example.invalid` are fixtures, not owned production services. Historical receipts with a different publication fingerprint describe their own earlier artifacts, not this edition. The final local build is intentionally noindex. Deployment needs neither Python, Java, browser binaries nor a specification fetch.
+## What this release does not certify
 
-## Remaining work
+- Exhaustive per-member, default/value, conversion, exception, lifecycle/algorithm and cross-specification teaching.
+- Independent technical or explained-answer correctness.
+- WCAG conformance, full real-device/zoom/forced-colour testing or actual NVDA, JAWS or VoiceOver operation.
+- Complete penetration testing, dependency/legal certification or universal browser support.
+- Search ranking, search-account ownership, indexing, or deployment merely because source was pushed.
 
-1. Exhaustive behavior, algorithm, conversion, exception, keyword/value/default and cross-specification coverage.
-2. Individual reconciliation of every inventory and coverage ID against substantive teaching and evidence. Historical foundation ledgers remain audit inputs, not completed coverage claims.
-3. Independent technical and explained-answer review across the complete manuscript.
-4. Broader real-device, keyboard, assistive-technology and usability review beyond the executed samples.
-5. Complete security/privacy assessment and any appropriate legal review.
-6. Tagged PDF remediation and independent PDF accessibility testing. Selectable text, bookmarks and language metadata do not create a semantic tag tree.
-7. Verified repository synchronization and separately verified deployment, including checks of the new live pages, downloads and primary-domain redirects. A push alone does not establish deployment.
-8. Optional search-console ownership verification, sitemap submission and observation of actual indexing. No ranking, AI inclusion or search-engine approval is guaranteed.
+These are scope distinctions, not a request for the author to perform the release work. Actual observations and unperformed checks must remain distinguishable. Detailed formal review records are retained in `docs/final-audit/`.
 
-These are not caused by missing author permission. The author has already supplied the name, visual approval and permission to proceed. Independent review does not mean the author must personally become the reviewer. Repository authorization does not close the acknowledged content-review work.
+## Delivery
 
-## Rights
-
-No open reuse license was selected for original editorial work. Upstream permissions and font notices remain intact. This status document is not a legal opinion or certification.
-
-## Full-gates checkpoint, 16 October 2026
-
-A separate 594-page full-book tagged candidate passes veraPDF 1.30.3 PDF/UA-1 machine validation (106 passed rules, zero failed). The primary 456-page reading export remains separate and untagged. All 422 reading documents passed the broadened automated accessibility/reflow scan after reference target-size repairs. The captured gap ledger accounts for 3,471 rows, with 176 non-exact member routes and all 81 requirements still open. No independent, actual OS AT, exhaustive behavioural or full security approval is inferred. See docs/final-audit/full-gates-report.md.
+A non-force push must be read back from `origin/main`. Hosted CI, release-asset publication and the public website are separate observations. Do not label the production site updated until its actual public release manifest and PDF bytes match this edition. Delivery results are recorded separately to avoid a circular commit/hash claim.

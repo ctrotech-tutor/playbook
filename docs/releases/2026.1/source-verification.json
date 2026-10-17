@@ -1,0 +1,119 @@
+{
+  "publication_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
+  "edition": "2026.1",
+  "review_date": "2026-10-17",
+  "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
+  "results": [
+    {
+      "check": "Built HTML conformance",
+      "result": "PASS",
+      "scope": "496 HTTP-served built documents, including 74 wrapped examples and all seven project folders; Nu 26.10.12 (0a70d65).",
+      "version": "26.10.12 (0a70d65)",
+      "files": 496,
+      "messages": 0,
+      "jar_sha256": "19f89e204cb881e2d88c5d0cd451df6c1ee8334e7fe626f6694b64a129f6a813"
+    },
+    {
+      "check": "Expected-failure check",
+      "result": "PASS",
+      "scope": "The same checker rejects the deliberately invalid interactive-nesting fixture."
+    },
+    {
+      "check": "Manuscript structure",
+      "result": "PASS",
+      "scope": "74 populated chapter records with open independent review, 74 explained exercises, no em dashes in authored chapter data; no independent answer correctness approval is implied.",
+      "chapters": 74,
+      "exercises": 74
+    },
+    {
+      "check": "Internal links and assets",
+      "result": "PASS",
+      "scope": "13875 relative destinations checked across book/reference/project pages. Standalone media examples are excluded from resource-existence claims.",
+      "destinations": 13875
+    },
+    {
+      "check": "Project downloads",
+      "result": "PASS",
+      "scope": "All seven ZIPs pass integrity checks and contain a standalone index document."
+    },
+    {
+      "check": "Reading guide and edition consistency",
+      "result": "PASS",
+      "scope": "Shared reading routes, practice routine, scope, corrections and edition notes appear in both HTML and selectable PDF text. Independent review states are unchanged."
+    },
+    {
+      "check": "Syntax and author credits",
+      "result": "PASS",
+      "scope": "74 selectable, token-coloured PDF examples; exact website/code downloads; author credit and PDF metadata. Token contrast and synthetic multi-page wrapping checked; this is not an accessibility certification.",
+      "author": "Odejobi Abiola Samuel",
+      "pdf_font_notices_attached": true,
+      "examples_checked": 74,
+      "webidl_declarations_checked": 349,
+      "website_source_exact": true,
+      "raw_source_files_and_zip_exact": true,
+      "token_stream_and_prepared_rows_preserve_source": true,
+      "pdf_non_whitespace_code_characters_present": true,
+      "pdf_code_text_colours": 11,
+      "pdf_token_contrast_ratios": {
+        "Token.Comment": 5.42,
+        "Token.Keyword": 7.47,
+        "Token.Name.Tag": 6.87,
+        "Token.Name.Attribute": 6.96,
+        "Token.Name.Builtin": 7.18,
+        "Token.Name.Function": 7.47,
+        "Token.Literal.String": 7.33,
+        "Token.Literal.Number": 6.95,
+        "Token.Operator": 6.65,
+        "Token.Punctuation": 9.57,
+        "Token.Text": 11.86,
+        "label": 6.03
+      },
+      "minimum_pdf_token_contrast": 5.42,
+      "synthetic_multi_page_regression_pages": 4,
+      "copying_note": "PDF line wraps can change physical line breaks. Raw source downloads preserve exact UTF-8 bytes. Numerical contrast and text checks do not establish WCAG conformance or tagged-PDF accessibility."
+    },
+    {
+      "check": "PDF integrity and text layout",
+      "result": "PASS",
+      "scope": "594 pages; all chapter titles found; 404 bookmarks; text bounds checked. Semantically tagged; the separate exact-artifact PDF/UA-1 validation report is checked. Not independently accessibility-audited.",
+      "pages": 594,
+      "bookmarks": 404
+    },
+    {
+      "check": "Browser smoke tests",
+      "result": "PASS",
+      "scope": "14 checks using Chromium 156.0.8078.4; desktop and 390px mobile, served under /review-repo/. No general cross-browser or assistive-technology claim.",
+      "details": [
+        "Skip link is first keyboard destination",
+        "Keyboard search opens, finds content and closes with Escape",
+        "Reading progress persists across reload",
+        "Theme preference persists without an account",
+        "Copy control copies the exact canonical code to the clipboard",
+        "Editable example renders in a script-only isolated sandbox",
+        "Element reference filters to the requested feature",
+        "Demonstration form validates locally without POST or collection",
+        "Selected live examples: DOM updates, templates, lifecycle, text insertion and native dialog close path",
+        "Numeric character references render the intended Arabic name inside bdi",
+        "Input current-value/default-attribute distinction executed",
+        "Mobile chapter navigation opens and closes with represented state",
+        "No page-level horizontal overflow at 390px across 82 representative/all-chapter pages",
+        "No JavaScript errors, failed main-site requests or third-party requests in this test sequence"
+      ],
+      "browser_version": "156.0.8078.4"
+    },
+    {
+      "check": "Citation targets",
+      "result": "PASS",
+      "scope": "2723 HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion."
+    }
+  ],
+  "not_certified": [
+    "Independent technical or answer-key correctness",
+    "Whole-Standard API/member/value completeness",
+    "Universal browser compatibility",
+    "WCAG conformance or complete assistive-technology behavior",
+    "Complete security review",
+    "Independent PDF accessibility and actual assistive-technology approval",
+    "Legal certification or hosted deployment verification of this rebuilt edition"
+  ]
+}

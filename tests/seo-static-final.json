@@ -1,5 +1,5 @@
 {
-  "publication_fingerprint": "52a7ade0076eb562764b1153f6b69d10d7ed7478ecc784b9a29d0cfb0bb79a73",
+  "publication_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
   "scope": "Generated SEO, static routing/header emulation, selected desktop/mobile browser flows and automated accessibility checks. Not a real Vercel deployment, independent content review or WCAG certification.",
   "node": "v24.22.0",
   "checks": [
@@ -24,11 +24,11 @@
       "result": "PASS",
       "html_documents": 500,
       "indexed_pages": 410,
-      "internal_destinations": 18189,
+      "internal_destinations": 18190,
       "structured_data_pages": 410,
       "markdown_chapters": 74,
       "api_owner_pages": 314,
-      "pdf_sha256": "64bf327a39212e81d36282aed40298324de0c28a4a35909d5f8dc414585cee0c",
+      "pdf_sha256": "5685f8eb1dd9f073835e89a538e678e4151e809b8d4d26a801dbf1d99101590d",
       "canonical_test_origin": "https://book.example.test (synthetic test fixture only)"
     },
     {

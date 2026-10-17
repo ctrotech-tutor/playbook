@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/user/.cache/playbook-repository/docs/releases/2026.1/reproduce-candidate-security.py", line 38, in <module>
+    page.goto(base+'/chapters/44',wait_until='networkidle');page.locator('[data-open-lab]').click();page.evaluate('window.addEventListener("message",e=>{if(Array.isArray(e.data?.auditResult))window.__auditResults=e.data.auditResult})')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 18528, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_page.py", line 564, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 157, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://127.0.0.1:34281/chapters/44", waiting until "networkidle"
+

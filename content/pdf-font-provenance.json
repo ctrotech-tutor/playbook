@@ -20,6 +20,16 @@
     "fonts/pdf/LICENSE.txt": {
       "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
       "bytes": 3859
+    },
+    "fonts/pdf/CTROTECHCJKSubset.ttf": {
+      "sha256": "fc8bc6f4741e24bfeba7034aa445e0cf0e118d81d6afca27a845bcc62182bc39",
+      "source_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/SubsetOTF/JP/NotoSansJP-Regular.otf",
+      "source_sha256": "dff723ba59d57d136764a04b9b2d03205544f7cd785a711442d6d2d085ac5073",
+      "source_commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+      "license": "SIL Open Font License 1.1",
+      "license_file": "assets/fonts/Noto-CJK-OFL.txt",
+      "modification": "Renamed subset for ASCII and the three Japanese glyphs used in the ruby example; CFF outlines converted to TrueType curves with maximum approximation error 1 font unit",
+      "subset_tool": "fonttools 4.66.1"
     }
   }
 }

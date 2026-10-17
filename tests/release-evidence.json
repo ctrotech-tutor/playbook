@@ -1,7 +1,7 @@
 {
-  "publication_fingerprint": "df5c8bad043bab620892969455935702e4eb65f00707b10e3127cc5df646b67d",
+  "publication_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
   "edition": "2026.1",
-  "review_date": "2026-10-16",
+  "review_date": "2026-10-17",
   "state": "Executed checks passed; independent content and whole-Standard coverage approval remain open",
   "results": [
     {
@@ -75,9 +75,9 @@
     {
       "check": "PDF integrity and text layout",
       "result": "PASS",
-      "scope": "456 pages; all chapter titles found; 401 bookmarks; text bounds checked. Not tagged or independently accessibility-audited.",
-      "pages": 456,
-      "bookmarks": 401
+      "scope": "594 pages; all chapter titles found; 404 bookmarks; text bounds checked. Semantically tagged; the separate exact-artifact PDF/UA-1 validation report is checked. Not independently accessibility-audited.",
+      "pages": 594,
+      "bookmarks": 404
     },
     {
       "check": "Browser smoke tests",
@@ -113,7 +113,7 @@
     "Universal browser compatibility",
     "WCAG conformance or complete assistive-technology behavior",
     "Complete security review",
-    "Tagged accessible PDF",
+    "Independent PDF accessibility and actual assistive-technology approval",
     "Legal certification or hosted deployment verification of this rebuilt edition"
   ]
 }

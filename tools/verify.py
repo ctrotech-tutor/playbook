@@ -80,7 +80,7 @@ normal=lambda value:re.sub(r'\s+',' ',value).strip()
 guide_html=BeautifulSoup((SITE/'start.html').read_text(),'html.parser').get_text(' ',strip=True)
 for value in [guide['intro'],guide['formats'],guide['sources'],guide['scope'],guide['corrections']]+[r['text'] for r in guide['routes']]+[r['text'] for r in guide['practice']]+guide['edition_notes']:
     assert normal(value.replace('`','')) in normal(guide_html),value
-    assert normal(value.replace('`','')) in normal(alltext),value
+    assert re.sub(r'\s+','',value.replace('`','')) in re.sub(r'\s+','',alltext),value
 assert any(row[1]=='Start here: a reading guide' for row in pdf.get_toc())
 passed('Reading guide and edition consistency','Shared reading routes, practice routine, scope, corrections and edition notes appear in both HTML and selectable PDF text. Independent review states are unchanged.')
 syntax=check_syntax()
@@ -92,7 +92,9 @@ for n,page in enumerate(pdf):
     for block in page.get_text('blocks'):
         if block[0]<30 or block[2]>page.rect.width-25 or block[3]>page.rect.height-17:outliers.append((n+1,block[:4],block[4][:100]))
 assert not outliers,outliers[:10]
-passed('PDF integrity and text layout',f'{len(pdf)} pages; all chapter titles found; {len(pdf.get_toc())} bookmarks; text bounds checked. Not tagged or independently accessibility-audited.',pages=len(pdf),bookmarks=len(pdf.get_toc()))
+from pdf import verify_primary_pdf
+verify_primary_pdf(R)
+passed('PDF integrity and text layout',f'{len(pdf)} pages; all chapter titles found; {len(pdf.get_toc())} bookmarks; text bounds checked. Semantically tagged; the separate exact-artifact PDF/UA-1 validation report is checked. Not independently accessibility-audited.',pages=len(pdf),bookmarks=len(pdf.get_toc()))
 
 # Serve beneath a repository prefix to test GitHub Pages path behavior.
 errors=[];failures=[];network=[];browser_rows=[]
@@ -140,6 +142,6 @@ try:
 finally:server.shutdown();server.server_close()
 passed('Browser smoke tests',f'{len(browser_rows)} checks using Chromium {browser_version}; desktop and 390px mobile, served under /review-repo/. No general cross-browser or assistive-technology claim.',details=browser_rows,browser_version=browser_version)
 citations=json.loads((R/'tests/citation-checks.json').read_text());assert citations['checked']==citations['passed'];passed('Citation targets',f'{citations["passed"]} HTTP/document/fragment targets resolved. This verifies links, not the correctness of every cited assertion.')
-output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':datetime.now(timezone.utc).date().isoformat(),'state':'Executed checks passed; independent content and whole-Standard coverage approval remain open','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Tagged accessible PDF','Legal certification or hosted deployment verification of this rebuilt edition']}
+output={'publication_fingerprint':publication_fingerprint(R),'edition':meta['edition'],'review_date':datetime.now(timezone.utc).date().isoformat(),'state':'Executed checks passed; independent content and whole-Standard coverage approval remain open','results':results,'not_certified':['Independent technical or answer-key correctness','Whole-Standard API/member/value completeness','Universal browser compatibility','WCAG conformance or complete assistive-technology behavior','Complete security review','Independent PDF accessibility and actual assistive-technology approval','Legal certification or hosted deployment verification of this rebuilt edition']}
 (R/'tests/release-evidence.json').write_text(json.dumps(output,indent=2)+'\n')
 print(json.dumps(output,indent=2))

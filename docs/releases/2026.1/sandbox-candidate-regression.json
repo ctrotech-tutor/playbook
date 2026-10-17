@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-17",
+  "candidate_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
+  "result": "PASS",
+  "browsers": [
+    {
+      "engine": "chromium",
+      "version": "156.0.8078.4",
+      "parent_dom_blocked": true,
+      "opaque_origin_storage_blocked": true,
+      "fetch_blocked": true,
+      "network_requests_for_tested_image_form_and_navigation": 0,
+      "observation_window_ms": 1000,
+      "scope": "Only these locally exercised channels. Not a universal no-network or arbitrary-code safety guarantee."
+    },
+    {
+      "engine": "firefox",
+      "version": "157.0",
+      "parent_dom_blocked": true,
+      "opaque_origin_storage_blocked": true,
+      "fetch_blocked": true,
+      "network_requests_for_tested_image_form_and_navigation": 0,
+      "observation_window_ms": 1000,
+      "scope": "Only these locally exercised channels. Not a universal no-network or arbitrary-code safety guarantee."
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "parent_dom_blocked": true,
+      "opaque_origin_storage_blocked": true,
+      "fetch_blocked": true,
+      "network_requests_for_tested_image_form_and_navigation": 0,
+      "observation_window_ms": 1000,
+      "scope": "Only these locally exercised channels. Not a universal no-network or arbitrary-code safety guarantee."
+    }
+  ],
+  "not_deployed": true
+}

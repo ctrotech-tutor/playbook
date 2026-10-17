@@ -51,12 +51,13 @@
   ],
   "formats": "Website and PDF share the maintained chapter source. Use the exact code download for copying: some files are fragments and some media or server resources are illustrative. The seven project downloads are complete static teaching folders, not live services. Reading progress stays in this browser when storage is available; it is not an assessment or certificate.",
   "sources": "WHATWG defines HTML. MDN helps explain features and implementation support. WAI and WCAG provide accessibility guidance and requirements. A conformance checker, browser test and accessibility review answer different questions. Follow the source links and read the scope of each recorded check.",
-  "scope": "This is a published reading curriculum with captured reference inventories. It is not a completed whole-Standard behavioral reference. Independent technical, answer-key, accessibility and security reviews remain open. The PDF has selectable text, links and bookmarks, but is not a tagged accessible PDF.",
+  "scope": "This production edition contains a 74-chapter learning path, seven complete static projects and a source-linked captured reference. The declaration register helps locate definitions; it does not replace the HTML Standard or document every API algorithm. The downloadable PDF has selectable syntax-coloured code, bookmarks and semantic tags. Its PDF/UA-1 machine-validation result is recorded separately from specialist accessibility or assistive-technology approval.",
   "corrections": "Report a correction with the page URL or chapter number, the passage, the expected result and a supporting source. For browser-dependent behavior, include the browser version and a small reproducible example. GitHub requires an account. Never include secrets or personal form data in a public issue.",
   "edition_notes": [
-    "First published reading edition, dated 14 October 2026. Release-candidate and predeployment wording have been replaced with reader-facing publication details.",
-    "Chapter 60 now distinguishes the 166 foundation interface discovery routes from the 314 WebIDL declaration owners and 1,574 direct member declarations. Declaration coverage is not described as completed behavioral review.",
-    "Expanded practical explanations of responsive-image descriptors, form entries and submission paths, dialog interactions, script loading, storage failure and discovery controls. Added an explicit fictional-data warning to the registration brief.",
-    "Added this reading guide, a correction route and consistent website/PDF publication notes. Existing independent-review states remain open."
+    "Production edition accepted by the author on 17 October 2026 after reading the book and receiving positive feedback from approximately five friends. This is general-reader feedback, not a specialist certification.",
+    "The full-book semantically tagged PDF is now the standard download, replacing the earlier untagged reading export. Website and PDF retain the same maintained chapter and reference source.",
+    "Reference links have larger, spaced targets. The prior full 422-page automated accessibility and narrow-viewport audit found and verified that correction. Each new release records its own current checks.",
+    "All 74 chapters include objectives, a worked example, a mistake to consider and an exercise with an explained answer. Seven complete project folders and exact chapter-code downloads are included.",
+    "Expanded behavioural documentation and specialist review continue as separately tracked improvements. Corrections remain welcome through the published correction route."
   ]
 }

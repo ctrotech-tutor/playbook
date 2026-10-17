@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-17",
+  "result": "PASS",
+  "publication_fingerprint": "f9aa1fabe4430ce52c944abb127d2a8236be43fc7e943b0dc5aafc399fe7d408",
+  "edition": "2026.1",
+  "fresh_extraction": true,
+  "clean_npm_ci": "PASS",
+  "node_only_build": "PASS",
+  "node_integrity_and_hosting_tests": 14,
+  "node_output_tests": 3,
+  "pdf_guard_unit_tests": 6,
+  "static_verification_with_site_fallback": "PASS",
+  "precompiled_source_root": "site/",
+  "precompiled_site_tree_sha256": "0c1b768d64d037829898373c6a110686c5e535e1b69b64882f74cf1936fda6e0",
+  "site_tree_hash_order": "Lexicographically sorted relative POSIX names; NUL after name and file bytes",
+  "canonical_origin_initial_build": "https://ctrobook.vercel.app (local artifact build; not deployment)",
+  "scope": "Extracted preliminary ZIP, isolated npm install, input/output tests, production build, PDF guard tests and final static metadata/link/fragment/asset/code/Nu checks. Final packaging retains exactly this precompiled tree; final ZIP hash is recorded externally to avoid a circular archive-hash claim."
+}
