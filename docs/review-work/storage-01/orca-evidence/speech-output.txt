@@ -1,0 +1,645 @@
+03:17:36.993707 - SPEECH OUTPUT: 'Screen reader on.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:40.983761 - SPEECH OUTPUT: '127.0.0.1:46415 - Google Chrome for Testing frame' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:41.240632 - SPEECH OUTPUT: 'Address and search bar autocomplete 127.0.0.1:46415 selected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:41.264007 - SPEECH OUTPUT: '127.0.0.1:46415' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:41.296637 - SPEECH OUTPUT: 'Finished loading The book | CTROTECH HTML Playbook.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:43.251470 - SPEECH OUTPUT: 'left control' {'established': False}
+
+03:17:43.263851 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:17:43.755360 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:17:43.785004 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:43.809336 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:43.833411 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:17:43.849742 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:43.863148 - SPEECH OUTPUT: ':' {'established': False}
+
+03:17:43.880032 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:43.897858 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:43.922629 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:43.933415 - SPEECH OUTPUT: '2' {'established': False}
+
+03:17:43.941089 - SPEECH OUTPUT: '7' {'established': False}
+
+03:17:43.954854 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:43.964076 - SPEECH OUTPUT: '0' {'established': False}
+
+03:17:43.973221 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:43.981713 - SPEECH OUTPUT: '0' {'established': False}
+
+03:17:43.988362 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:43.999782 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:44.006491 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:44.011136 - SPEECH OUTPUT: ':' {'established': False}
+
+03:17:44.019008 - SPEECH OUTPUT: '4' {'established': False}
+
+03:17:44.025537 - SPEECH OUTPUT: '6' {'established': False}
+
+03:17:44.032735 - SPEECH OUTPUT: '4' {'established': False}
+
+03:17:44.040564 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:44.047683 - SPEECH OUTPUT: '5' {'established': False}
+
+03:17:44.054990 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:44.236821 - SPEECH OUTPUT: 'Text unselected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:44.562721 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:17:44.906481 - SPEECH OUTPUT: 'Finished loading The book | CTROTECH HTML Playbook.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:44.918275 - SPEECH OUTPUT: 'Page has 5 landmarks, 7 headings, 21 unvisited links.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:46.414913 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:48.036922 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:17:48.176244 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:48.177607 - SPEECH OUTPUT: 'The HTML Playbook. landmark' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:48.178675 - SPEECH OUTPUT: 'FIELD GUIDE 001 / OCTOBER 2026.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:48.501661 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:48.577505 - SPEECH OUTPUT: 'Odejobi Abiola Samuel link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:50.073905 - SPEECH OUTPUT: 'left control' {'established': False}
+
+03:17:50.094356 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:17:50.215816 - SPEECH OUTPUT: 'Address and search bar autocomplete 127.0.0.1:46415/#main selected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:50.588456 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:17:50.607862 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:50.642985 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:50.651145 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:17:50.671485 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:50.684423 - SPEECH OUTPUT: ':' {'established': False}
+
+03:17:50.702648 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:50.716674 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:50.728130 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:50.754690 - SPEECH OUTPUT: '2' {'established': False}
+
+03:17:50.767025 - SPEECH OUTPUT: '7' {'established': False}
+
+03:17:50.782417 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:50.789665 - SPEECH OUTPUT: '0' {'established': False}
+
+03:17:50.795910 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:50.803974 - SPEECH OUTPUT: '0' {'established': False}
+
+03:17:50.809921 - SPEECH OUTPUT: '.' {'established': False}
+
+03:17:50.819460 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:50.825575 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:50.832017 - SPEECH OUTPUT: ':' {'established': False}
+
+03:17:50.840141 - SPEECH OUTPUT: '4' {'established': False}
+
+03:17:50.846322 - SPEECH OUTPUT: '6' {'established': False}
+
+03:17:50.853230 - SPEECH OUTPUT: '4' {'established': False}
+
+03:17:50.859891 - SPEECH OUTPUT: '1' {'established': False}
+
+03:17:50.866507 - SPEECH OUTPUT: '5' {'established': False}
+
+03:17:50.873945 - SPEECH OUTPUT: '/' {'established': False}
+
+03:17:51.011068 - SPEECH OUTPUT: 'Text unselected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:51.399639 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:17:51.608400 - SPEECH OUTPUT: 'Finished loading The book | CTROTECH HTML Playbook.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:51.618065 - SPEECH OUTPUT: 'Page has 5 landmarks, 7 headings, 21 unvisited links.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:53.259139 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:53.803415 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:53.891040 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:53.892708 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:54.284773 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:54.345664 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:54.347137 - SPEECH OUTPUT: 'Read the book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:54.764582 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:54.828264 - SPEECH OUTPUT: 'Reference link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:55.266918 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:55.334119 - SPEECH OUTPUT: 'Projects link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:55.745515 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:17:55.827024 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:56.233054 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:17:57.190858 - SPEECH OUTPUT: 'Find a page or feature dialog' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:57.192326 - SPEECH OUTPUT: 'Search chapters and reference entries entry Try forms, selectedcontent, focus...' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:57.206796 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:57.333071 - SPEECH OUTPUT: '1629 matches · showing 35; add a more specific term' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:17:57.813240 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:57.871368 - SPEECH OUTPUT: 'H' {'established': False, 'average-pitch': 7.0}
+
+03:17:57.892871 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:57.911544 - SPEECH OUTPUT: 'T' {'established': False, 'average-pitch': 7.0}
+
+03:17:57.951854 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:57.963553 - SPEECH OUTPUT: 'M' {'established': False, 'average-pitch': 7.0}
+
+03:17:57.983799 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:57.993619 - SPEECH OUTPUT: 'L' {'established': False, 'average-pitch': 7.0}
+
+03:17:58.007571 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:58.020719 - SPEECH OUTPUT: 'I' {'established': False, 'average-pitch': 7.0}
+
+03:17:58.033646 - SPEECH OUTPUT: 'n' {'established': False}
+
+03:17:58.043403 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:17:58.052278 - SPEECH OUTPUT: 'u' {'established': False}
+
+03:17:58.061155 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:58.070356 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:17:58.077558 - SPEECH OUTPUT: 'E' {'established': False, 'average-pitch': 7.0}
+
+03:17:58.089071 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:17:58.100807 - SPEECH OUTPUT: 'e' {'established': False}
+
+03:17:58.109878 - SPEECH OUTPUT: 'm' {'established': False}
+
+03:17:58.119947 - SPEECH OUTPUT: 'e' {'established': False}
+
+03:17:58.129304 - SPEECH OUTPUT: 'n' {'established': False}
+
+03:17:58.138653 - SPEECH OUTPUT: 't' {'established': False}
+
+03:17:58.324643 - SPEECH OUTPUT: '2 matches' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:00.674412 - SPEECH OUTPUT: 'escape' {'established': False}
+
+03:18:00.773198 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:00.774921 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:00.776247 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:00.783307 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:02.283040 - SPEECH OUTPUT: 'left control' {'established': False}
+
+03:18:02.307058 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:18:02.408083 - SPEECH OUTPUT: 'Address and search bar autocomplete 127.0.0.1:46415 selected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:02.801836 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:02.833061 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:02.854023 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:02.876482 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:18:02.892983 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:18:02.908228 - SPEECH OUTPUT: ':' {'established': False}
+
+03:18:02.926545 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:02.942966 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:02.966874 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:02.984364 - SPEECH OUTPUT: '2' {'established': False}
+
+03:18:03.013883 - SPEECH OUTPUT: '7' {'established': False}
+
+03:18:03.030170 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:03.056334 - SPEECH OUTPUT: '0' {'established': False}
+
+03:18:03.071655 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:03.091389 - SPEECH OUTPUT: '0' {'established': False}
+
+03:18:03.107261 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:03.122146 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:03.131898 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:18:03.138280 - SPEECH OUTPUT: ':' {'established': False}
+
+03:18:03.146135 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:03.152466 - SPEECH OUTPUT: '6' {'established': False}
+
+03:18:03.160022 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:03.167017 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:03.173412 - SPEECH OUTPUT: '5' {'established': False}
+
+03:18:03.179749 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:03.186750 - SPEECH OUTPUT: 'c' {'established': False}
+
+03:18:03.197496 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:03.206821 - SPEECH OUTPUT: 'a' {'established': False}
+
+03:18:03.214850 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:18:03.222744 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:03.229546 - SPEECH OUTPUT: 'e' {'established': False}
+
+03:18:03.235929 - SPEECH OUTPUT: 'r' {'established': False}
+
+03:18:03.242360 - SPEECH OUTPUT: 's' {'established': False}
+
+03:18:03.249210 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:03.255258 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:03.261182 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:03.266909 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:03.274140 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:03.279828 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:03.285438 - SPEECH OUTPUT: 'm' {'established': False}
+
+03:18:03.291099 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:18:03.468324 - SPEECH OUTPUT: 'Text unselected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:03.735283 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:18:03.970227 - SPEECH OUTPUT: 'Finished loading Dialogs and popovers | CTROTECH HTML Playbook.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:03.979492 - SPEECH OUTPUT: 'Page has 7 landmarks, 8 headings, 13 unvisited links.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:05.597414 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:06.122279 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:06.195132 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:06.196432 - SPEECH OUTPUT: 'CTROTECH link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:06.598377 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:06.659998 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:06.661483 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:07.087260 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:07.165365 - SPEECH OUTPUT: 'leaving navigation.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:07.167017 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:07.168343 - SPEECH OUTPUT: 'Chapters collapsed button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:07.175540 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:07.560661 - SPEECH OUTPUT: 'space' {'established': False}
+
+03:18:07.629566 - SPEECH OUTPUT: 'expanded' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:09.147921 - SPEECH OUTPUT: 'space' {'established': False}
+
+03:18:09.246296 - SPEECH OUTPUT: 'collapsed' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:10.750671 - SPEECH OUTPUT: 'left control' {'established': False}
+
+03:18:10.758802 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:18:10.904548 - SPEECH OUTPUT: 'Address and search bar autocomplete 127.0.0.1:46415/chapters/44.html selected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:11.256774 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:11.292256 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:11.306693 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:11.317558 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:18:11.325888 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:18:11.356104 - SPEECH OUTPUT: ':' {'established': False}
+
+03:18:11.377214 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:11.395256 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:11.416606 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:11.440554 - SPEECH OUTPUT: '2' {'established': False}
+
+03:18:11.458996 - SPEECH OUTPUT: '7' {'established': False}
+
+03:18:11.484254 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:11.504996 - SPEECH OUTPUT: '0' {'established': False}
+
+03:18:11.522423 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:11.539653 - SPEECH OUTPUT: '0' {'established': False}
+
+03:18:11.556681 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:11.594997 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:11.604948 - SPEECH OUTPUT: 'left shift' {'established': False}
+
+03:18:11.610738 - SPEECH OUTPUT: ':' {'established': False}
+
+03:18:11.618440 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:11.625190 - SPEECH OUTPUT: '6' {'established': False}
+
+03:18:11.631424 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:11.638564 - SPEECH OUTPUT: '1' {'established': False}
+
+03:18:11.644409 - SPEECH OUTPUT: '5' {'established': False}
+
+03:18:11.652134 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:11.671108 - SPEECH OUTPUT: 'c' {'established': False}
+
+03:18:11.678097 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:11.689666 - SPEECH OUTPUT: 'a' {'established': False}
+
+03:18:11.698340 - SPEECH OUTPUT: 'p' {'established': False}
+
+03:18:11.707154 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:11.725473 - SPEECH OUTPUT: 'e' {'established': False}
+
+03:18:11.734994 - SPEECH OUTPUT: 'r' {'established': False}
+
+03:18:11.744247 - SPEECH OUTPUT: 's' {'established': False}
+
+03:18:11.751241 - SPEECH OUTPUT: '/' {'established': False}
+
+03:18:11.762302 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:11.770768 - SPEECH OUTPUT: '4' {'established': False}
+
+03:18:11.778869 - SPEECH OUTPUT: '.' {'established': False}
+
+03:18:11.785326 - SPEECH OUTPUT: 'h' {'established': False}
+
+03:18:11.791572 - SPEECH OUTPUT: 't' {'established': False}
+
+03:18:11.798736 - SPEECH OUTPUT: 'm' {'established': False}
+
+03:18:11.805805 - SPEECH OUTPUT: 'l' {'established': False}
+
+03:18:11.999571 - SPEECH OUTPUT: 'Text unselected.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:12.235695 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:18:12.476479 - SPEECH OUTPUT: 'Finished loading Dialogs and popovers | CTROTECH HTML Playbook.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:12.490364 - SPEECH OUTPUT: 'Page has 9 landmarks, 8 headings, 26 unvisited links.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:14.098957 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:14.606744 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:14.664873 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:14.666561 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:15.095319 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:15.189745 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:15.191311 - SPEECH OUTPUT: 'Read the book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:15.578642 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:15.637909 - SPEECH OUTPUT: 'Reference link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:16.053765 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:16.112109 - SPEECH OUTPUT: 'Projects link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:16.534924 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:16.616068 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.013829 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:17.073831 - SPEECH OUTPUT: 'leaving navigation.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.075543 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.076669 - SPEECH OUTPUT: 'complementary content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.077833 - SPEECH OUTPUT: 'All chapters link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.491716 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:17.555179 - SPEECH OUTPUT: 'Understanding HTML toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.562843 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:17.969349 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:18.023598 - SPEECH OUTPUT: 'Syntax and Document Foundations toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:18.441822 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:18.499029 - SPEECH OUTPUT: 'Text and Content Elements toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:18.920213 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:18.977679 - SPEECH OUTPUT: 'Semantic Website Architecture toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:19.399888 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:19.456834 - SPEECH OUTPUT: 'Images, Audio, Video and Embedded Content toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:19.872774 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:19.929276 - SPEECH OUTPUT: 'Forms and Native Controls toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:20.352503 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:20.407931 - SPEECH OUTPUT: 'Interaction and Modern HTML toggle button expanded.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:20.832333 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:20.932001 - SPEECH OUTPUT: 'List with 6 items' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:20.933618 - SPEECH OUTPUT: '42 Buttons and commands link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:20.942354 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:21.309062 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:21.390333 - SPEECH OUTPUT: '43 Disclosure with details link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:21.784120 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:21.867996 - SPEECH OUTPUT: '44 Dialogs and popovers link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:22.258868 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:22.340068 - SPEECH OUTPUT: '45 Focus, editing and dragging link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:22.739323 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:22.832552 - SPEECH OUTPUT: '46 Templates and component boundaries link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:23.211152 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:23.293431 - SPEECH OUTPUT: '47 Custom data and structured data link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:23.689917 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:23.767970 - SPEECH OUTPUT: 'leaving list.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:23.769486 - SPEECH OUTPUT: 'Attributes and Metadata toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:23.775897 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:24.168803 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:24.233961 - SPEECH OUTPUT: 'Browser Processing and Advanced Concepts toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:24.645956 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:24.710215 - SPEECH OUTPUT: 'Professional HTML Engineering toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:25.123295 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:25.196244 - SPEECH OUTPUT: 'Practical Projects toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:25.602954 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:25.710094 - SPEECH OUTPUT: 'leaving complementary content.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:25.711838 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:25.713109 - SPEECH OUTPUT: 'The book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:25.720863 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:26.085536 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:26.151633 - SPEECH OUTPUT: 'Copy button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:26.565802 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:26.639758 - SPEECH OUTPUT: 'Scrollable HTML example landmark.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:26.641125 - SPEECH OUTPUT: 'clickable.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:27.050966 - SPEECH OUTPUT: 'tab' {'established': False}
+
+03:18:27.120535 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:27.539930 - SPEECH OUTPUT: 'return' {'established': False}
+
+03:18:27.766939 - SPEECH OUTPUT: 'Try the markup <!doctype html>
+                  <html lang="en">
+                  <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width,initial-scale=1">
+                  <title>Dialogs and popovers: example</title>
+                  
+                  </head>
+                  <body>
+                  <h1>Dialogs and popovers: example</h1>
+                  <button type="button" id="open-help">Membership help</button>
+                  <dialog id="help-dialog" aria-labelledby="help-title">
+                    <h2 id="help-title">Membership help</h2>
+                    <p>Ask at the desk if you cannot supply an address document.</p>
+                    <form method="dialog"><button type="submit" autofocus>Close help</button></form>
+                  </dialog>
+                  <script>
+                    const help = document.getElementById("help-dialog");
+                    document.getElementById("open-help").addEventListener("click", () => {
+                      help.showModal();
+                    });
+                  </script>
+                  <button type="button" popovertarget="reading-tip">Reading tip</button>
+                  <div id="reading-tip" popover>
+                    <h2>A note about renewals</h2>
+                    <p>This is a fictional teaching note, not a real lending policy.</p>
+                    <button type="button" popovertarget="reading-tip"
+                            popovertargetaction="hide">Dismiss reading tip</button>
+                  </div>
+                  </body>
+                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:27.769921 - SPEECH OUTPUT: 'Close example button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:29.115205 - SPEECH OUTPUT: 'escape' {'established': False}
+
+03:18:29.230846 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}
+
+03:18:29.232209 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}

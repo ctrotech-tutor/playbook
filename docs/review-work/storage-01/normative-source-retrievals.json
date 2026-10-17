@@ -1,0 +1,24 @@
+{
+  "retrieved_date": "2026-10-17",
+  "scope": "Live normative sources read for this bounded unit. Availability alone is not claim correctness.",
+  "sources": [
+    {
+      "id": "html-storage",
+      "url": "https://html.spec.whatwg.org/multipage/webstorage.html",
+      "sha256": "2f84b44a7c483be3c37ff7b5c1d6d6b746bd5369d271e77e6ebad29066d5079f",
+      "bytes": 70485
+    },
+    {
+      "id": "webidl",
+      "url": "https://webidl.spec.whatwg.org/",
+      "sha256": "802c98f87b3bb8d353a5e071041fb5091188d11669aaed6201627574ff18202c",
+      "bytes": 2550436
+    },
+    {
+      "id": "storage-standard",
+      "url": "https://storage.spec.whatwg.org/",
+      "sha256": "badb2b604b270b9afc212d986fcbe08c636e7b86bed2c1507230edf7d4fdd846",
+      "bytes": 203633
+    }
+  ]
+}

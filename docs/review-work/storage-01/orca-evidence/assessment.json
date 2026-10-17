@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-17T03:18:31.761851+00:00",
+  "result": "BOUNDED_KEYBOARD_AND_ORCA_TRACE_WITH_OPEN_OBSERVATIONS",
+  "error": null,
+  "versions": {
+    "browser": "Chromium",
+    "browser_version": "156.0.8078.4",
+    "playwright": "Version 1.64.0",
+    "orca": "Orca version 48.1, AT-SPI2 version: 2.56.2"
+  },
+  "served_site_base_commit": "b7d54a3bd625d31af0d2b440a9535774172a3ec7",
+  "site_was_not_rebuilt_after_new_manuscript_draft": true,
+  "environment": "Private Xvfb X11, Openbox, private D-Bus/AT-SPI session, actual Orca process and native X11 keyboard events; headed Chromium, speech-dispatcher/eSpeak and a PulseAudio null sink. Not a Playwright accessibility-tree substitute.",
+  "trace_assignment": "Complete multiline utterances parsed after session teardown and assigned by local-clock start/end windows; not by live buffered-file offsets. Session did not cross midnight.",
+  "audio": "Actual PulseAudio monitor captured to speech.raw; null sink is not a claim that a human listened.",
+  "independent": false,
+  "human_listener": false,
+  "scope": "Bounded desktop-Linux actual-AT task evidence. Not NVDA/JAWS/VoiceOver, real mobile AT, full book comprehension or independent WCAG certification. Native keyboard assertions and Orca speech traces are recorded separately.",
+  "cases": [
+    {
+      "id": "skip-link-reached-by-native-tab",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "trace_window_start_local": "03:17:46.392754",
+      "trace_window_end_local": "03:17:48.016168",
+      "orca_speech_lines": [
+        "03:17:46.414913 - SPEECH OUTPUT: 'tab' {'established': False}"
+      ],
+      "expected_trace_fragments": [
+        "Skip to main content"
+      ],
+      "trace_result": "NEEDS_TRIAGE_EXPECTED_FRAGMENT_NOT_OBSERVED"
+    },
+    {
+      "id": "skip-link-moves-sequential-focus-into-main",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Odejobi Abiola Samuel"
+      },
+      "trace_window_start_local": "03:17:48.016229",
+      "trace_window_end_local": "03:17:50.064549",
+      "orca_speech_lines": [
+        "03:17:48.036922 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:17:48.176244 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:48.177607 - SPEECH OUTPUT: 'The HTML Playbook. landmark' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:48.178675 - SPEECH OUTPUT: 'FIELD GUIDE 001 / OCTOBER 2026.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:48.501661 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:48.577505 - SPEECH OUTPUT: 'Odejobi Abiola Samuel link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "main content"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "search-dialog-open-label-and-focus",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "INPUT",
+        "id": "book-search",
+        "text": ""
+      },
+      "trace_window_start_local": "03:17:53.243056",
+      "trace_window_end_local": "03:17:57.791274",
+      "orca_speech_lines": [
+        "03:17:53.259139 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:53.803415 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:53.891040 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:53.892708 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:54.284773 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:54.345664 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:54.347137 - SPEECH OUTPUT: 'Read the book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:54.764582 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:54.828264 - SPEECH OUTPUT: 'Reference link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:55.266918 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:55.334119 - SPEECH OUTPUT: 'Projects link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:55.745515 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:17:55.827024 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:56.233054 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:17:57.190858 - SPEECH OUTPUT: 'Find a page or feature dialog' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:57.192326 - SPEECH OUTPUT: 'Search chapters and reference entries entry Try forms, selectedcontent, focus...' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:57.206796 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:17:57.333071 - SPEECH OUTPUT: '1629 matches \u00b7 showing 35; add a more specific term' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "Find a page or feature dialog",
+        "Search chapters and reference entries"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "search-input-and-result-status",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "INPUT",
+        "id": "book-search",
+        "text": ""
+      },
+      "trace_window_start_local": "03:17:57.791340",
+      "trace_window_end_local": "03:18:00.657552",
+      "orca_speech_lines": [
+        "03:17:57.813240 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:57.871368 - SPEECH OUTPUT: 'H' {'established': False, 'average-pitch': 7.0}",
+        "03:17:57.892871 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:57.911544 - SPEECH OUTPUT: 'T' {'established': False, 'average-pitch': 7.0}",
+        "03:17:57.951854 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:57.963553 - SPEECH OUTPUT: 'M' {'established': False, 'average-pitch': 7.0}",
+        "03:17:57.983799 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:57.993619 - SPEECH OUTPUT: 'L' {'established': False, 'average-pitch': 7.0}",
+        "03:17:58.007571 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:58.020719 - SPEECH OUTPUT: 'I' {'established': False, 'average-pitch': 7.0}",
+        "03:17:58.033646 - SPEECH OUTPUT: 'n' {'established': False}",
+        "03:17:58.043403 - SPEECH OUTPUT: 'p' {'established': False}",
+        "03:17:58.052278 - SPEECH OUTPUT: 'u' {'established': False}",
+        "03:17:58.061155 - SPEECH OUTPUT: 't' {'established': False}",
+        "03:17:58.070356 - SPEECH OUTPUT: 'left shift' {'established': False}",
+        "03:17:58.077558 - SPEECH OUTPUT: 'E' {'established': False, 'average-pitch': 7.0}",
+        "03:17:58.089071 - SPEECH OUTPUT: 'l' {'established': False}",
+        "03:17:58.100807 - SPEECH OUTPUT: 'e' {'established': False}",
+        "03:17:58.109878 - SPEECH OUTPUT: 'm' {'established': False}",
+        "03:17:58.119947 - SPEECH OUTPUT: 'e' {'established': False}",
+        "03:17:58.129304 - SPEECH OUTPUT: 'n' {'established': False}",
+        "03:17:58.138653 - SPEECH OUTPUT: 't' {'established': False}",
+        "03:17:58.324643 - SPEECH OUTPUT: '2 matches' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "2 matches"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "search-escape-restores-trigger-focus",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Search\n\u2318 K"
+      },
+      "trace_window_start_local": "03:18:00.657620",
+      "trace_window_end_local": "03:18:02.240601",
+      "orca_speech_lines": [
+        "03:18:00.674412 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:18:00.773198 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:00.774921 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:00.776247 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:00.783307 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "Search button"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "narrow-viewport-chapter-navigation-expands",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Chapters"
+      },
+      "trace_window_start_local": "03:18:05.584232",
+      "trace_window_end_local": "03:18:09.136652",
+      "orca_speech_lines": [
+        "03:18:05.597414 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:06.122279 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:06.195132 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:06.196432 - SPEECH OUTPUT: 'CTROTECH link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:06.598377 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:06.659998 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:06.661483 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:07.087260 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:07.165365 - SPEECH OUTPUT: 'leaving navigation.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:07.167017 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:07.168343 - SPEECH OUTPUT: 'Chapters collapsed button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:07.175540 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:07.560661 - SPEECH OUTPUT: 'space' {'established': False}",
+        "03:18:07.629566 - SPEECH OUTPUT: 'expanded' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "expanded"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "chapter-navigation-collapses",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Chapters"
+      },
+      "trace_window_start_local": "03:18:09.136718",
+      "trace_window_end_local": "03:18:10.712063",
+      "orca_speech_lines": [
+        "03:18:09.147921 - SPEECH OUTPUT: 'space' {'established': False}",
+        "03:18:09.246296 - SPEECH OUTPUT: 'collapsed' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "collapsed"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "practice-lab-opens-with-native-keyboard",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close example"
+      },
+      "trace_window_start_local": "03:18:14.073869",
+      "trace_window_end_local": "03:18:29.103542",
+      "orca_speech_lines": [
+        "03:18:14.098957 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:14.606744 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:14.664873 - SPEECH OUTPUT: 'banner' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:14.666561 - SPEECH OUTPUT: 'CTROTECHHTML Playbook link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:15.095319 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:15.189745 - SPEECH OUTPUT: 'navigation Primary' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:15.191311 - SPEECH OUTPUT: 'Read the book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:15.578642 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:15.637909 - SPEECH OUTPUT: 'Reference link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:16.053765 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:16.112109 - SPEECH OUTPUT: 'Projects link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:16.534924 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:16.616068 - SPEECH OUTPUT: 'Search button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.013829 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:17.073831 - SPEECH OUTPUT: 'leaving navigation.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.075543 - SPEECH OUTPUT: 'leaving banner.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.076669 - SPEECH OUTPUT: 'complementary content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.077833 - SPEECH OUTPUT: 'All chapters link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.491716 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:17.555179 - SPEECH OUTPUT: 'Understanding HTML toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.562843 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:17.969349 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:18.023598 - SPEECH OUTPUT: 'Syntax and Document Foundations toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:18.441822 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:18.499029 - SPEECH OUTPUT: 'Text and Content Elements toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:18.920213 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:18.977679 - SPEECH OUTPUT: 'Semantic Website Architecture toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:19.399888 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:19.456834 - SPEECH OUTPUT: 'Images, Audio, Video and Embedded Content toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:19.872774 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:19.929276 - SPEECH OUTPUT: 'Forms and Native Controls toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:20.352503 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:20.407931 - SPEECH OUTPUT: 'Interaction and Modern HTML toggle button expanded.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:20.832333 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:20.932001 - SPEECH OUTPUT: 'List with 6 items' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:20.933618 - SPEECH OUTPUT: '42 Buttons and commands link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:20.942354 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:21.309062 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:21.390333 - SPEECH OUTPUT: '43 Disclosure with details link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:21.784120 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:21.867996 - SPEECH OUTPUT: '44 Dialogs and popovers link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:22.258868 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:22.340068 - SPEECH OUTPUT: '45 Focus, editing and dragging link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:22.739323 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:22.832552 - SPEECH OUTPUT: '46 Templates and component boundaries link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:23.211152 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:23.293431 - SPEECH OUTPUT: '47 Custom data and structured data link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:23.689917 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:23.767970 - SPEECH OUTPUT: 'leaving list.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:23.769486 - SPEECH OUTPUT: 'Attributes and Metadata toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:23.775897 - SPEECH OUTPUT: 'Focus mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:24.168803 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:24.233961 - SPEECH OUTPUT: 'Browser Processing and Advanced Concepts toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:24.645956 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:24.710215 - SPEECH OUTPUT: 'Professional HTML Engineering toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:25.123295 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:25.196244 - SPEECH OUTPUT: 'Practical Projects toggle button collapsed.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:25.602954 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:25.710094 - SPEECH OUTPUT: 'leaving complementary content.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:25.711838 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:25.713109 - SPEECH OUTPUT: 'The book link.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:25.720863 - SPEECH OUTPUT: 'Browse mode' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:26.085536 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:26.151633 - SPEECH OUTPUT: 'Copy button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:26.565802 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:26.639758 - SPEECH OUTPUT: 'Scrollable HTML example landmark.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:26.641125 - SPEECH OUTPUT: 'clickable.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:27.050966 - SPEECH OUTPUT: 'tab' {'established': False}",
+        "03:18:27.120535 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:27.539930 - SPEECH OUTPUT: 'return' {'established': False}",
+        "03:18:27.766939 - SPEECH OUTPUT: 'Try the markup <!doctype html>\n                  <html lang=\"en\">\n                  <head>\n                  <meta charset=\"utf-8\">\n                  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n                  <title>Dialogs and popovers: example</title>\n                  \n                  </head>\n                  <body>\n                  <h1>Dialogs and popovers: example</h1>\n                  <button type=\"button\" id=\"open-help\">Membership help</button>\n                  <dialog id=\"help-dialog\" aria-labelledby=\"help-title\">\n                    <h2 id=\"help-title\">Membership help</h2>\n                    <p>Ask at the desk if you cannot supply an address document.</p>\n                    <form method=\"dialog\"><button type=\"submit\" autofocus>Close help</button></form>\n                  </dialog>\n                  <script>\n                    const help = document.getElementById(\"help-dialog\");\n                    document.getElementById(\"open-help\").addEventListener(\"click\", () => {\n                      help.showModal();\n                    });\n                  </script>\n                  <button type=\"button\" popovertarget=\"reading-tip\">Reading tip</button>\n                  <div id=\"reading-tip\" popover>\n                    <h2>A note about renewals</h2>\n                    <p>This is a fictional teaching note, not a real lending policy.</p>\n                    <button type=\"button\" popovertarget=\"reading-tip\"\n                            popovertargetaction=\"hide\">Dismiss reading tip</button>\n                  </div>\n                  </body>\n                  </html>Isolated preview. Parent DOM access and form submissions are blocked; resource loading is restricted. Never paste secrets or run code you do not trust.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:27.769921 - SPEECH OUTPUT: 'Close example button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "Try the markup",
+        "Close example button"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    },
+    {
+      "id": "practice-lab-escape-restores-trigger",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "trace_window_start_local": "03:18:29.103648",
+      "trace_window_end_local": "03:18:30.690349",
+      "orca_speech_lines": [
+        "03:18:29.115205 - SPEECH OUTPUT: 'escape' {'established': False}",
+        "03:18:29.230846 - SPEECH OUTPUT: 'main content' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}",
+        "03:18:29.232209 - SPEECH OUTPUT: 'Try the markup button.' {'established': False, 'family': {'name': None, 'gender': None, 'lang': None, 'dialect': None, 'variant': None}}"
+      ],
+      "expected_trace_fragments": [
+        "Try the markup button"
+      ],
+      "trace_result": "EXPECTED_FRAGMENTS_OBSERVED"
+    }
+  ],
+  "raw_trace_sha256": "1974bcbae9ca6dba11aabaae15555914b4c9b592fd188022481fcb5670889253",
+  "orca_speech_utterance_count": 308,
+  "open_observations": [
+    {
+      "id": "AT-01",
+      "case": "skip-link-reached-by-native-tab",
+      "status": "NEEDS_TRIAGE",
+      "observation": "Keyboard focus reached the skip link, but its expected link label was not observed in this bounded Orca speech window. Determine whether page-load timing, browser focus events or Orca presentation explain this before attributing a site defect.",
+      "independent_review": false
+    },
+    {
+      "id": "AT-02",
+      "case": "practice-lab-opens-with-native-keyboard",
+      "status": "NEEDS_HUMAN_REVIEW",
+      "observation": "Orca submitted the example source as part of its opening-dialog utterance before announcing Close example. The dialog has an explicit label. Assess interruption, verbosity and editor navigation with actual listeners before deciding whether a presentation change is needed. This is not an established WCAG failure."
+    }
+  ]
+}

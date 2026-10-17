@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-17T03:13:42.194877+00:00",
+  "result": "KEYBOARD_TASKS_COMPLETED_PENDING_SPEECH_REVIEW",
+  "error": null,
+  "versions": {
+    "browser": "Chromium",
+    "browser_version": "156.0.8078.4",
+    "playwright": "Version 1.64.0",
+    "orca": "Orca version 48.1, AT-SPI2 version: 2.56.2"
+  },
+  "served_site_base_commit": "b7d54a3bd625d31af0d2b440a9535774172a3ec7",
+  "site_was_not_rebuilt_after_new_manuscript_draft": true,
+  "environment": "Private Xvfb X11, Openbox, private D-Bus/AT-SPI session, actual Orca process and native X11 keyboard events; headed Chromium, speech-dispatcher/eSpeak and a PulseAudio null sink. Not a Playwright accessibility-tree substitute.",
+  "audio": "Actual PulseAudio monitor captured to speech.raw; null sink is not a claim that a human listened.",
+  "independent": false,
+  "human_listener": false,
+  "scope": "Bounded desktop-Linux actual-AT task evidence. Not NVDA/JAWS/VoiceOver, real mobile AT, full book comprehension or independent WCAG certification. Native keyboard assertions and Orca speech traces are recorded separately.",
+  "cases": [
+    {
+      "id": "skip-link-reached-by-native-tab",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Skip to main content"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "skip-link-moves-sequential-focus-into-main",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "A",
+        "id": "",
+        "text": "Odejobi Abiola Samuel"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "search-dialog-open-label-and-focus",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "INPUT",
+        "id": "book-search",
+        "text": ""
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "search-input-and-result-status",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "INPUT",
+        "id": "book-search",
+        "text": ""
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "search-escape-restores-trigger-focus",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Search\n\u2318 K"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "narrow-viewport-chapter-navigation-expands",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Chapters"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "chapter-navigation-collapses",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Chapters"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "practice-lab-opens-with-native-keyboard",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Close example"
+      },
+      "orca_speech_lines": []
+    },
+    {
+      "id": "practice-lab-escape-restores-trigger",
+      "result": "PASS_KEYBOARD_AND_DOM_CHECK",
+      "focus": {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Try the markup"
+      },
+      "orca_speech_lines": []
+    }
+  ],
+  "orca_speech_line_count": 1,
+  "raw_trace_sha256": "3a29c2e60af091851afd07c71cd2c8270260487383f11babed818fad9b5a343c"
+}

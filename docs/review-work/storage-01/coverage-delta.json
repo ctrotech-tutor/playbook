@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-17",
+  "scope": "Unreleased six-member Storage unit only",
+  "members": [
+    {
+      "name": "length",
+      "signature": "readonly attribute unsigned long length;",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    },
+    {
+      "name": "key",
+      "signature": "DOMString? key(unsigned long index);",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    },
+    {
+      "name": "getItem",
+      "signature": "getter DOMString? getItem(DOMString key);",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    },
+    {
+      "name": "setItem",
+      "signature": "setter undefined setItem(DOMString key, DOMString value);",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    },
+    {
+      "name": "removeItem",
+      "signature": "deleter undefined removeItem(DOMString key);",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    },
+    {
+      "name": "clear",
+      "signature": "undefined clear();",
+      "status": "SUBSTANTIVE_DRAFT_AUTHORED_AND_SAME_AGENT_TESTED",
+      "independent_approval": false,
+      "production_integrated": false
+    }
+  ],
+  "draft_contracts_added": 6,
+  "production_contracts_added": 0,
+  "formal_requirements_closed": [],
+  "exclusions_added": [],
+  "next_gate": "Normative specialist review, observations triage and same-source website/PDF integration with exact regenerated-artifact checks."
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-17T03:11:25.866938+00:00",
+  "result": "FINDINGS_OR_SETUP_FAILURE",
+  "error": "BrowserType.launch: Executable doesn't exist at /home/user/.cache/playbook-repository/.cache/orca/cache/ms-playwright/chromium-1248/chrome-linux64/chrome\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d",
+  "versions": {
+    "orca": "Orca version 48.1, AT-SPI2 version: 2.56.2"
+  },
+  "served_site_base_commit": "b7d54a3bd625d31af0d2b440a9535774172a3ec7",
+  "site_was_not_rebuilt_after_new_manuscript_draft": true,
+  "environment": "Private Xvfb X11, Openbox, private D-Bus/AT-SPI session, actual Orca process and native X11 keyboard events; headed Chromium, speech-dispatcher/eSpeak and a PulseAudio null sink. Not a Playwright accessibility-tree substitute.",
+  "audio": "Actual PulseAudio monitor captured to speech.raw; null sink is not a claim that a human listened.",
+  "independent": false,
+  "human_listener": false,
+  "scope": "Bounded desktop-Linux actual-AT task evidence. Not NVDA/JAWS/VoiceOver, real mobile AT, full book comprehension or independent WCAG certification. Native keyboard assertions and Orca speech traces are recorded separately.",
+  "cases": [],
+  "orca_speech_line_count": 1,
+  "raw_trace_sha256": "4fed944390a7a923ec7b24829a08658c3c65936e27c6c2d133ea08231581dd1c"
+}

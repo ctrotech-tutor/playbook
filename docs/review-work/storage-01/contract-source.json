@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "scope": "Bounded authored behaviour units. A unit is not independent approval or closure of a whole-Standard requirement.",
+  "units": [
+    {
+      "owner": "Storage",
+      "id": "behavior-storage",
+      "title": "Storage: the six-member behaviour contract",
+      "review_date": "2026-10-17",
+      "review_method": "Same-assistant normative reading and separately executed browser tests; not independent approval",
+      "objectives": [
+        "Predict every Storage member result and distinguish a missing entry from an empty string.",
+        "Explain argument conversion and identify which step can throw before any mutation.",
+        "Use storage without assuming insertion order, same-window events, unlimited capacity or permanent retention.",
+        "Keep preferences optional and treat stored values as untrusted input."
+      ],
+      "prerequisites": [
+        "HTML Chapter 60: Where the wider APIs begin",
+        "JavaScript functions, strict equality and try/catch",
+        "The difference between an origin and a URL path"
+      ],
+      "terms": {
+        "DOMString": "A Web IDL string type; these members use JavaScript string conversion rather than JSON serialization.",
+        "opaque origin": "An origin that is not the normal scheme/host/port tuple, such as this book's isolated editor frame.",
+        "binding error": "Failure while checking the receiver, argument count or converting JavaScript arguments, before the HTML method steps.",
+        "broadcast": "Asynchronous storage-event scheduling for eligible other Storage objects.",
+        "quota": "A storage limit or policy boundary; an application should handle inability to save rather than assume a fixed available amount."
+      },
+      "introduction": "A Storage object is a synchronous string map, not a database transaction or a secret vault. These contracts cover all six direct declarations in the captured Storage interface. Window getter acquisition, event delivery and lifecycle/security boundaries are explained here as dependencies, not silently counted as independently completed owners.",
+      "shared_sections": [
+        {
+          "title": "Acquire the area inside the guarded operation",
+          "text": "Storage is exposed on Window, not WorkerGlobalScope, and has no public constructor in this interface. Get an actual object through window.localStorage or window.sessionStorage. Their getters can throw SecurityError for an opaque origin or policy denial. This book's script-only sandbox has an opaque origin, so storage examples should be run on a dedicated local HTTP origin outside that editor. file: storage behaviour is not a portable tutorial environment. HTTPS is recommended for transport security; do not invent a SecureContext requirement on this IDL.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage-dev",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#storage-2",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dns-spoofing-attacks"
+          ]
+        },
+        {
+          "title": "Storage scope is not a URL directory",
+          "text": "localStorage is origin-associated state, subject to browser privacy policy and storage-key decisions. Paths such as /reader and /admin on one origin are not storage security boundaries. sessionStorage is also scoped to the top-level browsing context: same-origin frames in one tab can share it, while a separate tab has its own session area. An auxiliary context can start with a copy of the opener's session state; the copy is not ongoing shared session storage. A new tab is therefore not universally an empty-state guarantee.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage-dev",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#cross-directory-attacks",
+            "https://storage.spec.whatwg.org/#storage-keys"
+          ]
+        },
+        {
+          "title": "Read the event in the receiving context",
+          "text": "A storage broadcast excludes the mutating Storage object. For local storage, eligible other same-origin contexts can receive the event; session storage additionally requires the same top-level traversable. The queued event carries key, oldValue, newValue, the modifying document's URL and a storageArea object belonging to the receiver. It is not a synchronous callback from setItem and is not a cross-window lock. An inactive document can defer event processing. Equal-value setItem, missing-key removeItem and empty clear do not broadcast. Use a bounded observation in tests without treating elapsed silence as a proof that an event can never arrive.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-broadcast",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#the-storageevent-interface"
+          ]
+        },
+        {
+          "title": "Persistence, privacy and trust",
+          "text": "localStorage is intended to outlive a page session, but browser settings, privacy controls and user clearing can remove data. A quota failure is not the only possible access failure, and feature presence alone does not prove a write will succeed. Do not put credentials or confidential documents in a teaching preference store. Same-origin script can read it, a key prefix is not access control, and values can have been written by another document or modified through developer tools. Validate values before use and never insert stored strings as trusted HTML.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#privacy",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#security-storage",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#introduction-16"
+          ]
+        }
+      ],
+      "members": [
+        {
+          "name": "length",
+          "signature": "readonly attribute unsigned long length;",
+          "meaning": "Count stored entries, not occupied bytes. An empty stored string still occupies one key/value pair.",
+          "inputs_and_conversions": "This is a read-only attribute, not a method. Read it from a real Storage object. Its IDL type is unsigned long; the getter supplies a non-negative JavaScript integer.",
+          "returns_and_defaults": "The current map size. It does not report remaining quota, character count or a constant capacity. There is no author-supplied default argument.",
+          "algorithm": [
+            "Read the associated storage map and return its size.",
+            "A write to an existing key changes its value without creating a second entry. A successful removal reduces the count."
+          ],
+          "errors_and_restrictions": "Calling the extracted getter with a plain object fails the Web IDL receiver check with TypeError. Assigning to the read-only property is not a storage write: ordinary strict-mode JavaScript assignment throws TypeError; non-strict assignment can be ignored.",
+          "effects_and_ordering": "Reading the count does not mutate the area or broadcast a storage event. Another document can change shared local state; a count followed by enumeration is not a locked snapshot.",
+          "code": "const area = sessionStorage;\nconst before = area.length;\narea.setItem(\"ctro:empty\", \"\");\nconsole.log({ before, after: area.length, value: area.getItem(\"ctro:empty\") });\narea.removeItem(\"ctro:empty\");",
+          "code_language": "javascript",
+          "explanation": "Run on a dedicated practice origin. If the example key was absent, length rises by one even though its stored value is empty.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-length",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function"
+          ]
+        },
+        {
+          "name": "key",
+          "signature": "DOMString? key(unsigned long index);",
+          "meaning": "Look up a key name by position. The position is not a durable identifier.",
+          "inputs_and_conversions": "One required unsigned long index, without Clamp or EnforceRange. Web IDL first converts through ToNumber, maps NaN and either infinity to zero, truncates finite fractions toward zero, and reduces modulo 2^32. Consequently key(-1) addresses 4294967295, while key(2 ** 32) addresses zero. null and an explicitly supplied undefined convert to zero. Symbol and BigInt cannot use this ToNumber conversion.",
+          "returns_and_defaults": "The key at the converted index, or null when that index is at least the current entry count. A missing required argument is not a default-zero call: key() throws TypeError.",
+          "algorithm": [
+            "Convert and check the JavaScript call through the Web IDL binding.",
+            "Compare the converted index with the map size. Return null if it is outside the map.",
+            "Otherwise obtain the current map keys and return the key at that index."
+          ],
+          "errors_and_restrictions": "Missing arguments, incompatible receivers, Symbol and BigInt numeric inputs can throw TypeError before the HTML steps. Object-to-number conversion may run author code and propagate its exception.",
+          "effects_and_ordering": "Enumeration order is implementation-defined. Adding or removing keys can reorder entries. Replacing an existing value follows the no-reorder branch of setItem. If you need a sorted report, gather names and sort them explicitly; do not mutate the map inside index-based enumeration.",
+          "code": "const area = sessionStorage;\nconst names = [];\nfor (let i = 0; i < area.length; i += 1) {\n  const name = area.key(i);\n  if (name !== null) names.push(name);\n}\nnames.sort();\nconsole.log(names);",
+          "code_language": "javascript",
+          "explanation": "The result is an application-defined sorted list, not a claim about browser insertion order. Concurrent changes from another eligible document can still affect the snapshot; this loop does not add locking.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+            "https://webidl.spec.whatwg.org/#abstract-opdef-converttoint",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-reorder"
+          ]
+        },
+        {
+          "name": "getItem",
+          "signature": "getter DOMString? getItem(DOMString key);",
+          "meaning": "Read the stored string for a key, preserving the distinction between absence and an empty value.",
+          "inputs_and_conversions": "One required DOMString key. null becomes \"null\"; explicitly supplied undefined becomes \"undefined\". Those are actual key names. Objects undergo string conversion, which can run code or throw. A Symbol is not accepted by Web IDL ToString even though JavaScript String(symbol) has a special explicit-conversion behaviour.",
+          "returns_and_defaults": "A string when present, including \"\", \"false\" or \"0\"; null when absent. No automatic JSON parsing, boolean conversion or fallback occurs. getItem() without the required argument throws TypeError.",
+          "algorithm": [
+            "Convert the key using the Web IDL binding.",
+            "If the map has no entry for that key, return null.",
+            "Otherwise return the stored value without parsing it."
+          ],
+          "errors_and_restrictions": "A missing argument, Symbol input or incompatible receiver can throw TypeError. User-defined string conversion may throw a different exception. Accessing window.localStorage or window.sessionStorage is an earlier operation that can itself throw SecurityError; put the property access inside the guarded code.",
+          "effects_and_ordering": "The read does not mutate storage or broadcast an event. Property-style reads are not interchangeable with getItem: an absent named property normally gives undefined, and API-name collisions can expose a prototype member instead of stored data.",
+          "code": "let value;\ntry {\n  value = localStorage.getItem(\"ctro:theme\");\n} catch {\n  value = null;\n}\nconst theme = value === \"night\" ? \"night\" : \"paper\";",
+          "code_language": "javascript",
+          "explanation": "The allowlist treats storage as untrusted input. An absent, unavailable or unexpected preference falls back to paper. Use value === null when an application must distinguish absence from the stored empty string. Do not use value || fallback if empty is a meaningful saved value.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-getitem",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-sessionstorage-dev",
+            "https://webidl.spec.whatwg.org/#legacy-platform-object-getownproperty"
+          ]
+        },
+        {
+          "name": "setItem",
+          "signature": "setter undefined setItem(DOMString key, DOMString value);",
+          "meaning": "Create or replace one string-valued entry synchronously, subject to access and storage limits.",
+          "inputs_and_conversions": "Two required DOMString arguments, converted in order: key and then value. setItem(\"x\", null) stores \"null\"; setItem(\"x\", undefined) stores \"undefined\". Omitting the value throws TypeError instead. Objects are not automatically serialized to JSON, and Symbol conversion throws.",
+          "returns_and_defaults": "JavaScript undefined on success, not a promise, an entry count or a persistence certificate. There is no optional value or expiration default.",
+          "algorithm": [
+            "Start with oldValue = null and assume reordering may be needed.",
+            "If the key exists, read the old value. If it is the same string as the new value, return without mutation or broadcast. Otherwise mark that existing-value replacement must not reorder the map.",
+            "If the value cannot be stored, throw QuotaExceededError before changing this entry.",
+            "Set the map entry. Reorder only on the new-key branch. Broadcast the key, old string or null, and new string to eligible other Storage objects."
+          ],
+          "errors_and_restrictions": "QuotaExceededError is a DOMException from the storage algorithm, not a promise rejection. Do not assume a universal free-space value or fill the real application origin to discover a quota. Binding/conversion errors can occur first. A failed replacement at the quota-check step retains the old value.",
+          "effects_and_ordering": "A new key can reorder enumeration; an existing-key replacement does not. Equal-string writes produce no storage notification. Broadcast is asynchronous and does not notify the mutating Storage object itself. A synchronous return does not guarantee permanent disk retention or cross-window transaction locking.",
+          "code": "function saveTheme(theme) {\n  if (theme !== \"paper\" && theme !== \"night\") {\n    throw new TypeError(\"Unexpected theme\");\n  }\n  try {\n    localStorage.setItem(\"ctro:theme\", theme);\n    return true;\n  } catch {\n    return false;\n  }\n}",
+          "code_language": "javascript",
+          "explanation": "Validate the application value before writing. A false result means the preference was not saved, so keep the interface usable in memory and report that state without exposing private data. If you choose JSON, JSON.stringify and JSON.parse introduce their own errors and validation requirements.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-setitem",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-broadcast",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-reorder"
+          ]
+        },
+        {
+          "name": "removeItem",
+          "signature": "deleter undefined removeItem(DOMString key);",
+          "meaning": "Remove one key if it exists. Missing data is not an exceptional condition.",
+          "inputs_and_conversions": "One required DOMString key, with the same null, undefined, Symbol and object-conversion rules as getItem. Calling removeItem() without a key fails binding validation.",
+          "returns_and_defaults": "JavaScript undefined whether the key existed or not. It is not a boolean deletion result.",
+          "algorithm": [
+            "After argument conversion, return immediately if the map has no such key.",
+            "Otherwise remember its old string, remove the entry and reorder the map.",
+            "Broadcast the key, old string and newValue = null to eligible other Storage objects."
+          ],
+          "errors_and_restrictions": "Missing arguments, incompatible receivers or invalid string conversion can fail before deletion. Acquisition of the storage object can already have failed with SecurityError. Removing a nonexistent key does not manufacture an error or a notification.",
+          "effects_and_ordering": "A real removal can change enumeration order. The asynchronous event carries null as the new value. Application keys sharing one origin are not isolated by their names or URL directory.",
+          "code": "try {\n  localStorage.removeItem(\"ctro:theme\");\n} catch {\n  // Keep using the in-memory default.\n}",
+          "code_language": "javascript",
+          "explanation": "Delete only the preference you own. Catching an access failure does not prove that a previously saved preference was removed. A privacy-sensitive feature must report a failed deletion rather than promising erasure.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-removeitem",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-broadcast",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#cross-directory-attacks"
+          ]
+        },
+        {
+          "name": "clear",
+          "signature": "undefined clear();",
+          "meaning": "Remove every entry in the selected storage area, including entries owned by other features on that origin.",
+          "inputs_and_conversions": "No parameters. Extra JavaScript arguments are ignored by the Web IDL call; clear(\"ctro:\") is not a prefix filter. Use the correct local or session area and an isolated practice origin.",
+          "returns_and_defaults": "JavaScript undefined. An already-empty area is a successful no-op. This is not a certificate of physical erasure from backups, device storage or another area.",
+          "algorithm": [
+            "If the storage map is empty, return without broadcasting.",
+            "Otherwise clear the entire map.",
+            "Broadcast key = null, oldValue = null and newValue = null to eligible other Storage objects."
+          ],
+          "errors_and_restrictions": "A wrong receiver can fail the binding check. Obtaining the selected storage area can throw SecurityError. clear has no key conversion: passing an object is not a request to inspect or stringify that object.",
+          "effects_and_ordering": "A nonempty clear notifies eligible other documents asynchronously; an empty clear does not. It does not clear cookies, IndexedDB, the other Storage area or a server account. Do not use it as a general sign-out or application-reset implementation.",
+          "code": "// Dedicated, disposable practice origin only.\nconst area = sessionStorage;\narea.setItem(\"ctro:one\", \"1\");\narea.setItem(\"another-feature\", \"keep?\");\narea.clear(\"ctro:\");\nconsole.log(area.length); // 0, not 1",
+          "code_language": "javascript",
+          "explanation": "The extra argument has no filtering meaning. For a namespaced reset, first collect matching key names, then remove each one. Collect before deleting because removal can reorder index-based enumeration.",
+          "sources": [
+            "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-clear",
+            "https://webidl.spec.whatwg.org/#js-DOMString",
+            "https://webidl.spec.whatwg.org/#js-unsigned-long",
+            "https://webidl.spec.whatwg.org/#dfn-create-operation-function",
+            "https://html.spec.whatwg.org/multipage/webstorage.html#concept-storage-broadcast",
+            "https://webidl.spec.whatwg.org/#dfn-overload-resolution-algorithm"
+          ]
+        }
+      ],
+      "exercise": {
+        "question": "Implement a theme preference with exactly two accepted values: paper and night. The interface must work when storage is denied. Explain why getItem(key) || \"paper\", clear(\"ctro:\"), a sorted assumption about key(0), and waiting for a same-document storage event are each unsuitable shortcuts.",
+        "answer": "Read the Storage getter and getItem inside try/catch. Accept only paper or night and keep the chosen theme in memory when access or saving fails. Report that persistence is unavailable without breaking the theme control. A falsy fallback does not enforce the allowlist: an unexpected truthy string still passes through. Use an explicit null check when an empty string would be meaningful; a falsy fallback also conflates different saved values. clear ignores a prefix argument and removes all entries. key order is implementation-defined, so gather and sort names if ordering matters. Update this interface directly after a write, and use storage events only to react to eligible other documents. Catch a failed write or removal honestly: do not promise the value was saved or erased.",
+        "html": "<label for=\"theme-choice\">Theme</label>\n<select id=\"theme-choice\">\n  <option value=\"paper\">Paper</option>\n  <option value=\"night\">Night</option>\n</select>\n<p id=\"theme-status\" role=\"status\"></p>",
+        "code": "function createThemePreference(applyTheme, reportPersistence) {\n  const key = \"ctro:theme\";\n  const accepted = new Set([\"paper\", \"night\"]);\n  let theme = \"paper\";\n\n  function read() {\n    let stored;\n    let readable = true;\n    try {\n      stored = window.localStorage.getItem(key);\n    } catch {\n      readable = false;\n    }\n    if (readable) theme = accepted.has(stored) ? stored : \"paper\";\n    applyTheme(theme);\n    reportPersistence(readable\n      ? \"Preference read; saving is not yet verified.\"\n      : \"Preference storage is unavailable.\");\n    return theme;\n  }\n\n  function set(next) {\n    if (!accepted.has(next)) throw new TypeError(\"Unknown theme\");\n    theme = next;\n    applyTheme(theme);\n    let saved = true;\n    try {\n      window.localStorage.setItem(key, theme);\n    } catch {\n      saved = false;\n    }\n    reportPersistence(saved\n      ? \"Preference saved.\"\n      : \"Theme changed for this page only.\");\n    return saved;\n  }\n\n  return { read, set, get value() { return theme; } };\n}",
+        "usage_code": "const preference = createThemePreference(\n  (theme) => {\n    document.documentElement.dataset.theme = theme;\n    document.getElementById(\"theme-choice\").value = theme;\n  },\n  (message) => {\n    document.getElementById(\"theme-status\").textContent = message;\n  }\n);\npreference.read();\ndocument.getElementById(\"theme-choice\").addEventListener(\"change\", (event) => {\n  preference.set(event.currentTarget.value);\n});",
+        "implementation_notes": "The callbacks keep presentation outside the guarded storage call, so a rendering error is not misreported as a save failure. The in-memory value and control update immediately; another document does not need to send an event. A successful read does not promise a successful future write. Invalid stored text is ignored, not rendered as HTML. Put the scripts after this markup on a disposable HTTP origin. The fragment demonstrates preference state and honest status reporting; add matching theme styles in the application."
+      },
+      "compatibility": "The browser report records 267 executed observations in exact Chromium, Firefox and WebKit versions, including both local and session Storage member probes. One WebKit observation needs triage: an unrelated automated page could read the changed local value but no event was observed there within 1,200 ms; an opener-connected peer did receive the expected events. This is not proof of permanent non-delivery or universal WebKit failure. Cross-agent-cluster interaction, automation context eligibility and current WPT evidence need review. Third-party storage policy, private browsing, all-device quotas and long-term retention remain separate assessment work.",
+      "still_open": [
+        "Independent technical review of this unit and its answer.",
+        "Unbounded/all-device privacy-policy and quota behaviour.",
+        "Full inherited JavaScript/Web IDL platform-object semantics beyond the explicitly taught named-property boundaries.",
+        "StorageEvent constructors and initStorageEvent as separate captured members."
+      ]
+    }
+  ],
+  "publication_state": "Unreleased review-source unit. Not counted as production teaching or independent approval until integrated and verified in both maintained publication formats."
+}

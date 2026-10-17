@@ -1,0 +1,84 @@
+
+> ctrotech-html-playbook@1.0.0 test
+> node --test tests/build-integrity.test.mjs tests/hosting-contract.test.mjs
+
+TAP version 13
+# Subtest: JSON indentation, blank lines, trailing whitespace and Windows line endings are harmless
+ok 1 - JSON indentation, blank lines, trailing whitespace and Windows line endings are harmless
+  ---
+  duration_ms: 2.65391
+  ...
+# Subtest: whitespace inside JSON strings is protected
+ok 2 - whitespace inside JSON strings is protected
+  ---
+  duration_ms: 0.480402
+  ...
+# Subtest: dependency versions and added dependencies are protected
+ok 3 - dependency versions and added dependencies are protected
+  ---
+  duration_ms: 0.37084
+  ...
+# Subtest: non-JSON source and binary assets remain byte-exact
+ok 4 - non-JSON source and binary assets remain byte-exact
+  ---
+  duration_ms: 0.27041
+  ...
+# Subtest: invalid JSON is rejected rather than repaired by normalization
+ok 5 - invalid JSON is rejected rather than repaired by normalization
+  ---
+  duration_ms: 0.540355
+  ...
+# Subtest: Python and Node use the same normalization, including every retained input
+ok 6 - Python and Node use the same normalization, including every retained input
+  ---
+  duration_ms: 468.597208
+  ...
+# Subtest: guard accepts harmless formatting, reports all stale inputs and rejects missing files
+ok 7 - guard accepts harmless formatting, reports all stale inputs and rejects missing files
+  ---
+  duration_ms: 5.703208
+  ...
+# Subtest: old manifests and out-of-root paths fail closed
+ok 8 - old manifests and out-of-root paths fail closed
+  ---
+  duration_ms: 0.319466
+  ...
+# Subtest: hosting metadata, property order, regions and redirects are not manuscript changes
+ok 9 - hosting metadata, property order, regions and redirects are not manuscript changes
+  ---
+  duration_ms: 1.707637
+  ...
+# Subtest: incompatible output and routing settings fail with hosting-specific guidance
+ok 10 - incompatible output and routing settings fail with hosting-specific guidance
+  ---
+  duration_ms: 0.814957
+  ...
+# Subtest: an ignored stale local snapshot cannot shadow the current tracked snapshot
+ok 11 - an ignored stale local snapshot cannot shadow the current tracked snapshot
+  ---
+  duration_ms: 13.39696
+  ...
+# Subtest: all stale candidates still reject a real content edit
+ok 12 - all stale candidates still reject a real content edit
+  ---
+  duration_ms: 5.029439
+  ...
+# Subtest: the snapshot manifest excludes hosting config but protects book data and dependencies
+ok 13 - the snapshot manifest excludes hosting config but protects book data and dependencies
+  ---
+  duration_ms: 108.695444
+  ...
+# Subtest: actual compiler accepts changed hosting config and stale local cache, but rejects manuscript edits
+ok 14 - actual compiler accepts changed hosting config and stale local cache, but rejects manuscript edits
+  ---
+  duration_ms: 8197.539344
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8954.142576

@@ -1,0 +1,9 @@
+{
+  "format": "signed 16-bit little-endian PCM",
+  "rate": 16000,
+  "channels": 1,
+  "seconds": 53.788375,
+  "pcm_sha256": "dd258618f0c300321d1ec1c8413831992c34311cd0f11420f6e140ea406c33ab",
+  "origin": "Actual private PulseAudio monitor recording of the Orca/speech-dispatcher/eSpeak session, not generated narration.",
+  "human_listened": false
+}

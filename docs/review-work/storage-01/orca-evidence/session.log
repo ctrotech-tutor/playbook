@@ -1,0 +1,17 @@
+dbus-daemon[11956]: [session uid=1000 pid=11956 pidfd=4] Activating service name='ca.desrt.dconf' requested by ':1.1' (uid=1000 pid=11970 comm="gsettings set org.gnome.desktop.a11y.applications" label="kernel")
+dbus-daemon[11956]: [session uid=1000 pid=11956 pidfd=4] Successfully activated service 'ca.desrt.dconf'
+dbus-daemon[11956]: [session uid=1000 pid=11956 pidfd=4] Activating service name='org.a11y.Bus' requested by ':1.3' (uid=1000 pid=12001 comm="/usr/bin/python3 /usr/bin/orca --replace --user-pr" label="kernel")
+dbus-daemon[11956]: [session uid=1000 pid=11956 pidfd=4] Successfully activated service 'org.a11y.Bus'
+dbus-daemon[12011]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=12001 comm="/usr/bin/python3 /usr/bin/orca --replace --user-pr" label="kernel")
+dbus-daemon[12011]: Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+skip-link-reached-by-native-tab keyboard and DOM check complete
+skip-link-moves-sequential-focus-into-main keyboard and DOM check complete
+search-dialog-open-label-and-focus keyboard and DOM check complete
+search-input-and-result-status keyboard and DOM check complete
+search-escape-restores-trigger-focus keyboard and DOM check complete
+narrow-viewport-chapter-navigation-expands keyboard and DOM check complete
+chapter-navigation-collapses keyboard and DOM check complete
+practice-lab-opens-with-native-keyboard keyboard and DOM check complete
+practice-lab-escape-restores-trigger keyboard and DOM check complete
+KEYBOARD_TASKS_COMPLETED_PENDING_SPEECH_REVIEW 9 tasks; 308 Orca speech-output lines
