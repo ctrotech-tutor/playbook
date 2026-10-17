@@ -1,3 +1,5 @@
+> Historical audit checkpoints through 16 October 2026. The current author-accepted production edition and its newer evidence are in [the 2026.1 release notes](../releases/2026.1/README.md). Earlier candidate/untagged-export descriptions below are dated history, not the current standard PDF. Formal unclosed requirements remain tracked.
+
 # Final-readiness content audit
 
 **The HTML Playbook | Odejobi Abiola Samuel | CTROTECH**  

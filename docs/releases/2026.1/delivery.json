@@ -1,0 +1,213 @@
+{
+  "verified_at": "2026-10-17T01:39:24.035847+00:00",
+  "repository": "https://github.com/ctrotech-tutor/playbook",
+  "edition": "2026.1",
+  "author_accepted_production_release": true,
+  "content_commit": "01d0a20057312a7b03334c13f2907133448b5783",
+  "previous_remote_main": "82b553c77e883b0c46bcd748518fa037f98146db",
+  "remote_main_verified": "01d0a20057312a7b03334c13f2907133448b5783",
+  "pushed": true,
+  "force_push": false,
+  "credential_saved": false,
+  "final_zip_sha256": "d5d9a914d8a04e71d25363b97f43f06ace60c65811daf7ec8da8c751cd756214",
+  "final_zip_bytes": 10707497,
+  "final_zip_fresh_extraction_full_build_and_tests": "PASS",
+  "final_zip_crc_and_per_file_manifest": "PASS",
+  "pdf_sha256": "5685f8eb1dd9f073835e89a538e678e4151e809b8d4d26a801dbf1d99101590d",
+  "pdf_machine_pdfua1_validation": "PASS",
+  "payload_files": 950,
+  "hosted_ci_verified": true,
+  "production_deployment_verified": true,
+  "scope": "Author-accepted current production edition. Does not silently close exhaustive whole-Standard or specialist independent-review requirements.",
+  "release_url": "https://github.com/ctrotech-tutor/playbook/releases/tag/v2026.1",
+  "release_id": 415516920,
+  "release_tag": "v2026.1",
+  "release_published": true,
+  "release_assets": [
+    {
+      "name": "ctrotech-html-playbook-vercel.zip",
+      "url": "https://github.com/ctrotech-tutor/playbook/releases/download/v2026.1/ctrotech-html-playbook-vercel.zip",
+      "bytes": 10707497,
+      "sha256": "d5d9a914d8a04e71d25363b97f43f06ace60c65811daf7ec8da8c751cd756214",
+      "public_download_verified": true
+    },
+    {
+      "name": "ctrotech-html-playbook.pdf",
+      "url": "https://github.com/ctrotech-tutor/playbook/releases/download/v2026.1/ctrotech-html-playbook.pdf",
+      "bytes": 3062734,
+      "sha256": "5685f8eb1dd9f073835e89a538e678e4151e809b8d4d26a801dbf1d99101590d",
+      "public_download_verified": true
+    },
+    {
+      "name": "release-checksums.json",
+      "url": "https://github.com/ctrotech-tutor/playbook/releases/download/v2026.1/release-checksums.json",
+      "bytes": 511,
+      "sha256": "bb942c3645309c5618cf99e992f805dc0dbf62dc086cd938bcf7c22ac47b952f",
+      "public_download_verified": true
+    }
+  ],
+  "hosted_ci_runs": [
+    {
+      "id": 38991507766,
+      "head_sha": "01d0a20057312a7b03334c13f2907133448b5783",
+      "name": "Build and integrity checks",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38991507766"
+    },
+    {
+      "id": 38991459411,
+      "head_sha": "01d0a20057312a7b03334c13f2907133448b5783",
+      "name": "Build and integrity checks",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38991459411"
+    }
+  ],
+  "commit_statuses": [
+    {
+      "context": "Vercel",
+      "state": "success",
+      "target_url": "https://vercel.com/ctrotech-tutors-projects/ctrobook/3mUGPx1QYiS3AhQ2diR6UaQscq1t",
+      "description": "Deployment has completed"
+    }
+  ],
+  "observed_public_pdf_sha256": "5685f8eb1dd9f073835e89a538e678e4151e809b8d4d26a801dbf1d99101590d",
+  "verified_hosted_jobs": [
+    {
+      "id": 117274550089,
+      "name": "Node 24 / ubuntu-latest",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38991459411/job/117274550089"
+    },
+    {
+      "id": 117274550280,
+      "name": "Node 24 / windows-latest",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ctrotech-tutor/playbook/actions/runs/38991459411/job/117274550280"
+    }
+  ],
+  "public_production_verification": {
+    "observed_at": "2026-10-17T01:37:59.570051+00:00",
+    "origin": "https://ctrobook.vercel.app",
+    "comparison_fixture": "Fresh real production-origin build, not the synthetic SEO-test origin",
+    "scope": "Actual public production, selected exact-HTML routes/assets and reader/browser flows. Not independent accessibility certification or a complete penetration test.",
+    "routes": [
+      {
+        "path": "/",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "40af953a47ae95dc849504161143034fffd229f858218003e648d149073aff51"
+      },
+      {
+        "path": "/start",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "f3ca545ce187d60f06891334b8c1e636b45fb707098a0d26640db1fe39879f6d"
+      },
+      {
+        "path": "/contents",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "58e4631180dcf3e602a45f1ac72c74b5d6cc799cc780b877a7de805618a473cf"
+      },
+      {
+        "path": "/about",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "0c05f23b5a09c58592a233403091b1d9c2fb463a770ab1a03d00fa0b512caa02"
+      },
+      {
+        "path": "/author",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "7614794e0b8b98f9ca46f242cd7bd670fc0ae967d77bae7ad690029c7b379166"
+      },
+      {
+        "path": "/projects",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "94657dc00acf21385d8a55dbea44ac1c29195db608c2ec98c849cd2a3d45dc91"
+      },
+      {
+        "path": "/reference",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "0f9fd1c95cae555819d4c1db90f96da47a804f9c9623d4d7c466b7ac0656a753"
+      },
+      {
+        "path": "/reference/status",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "a36d2962a829c710f24deaff82950ceddd22c4b5719a2c5c700b724661ac0ba8"
+      },
+      {
+        "path": "/reference/api/htmlinputelement",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "4dbae6659b200c103cec80e2fd3f8f793e55d7fc39446efb1b4b4a7938dff098"
+      },
+      {
+        "path": "/chapters/01",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "f5690231bf01069c053287bedb1b56eac0fb5e227413424780cba1f646bfee38"
+      },
+      {
+        "path": "/chapters/44",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "08ccea65cbb3e47ac8de450d0762bd0cbe5bad47578499f63914a352303fc06c"
+      },
+      {
+        "path": "/chapters/74",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "0645242dd92a65e312d94fdd69a49f63f906f02eeb064b770dc2c072953e501c"
+      },
+      {
+        "path": "/projects/registration",
+        "status": 200,
+        "bytes_match_production_build": true,
+        "sha256": "19af8a225d7c71ed695e3b3c0f4578b2099a39243b564fa2b663b463151011bf"
+      }
+    ],
+    "browsers": [
+      {
+        "engine": "chromium",
+        "version": "156.0.8078.4",
+        "search_and_escape": "PASS",
+        "actual_editor_parent_isolation": "PASS",
+        "reference_filter": "PASS",
+        "fictional_registration_no_post": "PASS",
+        "selected_320px_reflow": "PASS",
+        "page_errors": []
+      },
+      {
+        "engine": "firefox",
+        "version": "157.0",
+        "search_and_escape": "PASS",
+        "actual_editor_parent_isolation": "PASS",
+        "reference_filter": "PASS",
+        "fictional_registration_no_post": "PASS",
+        "selected_320px_reflow": "PASS",
+        "page_errors": []
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "search_and_escape": "PASS",
+        "actual_editor_parent_isolation": "PASS",
+        "reference_filter": "PASS",
+        "fictional_registration_no_post": "PASS",
+        "selected_320px_reflow": "PASS",
+        "page_errors": []
+      }
+    ],
+    "result": "PASS_PUBLIC_PRODUCTION_SCOPE"
+  },
+  "verification_download_url": "https://github.com/ctrotech-tutor/playbook/releases/download/v2026.1/release-verification.json",
+  "public_pdf_exact_hash_verified": true
+}

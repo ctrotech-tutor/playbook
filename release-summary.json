@@ -11,7 +11,7 @@
   "primary_pdf_tagged": true,
   "primary_pdf_machine_profile": "PDF/UA-1",
   "independent_content_approved": false,
-  "hosted_vercel_deployment_tested": false,
+  "hosted_vercel_deployment_tested": true,
   "vercel_project_created_by_agent": false,
   "vercel_project_created_by_author": true,
   "search_accounts_verified": false,
@@ -41,5 +41,9 @@
     "Complete security review",
     "Independent PDF accessibility and actual assistive-technology approval",
     "Legal certification or hosted deployment verification of this rebuilt edition"
-  ]
+  ],
+  "hosted_ci_verified": true,
+  "public_production_verification": "docs/releases/2026.1/delivery.json",
+  "production_observed_at": "2026-10-17T01:39:24.035847+00:00",
+  "production_verification_scope": "13 actual public HTML routes byte-match the actual-origin build; current public PDF hash matches; selected live reader/editor/form/mobile flows pass in three engines. Not independent WCAG or whole-site penetration testing."
 }

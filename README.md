@@ -23,6 +23,10 @@ Chapters, reading guidance, publication details and captured reference data are 
 
 The API register preserves captured declarations and source-definition routes. It is not a complete explanation of every HTML algorithm, inherited contract, exception or conversion. The formal scope ledger and specialist review records remain in [the audit archive](docs/final-audit/README.md). Publication acceptance does not silently close those requirements or grant an accessibility/security certificate.
 
+## Production verification
+
+On 17 October 2026, the public production PDF matched the release hash, 13 selected public HTML routes matched the actual-origin build byte for byte, and live search, isolated editing, reference filtering, fictional registration and narrow-viewport flows passed in Chromium, Firefox and WebKit. Hosted Node 24 CI passed on Ubuntu and Windows for the production content commit. See the [dated delivery receipt](docs/releases/2026.1/delivery.json). This observation applies to this edition; future updates need their own verification.
+
 ## Source and deployment
 
 GitHub stores the source. **Vercel remains the website host**, not GitHub Pages. A push alone does not establish that production has deployed; see the separately dated delivery/deployment receipt for observed results.
